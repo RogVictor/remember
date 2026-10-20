@@ -49,6 +49,32 @@ export type CMSFAQ = {
   sortOrder: number
 }
 
+export type CMSCompanySettings = {
+  additionalPhone: string
+  address: string
+  brandSlogan: string
+  city: string
+  companyName: string
+  email: string
+  logo: CMSMedia | null
+  messengerUrl: string
+  phone: string
+  workingHours: string
+}
+
+export const DEFAULT_COMPANY_SETTINGS: CMSCompanySettings = {
+  additionalPhone: '+7 (000) 000-00-01',
+  address: 'Адрес офиса уточняется',
+  brandSlogan: 'Ритуальная служба',
+  city: 'Москва',
+  companyName: 'Ритуальная служба «Память»',
+  email: '',
+  logo: null,
+  messengerUrl: '',
+  phone: '+7 (000) 000-00-00',
+  workingHours: 'Круглосуточно, без выходных',
+}
+
 export type CMSPage = {
   content: SerializedEditorState | null
   id: number | string

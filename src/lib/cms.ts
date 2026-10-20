@@ -4,8 +4,10 @@ import { cache } from 'react'
 import config from '@payload-config'
 import { getPayload } from 'payload'
 import { unstable_noStore as noStore } from 'next/cache'
+import { DEFAULT_COMPANY_SETTINGS } from './cms-types'
 import type {
   CMSFAQ,
+  CMSCompanySettings,
   CMSMedia,
   CMSPage,
   CMSPrice,
@@ -22,6 +24,9 @@ const isRecord = (value: unknown): value is RecordValue =>
 
 const text = (value: unknown): string | null =>
   typeof value === 'string' && value.trim() !== '' ? value.trim() : null
+
+const optionalText = (value: unknown, fallback: string): string =>
+  typeof value === 'string' ? value.trim() : fallback
 
 const number = (value: unknown): number | null =>
   typeof value === 'number' && Number.isFinite(value) ? value : null
@@ -151,6 +156,35 @@ export const getPublishedPageSlugs = async (): Promise<string[]> => {
 const reportLoadFailure = (collection: string): void => {
   console.error(`[CMS] Could not load published ${collection} from Payload.`)
 }
+
+export const getCompanySettings = cache(async (): Promise<CMSCompanySettings> => {
+  noStore()
+  try {
+    const payload = await getPayload({ config })
+    const settings = await payload.findGlobal({
+      slug: 'company-settings',
+      depth: 1,
+      overrideAccess: false,
+    })
+    const values: RecordValue = isRecord(settings) ? settings : {}
+
+    return {
+      additionalPhone: optionalText(values.additionalPhone, DEFAULT_COMPANY_SETTINGS.additionalPhone),
+      address: optionalText(values.address, DEFAULT_COMPANY_SETTINGS.address),
+      brandSlogan: optionalText(values.brandSlogan, DEFAULT_COMPANY_SETTINGS.brandSlogan),
+      city: text(values.city) ?? DEFAULT_COMPANY_SETTINGS.city,
+      companyName: text(values.companyName) ?? DEFAULT_COMPANY_SETTINGS.companyName,
+      email: optionalText(values.email, DEFAULT_COMPANY_SETTINGS.email),
+      logo: media(values.logo),
+      messengerUrl: optionalText(values.messengerUrl, DEFAULT_COMPANY_SETTINGS.messengerUrl),
+      phone: text(values.phone) ?? DEFAULT_COMPANY_SETTINGS.phone,
+      workingHours: text(values.workingHours) ?? DEFAULT_COMPANY_SETTINGS.workingHours,
+    }
+  } catch (error) {
+    console.error('[CMS] Could not load company settings from Payload.', error)
+    throw new Error('Could not load company settings.', { cause: error })
+  }
+})
 
 export const getServices = async (): Promise<CMSResult<CMSService>> => {
   noStore()

@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import type {
+  CMSCompanySettings,
   CMSFAQ,
   CMSPriceItem,
   CMSProduct,
   CMSResult,
   CMSService,
 } from './lib/cms-types'
+import { DEFAULT_COMPANY_SETTINGS } from './lib/cms-types'
 
 type PageKey = 'home' | 'services' | 'funeral' | 'products' | 'prices' | 'about' | 'info' | 'faq' | 'contacts' | 'legal' | 'cms'
 
@@ -27,6 +29,20 @@ function go(page: PageKey) {
   window.location.assign(path)
 }
 
+function phoneHref(phone: string) {
+  return `tel:${phone.replace(/[^\d+]/g, '')}`
+}
+
+function BrandMark({ company }: { company: CMSCompanySettings }) {
+  return (
+    <span className="brand-mark">
+      {company.logo
+        ? <img className="brand-logo" src={company.logo.url} alt={company.logo.alt || company.companyName} />
+        : company.companyName.charAt(0)}
+    </span>
+  )
+}
+
 function Button({ children, secondary = false, onClick, type = 'button', disabled }: { children: React.ReactNode; secondary?: boolean; onClick?: () => void; type?: 'button' | 'submit'; disabled?: boolean }) {
   return <button className={secondary ? 'btn btn-secondary' : 'btn'} onClick={onClick} type={type} disabled={disabled}>{children}</button>
 }
@@ -43,17 +59,17 @@ function Icon({ name }: { name: 'phone' | 'clock' | 'menu' | 'close' | 'check' |
   return <svg aria-hidden="true" viewBox="0 0 24 24">{paths[name]}</svg>
 }
 
-function Header({ page }: { page: PageKey }) {
+function Header({ page, company }: { page: PageKey; company: CMSCompanySettings }) {
   const [open, setOpen] = useState(false)
   return <>
-    <div className="topline"><div className="container top-inner"><span>Ритуальные услуги в Москве</span><span className="top-hours"><Icon name="clock" /> Работаем круглосуточно</span></div></div>
+    <div className="topline"><div className="container top-inner"><span>Ритуальные услуги в {company.city}</span><span className="top-hours"><Icon name="clock" /> {company.workingHours}</span></div></div>
     <header>
       <div className="container header-main">
         <button className="brand" onClick={() => go('home')} aria-label="На главную">
-          <span className="brand-mark">П</span><span><strong>ПАМЯТЬ</strong><small>Ритуальная служба</small></span>
+          <BrandMark company={company}/><span><strong>{company.companyName}</strong><small>{company.brandSlogan}</small></span>
         </button>
         <div className="brand-note">Деликатная помощь<br/>в трудный момент</div>
-        <div className="header-contact"><small>Круглосуточная линия</small><a href="tel:+70000000000">+7 (000) 000-00-00</a></div>
+        <div className="header-contact"><small>Телефон для связи</small><a href={phoneHref(company.phone)}>{company.phone}</a></div>
         <Button secondary onClick={() => go('contacts')}>Заказать звонок</Button>
         <Button onClick={() => go('contacts')}>Вызвать специалиста</Button>
         <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Открыть меню"><Icon name={open ? 'close' : 'menu'} /></button>
@@ -65,13 +81,13 @@ function Header({ page }: { page: PageKey }) {
   </>
 }
 
-function Footer() {
+function Footer({ company }: { company: CMSCompanySettings }) {
   return <footer><div className="container footer-grid">
-    <div><div className="footer-brand"><span className="brand-mark">П</span><strong>ПАМЯТЬ</strong></div><p>Комплексная помощь в организации похорон и решении сопутствующих вопросов.</p></div>
+    <div><div className="footer-brand"><BrandMark company={company}/><strong>{company.companyName}</strong></div><p>Комплексная помощь в организации похорон и решении сопутствующих вопросов.</p></div>
     <div><h3>Услуги</h3><button onClick={() => go('funeral')}>Организация похорон</button><button onClick={() => go('products')}>Ритуальные товары</button><button onClick={() => go('prices')}>Цены на услуги</button></div>
     <div><h3>Информация</h3><button onClick={() => go('about')}>О компании</button><button onClick={() => go('faq')}>Частые вопросы</button><button onClick={() => go('legal')}>Политика конфиденциальности</button></div>
-    <div><h3>Контакты</h3><a className="footer-phone" href="tel:+70000000000">+7 (000) 000-00-00</a><p>Адрес офиса уточняется<br/>Круглосуточно, без выходных</p></div>
-  </div><div className="container copyright">© 2026 Ритуальная служба «Память». Информация на сайте не является публичной офертой.</div></footer>
+    <div><h3>Контакты</h3><a className="footer-phone" href={phoneHref(company.phone)}>{company.phone}</a>{company.additionalPhone && <p><a href={phoneHref(company.additionalPhone)}>{company.additionalPhone}</a></p>}<p>{company.address && <>{company.address}<br/></>}{company.workingHours}</p>{company.email && <a href={`mailto:${company.email}`}>{company.email}</a>}{company.messengerUrl && <p><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></p>}</div>
+  </div><div className="container copyright">© 2026 {company.companyName}. Информация на сайте не является публичной офертой.</div></footer>
 }
 
 function SectionTitle({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) {
@@ -124,8 +140,8 @@ function formatPrice(price: Pick<CMSService, 'price' | 'priceMax' | 'priceMin' |
   return 'Уточняйте стоимость'
 }
 
-function ContactAside() {
-  return <aside className="contact-aside"><span>Круглосуточная консультация</span><a href="tel:+70000000000">+7 (000) 000-00-00</a><p>Специалист ответит на вопросы и поможет определить порядок действий.</p><Button onClick={() => go('contacts')}>Связаться с нами</Button></aside>
+function ContactAside({ company }: { company: CMSCompanySettings }) {
+  return <aside className="contact-aside"><span>Консультация · {company.workingHours}</span><a href={phoneHref(company.phone)}>{company.phone}</a><p>Специалист ответит на вопросы и поможет определить порядок действий.</p><Button onClick={() => go('contacts')}>Связаться с нами</Button></aside>
 }
 
 function Breadcrumbs({ title }: { title: string }) {
@@ -133,21 +149,23 @@ function Breadcrumbs({ title }: { title: string }) {
 }
 
 function Home({
+  company,
   services,
   priceItems,
   faqs,
 }: {
+  company: CMSCompanySettings
   services: CMSResult<CMSService>
   priceItems: CMSResult<CMSPriceItem>
   faqs: CMSResult<CMSFAQ>
 }) {
   return <>
-    <section className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Button secondary onClick={() => go('services')}>Все услуги</Button></div><a className="hero-phone" href="tel:+70000000000"><Icon name="phone"/> +7 (000) 000-00-00</a></div><div className="hero-image"><img src="https://images.unsplash.com/photo-1532276958900-0036587925c8?auto=format&fit=crop&w=1000&q=85" alt="Белые цветы в спокойной светлой композиции"/><span>Помощь с уважением и вниманием к каждой семье</span></div></div></section>
+    <section className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Button secondary onClick={() => go('services')}>Все услуги</Button></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a></div><div className="hero-image"><img src="https://images.unsplash.com/photo-1532276958900-0036587925c8?auto=format&fit=crop&w=1000&q=85" alt="Белые цветы в спокойной светлой композиции"/><span>Помощь с уважением и вниманием к каждой семье</span></div></div></section>
     <section className="section container"><SectionTitle eyebrow="Основные направления">Наши услуги</SectionTitle><ServiceGrid result={services} limit={8}/><div className="center"><Button secondary onClick={() => go('services')}>Смотреть все услуги</Button></div></section>
     <section className="advantages"><div className="container"><SectionTitle>Почему обращаются к нам</SectionTitle><div className="adv-grid">{['Круглосуточная консультация','Комплексный подход','Понятная стоимость услуг','Сопровождение на этапах'].map((x,i)=><div className="adv" key={x}><span>0{i+1}</span><h3>{x}</h3><p>{['Принимаем обращения 24 часа, без выходных.','Помогаем согласовать услуги в одном месте.','Объясняем, из чего складывается итоговая сумма.','Остаёмся на связи в согласованном порядке.'][i]}</p></div>)}</div></div></section>
     <section className="section container"><SectionTitle eyebrow="Порядок действий">Как организовать похороны</SectionTitle><div className="steps">{['Свяжитесь с нами','Обсудите необходимые услуги','Согласуйте стоимость и порядок','Получите помощь в организации'].map((x,i)=><div className="step" key={x}><span>{i+1}</span><strong>{x}</strong></div>)}</div></section>
     <section className="section muted"><div className="container"><SectionTitle>Стоимость ритуальных услуг</SectionTitle><PriceTable result={priceItems} compact/><div className="center"><Button onClick={() => go('prices')}>Посмотреть все цены</Button></div></div></section>
-    <section className="section container split-section"><div><SectionTitle eyebrow="Ответы специалистов">Часто задаваемые вопросы</SectionTitle><FaqList result={faqs} limit={3}/><button className="text-link faq-more" onClick={()=>go('faq')}>Все вопросы <Icon name="arrow"/></button></div><ContactAside/></section>
+    <section className="section container split-section"><div><SectionTitle eyebrow="Ответы специалистов">Часто задаваемые вопросы</SectionTitle><FaqList result={faqs} limit={3}/><button className="text-link faq-more" onClick={()=>go('faq')}>Все вопросы <Icon name="arrow"/></button></div><ContactAside company={company}/></section>
   </>
 }
 
@@ -170,15 +188,17 @@ function PriceTable({ result, compact = false }: { result: CMSResult<CMSPriceIte
 }
 
 function CatalogPage({
+  company,
   type,
   services,
   products,
 }: {
+  company: CMSCompanySettings
   type: 'services' | 'products'
   services: CMSResult<CMSService>
   products: CMSResult<CMSProduct>
 }) {
-  return <PageShell title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Оказываем комплексную помощь в организации похорон. Специалист подробно объяснит порядок действий и поможет выбрать только необходимые услуги.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
+  return <PageShell company={company} title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Оказываем комплексную помощь в организации похорон. Специалист подробно объяснит порядок действий и поможет выбрать только необходимые услуги.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
     {type === 'services' ? <ServiceGrid result={services}/> : products.error
       ? <EmptyState>Не удалось загрузить каталог. Попробуйте открыть страницу позже.</EmptyState>
       : products.data.length === 0
@@ -203,12 +223,12 @@ function CatalogPage({
   </PageShell>
 }
 
-function PageShell({ title, intro, children, aside = true }: { title: string; intro?: string; children: React.ReactNode; aside?: boolean }) {
-  return <main className="page container"><Breadcrumbs title={title}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside/>}</div></main>
+function PageShell({ company, title, intro, children, aside = true }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean }) {
+  return <main className="page container"><Breadcrumbs title={title}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
 }
 
-function FuneralPage() {
-  return <PageShell title="Организация похорон" intro="Помогаем последовательно решить организационные вопросы и согласовать состав необходимых услуг.">
+function FuneralPage({ company }: { company: CMSCompanySettings }) {
+  return <PageShell company={company} title="Организация похорон" intro="Помогаем последовательно решить организационные вопросы и согласовать состав необходимых услуг.">
     <img className="content-image" src="https://images.unsplash.com/photo-1777542842081-808785008a22?auto=format&fit=crop&w=1200&q=80" alt="Сдержанная композиция из белых цветов"/>
     <h2>Помощь на каждом согласованном этапе</h2><p>Организация церемонии требует внимания к документам, срокам и множеству практических деталей. Специалист уточнит обстоятельства, предложит понятный порядок действий и ответит на вопросы.</p>
     <div className="note"><strong>В комплекс услуг может входить:</strong><ul>{['Консультация по первоочередным действиям','Помощь с подготовкой необходимых документов','Подбор ритуальных принадлежностей','Организация транспорта и церемонии','Согласование дополнительных услуг'].map(x=><li key={x}><Icon name="check"/>{x}</li>)}</ul></div>
@@ -225,16 +245,16 @@ function FaqList({ result, limit }: { result: CMSResult<CMSFAQ>; limit?: number 
   return <div className="faq">{result.data.slice(0,limit).map(({ question, answer, id },i)=><div className="faq-item" key={id}><button onClick={()=>setActive(active===i?-1:i)}><span>{question}</span><b>{active===i?'−':'+'}</b></button>{active===i&&<p>{answer}</p>}</div>)}</div>
 }
 
-function InfoPage() {
+function InfoPage({ company }: { company: CMSCompanySettings }) {
   const articles=['Что делать в первую очередь','Какие документы могут понадобиться','Как выбрать ритуальные принадлежности','Из чего складывается стоимость похорон','Кремация: основные организационные вопросы','Как подготовиться к поминальной церемонии']
-  return <PageShell title="Полезная информация" intro="Практические материалы о порядке действий, документах и организации церемонии.">
+  return <PageShell company={company} title="Полезная информация" intro="Практические материалы о порядке действий, документах и организации церемонии.">
     <div className="article-list">{articles.map((x,i)=><article key={x}><span>Информация · [дата]</span><h2>{x}</h2><p>Краткие разъяснения и практические рекомендации, которые помогут сориентироваться в последовательности действий.</p><button className="text-link">Читать далее <Icon name="arrow"/></button></article>)}</div>
   </PageShell>
 }
 
-function Contacts() {
-  return <PageShell title="Контакты" intro="Мы готовы ответить на вопросы и помочь определить дальнейший порядок действий." aside={false}>
-    <div className="contacts-grid"><div className="contact-details"><div><small>Круглосуточный телефон</small><a href="tel:+70000000000">+7 (000) 000-00-00</a></div><div><small>Дополнительный телефон</small><a href="tel:+70000000001">+7 (000) 000-00-01</a></div><div><small>Адрес</small><strong>Адрес офиса уточняется</strong></div><div><small>Режим работы</small><strong>Круглосуточно, без выходных</strong></div><div className="map">Место для карты</div></div><CallbackForm/></div>
+function Contacts({ company }: { company: CMSCompanySettings }) {
+  return <PageShell company={company} title="Контакты" intro="Мы готовы ответить на вопросы и помочь определить дальнейший порядок действий." aside={false}>
+    <div className="contacts-grid"><div className="contact-details"><div><small>Основной телефон</small><a href={phoneHref(company.phone)}>{company.phone}</a></div>{company.additionalPhone && <div><small>Дополнительный телефон</small><a href={phoneHref(company.additionalPhone)}>{company.additionalPhone}</a></div>}{company.email && <div><small>Email</small><a href={`mailto:${company.email}`}>{company.email}</a></div>}{company.address && <div><small>Адрес</small><strong>{company.address}</strong></div>}<div><small>Режим работы</small><strong>{company.workingHours}</strong></div>{company.messengerUrl && <div><small>Мессенджер</small><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать нам</a></div>}<div className="map">Место для карты</div></div><CallbackForm/></div>
   </PageShell>
 }
 
@@ -284,13 +304,14 @@ function CallbackForm() {
   </form>
 }
 
-function About() {
-  return <PageShell title="О компании" intro="Ритуальная служба «Память» помогает семьям решать организационные вопросы спокойно, последовательно и с уважением.">
+function About({ company }: { company: CMSCompanySettings }) {
+  return <PageShell company={company} title="О компании" intro={`${company.companyName} помогает семьям решать организационные вопросы спокойно, последовательно и с уважением.`}>
     <div className="editorial"><h2>Наш подход к работе</h2><p>Мы считаем важными деликатное общение, понятное объяснение каждого этапа и прозрачное согласование состава услуг. Фактические сведения о компании, реквизиты и документы будут добавлены после подтверждения.</p><div className="principles">{['Уважительное отношение','Понятный порядок действий','Согласование стоимости','Круглосуточная связь'].map((x,i)=><div key={x}><span>0{i+1}</span><h3>{x}</h3></div>)}</div><h2>В каких вопросах мы помогаем</h2><p>Организация похорон, подбор принадлежностей, транспорт, консультации по документам, кремация, памятники и поминальные мероприятия.</p></div>
   </PageShell>
 }
 
 export default function App({
+  company = DEFAULT_COMPANY_SETTINGS,
   page = 'home',
   services = { data: [], error: false },
   products = { data: [], error: false },
@@ -299,6 +320,7 @@ export default function App({
   cmsTitle,
   children,
 }: {
+  company?: CMSCompanySettings
   page?: PageKey
   services?: CMSResult<CMSService>
   products?: CMSResult<CMSProduct>
@@ -308,16 +330,16 @@ export default function App({
   children?: React.ReactNode
 }) {
   let content: React.ReactNode
-  if(page==='home') content=<Home services={services} priceItems={priceItems} faqs={faqs}/>
-  else if(page==='services') content=<CatalogPage type="services" services={services} products={products}/>
-  else if(page==='products') content=<CatalogPage type="products" services={services} products={products}/>
-  else if(page==='funeral') content=<FuneralPage/>
-  else if(page==='prices') content=<PageShell title="Цены на ритуальные услуги" intro="Актуальные позиции и стоимость услуг из нашего прайс-листа."><PriceTable result={priceItems}/><div className="note price-note"><strong>Обратите внимание</strong><p>Итоговая сумма зависит от выбранного состава услуг, принадлежностей и индивидуальных условий. Точную стоимость специалист согласует до оформления.</p></div></PageShell>
-  else if(page==='about') content=<About/>
-  else if(page==='info') content=<InfoPage/>
-  else if(page==='faq') content=<PageShell title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
-  else if(page==='contacts') content=<Contacts/>
-  else if(page==='legal') content=<PageShell title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>
-  else content=<PageShell title={cmsTitle || ''}><article className="editorial cms-page">{children}</article></PageShell>
-  return <><Header page={page}/>{content}<Footer/></>
+  if(page==='home') content=<Home company={company} services={services} priceItems={priceItems} faqs={faqs}/>
+  else if(page==='services') content=<CatalogPage company={company} type="services" services={services} products={products}/>
+  else if(page==='products') content=<CatalogPage company={company} type="products" services={services} products={products}/>
+  else if(page==='funeral') content=<FuneralPage company={company}/>
+  else if(page==='prices') content=<PageShell company={company} title="Цены на ритуальные услуги" intro="Актуальные позиции и стоимость услуг из нашего прайс-листа."><PriceTable result={priceItems}/><div className="note price-note"><strong>Обратите внимание</strong><p>Итоговая сумма зависит от выбранного состава услуг, принадлежностей и индивидуальных условий. Точную стоимость специалист согласует до оформления.</p></div></PageShell>
+  else if(page==='about') content=<About company={company}/>
+  else if(page==='info') content=<InfoPage company={company}/>
+  else if(page==='faq') content=<PageShell company={company} title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
+  else if(page==='contacts') content=<Contacts company={company}/>
+  else if(page==='legal') content=<PageShell company={company} title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>
+  else content=<PageShell company={company} title={cmsTitle || ''}><article className="editorial cms-page">{children}</article></PageShell>
+  return <><Header page={page} company={company}/>{content}<Footer company={company}/></>
 }

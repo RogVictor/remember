@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
-import App from '../../src/App'
+import SiteApp from '../../src/SiteApp'
 import { getPublishedPage } from '../../src/lib/cms'
 
 type PageProps = {
@@ -25,8 +25,8 @@ export default async function CMSPageRoute({ params }: PageProps) {
   if (!page) notFound()
 
   return (
-    <App page="cms" cmsTitle={page.title}>
+    <SiteApp page="cms" cmsTitle={page.title}>
       {page.content && <RichText data={page.content} />}
-    </App>
+    </SiteApp>
   )
 }

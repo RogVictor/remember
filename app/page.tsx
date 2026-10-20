@@ -1,4 +1,4 @@
-import App from '../src/App'
+import SiteApp from '../src/SiteApp'
 import { getFAQs, getPriceItems, getServices } from '../src/lib/cms'
 
 export const dynamic = 'force-dynamic'
@@ -10,5 +10,5 @@ export default async function HomePage() {
     getFAQs(),
   ])
 
-  return <App page="home" services={services} priceItems={priceItems} faqs={faqs} />
+  return <SiteApp page="home" services={services} priceItems={priceItems} faqs={faqs} />
 }
