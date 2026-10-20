@@ -1,0 +1,34 @@
+.catalog-service-image {
+  height: 130px;
+  object-fit: cover;
+  margin: -22px -22px 16px;
+  width: calc(100% + 44px);
+  max-width: none;
+}
+
+.catalog-category {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.catalog-price {
+  color: var(--wine);
+  margin-bottom: 12px;
+}
+
+.catalog-empty {
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.table-wrap td span {
+  color: var(--muted);
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import App from '../../src/App'
+import { getFAQs } from '../../src/lib/cms'
 
 const titles: Record<string, string> = {
   services: 'Ритуальные услуги',
@@ -18,4 +19,7 @@ export const metadata: Metadata = {
   description: 'Ритуальная служба «Память» в Москве. Информация и консультации по организации похорон.',
 }
 
-export default function Page() { return <App page="faq" /> }
+export default async function Page() {
+  const faqs = await getFAQs()
+  return <App page="faq" faqs={faqs} />
+}
