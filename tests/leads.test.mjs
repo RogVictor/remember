@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { leadAccess } from '../collections/access.ts'
 import { createLeadAndNotify, deliverLeadNotifications } from '../src/lib/lead-flow.ts'
+import { checkLeadRateLimit } from '../src/lib/lead-rate-limit.ts'
 import { LeadValidationError, normalizeLeadSubmission } from '../src/lib/lead-validation.ts'
 
 const validSubmission = {
@@ -168,4 +169,17 @@ test('staff can read leads, but only admins can update or delete them', () => {
   assert.equal(leadAccess.read({ req: admin }), true)
   assert.equal(leadAccess.update({ req: admin }), true)
   assert.equal(leadAccess.delete({ req: admin }), true)
+})
+
+test('limits lead submissions per client and resets the window after expiry', () => {
+  const clientIP = `test-${Date.now()}`
+  const now = Date.now()
+
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    assert.equal(checkLeadRateLimit(clientIP, now).allowed, true)
+  }
+  const limited = checkLeadRateLimit(clientIP, now)
+  assert.equal(limited.allowed, false)
+  assert.ok(limited.retryAfterSeconds > 0)
+  assert.equal(checkLeadRateLimit(clientIP, now + 15 * 60 * 1000).allowed, true)
 })

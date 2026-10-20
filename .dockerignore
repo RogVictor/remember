@@ -3,6 +3,10 @@ node_modules
 .git
 .env
 .env.*
-!.env.example
 npm-debug.log*
 REPORT.md
+Copilot/
+app.zip
+pnpm-lock.yaml
+yarn.lock
+*.tsbuildinfo

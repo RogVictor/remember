@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${company.companyName}`,
     },
     description: `Информация об услугах по организации похорон, ритуальных принадлежностях и порядке обращения. ${company.city}.`,
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+    metadataBase: new URL(process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
     robots: { index: false, follow: false },
   }
 }

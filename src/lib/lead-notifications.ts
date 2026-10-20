@@ -62,7 +62,7 @@ const leadDetails = (lead: LeadForNotification): string => [
   .join('\n')
 
 const leadAdminURL = (id: string | number): string | undefined => {
-  const siteURL = process.env.NEXT_PUBLIC_SITE_URL
+  const siteURL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL
   if (!siteURL) return undefined
 
   try {
@@ -107,6 +107,7 @@ export const sendEmailLeadNotification = async (lead: LeadForNotification): Prom
     host: SMTP_HOST,
     port,
     secure: port === 465,
+    requireTLS: port !== 465,
     auth: { user: SMTP_USER, pass: SMTP_PASS },
     connectionTimeout: 8000,
     greetingTimeout: 8000,
