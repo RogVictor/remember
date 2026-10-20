@@ -169,6 +169,7 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
           summary: text(doc.summary),
           description: richText(doc.description),
           image: media(doc.image),
+          linkSlug: text(doc.linkSlug),
           sortOrder: sortOrder(doc.sortOrder),
           ...price(doc),
         }]
@@ -241,6 +242,7 @@ export const getPriceItems = async (): Promise<CMSResult<CMSPriceItem>> => {
           title,
           category: text(doc.category),
           description: text(doc.description),
+          linkSlug: text(doc.linkSlug),
           unit: text(doc.unit),
           sortOrder: sortOrder(doc.sortOrder),
           ...price(doc),

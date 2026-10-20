@@ -6,6 +6,27 @@
   max-width: none;
 }
 
+.service-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-card-link:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+}
+
+.catalog-item-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-item-link:hover,
+.catalog-item-link:focus-visible {
+  color: var(--wine);
+  text-decoration: underline;
+}
+
 .catalog-category {
   color: var(--muted);
   font-size: 11px;

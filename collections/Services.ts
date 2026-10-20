@@ -20,6 +20,16 @@ export const Services: CollectionConfig = {
   fields: [
     { name: 'title', type: 'text', required: true, label: 'Название' },
     { name: 'slug', type: 'text', required: true, unique: true, index: true, label: 'URL (slug)' },
+    {
+      name: 'linkSlug',
+      type: 'text',
+      label: 'Ссылка на страницу (slug)',
+      admin: { description: 'Необязательно. Slug опубликованной страницы, например about-us.' },
+      validate: (value: string | null | undefined) =>
+        value == null || value.trim() === '' || /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.trim())
+          ? true
+          : 'Используйте строчные латинские буквы, цифры и дефисы.',
+    },
     { name: 'category', type: 'text', label: 'Категория' },
     { name: 'summary', type: 'textarea', label: 'Краткое описание' },
     { name: 'description', type: 'richText', label: 'Описание' },

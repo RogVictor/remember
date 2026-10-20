@@ -82,17 +82,20 @@ function ServiceGrid({ result, limit }: { result: CMSResult<CMSService>; limit?:
   if (result.error) return <EmptyState>Не удалось загрузить услуги. Попробуйте открыть страницу позже.</EmptyState>
   if (result.data.length === 0) return <EmptyState>Информация об услугах скоро появится.</EmptyState>
 
-  return <div className="service-grid">{result.data.slice(0, limit).map((service, index) =>
-    <article className="service-card" key={service.id}>
+  return <div className="service-grid">{result.data.slice(0, limit).map((service) => {
+    const card = <article className="service-card" key={service.id}>
       {service.image && <img className="catalog-service-image" src={service.image.url} alt={service.image.alt || service.title} />}
-      {/* <span className="service-num">{String(index + 1).padStart(2, '0')}</span> */}
       {service.category && <small className="catalog-category">{service.category}</small>}
       <h3>{service.title}</h3>
       {service.summary && <p>{service.summary}</p>}
       {service.description && <p>{service.description}</p>}
       <strong className="catalog-price">{formatPrice(service)}</strong>
     </article>
-  )}</div>
+
+    return service.linkSlug
+      ? <a className="service-card-link" href={`/${service.linkSlug}`} key={service.id}>{card}</a>
+      : card
+  })}</div>
 }
 
 function EmptyState({ children }: { children: React.ReactNode }) {
@@ -155,7 +158,11 @@ function PriceTable({ result, compact = false }: { result: CMSResult<CMSPriceIte
   const items = compact ? result.data.slice(0, 4) : result.data
   return <div className="table-wrap"><table><thead><tr><th>Наименование услуги</th><th>Описание</th><th>Стоимость</th></tr></thead><tbody>{items.map((item) =>
     <tr key={item.id}>
-      <td data-label="Услуга">{item.category && <small className="catalog-category">{item.category} · </small>}{item.title}{item.unit && <span> / {item.unit}</span>}</td>
+      <td data-label="Услуга">
+        {item.category && <small className="catalog-category">{item.category} · </small>}
+        {item.linkSlug ? <a className="catalog-item-link" href={`/${item.linkSlug}`}>{item.title}</a> : item.title}
+        {item.unit && <span> / {item.unit}</span>}
+      </td>
       <td data-label="Описание">{item.description || '—'}</td>
       <td data-label="Стоимость">{formatPrice(item)}</td>
     </tr>
