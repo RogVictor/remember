@@ -27,8 +27,8 @@ function go(page: PageKey) {
   window.location.assign(path)
 }
 
-function Button({ children, secondary = false, onClick }: { children: React.ReactNode; secondary?: boolean; onClick?: () => void }) {
-  return <button className={secondary ? 'btn btn-secondary' : 'btn'} onClick={onClick}>{children}</button>
+function Button({ children, secondary = false, onClick, type = 'button', disabled }: { children: React.ReactNode; secondary?: boolean; onClick?: () => void; type?: 'button' | 'submit'; disabled?: boolean }) {
+  return <button className={secondary ? 'btn btn-secondary' : 'btn'} onClick={onClick} type={type} disabled={disabled}>{children}</button>
 }
 
 function Icon({ name }: { name: 'phone' | 'clock' | 'menu' | 'close' | 'check' | 'arrow' }) {
@@ -239,8 +239,49 @@ function Contacts() {
 }
 
 function CallbackForm() {
-  const [sent,setSent]=useState(false)
-  return <form className="callback" onSubmit={e=>{e.preventDefault();setSent(true)}}><span>Обратная связь</span><h2>Заказать звонок</h2><p>Оставьте номер — специалист свяжется с вами для консультации.</p><label>Ваше имя<input placeholder="Как к вам обращаться"/></label><label>Телефон<input required placeholder="+7 (___) ___-__-__"/></label><label className="consent"><input type="checkbox" required/> <span>Согласен на обработку персональных данных</span></label><Button>{sent?'Форма не подключена':'Заказать звонок'}</Button>{sent&&<p className="success">Форма пока не подключена к серверу. Пожалуйста, позвоните по указанному номеру.</p>}</form>
+  const [sent, setSent] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState('')
+
+  const submitLead = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const form = event.currentTarget
+    setSubmitting(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      })
+      if (!response.ok) throw new Error('Lead submission failed')
+      setSent(true)
+      form.reset()
+    } catch {
+      setError('Не удалось отправить заявку. Проверьте соединение и попробуйте ещё раз.')
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  return <form className="callback" onSubmit={submitLead}>
+    <span>Обратная связь</span><h2>Заказать звонок</h2>
+    <p>Оставьте номер — специалист свяжется с вами для консультации.</p>
+    <label>Ваше имя<input name="name" required maxLength={120} placeholder="Как к вам обращаться"/></label>
+    <label>Телефон<input name="phone" type="tel" required maxLength={40} placeholder="+7 (___) ___-__-__"/></label>
+    <div className="lead-honeypot" aria-hidden="true">
+      <label>Оставьте это поле пустым<input name="website" tabIndex={-1} autoComplete="off"/></label>
+    </div>
+    <input type="hidden" name="requestType" value="callback"/>
+    <input type="hidden" name="source" value="/contacts#callback"/>
+    <label className="consent"><input type="checkbox" name="personalDataConsent" value="true" required/> <span>Согласен на обработку персональных данных</span></label>
+    <Button type="submit" disabled={submitting || sent}>
+      {submitting ? 'Отправка…' : sent ? 'Заявка отправлена' : 'Заказать звонок'}
+    </Button>
+    {sent && <p className="success" role="status">Спасибо! Заявка сохранена, специалист свяжется с вами.</p>}
+    {error && <p className="error" role="alert">{error}</p>}
+  </form>
 }
 
 function About() {
