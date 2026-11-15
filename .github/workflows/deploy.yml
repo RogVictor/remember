@@ -1,0 +1,73 @@
+
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy over SSH
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+
+          printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            "$VPS_USER@$VPS_HOST" 'bash -se' <<'REMOTE'
+          set -Eeuo pipefail
+
+          cd /opt/remember
+
+          echo "=== Updating source code ==="
+          git pull --ff-only origin main
+
+          echo "=== Building Docker image ==="
+          docker compose build app
+
+          echo "=== Applying database migrations ==="
+          docker compose run --rm app npm run payload:migrate
+
+          echo "=== Restarting application ==="
+          docker compose up -d --no-deps app
+
+          echo "=== Checking application health ==="
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3000/api/health; then
+              echo
+              echo "Deployment successful!"
+              docker compose ps
+              exit 0
+            fi
+            sleep 5
+          done
+
+          echo "Deployment health check failed"
+          docker compose logs --tail=100 app
+          exit 1
+          REMOTE
