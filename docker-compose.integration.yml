@@ -1,0 +1,51 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: remember_integration
+      POSTGRES_USER: integration
+      POSTGRES_PASSWORD: integration-only-password
+    volumes:
+      - integration_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U integration -d remember_integration"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgres://integration:integration-only-password@db:5432/remember_integration
+      PAYLOAD_SECRET: integration-only-secret-never-use-in-production
+      SITE_URL: https://integration.invalid
+      NEXT_PUBLIC_SITE_URL: https://integration.invalid
+      NODE_ENV: production
+      TELEGRAM_BOT_TOKEN: ""
+      TELEGRAM_CHAT_ID: ""
+      SMTP_HOST: ""
+      SMTP_PORT: "587"
+      SMTP_USER: ""
+      SMTP_PASS: ""
+      EMAIL_FROM: ""
+      LEADS_EMAIL_TO: ""
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3180:3000"
+    volumes:
+      - integration_media:/app/media
+      - ./migrations:/app/migrations
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then((r) => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+      start_period: 90s
+
+volumes:
+  integration_postgres:
+  integration_media:

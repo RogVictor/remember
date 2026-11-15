@@ -23,9 +23,11 @@ public traffic until every required condition at the end of this document is met
   saved lead. There is no durable notification queue; retries are manual.
 - PostgreSQL is configured through the Payload 3 Postgres adapter. Development
   schema push is enabled, but production automatic push is explicitly disabled.
-  There is currently no `migrations/` directory or committed migration. A
-  production database must not be used until migrations are created and tested
-  against a disposable copy of the intended schema.
+  The initial migration in `migrations/` was generated from the current Payload
+  config and applied to a separate, empty PostgreSQL 16 integration database.
+  The existing local `remember` database and any production database were not
+  inspected or changed. The baseline creates the full current schema; it is not
+  safe to apply blindly to an existing schema-pushed database.
 - Media uploads use the relative `media/` directory. Compose mounts it at
   `/app/media` in a named volume; the database uses a separate named volume.
 - The current in-process lead rate limiter allows 5 requests per IP per 15
@@ -40,10 +42,10 @@ public traffic until every required condition at the end of this document is met
 - `.env` is ignored by Git. Never copy it into the image or print it to logs.
   `SITE_URL` is the canonical runtime URL. `NEXT_PUBLIC_SITE_URL` remains a
   compatibility fallback for existing local configurations.
-- The npm lockfile is `package-lock.json` (lockfile version 3). `pnpm-lock.yaml`
-  and `yarn.lock` are also present, but Docker uses the npm lockfile with `npm
-  ci`. Do not update dependencies with a different package manager as part of a
-  production deployment.
+- The npm lockfile is `package-lock.json` (lockfile version 3). A
+  `pnpm-lock.yaml` is also present; Docker uses `package-lock.json` with `npm
+  ci`. Do not update dependencies with a different package manager as part of
+  a production deployment.
 - Next.js was raised from 15.4.11 to 16.3.8 because the former had critical
   production audit advisories. Payload 3.91.0 declares peer support for Next
   `>=16.3.3 <17`; the installed Next 16.3.8 passed this project's production
@@ -167,6 +169,34 @@ docker compose build app
 Use the project's npm lockfile and the exact reviewed source revision for every
 release. Do not run the Next.js development server in production.
 
+### Isolated integration environment
+
+`docker-compose.integration.yml` is a separate test configuration. It has no
+`env_file`, points only to its own PostgreSQL service/database, uses test-only
+credentials, disables Telegram/SMTP by setting their values empty, and binds
+the app only to `127.0.0.1:3180`. Every unique Compose project name gets
+separate PostgreSQL and media volumes. It is not a production deployment file.
+
+On Windows PowerShell, use a unique project name and the example environment
+file so Compose does not load the ignored `.env`:
+
+```powershell
+$project = "remember-integration-<unique-suffix>"
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml config --quiet
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml build app
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml up -d --wait db
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml run --rm --no-deps app npm run payload:migrate:create -- initial_schema
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml build app
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml run --rm --no-deps app npm run payload:migrate
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml run --rm --no-deps app npm run payload:migrate:status
+docker compose --env-file .env.example -p $project -f docker-compose.integration.yml up -d --wait app
+```
+
+The test-only project name must not be reused for another environment. Confirm
+the project-specific volume names and database URL before running a migration.
+Do not use `down -v`; stopping/removing test containers does not require
+deleting their data volumes.
+
 ## 4. Domain, HTTPS, and reverse proxy
 
 Do not apply DNS changes until the domain, VPS address, and proxy configuration
@@ -215,38 +245,55 @@ production and sets the migration directory to `migrations/`. Do not enable
 production schema push and do not use `migrate:fresh`, `migrate:reset`, or
 `migrate:refresh` on production data.
 
-There is no migration checked into this repository yet. Before the first
-production database is prepared:
+The generated baseline is a complete `CREATE`-schema migration. The commands
+available in the locked Payload 3.91.0 CLI are `migrate:create`, `migrate`,
+and `migrate:status` (among other reset/refresh commands that must not be used
+on production). Use the repository scripts:
 
-1. Start with a disposable local/test PostgreSQL database, not the VPS
-   production database.
-2. Generate a migration using the installed Payload CLI:
+```sh
+npm run payload:migrate:create -- initial_schema
+npm run payload:migrate
+npm run payload:migrate:status
+```
 
-   ```sh
-   npx payload migrate:create
-   ```
+The migration scripts invoke the installed Payload CLI in Node's native
+TypeScript mode, using `scripts/payload-cli-loader.mjs` for this project's
+extensionless TypeScript imports. Use the pinned Node 22 runtime. Review the
+generated migration and its `down` function before applying it; the committed
+initial migration is generated from the actual collections, relationships,
+globals, auth, drafts, and upload fields.
 
-3. Review the generated SQL/TypeScript migration. Check that it preserves the
-   current records and does not drop or rename live columns unexpectedly.
-4. Apply it to a disposable database and verify the application, CMS, and all
-   collections. Commit the reviewed migration.
-5. Back up the target database and media before each production migration.
-6. Apply only committed migrations to the intended database, then check status:
+For a new, confirmed-empty database, first apply the baseline only to an
+isolated test database, then verify the app and collections. Before using it
+against any existing database, work from an authorized backup/clone, not an
+unknown or live production target:
 
-   ```sh
-   docker compose run --rm --no-deps app npm run payload:migrate
-   docker compose run --rm --no-deps app npx payload migrate:status
-   ```
+1. Establish the exact database identity with the operator and take a matched
+   database/media backup. Never infer the target from a `.env` file or a
+   container name.
+2. On a disposable clone, inspect whether `public.payload_migrations` exists
+   and, if so, its migration names/batches. Compare a schema-only dump and the
+   existing tables, columns, indexes, constraints, and enum types with the
+   generated migration.
+3. If the schema already exists but has no matching migration history, do not
+   apply this full-create baseline: it will conflict with existing objects.
+   Stop and design/review a baseline-adoption procedure on the clone before
+   touching any real database. Do not manually edit the migration ledger or
+   enable automatic schema push to bypass that review.
+4. Only after the clone proves the exact procedure safe, back up the intended
+   database and media again, apply committed migrations, and check status.
 
-`docker compose run` uses the built application image and environment. Build
-the new image first. Keep the old app available for an application rollback,
-but assume a schema migration can make an old app incompatible. A migration
-rollback is allowed only if its down migration has been reviewed and tested.
-Otherwise restore a tested backup in a controlled maintenance window.
+For the production Compose project, build the reviewed image first, then use
+`docker compose run --rm --no-deps app npm run payload:migrate` and
+`docker compose run --rm --no-deps app npm run payload:migrate:status` only
+after the target and backups are confirmed. Keep the old app available for an
+application rollback, but assume a schema migration can make it incompatible.
+A migration rollback is allowed only if its down migration has been reviewed
+and tested. Otherwise restore a tested backup in a controlled maintenance
+window.
 
-For the first schema, consider the existing data and currently running local
-installation. Do not apply a generated migration to a database whose contents,
-Payload version, or existing schema have not been inventoried.
+The existing local database state remains unknown and was not queried. Its
+first migration is therefore still blocked on inventory and a tested clone.
 
 ## 6. Persistent data and backup
 
@@ -265,7 +312,7 @@ mkdir -p backups
 stamp=$(date -u +%Y%m%dT%H%M%SZ)
 docker compose exec -T db pg_dump -U payload -d funeral_site -Fc \
   > "backups/postgres-${stamp}.dump"
-docker compose exec -T app tar -C /app -czf - media \
+docker compose exec -T app tar -C /app/media -czf - . \
   > "backups/media-${stamp}.tar.gz"
 test -s "backups/postgres-${stamp}.dump"
 test -s "backups/media-${stamp}.tar.gz"
@@ -281,17 +328,52 @@ the same VPS as disaster recovery.
 
 Regularly test recovery in an isolated, disposable environment:
 
-1. Create a fresh test PostgreSQL database and empty media directory/volume.
-2. Set `TEST_DATABASE_URL` and `DUMP_FILE` to the isolated test database and
-   dump path, then restore with
-   `pg_restore --no-owner --dbname="$TEST_DATABASE_URL" "$DUMP_FILE"`. Do not
-   use a production target.
-3. Extract the media archive into the test media directory.
-4. Start a test app using the restored database/media and a separate test
-   `PAYLOAD_SECRET`. Verify admin login, catalog records, images, and a test
-   lead. Disable notifications or use explicitly controlled test recipients.
-5. Record the recovery time and any missing data. A backup is not verified
-   until this restoration succeeds.
+1. Create a separate Compose project and an empty PostgreSQL volume/database.
+   Create a separate media volume and confirm its exact name before restoring.
+2. Restore the custom-format DB dump with `pg_restore --exit-on-error
+   --no-owner --dbname="$TEST_DATABASE_URL" "$DUMP_FILE"`.
+3. Extract the paired media archive into that separate media volume (the
+   archive contains the contents of `/app/media`, so extract into that path).
+4. Start the recovery app with a test-only `PAYLOAD_SECRET` and notifications
+   disabled. Verify Admin authentication, restored collection records, the
+   lead row, migration status, and that the restored image can be fetched and
+   read. A database-only or media-only restore is not a successful test.
+5. Record recovery time and missing data. Never remove volumes until their
+   identity and contents have been explicitly checked; never use a production
+   volume for this exercise.
+
+For this repository's isolated Compose test file, the equivalent POSIX shell
+sequence is below. Use a new project name, verify neither project volumes nor
+containers already exist, and substitute the matched archive paths:
+
+```sh
+restore=remember-recovery-<unique-suffix>
+media_volume="${restore}_integration_media"
+backup_dir="$PWD/backups"
+docker compose --env-file .env.example -p "$restore" -f docker-compose.integration.yml up -d --wait db
+docker volume create --name "$media_volume" \
+  --label "com.docker.compose.project=$restore" \
+  --label com.docker.compose.volume=integration_media
+docker compose --env-file .env.example -p "$restore" -f docker-compose.integration.yml exec -T db \
+  pg_restore --exit-on-error --no-owner -U integration -d remember_integration \
+  < "$backup_dir/postgres-<stamp>.dump"
+docker run --rm \
+  --mount "type=volume,source=$media_volume,target=/restore_media" \
+  --volume "$backup_dir:/backup:ro" postgres:16-alpine \
+  tar -C /restore_media -xzf /backup/media-<stamp>.tar.gz
+docker compose --env-file .env.example -p "$restore" -f docker-compose.integration.yml up -d --wait app
+```
+
+The recovery app binds to `127.0.0.1:3180`; stop the source integration app
+first or use an operator-reviewed port override. Keep both recovery volumes
+until the full restore has been inspected. Stop containers without `-v` when
+the verification is complete.
+
+The isolated integration test for this repository completed the full paired
+backup/restore: one synthetic row existed in each tested collection, the
+restored Admin login worked, the migration ledger showed the baseline applied,
+and the restored uploaded image was byte-identical to the original. This does
+not verify any production backup pair.
 
 Database and media archives should be timestamped and retained as a matched
 pair. If uploads or edits continue while the two commands run, restore may not

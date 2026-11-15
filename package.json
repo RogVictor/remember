@@ -10,7 +10,9 @@
     "test:leads": "tsx --test tests/leads.test.mjs",
     "payload:types": "payload generate:types",
     "payload:importmap": "payload generate:importmap",
-    "payload:migrate": "payload migrate",
+    "payload:migrate:create": "node --experimental-strip-types --import=./scripts/payload-cli-loader.mjs ./node_modules/payload/bin.js --disable-transpile migrate:create",
+    "payload:migrate": "node --experimental-strip-types --import=./scripts/payload-cli-loader.mjs ./node_modules/payload/bin.js --disable-transpile migrate",
+    "payload:migrate:status": "node --experimental-strip-types --import=./scripts/payload-cli-loader.mjs ./node_modules/payload/bin.js --disable-transpile migrate:status",
     "verify:scaffold": "node scripts/verify-scaffold.mjs"
   },
   "dependencies": {

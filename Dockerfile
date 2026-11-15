@@ -33,6 +33,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/media ./media
 COPY --from=builder /app/next.config.ts ./next.config.ts
 COPY --from=builder /app/payload.config.ts ./payload.config.ts
+COPY --from=builder /app/scripts/payload-cli-loader.mjs ./scripts/payload-cli-loader.mjs
 COPY --from=builder /app/migrations ./migrations
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
 COPY --from=builder /app/package.json ./package.json
