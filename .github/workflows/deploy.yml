@@ -47,27 +47,77 @@ jobs:
           echo "=== Updating source code ==="
           git pull --ff-only origin main
 
-          echo "=== Building Docker image ==="
-          docker compose build app
+          NEW_TAG="$(git rev-parse --short=12 HEAD)"
+          PREVIOUS_TAG="rollback-$(date +%Y%m%d-%H%M%S)"
+
+          echo "New version: $NEW_TAG"
+
+          echo "=== Saving previous application image ==="
+          CURRENT_IMAGE_ID="$(docker inspect --format '{{.Image}}' remember-app-1)"
+          docker image tag "$CURRENT_IMAGE_ID" "remember-app:$PREVIOUS_TAG"
+
+          echo "Previous version saved as: $PREVIOUS_TAG"
+
+          echo "=== Building new application image ==="
+          APP_IMAGE_TAG="$NEW_TAG" docker compose build app
+
+          echo "=== Creating database backup ==="
+          mkdir -p backups
+          chmod 700 backups
+
+          BACKUP_FILE="backups/postgres-$(date +%Y%m%d-%H%M%S)-${NEW_TAG}.dump"
+
+          docker compose exec -T db pg_dump \
+            -U payload -d funeral_site -Fc > "$BACKUP_FILE"
+
+          chmod 600 "$BACKUP_FILE"
+
+          test -s "$BACKUP_FILE"
+          docker compose exec -T db pg_restore --list < "$BACKUP_FILE" > /dev/null
+
+          echo "Database backup verified: $BACKUP_FILE"
 
           echo "=== Applying database migrations ==="
-          docker compose run --rm app npm run payload:migrate
+          APP_IMAGE_TAG="$NEW_TAG" docker compose run --rm --no-deps app npm run payload:migrate
 
-          echo "=== Restarting application ==="
-          docker compose up -d --no-deps app
+          echo "=== Starting new application version ==="
+          if ! APP_IMAGE_TAG="$NEW_TAG" docker compose up -d --no-deps app; then
+            echo "New version failed to start. Restoring previous application image."
+            APP_IMAGE_TAG="$PREVIOUS_TAG" docker compose up -d --no-deps app || true
+            docker compose logs --tail=100 app
+            exit 1
+          fi
 
           echo "=== Checking application health ==="
           for i in $(seq 1 30); do
             if curl -fsS http://127.0.0.1:3000/api/health; then
               echo
-              echo "Deployment successful!"
+              echo "Deployment successful: $NEW_TAG"
               docker compose ps
               exit 0
             fi
             sleep 5
           done
 
-          echo "Deployment health check failed"
+          echo "New version failed health check."
           docker compose logs --tail=100 app
+
+          echo "=== Restoring previous application image ==="
+          APP_IMAGE_TAG="$PREVIOUS_TAG" docker compose up -d --no-deps app
+
+          echo "=== Checking rollback health ==="
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3000/api/health; then
+              echo
+              echo "Previous application version restored: $PREVIOUS_TAG"
+              docker compose ps
+              exit 1
+            fi
+            sleep 5
+          done
+
+          echo "CRITICAL: Rollback application is not healthy."
+          docker compose logs --tail=150 app
+          docker compose ps
           exit 1
           REMOTE
