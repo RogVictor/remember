@@ -1,3 +1,4 @@
+
 name: Deploy to VPS
 
 on:
@@ -14,16 +15,26 @@ jobs:
   deploy:
     name: Build and deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Deploy over SSH
+        timeout-minutes: 25
         env:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_USER: ${{ secrets.VPS_USER }}
           VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
           VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+
         run: |
-          set -euo pipefail
+          set -Eeuo pipefail
+
+          echo "=== Checking SSH configuration ==="
+
+          test -n "$VPS_HOST"
+          test -n "$VPS_USER"
+          test -n "$VPS_SSH_KEY"
+          test -n "$VPS_KNOWN_HOSTS"
 
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
@@ -34,16 +45,46 @@ jobs:
           printf '%s\n' "$VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
+          echo "=== Connecting to VPS ==="
+
           ssh \
             -i ~/.ssh/id_ed25519 \
             -o IdentitiesOnly=yes \
             -o StrictHostKeyChecking=yes \
+            -o BatchMode=yes \
+            -o ConnectTimeout=15 \
+            -o ServerAliveInterval=15 \
+            -o ServerAliveCountMax=4 \
             "$VPS_USER@$VPS_HOST" 'bash -se' <<'REMOTE'
+
           set -Eeuo pipefail
 
           cd /opt/remember
 
+          STAGE="initialization"
+
+          trap '
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+              echo "======================================"
+              echo "DEPLOY FAILED"
+              echo "Stage: $STAGE"
+              echo "Exit code: $rc"
+              echo "Time: $(date -Is)"
+              echo "======================================"
+            else
+              echo "REMOTE SCRIPT EXIT CODE: 0"
+            fi
+          ' EXIT
+
+          echo "======================================"
+          echo "DEPLOYMENT STARTED"
+          echo "Time: $(date -Is)"
+          echo "======================================"
+
+          STAGE="updating source code"
           echo "=== Updating source code ==="
+
           git pull --ff-only origin main
 
           NEW_TAG="$(git rev-parse --short=12 HEAD)"
@@ -52,7 +93,9 @@ jobs:
           echo "New commit: $(git rev-parse HEAD)"
           echo "New image tag: $NEW_TAG"
 
+          STAGE="saving previous application image"
           echo "=== Saving previous application image ==="
+
           CURRENT_CONTAINER="$(docker compose ps -q app)"
 
           if [ -z "$CURRENT_CONTAINER" ]; then
@@ -67,7 +110,9 @@ jobs:
           echo "Previous image ID: $PREVIOUS_IMAGE_ID"
           echo "Previous image tag: $PREVIOUS_TAG"
 
+          STAGE="building new application image"
           echo "=== Building new application image ==="
+
           APP_IMAGE_TAG="$NEW_TAG" docker compose build app
 
           EXPECTED_IMAGE_ID="$(docker image inspect "remember-app:$NEW_TAG" --format '{{.Id}}')"
@@ -78,28 +123,48 @@ jobs:
           fi
 
           echo "New image ID: $EXPECTED_IMAGE_ID"
+          echo "=== Image build completed ==="
 
+          STAGE="creating database backup"
           echo "=== Creating database backup ==="
+
           mkdir -p backups
           chmod 700 backups
 
           BACKUP_FILE="backups/postgres-$(date +%Y%m%d-%H%M%S)-${NEW_TAG}.dump"
 
+          echo "Backup file: $BACKUP_FILE"
+          echo "Starting pg_dump..."
+
           docker compose exec -T db pg_dump \
             -U payload -d funeral_site -Fc > "$BACKUP_FILE"
 
+          echo "pg_dump completed."
+
           chmod 600 "$BACKUP_FILE"
 
-          test -s "$BACKUP_FILE"
+          if [ ! -s "$BACKUP_FILE" ]; then
+            echo "ERROR: Backup file is empty."
+            exit 1
+          fi
+
+          echo "Verifying backup archive..."
 
           docker compose exec -T db pg_restore --list \
             < "$BACKUP_FILE" > /dev/null
 
           echo "Database backup verified: $BACKUP_FILE"
+          echo "=== Database backup completed ==="
 
+          STAGE="applying database migrations"
           echo "=== Applying database migrations ==="
+
+          echo "Starting Payload migrations..."
+
           APP_IMAGE_TAG="$NEW_TAG" docker compose run \
             --rm --no-deps app npm run payload:migrate
+
+          echo "=== Database migrations completed ==="
 
           rollback_application() {
             echo "=== Restoring previous application image ==="
@@ -132,6 +197,7 @@ jobs:
                 docker compose ps
                 return 0
               fi
+
               sleep 5
             done
 
@@ -141,16 +207,19 @@ jobs:
             exit 1
           }
 
+          STAGE="starting new application version"
           echo "=== Starting new application version ==="
 
           if ! APP_IMAGE_TAG="$NEW_TAG" docker compose up \
             -d --no-deps --force-recreate --pull never app; then
 
             echo "ERROR: New version failed to start."
+            docker compose logs --tail=100 app
             rollback_application
             exit 1
           fi
 
+          STAGE="verifying running image"
           echo "=== Verifying running image ==="
 
           NEW_CONTAINER="$(docker compose ps -q app)"
@@ -177,15 +246,30 @@ jobs:
             exit 1
           fi
 
+          echo "=== Running image verified ==="
+
+          STAGE="checking application health"
           echo "=== Checking application health ==="
 
           for i in $(seq 1 30); do
+            echo "Health check attempt $i/30"
+
             if curl -fsS http://127.0.0.1:3000/api/health; then
               echo
               echo "Deployment successful: $NEW_TAG"
               echo "Running image: $ACTUAL_IMAGE_TAG"
               echo "Running image ID: $ACTUAL_IMAGE_ID"
+
               docker compose ps
+
+              STAGE="completed successfully"
+
+              echo "======================================"
+              echo "DEPLOYMENT FINISHED SUCCESSFULLY"
+              echo "Commit: $NEW_TAG"
+              echo "Time: $(date -Is)"
+              echo "======================================"
+
               exit 0
             fi
 
@@ -193,8 +277,14 @@ jobs:
           done
 
           echo "ERROR: New version failed health check."
+
           docker compose logs --tail=100 app
 
           rollback_application
           exit 1
+
           REMOTE
+
+          echo "======================================"
+          echo "SSH DEPLOYMENT FINISHED SUCCESSFULLY"
+          echo "======================================"
