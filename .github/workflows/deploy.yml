@@ -1,138 +1,128 @@
-            < "$BACKUP_FILE" > /dev/null
+name: Deploy to VPS
 
-          echo "Database backup verified: $BACKUP_FILE"
-          echo "=== Database backup completed ==="
+"on":
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-          STAGE="applying database migrations"
-          echo "=== Applying database migrations ==="
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
 
-          echo "Starting Payload migrations..."
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
 
-          APP_IMAGE_TAG="$NEW_TAG" docker compose run \
-            --rm --no-deps app npm run payload:migrate
+    steps:
+      - name: Deploy over SSH
+        timeout-minutes: 25
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
 
-          echo "=== Database migrations completed ==="
+        run: |
+          set -Eeuo pipefail
 
-          rollback_application() {
-            echo "=== Restoring previous application image ==="
+          echo "=== Checking SSH configuration ==="
 
-            APP_IMAGE_TAG="$PREVIOUS_TAG" docker compose up \
-              -d --no-deps --force-recreate --pull never app
+          test -n "$VPS_HOST"
+          test -n "$VPS_USER"
+          test -n "$VPS_SSH_KEY"
+          test -n "$VPS_KNOWN_HOSTS"
 
-            ROLLBACK_CONTAINER="$(docker compose ps -q app)"
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
 
-            if [ -z "$ROLLBACK_CONTAINER" ]; then
-              echo "CRITICAL: Rollback container not found."
-              docker compose logs --tail=150 app
-              exit 1
-            fi
+          printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
 
-            ROLLBACK_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$ROLLBACK_CONTAINER")"
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
 
-            if [ "$ROLLBACK_IMAGE_ID" != "$PREVIOUS_IMAGE_ID" ]; then
-              echo "CRITICAL: Rollback image ID mismatch."
-              docker compose logs --tail=150 app
-              exit 1
-            fi
+          echo "=== Connecting to VPS ==="
 
-            echo "Previous image restored: $PREVIOUS_TAG"
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            -o BatchMode=yes \
+            -o ConnectTimeout=15 \
+            -o ServerAliveInterval=15 \
+            -o ServerAliveCountMax=4 \
+            "$VPS_USER@$VPS_HOST" 'bash -se' <<'REMOTE'
 
-            for i in $(seq 1 30); do
-              if curl -fsS http://127.0.0.1:3000/api/health; then
-                echo
-                echo "Rollback health check successful."
-                docker compose ps
-                return 0
-              fi
+          set -Eeuo pipefail
 
-              sleep 5
-            done
+          cd /opt/remember
 
-            echo "CRITICAL: Previous application version is not healthy."
-            docker compose logs --tail=150 app
-            docker compose ps
-            exit 1
-          }
+          STAGE="initialization"
+          DEPLOY_COMPLETED=0
 
-          STAGE="starting new application version"
-          echo "=== Starting new application version ==="
-
-          if ! APP_IMAGE_TAG="$NEW_TAG" docker compose up \
-            -d --no-deps --force-recreate --pull never app; then
-
-            echo "ERROR: New version failed to start."
-            docker compose logs --tail=100 app
-            rollback_application
-            exit 1
-          fi
-
-          STAGE="verifying running image"
-          echo "=== Verifying running image ==="
-
-          NEW_CONTAINER="$(docker compose ps -q app)"
-
-          if [ -z "$NEW_CONTAINER" ]; then
-            echo "ERROR: New application container not found."
-            rollback_application
-            exit 1
-          fi
-
-          ACTUAL_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$NEW_CONTAINER")"
-          ACTUAL_IMAGE_TAG="$(docker inspect --format '{{.Config.Image}}' "$NEW_CONTAINER")"
-
-          echo "Expected tag: remember-app:$NEW_TAG"
-          echo "Actual tag:   $ACTUAL_IMAGE_TAG"
-          echo "Expected ID:  $EXPECTED_IMAGE_ID"
-          echo "Actual ID:    $ACTUAL_IMAGE_ID"
-
-          if [ "$ACTUAL_IMAGE_TAG" != "remember-app:$NEW_TAG" ] || \
-             [ "$ACTUAL_IMAGE_ID" != "$EXPECTED_IMAGE_ID" ]; then
-
-            echo "ERROR: Running container does not use the new image."
-            rollback_application
-            exit 1
-          fi
-
-          echo "=== Running image verified ==="
-
-          STAGE="checking application health"
-          echo "=== Checking application health ==="
-
-          for i in $(seq 1 30); do
-            echo "Health check attempt $i/30"
-
-            if curl -fsS http://127.0.0.1:3000/api/health; then
-              echo
-              echo "Deployment successful: $NEW_TAG"
-              echo "Running image: $ACTUAL_IMAGE_TAG"
-              echo "Running image ID: $ACTUAL_IMAGE_ID"
-
-              docker compose ps
-
-              STAGE="completed successfully"
-              DEPLOY_COMPLETED=1
-
+          trap '
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
               echo "======================================"
-              echo "DEPLOYMENT FINISHED SUCCESSFULLY"
-              echo "Commit: $NEW_TAG"
+              echo "DEPLOY FAILED"
+              echo "Stage: $STAGE"
+              echo "Exit code: $rc"
               echo "Time: $(date -Is)"
               echo "======================================"
-
-              exit 0
+            elif [ "$DEPLOY_COMPLETED" -ne 1 ]; then
+              echo "======================================"
+              echo "DEPLOY FAILED: script ended before deployment completion."
+              echo "Stage: $STAGE"
+              echo "======================================"
+              trap - EXIT
+              exit 1
+            else
+              echo "REMOTE SCRIPT EXIT CODE: 0"
             fi
-
-            sleep 5
-          done
-
-          echo "ERROR: New version failed health check."
-
-          docker compose logs --tail=100 app
-
-          rollback_application
-          exit 1
-
-          REMOTE
+          ' EXIT
 
           echo "======================================"
-          echo "SSH DEPLOYMENT FINISHED SUCCESSFULLY"
+          echo "DEPLOYMENT STARTED"
+          echo "Time: $(date -Is)"
           echo "======================================"
+
+          STAGE="updating source code"
+          echo "=== Updating source code ==="
+
+          git pull --ff-only origin main
+
+          NEW_TAG="$(git rev-parse --short=12 HEAD)"
+          PREVIOUS_TAG="rollback-$(date +%Y%m%d-%H%M%S)"
+
+          echo "New commit: $(git rev-parse HEAD)"
+          echo "New image tag: $NEW_TAG"
+
+          STAGE="saving previous application image"
+          echo "=== Saving previous application image ==="
+
+          CURRENT_CONTAINER="$(docker compose ps -q app)"
+
+          if [ -z "$CURRENT_CONTAINER" ]; then
+            echo "ERROR: Current application container not found."
+            exit 1
+          fi
+
+          PREVIOUS_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$CURRENT_CONTAINER")"
+
+          docker image tag "$PREVIOUS_IMAGE_ID" "remember-app:$PREVIOUS_TAG"
+
+          echo "Previous image ID: $PREVIOUS_IMAGE_ID"
+          echo "Previous image tag: $PREVIOUS_TAG"
+
+          STAGE="building new application image"
+          echo "=== Building new application image ==="
+
+          APP_IMAGE_TAG="$NEW_TAG" docker compose build app
+
+          EXPECTED_IMAGE_ID="$(docker image inspect "remember-app:$NEW_TAG" --format '{{.Id}}')"
+
+          if [ -z "$EXPECTED_IMAGE_ID" ]; then
+            echo "ERROR: New image was not created."
