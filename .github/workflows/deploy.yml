@@ -126,3 +126,7 @@ jobs:
 
           if [ -z "$EXPECTED_IMAGE_ID" ]; then
             echo "ERROR: New image was not created."
+            exit 1
+          fi
+          echo "New image ID: $EXPECTED_IMAGE_ID"
+          echo "=== Image build completed ==="
