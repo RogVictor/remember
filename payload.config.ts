@@ -22,6 +22,11 @@ const isNextBuildPhase = process.env.NEXT_PHASE === 'phase-production-build'
 const configuredSiteURL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL
 const siteURL = configuredSiteURL || 'http://localhost:3000'
 const siteOrigin = new URL(siteURL).origin
+const extraOrigins = (process.env.PAYLOAD_EXTRA_ORIGINS || '')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean)
+const allowedOrigins = [siteOrigin, ...extraOrigins]
 
 if (!secret && !isNextBuildPhase) {
   throw new Error('Set PAYLOAD_SECRET before starting Payload.')
@@ -43,8 +48,8 @@ if (
 export default buildConfig({
   secret: secret || '',
   serverURL: siteOrigin,
-  cors: [siteOrigin],
-  csrf: [siteOrigin],
+  cors: allowedOrigins,
+  csrf: allowedOrigins,
   admin: {
     user: Users.slug,
     importMap: { baseDir: dirname },
