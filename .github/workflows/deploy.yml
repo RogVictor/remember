@@ -1,4 +1,3 @@
-
 name: Deploy to VPS
 
 on:
@@ -50,16 +49,35 @@ jobs:
           NEW_TAG="$(git rev-parse --short=12 HEAD)"
           PREVIOUS_TAG="rollback-$(date +%Y%m%d-%H%M%S)"
 
-          echo "New version: $NEW_TAG"
+          echo "New commit: $(git rev-parse HEAD)"
+          echo "New image tag: $NEW_TAG"
 
           echo "=== Saving previous application image ==="
-          CURRENT_IMAGE_ID="$(docker inspect --format '{{.Image}}' remember-app-1)"
-          docker image tag "$CURRENT_IMAGE_ID" "remember-app:$PREVIOUS_TAG"
+          CURRENT_CONTAINER="$(docker compose ps -q app)"
 
-          echo "Previous version saved as: $PREVIOUS_TAG"
+          if [ -z "$CURRENT_CONTAINER" ]; then
+            echo "ERROR: Current application container not found."
+            exit 1
+          fi
+
+          PREVIOUS_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$CURRENT_CONTAINER")"
+
+          docker image tag "$PREVIOUS_IMAGE_ID" "remember-app:$PREVIOUS_TAG"
+
+          echo "Previous image ID: $PREVIOUS_IMAGE_ID"
+          echo "Previous image tag: $PREVIOUS_TAG"
 
           echo "=== Building new application image ==="
           APP_IMAGE_TAG="$NEW_TAG" docker compose build app
+
+          EXPECTED_IMAGE_ID="$(docker image inspect "remember-app:$NEW_TAG" --format '{{.Id}}')"
+
+          if [ -z "$EXPECTED_IMAGE_ID" ]; then
+            echo "ERROR: New image was not created."
+            exit 1
+          fi
+
+          echo "New image ID: $EXPECTED_IMAGE_ID"
 
           echo "=== Creating database backup ==="
           mkdir -p backups
@@ -73,51 +91,110 @@ jobs:
           chmod 600 "$BACKUP_FILE"
 
           test -s "$BACKUP_FILE"
-          docker compose exec -T db pg_restore --list < "$BACKUP_FILE" > /dev/null
+
+          docker compose exec -T db pg_restore --list \
+            < "$BACKUP_FILE" > /dev/null
 
           echo "Database backup verified: $BACKUP_FILE"
 
           echo "=== Applying database migrations ==="
-          APP_IMAGE_TAG="$NEW_TAG" docker compose run --rm --no-deps app npm run payload:migrate
+          APP_IMAGE_TAG="$NEW_TAG" docker compose run \
+            --rm --no-deps app npm run payload:migrate
+
+          rollback_application() {
+            echo "=== Restoring previous application image ==="
+
+            APP_IMAGE_TAG="$PREVIOUS_TAG" docker compose up \
+              -d --no-deps --force-recreate --pull never app
+
+            ROLLBACK_CONTAINER="$(docker compose ps -q app)"
+
+            if [ -z "$ROLLBACK_CONTAINER" ]; then
+              echo "CRITICAL: Rollback container not found."
+              docker compose logs --tail=150 app
+              exit 1
+            fi
+
+            ROLLBACK_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$ROLLBACK_CONTAINER")"
+
+            if [ "$ROLLBACK_IMAGE_ID" != "$PREVIOUS_IMAGE_ID" ]; then
+              echo "CRITICAL: Rollback image ID mismatch."
+              docker compose logs --tail=150 app
+              exit 1
+            fi
+
+            echo "Previous image restored: $PREVIOUS_TAG"
+
+            for i in $(seq 1 30); do
+              if curl -fsS http://127.0.0.1:3000/api/health; then
+                echo
+                echo "Rollback health check successful."
+                docker compose ps
+                return 0
+              fi
+              sleep 5
+            done
+
+            echo "CRITICAL: Previous application version is not healthy."
+            docker compose logs --tail=150 app
+            docker compose ps
+            exit 1
+          }
 
           echo "=== Starting new application version ==="
-          if ! APP_IMAGE_TAG="$NEW_TAG" docker compose up -d --no-deps app; then
-            echo "New version failed to start. Restoring previous application image."
-            APP_IMAGE_TAG="$PREVIOUS_TAG" docker compose up -d --no-deps app || true
-            docker compose logs --tail=100 app
+
+          if ! APP_IMAGE_TAG="$NEW_TAG" docker compose up \
+            -d --no-deps --force-recreate --pull never app; then
+
+            echo "ERROR: New version failed to start."
+            rollback_application
+            exit 1
+          fi
+
+          echo "=== Verifying running image ==="
+
+          NEW_CONTAINER="$(docker compose ps -q app)"
+
+          if [ -z "$NEW_CONTAINER" ]; then
+            echo "ERROR: New application container not found."
+            rollback_application
+            exit 1
+          fi
+
+          ACTUAL_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$NEW_CONTAINER")"
+          ACTUAL_IMAGE_TAG="$(docker inspect --format '{{.Config.Image}}' "$NEW_CONTAINER")"
+
+          echo "Expected tag: remember-app:$NEW_TAG"
+          echo "Actual tag:   $ACTUAL_IMAGE_TAG"
+          echo "Expected ID:  $EXPECTED_IMAGE_ID"
+          echo "Actual ID:    $ACTUAL_IMAGE_ID"
+
+          if [ "$ACTUAL_IMAGE_TAG" != "remember-app:$NEW_TAG" ] || \
+             [ "$ACTUAL_IMAGE_ID" != "$EXPECTED_IMAGE_ID" ]; then
+
+            echo "ERROR: Running container does not use the new image."
+            rollback_application
             exit 1
           fi
 
           echo "=== Checking application health ==="
+
           for i in $(seq 1 30); do
             if curl -fsS http://127.0.0.1:3000/api/health; then
               echo
               echo "Deployment successful: $NEW_TAG"
+              echo "Running image: $ACTUAL_IMAGE_TAG"
+              echo "Running image ID: $ACTUAL_IMAGE_ID"
               docker compose ps
               exit 0
             fi
+
             sleep 5
           done
 
-          echo "New version failed health check."
+          echo "ERROR: New version failed health check."
           docker compose logs --tail=100 app
 
-          echo "=== Restoring previous application image ==="
-          APP_IMAGE_TAG="$PREVIOUS_TAG" docker compose up -d --no-deps app
-
-          echo "=== Checking rollback health ==="
-          for i in $(seq 1 30); do
-            if curl -fsS http://127.0.0.1:3000/api/health; then
-              echo
-              echo "Previous application version restored: $PREVIOUS_TAG"
-              docker compose ps
-              exit 1
-            fi
-            sleep 5
-          done
-
-          echo "CRITICAL: Rollback application is not healthy."
-          docker compose logs --tail=150 app
-          docker compose ps
+          rollback_application
           exit 1
           REMOTE
