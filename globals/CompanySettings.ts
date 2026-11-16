@@ -6,7 +6,19 @@ export const CompanySettings: GlobalConfig = {
   label: 'Настройки компании',
   access: {
     read: () => true,
-    update: ({ req }) => isAdminUser(req.user),
+    update: ({ req }) => {
+    const user = req.user as {
+      id?: string | number
+      role?: string
+    } | null
+
+    console.info('[CompanySettings update access]', {
+      userId: user?.id ?? null,
+      role: user?.role ?? null,
+    })
+
+    return isAdminUser(req.user)
+  },
   },
   fields: [
     { name: 'companyName', type: 'text', required: true, defaultValue: 'Ритуальная служба «Память»', label: 'Название компании' },
