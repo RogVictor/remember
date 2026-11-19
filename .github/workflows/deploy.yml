@@ -177,24 +177,86 @@ jobs:
             exit 1
           fi
 
-          echo "=== Checking application health ==="
+                    echo "=== Checking application health ==="
+
+          DEPLOY_HEALTHY=0
 
           for i in $(seq 1 30); do
-            if curl -fsS http://127.0.0.1:3000/api/health; then
-              echo
-              echo "Deployment successful: $NEW_TAG"
-              echo "Running image: $ACTUAL_IMAGE_TAG"
-              echo "Running image ID: $ACTUAL_IMAGE_ID"
-              docker compose ps
-              exit 0
+            if curl -fsS http://127.0.0.1:3000/api/health > /dev/null; then
+              CONTAINER_HEALTH="$(docker inspect \
+                --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}{{.State.Status}}{{end}}' \
+                "$NEW_CONTAINER")"
+
+              if [ "$CONTAINER_HEALTH" = "healthy" ]; then
+                DEPLOY_HEALTHY=1
+                break
+              fi
             fi
 
             sleep 5
           done
 
-          echo "ERROR: New version failed health check."
-          docker compose logs --tail=100 app
+          if [ "$DEPLOY_HEALTHY" -ne 1 ]; then
+            echo "ERROR: New version failed health check."
+            docker compose logs --tail=100 app
+            rollback_application
+            exit 1
+          fi
 
-          rollback_application
-          exit 1
-          REMOTE
+          echo "=== Verifying final running image ==="
+
+          FINAL_CONTAINER="$(docker compose ps -q app)"
+          FINAL_IMAGE_ID="$(docker inspect --format '{{.Image}}' "$FINAL_CONTAINER")"
+
+          if [ "$FINAL_IMAGE_ID" != "$EXPECTED_IMAGE_ID" ]; then
+            echo "ERROR: Final running image mismatch."
+            rollback_application
+            exit 1
+          fi
+
+          echo "=== Deployment successful ==="
+          echo "Commit: $(git rev-parse HEAD)"
+          echo "Image: remember-app:$NEW_TAG"
+          docker compose ps
+
+          echo "=== Cleaning up old application images ==="
+
+          # Сохраняем текущий и предыдущий образы.
+          # Также не удаляем образы, используемые любыми контейнерами.
+          for IMAGE_TAG in $(docker image ls remember-app \
+            --format '{{.Repository}}:{{.Tag}}'); do
+
+            case "$IMAGE_TAG" in
+              *:\<none\>)
+                continue
+                ;;
+            esac
+
+            IMAGE_ID="$(docker image inspect "$IMAGE_TAG" \
+              --format '{{.Id}}')"
+
+            if [ "$IMAGE_ID" = "$EXPECTED_IMAGE_ID" ] || \
+               [ "$IMAGE_ID" = "$PREVIOUS_IMAGE_ID" ]; then
+              echo "Keeping: $IMAGE_TAG"
+              continue
+            fi
+
+            if docker ps -aq --filter "ancestor=$IMAGE_ID" | grep -q .; then
+              echo "Keeping image used by container: $IMAGE_TAG"
+              continue
+            fi
+
+            echo "Removing: $IMAGE_TAG"
+            docker image rm "$IMAGE_TAG" || true
+          done
+
+          echo "=== Cleaning up dangling images ==="
+          docker image prune -f || true
+
+          echo "=== Cleaning up old build cache ==="
+          docker builder prune -f --filter "until=168h" || true
+
+          echo "=== Final disk usage ==="
+          docker system df
+
+          echo "=== Finished ==="
