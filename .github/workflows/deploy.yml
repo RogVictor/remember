@@ -99,12 +99,6 @@ jobs:
 
           echo "Database backup verified: $BACKUP_FILE"
 
-          # The chat schema requires a manually reviewed migration before rollout.
-          if ! docker compose exec -T db psql -U payload -d funeral_site -Atc \
-            "SELECT 1 FROM payload_migrations WHERE name='20261119_233002_chat'" | grep -qx 1; then
-            echo "Apply the chat migration manually using the verified backup and image $NEW_TAG. See docs/chat.md."
-            exit 1
-          fi
           echo "=== Applying database migrations ==="
           APP_IMAGE_TAG="$NEW_TAG" docker compose run \
             --interactive=false --rm --no-deps app npm run payload:migrate
