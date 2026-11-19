@@ -10,6 +10,7 @@ import { Services } from './collections/Services'
 import { Products } from './collections/Products'
 import { PriceItems } from './collections/PriceItems'
 import { FAQs } from './collections/FAQs'
+import { InfoArticles } from './collections/InfoArticles'
 import { Media } from './collections/Media'
 import { Leads } from './collections/Leads'
 import { CompanySettings } from './globals/CompanySettings'
@@ -54,7 +55,7 @@ export default buildConfig({
     user: Users.slug,
     importMap: { baseDir: dirname },
   },
-  collections: [Users, Pages, Services, Products, PriceItems, FAQs, Media, Leads],
+  collections: [Users, Pages, InfoArticles, Services, Products, PriceItems, FAQs, Media, Leads],
   globals: [CompanySettings],
   editor: lexicalEditor(),
   db: postgresAdapter({

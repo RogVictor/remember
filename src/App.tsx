@@ -4,6 +4,7 @@ import { useState } from 'react'
 import type {
   CMSCompanySettings,
   CMSFAQ,
+  CMSInfoArticle,
   CMSPriceItem,
   CMSProduct,
   CMSResult,
@@ -245,10 +246,11 @@ function FaqList({ result, limit }: { result: CMSResult<CMSFAQ>; limit?: number 
   return <div className="faq">{result.data.slice(0,limit).map(({ question, answer, id },i)=><div className="faq-item" key={id}><button onClick={()=>setActive(active===i?-1:i)}><span>{question}</span><b>{active===i?'−':'+'}</b></button>{active===i&&<p>{answer}</p>}</div>)}</div>
 }
 
-function InfoPage({ company }: { company: CMSCompanySettings }) {
-  const articles=['Что делать в первую очередь','Какие документы могут понадобиться','Как выбрать ритуальные принадлежности','Из чего складывается стоимость похорон','Кремация: основные организационные вопросы','Как подготовиться к поминальной церемонии']
+function InfoPage({ company, articles }: { company: CMSCompanySettings; articles: CMSInfoArticle[] }) {
   return <PageShell company={company} title="Полезная информация" intro="Практические материалы о порядке действий, документах и организации церемонии.">
-    <div className="article-list">{articles.map((x,i)=><article key={x}><span>Информация · [дата]</span><h2>{x}</h2><p>Краткие разъяснения и практические рекомендации, которые помогут сориентироваться в последовательности действий.</p><button className="text-link">Читать далее <Icon name="arrow"/></button></article>)}</div>
+    {articles.length > 0
+      ? <div className="article-list">{articles.map((article) => <article key={article.pageSlug}><span>Информация</span><h2>{article.title}</h2>{article.description && <p>{article.description}</p>}<a className="text-link" href={`/${article.pageSlug}`}>Читать далее <Icon name="arrow"/></a></article>)}</div>
+      : <EmptyState>Опубликованные материалы пока не добавлены.</EmptyState>}
   </PageShell>
 }
 
@@ -318,6 +320,7 @@ export default function App({
   priceItems = { data: [], error: false },
   faqs = { data: [], error: false },
   cmsTitle,
+  infoArticles = [],
   children,
 }: {
   company?: CMSCompanySettings
@@ -327,6 +330,7 @@ export default function App({
   priceItems?: CMSResult<CMSPriceItem>
   faqs?: CMSResult<CMSFAQ>
   cmsTitle?: string
+  infoArticles?: CMSInfoArticle[]
   children?: React.ReactNode
 }) {
   let content: React.ReactNode
@@ -336,7 +340,7 @@ export default function App({
   else if(page==='funeral') content=<FuneralPage company={company}/>
   else if(page==='prices') content=<PageShell company={company} title="Цены на ритуальные услуги" intro="Актуальные позиции и стоимость услуг из нашего прайс-листа."><PriceTable result={priceItems}/><div className="note price-note"><strong>Обратите внимание</strong><p>Итоговая сумма зависит от выбранного состава услуг, принадлежностей и индивидуальных условий. Точную стоимость специалист согласует до оформления.</p></div></PageShell>
   else if(page==='about') content=<About company={company}/>
-  else if(page==='info') content=<InfoPage company={company}/>
+  else if(page==='info') content=<InfoPage company={company} articles={infoArticles}/>
   else if(page==='faq') content=<PageShell company={company} title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
   else if(page==='contacts') content=<Contacts company={company}/>
   else if(page==='legal') content=<PageShell company={company} title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>

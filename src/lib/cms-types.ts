@@ -49,6 +49,12 @@ export type CMSFAQ = {
   sortOrder: number
 }
 
+export type CMSInfoArticle = {
+  description: string | null
+  pageSlug: string
+  title: string
+}
+
 export type CMSCompanySettings = {
   additionalPhone: string
   address: string

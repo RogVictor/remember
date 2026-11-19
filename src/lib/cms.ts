@@ -8,6 +8,7 @@ import { DEFAULT_COMPANY_SETTINGS } from './cms-types'
 import type {
   CMSFAQ,
   CMSCompanySettings,
+  CMSInfoArticle,
   CMSMedia,
   CMSPage,
   CMSPrice,
@@ -150,6 +151,35 @@ export const getPublishedPageSlugs = async (): Promise<string[]> => {
   } catch (error) {
     console.error('[CMS] Could not load published page slugs from Payload.', error)
     throw new Error('Could not load published page slugs.', { cause: error })
+  }
+}
+
+export const getPublishedInfoArticles = async (): Promise<CMSInfoArticle[]> => {
+  noStore()
+  try {
+    const payload = await getPayload({ config })
+    const result = await payload.find({
+      collection: 'info-articles',
+      depth: 1,
+      draft: false,
+      limit: 200,
+      overrideAccess: false,
+      sort: 'sortOrder',
+      where: { _status: { equals: 'published' } },
+    })
+
+    return result.docs.flatMap((doc) => {
+      if (!isRecord(doc.page) || doc.page._status !== 'published') return []
+
+      const pageSlug = text(doc.page.slug)
+      const title = text(doc.title)
+      if (!pageSlug || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(pageSlug) || !title) return []
+
+      return [{ description: text(doc.summary), pageSlug, title }]
+    })
+  } catch (error) {
+    console.error('[CMS] Could not load published info articles from Payload.', error)
+    throw new Error('Could not load published info articles.', { cause: error })
   }
 }
 

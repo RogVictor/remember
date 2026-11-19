@@ -4,6 +4,10 @@
   object-fit: contain;
 }
 
+.brand-mark:has(.brand-logo) {
+  border: 0;
+}
+
 .catalog-service-image {
   height: 130px;
   object-fit: cover;
