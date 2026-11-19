@@ -101,7 +101,7 @@ jobs:
 
           echo "=== Applying database migrations ==="
           APP_IMAGE_TAG="$NEW_TAG" docker compose run \
-            --rm --no-deps app npm run payload:migrate
+            --interactive=false --rm --no-deps app npm run payload:migrate
 
           rollback_application() {
             echo "=== Restoring previous application image ==="
