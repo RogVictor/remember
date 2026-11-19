@@ -13,6 +13,7 @@ import { FAQs } from './collections/FAQs'
 import { InfoArticles } from './collections/InfoArticles'
 import { Media } from './collections/Media'
 import { Leads } from './collections/Leads'
+import { ChatSessions, ChatMessages } from './collections/Chat'
 import { CompanySettings } from './globals/CompanySettings'
 
 const filename = fileURLToPath(import.meta.url)
@@ -55,7 +56,7 @@ export default buildConfig({
     user: Users.slug,
     importMap: { baseDir: dirname },
   },
-  collections: [Users, Pages, InfoArticles, Services, Products, PriceItems, FAQs, Media, Leads],
+  collections: [Users, Pages, InfoArticles, Services, Products, PriceItems, FAQs, Media, Leads, ChatSessions, ChatMessages],
   globals: [CompanySettings],
   editor: lexicalEditor(),
   db: postgresAdapter({

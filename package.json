@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test:leads": "tsx --test tests/leads.test.mjs",
+    "test:chat": "node --test tests/chat.test.mjs",
     "payload:types": "payload generate:types",
     "payload:importmap": "payload generate:importmap",
     "payload:migrate:create": "node --experimental-strip-types --import=./scripts/payload-cli-loader.mjs ./node_modules/payload/bin.js --disable-transpile migrate:create",
