@@ -1,6 +1,7 @@
 import { timingSafeEqual } from 'node:crypto'
 import type { PostgresAdapter } from '@payloadcms/db-postgres'
 import { ChatError, digest, transaction } from './chat-store'
+import { requestTelegram } from './telegram-api.mjs'
 
 type Pool = PostgresAdapter['pool']
 
@@ -24,7 +25,7 @@ export function checkSecret(config: Config, supplied: string) {
 
 // Serialize dispatch and mapping lookup so a fast Reply sees the committed mapping.
 const deliveryLock = 'SELECT pg_advisory_xact_lock(219847312)'
-export async function dispatchOne(pool: Pool, config: Config, send = fetch) {
+export async function dispatchOne(pool: Pool, config: Config) {
   return transaction(pool, async client => {
     await client.query(deliveryLock)
     const { rows: [row] } = await client.query("SELECT id, session_id, text, attempts FROM chat_messages WHERE retry_at <= now() AND author='visitor' ORDER BY retry_at,id LIMIT 1 FOR UPDATE")
@@ -32,14 +33,19 @@ export async function dispatchOne(pool: Pool, config: Config, send = fetch) {
     let messageId: number
     let delay = Math.min(300, 5 * 2 ** Math.min(6, Number(row.attempts)))
     try {
-      const response = await send('https://api.telegram.org/bot' + config.bot + '/sendMessage', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: AbortSignal.timeout(8000),
-        body: JSON.stringify({ chat_id: config.group, text: 'Диалог №' + row.session_id + '\n\n' + row.text }),
+      const response = await requestTelegram(config.bot, 'sendMessage', {
+        chat_id: config.group, text: 'Диалог №' + row.session_id + '\n\n' + row.text,
       })
-      const data = await response.json()
-      if (Number.isSafeInteger(data.parameters?.retry_after)) delay = Math.max(delay, data.parameters.retry_after)
-      if (!response.ok || !data.ok || String(data.result?.chat?.id) !== config.group || !Number.isSafeInteger(data.result?.message_id)) throw new Error()
-      messageId = data.result.message_id
+      const data = await response.json() as {
+        ok?: boolean
+        parameters?: { retry_after?: number }
+        result?: { chat?: { id?: number }; message_id?: number }
+      } | null
+      const retryAfter = data?.parameters?.retry_after
+      if (typeof retryAfter === 'number' && Number.isSafeInteger(retryAfter)) delay = Math.max(delay, retryAfter)
+      const id = data?.result?.message_id
+      if (!response.ok || !data?.ok || String(data.result?.chat?.id) !== config.group || typeof id !== 'number' || !Number.isSafeInteger(id)) throw new Error()
+      messageId = id
     } catch {
       await client.query("UPDATE chat_messages SET attempts=attempts+1,retry_at=now()+$2 * interval '1 second' WHERE id=$1", [row.id, delay])
       return

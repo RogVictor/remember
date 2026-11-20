@@ -6,31 +6,60 @@
 
 1. Создайте отдельного бота командой `/newbot` у @BotFather. Внесите токен в серверный `.env` как `TELEGRAM_CHAT_BOT_TOKEN`. Существующие `TELEGRAM_BOT_TOKEN` и `TELEGRAM_CHAT_ID` относятся к формам заявок.
 2. Создайте закрытую группу, добавьте операторов и бота. Разрешите боту отправлять сообщения. Оставьте включённым Privacy Mode. Для обычного Reply на сообщение бота прав администратора не требуется. Операторы должны писать от своего аккаунта. [Telegram Bots FAQ](https://core.telegram.org/bots/faq#what-messages-will-my-bot-get)
-3. До регистрации webhook попросите каждого оператора послать в группу команду `/start@имя_бота`. На доверенном компьютере с Node 22+ и токеном в окружении выполните следующую команду. Она выводит только ID из полученных групповых команд.
+3. До регистрации webhook попросите каждого оператора послать в группу команду `/start@имя_бота`. В работающем контейнере выполните следующую команду. Она выводит только ID из полученных групповых команд.
 
 ```sh
-node --input-type=module -e 'const r=await fetch("https://api.telegram.org/bot"+process.env.TELEGRAM_CHAT_BOT_TOKEN+"/getUpdates");const d=await r.json();if(!d.ok)process.exit(1);for(const {message:m} of d.result)if(m?.chat?.id<0 && m?.text?.startsWith("/start@"))console.log(m.chat.id,m.from.id)'
+docker compose exec -T app node --input-type=module <<'JS'
+import { requestTelegram } from './src/lib/telegram-api.mjs'
+try {
+  const response = await requestTelegram(process.env.TELEGRAM_CHAT_BOT_TOKEN, 'getUpdates')
+  const data = await response.json()
+  if (!response.ok || !data.ok) throw new Error()
+  for (const { message } of data.result) {
+    if (message?.chat?.id < 0 && message?.text?.startsWith('/start@')) console.log(message.chat.id, message.from.id)
+  }
+} catch {
+  console.error('Не удалось получить обновления Telegram')
+  process.exitCode = 1
+}
+JS
 ```
 
 4. Укажите отрицательный ID группы в `TELEGRAM_CHAT_GROUP_ID`, числовые ID проверенных операторов через запятую в `TELEGRAM_CHAT_OPERATOR_IDS`. Сгенерируйте `TELEGRAM_CHAT_WEBHOOK_SECRET` командой `openssl rand -hex 32`. Храните значение в серверном окружении. Приложение получает переменные через уже настроенный Compose `env_file`.
-5. После выпуска приложения зарегистрируйте HTTPS webhook. Следующий пример предназначен для POSIX shell с экспортированными `TELEGRAM_CHAT_BOT_TOKEN`, `TELEGRAM_CHAT_WEBHOOK_SECRET` и `SITE_URL=https://ritualgroup24.ru`. Путь обрабатывает Next.js через существующий прокси. Для запросов посетителя приложение использует доверенный `X-Real-IP`, как и форма заявок. [Telegram Bot API](https://core.telegram.org/bots/api#setwebhook)
+5. При первичной настройке бота зарегистрируйте HTTPS webhook. Команда читает `TELEGRAM_CHAT_BOT_TOKEN`, `TELEGRAM_CHAT_WEBHOOK_SECRET` и `SITE_URL` из окружения контейнера. Путь обрабатывает Next.js через существующий обратный прокси. Для запросов посетителя приложение использует доверенный `X-Real-IP`, как и форма заявок. [Telegram Bot API](https://core.telegram.org/bots/api#setwebhook)
 
 ```sh
-node --input-type=module <<'JS'
+docker compose exec -T app node --input-type=module <<'JS'
+import { requestTelegram } from './src/lib/telegram-api.mjs'
 const { TELEGRAM_CHAT_BOT_TOKEN: token, TELEGRAM_CHAT_WEBHOOK_SECRET: secret, SITE_URL } = process.env
-if (!token || !secret || !SITE_URL?.startsWith('https://')) process.exit(1)
-const base = 'https://api.telegram.org/bot' + token + '/'
-const url = new URL('/api/chat/webhook', SITE_URL).href
-const set = await fetch(base + 'setWebhook', {
-  method: 'POST', headers: { 'content-type': 'application/json' },
-  body: JSON.stringify({ url, secret_token: secret, allowed_updates: ['message'] })
-}).then(r => r.json())
-if (!set.ok) throw new Error('Telegram отказал в регистрации')
-const info = await fetch(base + 'getWebhookInfo').then(r => r.json())
-if (!info.ok || info.result.url !== url) throw new Error('Проверьте адрес webhook')
-console.log('Webhook зарегистрирован. Ожидают доставки:', info.result.pending_update_count)
+try {
+  if (!token || !secret || !SITE_URL?.startsWith('https://')) throw new Error()
+  const url = new URL('/api/chat/webhook', SITE_URL).href
+  const set = await requestTelegram(token, 'setWebhook', { url, secret_token: secret, allowed_updates: ['message'] }).then(r => r.json())
+  if (!set.ok) throw new Error()
+  const info = await requestTelegram(token, 'getWebhookInfo').then(r => r.json())
+  if (!info.ok || info.result.url !== url) throw new Error()
+  console.log('Webhook зарегистрирован. Ожидают доставки:', info.result.pending_update_count)
+} catch {
+  console.error('Не удалось зарегистрировать или проверить webhook Telegram')
+  process.exitCode = 1
+}
 JS
 ```
+
+## Исходящий прокси и проверка на VPS
+
+В серверном `.env` укажите `TELEGRAM_CHAT_PROXY_URL` в формате `http://user:password@proxy.example:3128` или `https://user:password@proxy.example:3128`. Схема определяет соединение с прокси. Для доступа к Telegram в обоих случаях используется CONNECT. Специальные символы логина и пароля кодируйте по правилам URL, например `@` как `%40`. Для прямого подключения оставьте переменную пустой. Настройка действует на Bot API чата и уведомлений о заявках. Уже зарегистрированный webhook продолжит принимать входящие запросы по прежнему адресу.
+
+Если собираете образ на VPS из исходников, выполните из каталога Compose:
+
+```sh
+docker compose up -d --build app
+docker compose exec -T app node scripts/telegram-check.mjs
+curl -fsS http://127.0.0.1:3000/api/health
+```
+
+Если используете готовый образ, выполните команду проверки после штатного развёртывания новой версии. При успешной проверке `getMe` через прокси ожидается `{"mode":"proxy","status":200,"result":"ok"}`. Проверка выводит только режим, HTTP-статус при получении ответа и результат. При ошибке код завершения равен `1`. `invalid_proxy_configuration` означает ошибку в настройке URL, `invalid_bot_token` — отсутствующий или некорректный формат токена, `connection_failed` — сбой при установлении соединения или туннеля, `timeout` — истечение срока ожидания, `http_error` — ответ API с кодом вне диапазона 2xx. Доступ бота к группе и обработку Reply проверьте по шагам приёмки ниже.
 
 ## Ручное применение миграции
 

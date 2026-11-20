@@ -2,6 +2,7 @@ import 'server-only'
 
 import nodemailer from 'nodemailer'
 import type { LeadNotificationStatuses } from './lead-flow'
+import { requestTelegram } from './telegram-api.mjs'
 
 export type LeadForNotification = {
   id: number | string
@@ -86,12 +87,10 @@ export const sendTelegramLeadNotification = async (lead: LeadForNotification): P
     .slice(1)
     .map(escapeHTML)
     .join('\n')}${adminURL ? `\n<a href="${escapeHTML(adminURL)}">Открыть заявку в админке</a>` : ''}`
-  const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ chat_id: chatId, text: message, parse_mode: 'HTML' }),
-    signal: AbortSignal.timeout(8000),
+  const response = await requestTelegram(token, 'sendMessage', {
+    chat_id: chatId, text: message, parse_mode: 'HTML',
   })
+  await response.body?.cancel().catch(() => {})
   if (!response.ok) throw new Error('Telegram notification failed')
 }
 

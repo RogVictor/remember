@@ -52,7 +52,7 @@ test('production chat HTTP routes and persistent Telegram worker', async t => {
   const child = spawn(process.execPath, ['--require', './tests/chat-telegram-fixture.cjs', './node_modules/next/dist/bin/next', 'start', '-H', '127.0.0.1', '-p', String(port)], {
     stdio: 'ignore', windowsHide: true, env: { ...process.env, NODE_ENV: 'production', SITE_URL: origin, DATABASE_URL: database.href,
       PAYLOAD_SECRET: 'local-integration-fixture-password-only', TELEGRAM_CHAT_BOT_TOKEN: '713:test-chat-fixture', TELEGRAM_CHAT_GROUP_ID: group,
-      TELEGRAM_CHAT_WEBHOOK_SECRET: secret, TELEGRAM_CHAT_OPERATOR_IDS: '50,51', CHAT_FIXTURE_URL: 'http://127.0.0.1:' + fixturePort },
+      TELEGRAM_CHAT_WEBHOOK_SECRET: secret, TELEGRAM_CHAT_OPERATOR_IDS: '50,51', TELEGRAM_CHAT_PROXY_URL: '', CHAT_FIXTURE_URL: 'http://127.0.0.1:' + fixturePort },
   })
   t.after(async () => { if (child.exitCode === null && !child.signalCode) { const exit = once(child, 'exit'); child.kill(); await exit } })
   await until(async () => { try { return (await fetch(base + '/api/health')).ok } catch { return false } })
