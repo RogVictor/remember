@@ -12,7 +12,8 @@
 .chat-outgoing small {color:#f0dcde}
 .site-chat form {padding:.65rem 1rem;display:grid;gap:.3rem}
 .site-chat form label,.site-chat [role=status] {font-size:.82rem}
-.site-chat textarea {width:100%;resize:none;padding:.45rem;font:inherit;border:1px solid var(--line);border-radius:5px}
+.site-chat input,.site-chat textarea {width:100%;padding:.45rem;font:inherit;border:1px solid var(--line);border-radius:5px}
+.site-chat textarea {resize:none}
 .site-chat .btn {justify-self:end;border-radius:5px}
 .site-chat .btn:disabled {opacity:.55;cursor:default}
 .site-chat :focus-visible {outline:3px solid #b2804e;outline-offset:-3px}

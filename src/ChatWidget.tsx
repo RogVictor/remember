@@ -4,11 +4,20 @@ import { useEffect, useRef, useState } from 'react'
 import './chat.css'
 
 type Message = { id: number, author: 'visitor' | 'operator', text: string, createdAt: string }
+const messageLimit = 2000
+const contactLimit = 254
 const time = new Intl.DateTimeFormat('ru', { hour: '2-digit', minute: '2-digit' })
 const post = (action: string, data: object) => fetch('/api/chat/' + action, {
   method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data),
   signal: AbortSignal.timeout(15000),
 })
+
+function isValidContact(contact: string) {
+  if (contact.length > contactLimit || contact.includes('\0')) return false
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) return true
+  const digits = contact.replace(/\D/g, '')
+  return /^\+?[\d ().-]+$/.test(contact) && digits.length >= 7 && digits.length <= 15
+}
 
 export default function ChatWidget() {
   const [open, setOpen] = useState(false)
@@ -16,6 +25,7 @@ export default function ChatWidget() {
   const [ready, setReady] = useState(false)
   const [closed, setClosed] = useState(false)
   const [draft, setDraft] = useState('')
+  const [contact, setContact] = useState('')
   const [busy, setBusy] = useState(false)
   const [readError, setReadError] = useState('')
   const [sendError, setSendError] = useState('')
@@ -87,8 +97,19 @@ export default function ChatWidget() {
   function close() { setOpen(false); launcher.current?.focus() }
   async function submit(e: React.FormEvent) {
     e.preventDefault()
-    const text = draft.trim()
-    if (sending.current || !text || !ready || closed) return
+    const question = draft.trim()
+    if (sending.current || !question || !ready || closed) return
+    const replyContact = contact.trim()
+    if (!isValidContact(replyContact)) {
+      setSendError('Укажите телефон или email в корректном формате.')
+      return
+    }
+    const contactLine = `\n\nКонтакт для ответа: ${replyContact}`
+    const text = question + contactLine
+    if (text.length > messageLimit) {
+      setSendError(`Сократите вопрос до ${messageLimit - contactLine.length} символов, чтобы добавить контакт.`)
+      return
+    }
     sending.current = true
     setBusy(true)
     setSendError('')
@@ -119,8 +140,10 @@ export default function ChatWidget() {
       <form onSubmit={submit}>
         <div role="status">{sendError || readError || (closed ? 'Диалог закрыт.' : !ready ? 'Загружаем переписку…' : '')}</div>
         <label htmlFor="chat-question">Ваш вопрос</label>
-        <textarea id="chat-question" maxLength={2000} rows={2} value={draft} disabled={busy || closed} onChange={e => setDraft(e.target.value)} />
-        <button className="btn" disabled={!ready || busy || closed || !draft.trim()}>{busy ? 'Отправляем…' : 'Отправить'}</button>
+        <textarea id="chat-question" maxLength={messageLimit} rows={2} value={draft} disabled={busy || closed} onChange={e => setDraft(e.target.value)} />
+        <label htmlFor="chat-contact">Телефон или email (обязательно)</label>
+        <input id="chat-contact" type="text" required maxLength={contactLimit} autoCapitalize="none" spellCheck={false} value={contact} disabled={busy || closed} onChange={e => setContact(e.target.value)} />
+        <button className="btn" disabled={!ready || busy || closed || !draft.trim() || !contact.trim()}>{busy ? 'Отправляем…' : 'Отправить'}</button>
       </form>
     </section>}
     <button className="chat-launcher" ref={launcher} aria-expanded={open} aria-controls={open ? 'site-chat-panel' : undefined} onClick={() => open ? close() : setOpen(true)}>
