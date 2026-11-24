@@ -11,8 +11,10 @@ import type {
   CMSService,
 } from './lib/cms-types'
 import { DEFAULT_COMPANY_SETTINGS } from './lib/cms-types'
+import './navigation.css'
 
 type PageKey = 'home' | 'services' | 'funeral' | 'products' | 'prices' | 'about' | 'info' | 'faq' | 'contacts' | 'legal' | 'cms'
+type ServiceLink = Pick<CMSService, 'id' | 'title'> & { href: string }
 
 const routes: Record<string, PageKey> = {
   '': 'home', home: 'home', services: 'services', funeral: 'funeral', products: 'products',
@@ -25,9 +27,12 @@ const nav = [
   ['info', 'Полезная информация'], ['contacts', 'Контакты'],
 ] as const
 
+function pagePath(page: PageKey) {
+  return page === 'home' ? '/' : `/${page}`
+}
+
 function go(page: PageKey) {
-  const path = page === 'home' ? '/' : `/${page}`
-  window.location.assign(path)
+  window.location.assign(pagePath(page))
 }
 
 function phoneHref(phone: string) {
@@ -60,7 +65,7 @@ function Icon({ name }: { name: 'phone' | 'clock' | 'menu' | 'close' | 'check' |
   return <svg aria-hidden="true" viewBox="0 0 24 24">{paths[name]}</svg>
 }
 
-function Header({ page, company }: { page: PageKey; company: CMSCompanySettings }) {
+function Header({ page, company, serviceLinks }: { page: PageKey; company: CMSCompanySettings; serviceLinks: ServiceLink[] }) {
   const [open, setOpen] = useState(false)
   return <>
     <div className="topline"><div className="container top-inner"><span>Ритуальные услуги в {company.city}</span><span className="top-hours"><Icon name="clock" /> {company.workingHours}</span></div></div>
@@ -73,10 +78,32 @@ function Header({ page, company }: { page: PageKey; company: CMSCompanySettings 
         <div className="header-contact"><small>Телефон для связи</small><a href={phoneHref(company.phone)}>{company.phone}</a></div>
         <Button secondary onClick={() => go('contacts')}>Заказать звонок</Button>
         <Button onClick={() => go('contacts')}>Вызвать специалиста</Button>
-        <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Открыть меню"><Icon name={open ? 'close' : 'menu'} /></button>
+        <button className="menu-btn" onClick={() => setOpen(!open)} aria-label={open ? 'Закрыть меню' : 'Открыть меню'} aria-expanded={open} aria-controls="site-navigation"><Icon name={open ? 'close' : 'menu'} /></button>
       </div>
-      <nav className={open ? 'nav open' : 'nav'}><div className="container nav-inner">
-        {nav.map(([key, label]) => <button key={key} className={page === key ? 'active' : ''} onClick={() => { go(key); setOpen(false) }}>{label}{['services','products','info'].includes(key)}</button>)}
+      <nav id="site-navigation" className={open ? 'nav open' : 'nav'}><div className="container nav-inner">
+        {nav.map(([key, label]) => key === 'services' ? (
+          <details
+            key={key}
+            className="services-nav"
+            onBlur={({ currentTarget, relatedTarget }) => {
+              if (relatedTarget && !currentTarget.contains(relatedTarget)) currentTarget.open = false
+            }}
+            onKeyDown={(event) => {
+              const dropdown = event.currentTarget
+              if (event.key === 'Escape' && dropdown.open) {
+                event.preventDefault()
+                dropdown.querySelector('summary')?.focus()
+                dropdown.open = false
+              }
+            }}
+          >
+            <summary className={page === key ? 'active' : ''}>{label}</summary>
+            <ul className="services-nav-links">
+              <li><a href={pagePath(key)} aria-current={page === key ? 'page' : undefined}>Все услуги</a></li>
+              {serviceLinks.map(({ id, title, href }) => <li key={id}><a href={href}>{title}</a></li>)}
+            </ul>
+          </details>
+        ) : <button key={key} className={page === key ? 'active' : ''} onClick={() => { go(key); setOpen(false) }}>{label}</button>)}
       </div></nav>
     </header>
   </>
@@ -260,7 +287,7 @@ function FaqList({ result, limit }: { result: CMSResult<CMSFAQ>; limit?: number 
 function InfoPage({ company, articles }: { company: CMSCompanySettings; articles: CMSInfoArticle[] }) {
   return <PageShell company={company} title="Полезная информация" intro="Практические материалы о порядке действий, документах и организации церемонии.">
     {articles.length > 0
-      ? <div className="article-list">{articles.map((article) => <article key={article.pageSlug}><span>Информация</span><h2>{article.title}</h2>{article.description && <p>{article.description}</p>}<a className="text-link" href={`/${article.pageSlug}`}>Читать далее <Icon name="arrow"/></a></article>)}</div>
+      ? <div className="article-list">{articles.map((article) => <article key={article.pageSlug}><h2>{article.title}</h2>{article.description && <p>{article.description}</p>}<a className="text-link" href={`/${article.pageSlug}`}>Читать далее <Icon name="arrow"/></a></article>)}</div>
       : <EmptyState>Опубликованные материалы пока не добавлены.</EmptyState>}
   </PageShell>
 }
@@ -327,6 +354,7 @@ export default function App({
   company = DEFAULT_COMPANY_SETTINGS,
   page = 'home',
   services = { data: [], error: false },
+  serviceLinks = [],
   products = { data: [], error: false },
   priceItems = { data: [], error: false },
   faqs = { data: [], error: false },
@@ -337,6 +365,7 @@ export default function App({
   company?: CMSCompanySettings
   page?: PageKey
   services?: CMSResult<CMSService>
+  serviceLinks?: ServiceLink[]
   products?: CMSResult<CMSProduct>
   priceItems?: CMSResult<CMSPriceItem>
   faqs?: CMSResult<CMSFAQ>
@@ -356,5 +385,5 @@ export default function App({
   else if(page==='contacts') content=<Contacts company={company}/>
   else if(page==='legal') content=<PageShell company={company} title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>
   else content=<PageShell company={company} title={cmsTitle || ''}><article className="editorial cms-page">{children}</article></PageShell>
-  return <><Header page={page} company={company}/>{content}<Footer company={company}/></>
+  return <><Header page={page} company={company} serviceLinks={serviceLinks}/>{content}<Footer company={company}/></>
 }

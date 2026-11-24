@@ -1,0 +1,96 @@
+.services-nav {
+  position: relative;
+}
+
+.services-nav summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  padding: 0 16px;
+  border-bottom: 3px solid transparent;
+  font-size: 13px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.services-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.services-nav summary::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.services-nav[open] summary::after {
+  transform: rotate(225deg);
+}
+
+.services-nav summary:hover,
+.services-nav summary.active,
+.services-nav[open] summary {
+  color: var(--wine);
+  border-bottom-color: var(--wine);
+}
+
+.services-nav-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  min-width: 220px;
+  max-width: 360px;
+  max-height: min(60dvh, 420px);
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 18px #0002;
+}
+
+.services-nav-links a {
+  display: block;
+  padding: 10px 16px;
+  color: var(--ink);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.services-nav-links a:hover,
+.services-nav-links a:focus-visible,
+.services-nav-links a[aria-current] {
+  color: var(--wine);
+  background: var(--gray);
+}
+
+@media (max-width: 1000px) {
+  .nav.open {
+    max-height: calc(100dvh - 109px);
+    overflow-y: auto;
+  }
+
+  .services-nav summary {
+    height: 44px;
+    padding: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .services-nav-links {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    box-shadow: none;
+  }
+}

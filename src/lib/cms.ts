@@ -88,7 +88,9 @@ const documents = async (collection: 'services' | 'products' | 'price-items' | '
     collection,
     depth: 1,
     draft: false,
-    limit: 200,
+    ...(collection === 'services'
+      ? { limit: 0, populate: { pages: { slug: true, _status: true } } }
+      : { limit: 200 }),
     overrideAccess: false,
     sort: 'sortOrder',
     where: { _status: { equals: 'published' } },
@@ -227,6 +229,8 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
         if (!isRecord(doc)) return []
         const title = text(doc.title)
         if (!title) return []
+        const linkedPage = isRecord(doc.page) && doc.page._status === 'published' ? doc.page : null
+
         return [{
           id: typeof doc.id === 'number' || typeof doc.id === 'string' ? doc.id : title,
           title,
@@ -234,7 +238,7 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
           summary: text(doc.summary),
           description: richText(doc.description),
           image: media(doc.image),
-          linkSlug: text(doc.linkSlug),
+          linkSlug: doc.page == null ? text(doc.linkSlug) : text(linkedPage?.slug),
           sortOrder: sortOrder(doc.sortOrder),
           ...price(doc),
         }]

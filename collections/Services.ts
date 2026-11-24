@@ -21,10 +21,24 @@ export const Services: CollectionConfig = {
     { name: 'title', type: 'text', required: true, label: 'Название' },
     { name: 'slug', type: 'text', required: true, unique: true, index: true, label: 'URL (slug)' },
     {
+      name: 'page',
+      type: 'relationship',
+      relationTo: 'pages',
+      label: 'Страница услуги',
+      filterOptions: { _status: { equals: 'published' } },
+      admin: {
+        allowCreate: true,
+        description: 'Выберите опубликованную страницу или создайте и опубликуйте новую прямо здесь.',
+      },
+    },
+    {
       name: 'linkSlug',
       type: 'text',
       label: 'Ссылка на страницу (slug)',
-      admin: { description: 'Необязательно. Slug опубликованной страницы, например about-us.' },
+      admin: {
+        condition: (data) => !data.page,
+        description: 'Если страница услуги не выбрана, можно указать адрес существующего раздела, например funeral.',
+      },
       validate: (value: string | null | undefined) =>
         value == null || value.trim() === '' || /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.trim())
           ? true
