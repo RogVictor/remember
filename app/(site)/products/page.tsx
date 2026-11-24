@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import SiteApp from '../../src/SiteApp'
-import { getProducts } from '../../src/lib/cms'
+import SiteApp from '@/SiteApp'
+import { getProducts } from '@/lib/cms'
 
 export const metadata: Metadata = {
   title: 'Ритуальные товары',

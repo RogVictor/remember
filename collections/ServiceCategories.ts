@@ -4,7 +4,7 @@ import { isAdminUser } from './access'
 export const ServiceCategories: CollectionConfig = {
   slug: 'service-categories',
   labels: { singular: 'Категория услуг', plural: 'Категории услуг' },
-  admin: { useAsTitle: 'title', defaultColumns: ['title', 'active', 'page'] },
+  admin: { group: 'Каталог', useAsTitle: 'title', defaultColumns: ['title', 'active', 'page'] },
   access: {
     read: ({ req }) => req.user ? true : { active: { equals: true } },
     create: ({ req }) => isAdminUser(req.user),

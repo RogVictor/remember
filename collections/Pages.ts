@@ -20,7 +20,7 @@ const reservedSlugs = new Set([
 export const Pages: CollectionConfig = {
   slug: 'pages',
   labels: { singular: 'Страница', plural: 'Страницы' },
-  admin: { useAsTitle: 'title', defaultColumns: ['title', 'slug', '_status', 'updatedAt'] },
+  admin: { group: 'Контент', useAsTitle: 'title', defaultColumns: ['title', 'slug', '_status', 'updatedAt'] },
   access: {
     read: ({ req }) => req.user ? true : { _status: { equals: 'published' } },
     create: ({ req }) => Boolean(req.user),

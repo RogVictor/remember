@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import './globals.css'
-import './catalog.css'
-import { getCompanySettings } from '../src/lib/cms'
+import '../globals.css'
+import '../catalog.css'
+import { getCompanySettings } from '@/lib/cms'
 
 export async function generateMetadata(): Promise<Metadata> {
   const company = await getCompanySettings()

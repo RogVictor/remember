@@ -4,7 +4,7 @@ import { isAdminUser } from './access'
 export const FAQs: CollectionConfig = {
   slug: 'faqs',
   labels: { singular: 'Вопрос и ответ', plural: 'Частые вопросы' },
-  admin: { useAsTitle: 'question', defaultColumns: ['question', '_status'] },
+  admin: { group: 'Контент', useAsTitle: 'question', defaultColumns: ['question', '_status'] },
   access: {
     read: ({ req }) =>
       req.user ? true : { _status: { equals: 'published' } },

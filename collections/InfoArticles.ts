@@ -8,6 +8,7 @@ export const InfoArticles: CollectionConfig = {
     plural: 'Материалы полезной информации',
   },
   admin: {
+    group: 'Контент',
     useAsTitle: 'title',
     defaultColumns: ['title', 'page', 'sortOrder', '_status'],
   },

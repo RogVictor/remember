@@ -1,0 +1,15 @@
+@use './styles/tokens';
+@use './styles/shell';
+@use './styles/collections';
+@use './styles/forms';
+@use './styles/dashboard';
+
+@layer payload {
+  html.ritual-admin {
+    @include tokens.theme;
+    @include shell.styles;
+    @include collections.styles;
+    @include forms.styles;
+    @include dashboard.styles;
+  }
+}

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import SiteApp from '../../src/SiteApp'
+import SiteApp from '@/SiteApp'
 
 export const metadata: Metadata = { title: 'О компании' }
 

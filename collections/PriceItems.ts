@@ -6,6 +6,7 @@ export const PriceItems: CollectionConfig = {
   slug: 'price-items',
   labels: { singular: 'Позиция прайса', plural: 'Прайс-лист' },
   admin: {
+    group: 'Каталог',
     useAsTitle: 'title',
     defaultColumns: ['title', 'category', 'priceType', '_status'],
   },

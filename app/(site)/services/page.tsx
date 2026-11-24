@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import SiteApp from '../../src/SiteApp'
-import ServiceCategoryGrid from '../../src/ServiceCategoryGrid'
-import { getServiceCatalog } from '../../src/lib/cms'
+import SiteApp from '@/SiteApp'
+import ServiceCategoryGrid from '@/ServiceCategoryGrid'
+import { getServiceCatalog } from '@/lib/cms'
 
 export const metadata: Metadata = {
   title: 'Ритуальные услуги',

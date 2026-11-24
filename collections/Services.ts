@@ -6,6 +6,7 @@ export const Services: CollectionConfig = {
   slug: 'services',
   labels: { singular: 'Услуга', plural: 'Услуги' },
   admin: {
+    group: 'Каталог',
     useAsTitle: 'title',
     defaultColumns: ['title', 'category', 'priceType', '_status'],
   },

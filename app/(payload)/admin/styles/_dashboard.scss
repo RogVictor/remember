@@ -1,0 +1,41 @@
+@mixin styles {
+  .dashboard { padding-block-start: 24px; }
+
+  .rg-dashboard-welcome {
+    margin-bottom: 28px;
+    padding: clamp(20px, 3vw, 32px);
+    border: 1px solid var(--rg-border);
+    border-inline-start: 4px solid var(--rg-accent);
+    border-radius: var(--rg-panel-radius);
+    background: var(--rg-surface);
+
+    h1 { margin: 0; overflow-wrap: anywhere; }
+    ul { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 16px 0 0; list-style: none; }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      min-height: var(--rg-control-height);
+      padding: 8px 12px;
+      border: 1px solid var(--rg-border);
+      border-radius: var(--style-radius-m);
+      color: var(--rg-accent);
+      font-weight: 650;
+      text-decoration: none;
+      transition: background-color var(--rg-speed);
+
+      &:hover { background: var(--rg-accent-soft); text-decoration: underline; }
+    }
+  }
+
+  .dashboard .card {
+    border-color: var(--rg-border);
+    border-radius: var(--rg-panel-radius);
+    background: var(--rg-surface);
+    min-width: 0;
+    overflow-wrap: anywhere;
+    transition: border-color var(--rg-speed), background-color var(--rg-speed);
+
+    &:hover, &:focus-within { border-color: var(--rg-accent); }
+  }
+}

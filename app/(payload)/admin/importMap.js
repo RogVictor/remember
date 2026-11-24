@@ -22,6 +22,12 @@ import { BlockquoteFeatureClient as BlockquoteFeatureClient_e70f5e05f09f93e00b99
 import { UploadFeatureClient as UploadFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { HorizontalRuleFeatureClient as HorizontalRuleFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { InlineToolbarFeatureClient as InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
+import { AdminIcon as AdminIcon_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
+import { AdminLogo as AdminLogo_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
+import { default as default_ec5dfb78f51b4fc2967471716a8f9625 } from '../../../app/(payload)/admin/components/ThemeToggle'
+import { MobileNavToggle as MobileNavToggle_ec5dfb78f51b4fc2967471716a8f9625 } from '../../../app/(payload)/admin/components/ThemeToggle'
+import { default as default_da9afb71bd0e9ab5610f99a6551b80f9 } from '../../../app/(payload)/admin/components/DashboardWelcome'
+import { NavBrand as NavBrand_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
 import { CollectionCards as CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1 } from '@payloadcms/next/rsc'
 
 /** @type import('payload').ImportMap */
@@ -50,5 +56,11 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#UploadFeatureClient": UploadFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#HorizontalRuleFeatureClient": HorizontalRuleFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#InlineToolbarFeatureClient": InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
+  "/app/(payload)/admin/components/Brand#AdminIcon": AdminIcon_e4149f270c1248a497447691509288a3,
+  "/app/(payload)/admin/components/Brand#AdminLogo": AdminLogo_e4149f270c1248a497447691509288a3,
+  "/app/(payload)/admin/components/ThemeToggle#default": default_ec5dfb78f51b4fc2967471716a8f9625,
+  "/app/(payload)/admin/components/ThemeToggle#MobileNavToggle": MobileNavToggle_ec5dfb78f51b4fc2967471716a8f9625,
+  "/app/(payload)/admin/components/DashboardWelcome#default": default_da9afb71bd0e9ab5610f99a6551b80f9,
+  "/app/(payload)/admin/components/Brand#NavBrand": NavBrand_e4149f270c1248a497447691509288a3,
   "@payloadcms/next/rsc#CollectionCards": CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1
 }

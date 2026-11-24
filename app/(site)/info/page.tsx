@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import SiteApp from '../../src/SiteApp'
-import { getPublishedInfoArticles } from '../../src/lib/cms'
+import SiteApp from '@/SiteApp'
+import { getPublishedInfoArticles } from '@/lib/cms'
 
 export const metadata: Metadata = { title: 'Полезная информация' }
 

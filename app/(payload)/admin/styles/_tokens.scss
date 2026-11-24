@@ -1,0 +1,105 @@
+@mixin theme {
+  --rg-accent: #762336;
+  --rg-accent-hover: #602031;
+  --rg-accent-soft: #f3e7ea;
+  --rg-accent-ink: #fff;
+  --rg-canvas: #f8fafc;
+  --rg-surface: #fff;
+  --rg-text: #17202b;
+  --rg-muted: #64748b;
+  --rg-border: #e2e8f0;
+  --rg-hover: #eff3f8;
+  --rg-success: #15803d;
+  --rg-success-ink: #166534;
+  --rg-success-soft: #e7f5eb;
+  --rg-warning: #b45309;
+  --rg-warning-soft: #fff1dc;
+  --rg-error: #dc2626;
+  --rg-error-ink: #b91c1c;
+  --rg-error-soft: #fceaea;
+  --rg-panel-radius: 12px;
+  --rg-speed: 160ms;
+  --rg-control-height: 40px;
+
+  --font-body: 'Segoe UI', system-ui, Arial, sans-serif;
+  --base-body-size: 14;
+  --theme-bg: var(--rg-canvas);
+  --theme-input-bg: var(--rg-surface);
+  --theme-text: var(--rg-text);
+  --theme-elevation-0: var(--rg-surface);
+  --theme-elevation-50: var(--rg-canvas);
+  --theme-elevation-100: var(--rg-hover);
+  --theme-elevation-150: var(--rg-border);
+  --theme-elevation-200: var(--rg-border);
+  --theme-elevation-500: var(--rg-muted);
+  --theme-elevation-800: var(--rg-text);
+  --theme-elevation-1000: var(--rg-text);
+  --theme-success-100: var(--rg-success-soft);
+  --theme-success-500: var(--rg-success);
+  --theme-success-750: var(--rg-success-ink);
+  --theme-warning-100: var(--rg-warning-soft);
+  --theme-warning-750: var(--rg-warning);
+  --theme-error-100: var(--rg-error-soft);
+  --theme-error-500: var(--rg-error);
+  --theme-error-750: var(--rg-error-ink);
+  --style-radius-s: 6px;
+  --style-radius-m: 8px;
+  --style-radius-l: var(--rg-panel-radius);
+  --accessibility-outline: 2px solid var(--rg-accent);
+  --nav-width: 260px;
+  --nav-trans-time: var(--rg-speed);
+  --app-header-height: 64px;
+  --gutter-h: clamp(20px, 3vw, 48px);
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  &[data-theme='dark'] {
+    --rg-accent: #f2a9bb;
+    --rg-accent-hover: #ffc3d2;
+    --rg-accent-soft: #432831;
+    --rg-accent-ink: #31131e;
+    --rg-canvas: #111318;
+    --rg-surface: #1b1e25;
+    --rg-text: #f1f5f9;
+    --rg-muted: #a1a1aa;
+    --rg-border: #30343d;
+    --rg-hover: #252a34;
+    --rg-success: #86efac;
+    --rg-success-ink: var(--rg-success);
+    --rg-success-soft: #153022;
+    --rg-warning: #fdba74;
+    --rg-warning-soft: #39291a;
+    --rg-error: #fca5a5;
+    --rg-error-ink: var(--rg-error);
+    --rg-error-soft: #3f2429;
+  }
+
+  @media (max-width: 768px) {
+    --nav-width: 100vw;
+    --app-header-height: 56px;
+    --gutter-h: 16px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    --rg-speed: 0ms;
+  }
+
+  body {
+    background: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  h1 {
+    font-size: clamp(26px, 2.5vw, 30px);
+    line-height: 1.2;
+    letter-spacing: -.025em;
+  }
+
+  h2 { font-size: 19px; line-height: 1.3; }
+
+  :is(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: var(--accessibility-outline);
+    outline-offset: 2px;
+  }
+}

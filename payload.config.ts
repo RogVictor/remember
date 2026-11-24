@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 import { buildConfig } from 'payload'
 import { postgresAdapter } from '@payloadcms/db-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { ru } from '@payloadcms/translations/languages/ru'
 import sharp from 'sharp'
 import { Users } from './collections/Users'
 import { Pages } from './collections/Pages'
@@ -53,11 +54,22 @@ export default buildConfig({
   serverURL: siteOrigin,
   cors: allowedOrigins,
   csrf: allowedOrigins,
+  i18n: { fallbackLanguage: 'ru', supportedLanguages: { ru } },
   admin: {
     user: Users.slug,
     importMap: { baseDir: dirname },
+    meta: { titleSuffix: ' · RitualGroup24 Admin' },
+    components: {
+      actions: ['/app/(payload)/admin/components/ThemeToggle', '/app/(payload)/admin/components/ThemeToggle#MobileNavToggle'],
+      beforeDashboard: ['/app/(payload)/admin/components/DashboardWelcome'],
+      beforeNavLinks: ['/app/(payload)/admin/components/Brand#NavBrand'],
+      graphics: {
+        Icon: '/app/(payload)/admin/components/Brand#AdminIcon',
+        Logo: '/app/(payload)/admin/components/Brand#AdminLogo',
+      },
+    },
   },
-  collections: [Users, Pages, InfoArticles, Services, ServiceCategories, Products, PriceItems, FAQs, Media, Leads, ChatSessions, ChatMessages],
+  collections: [Pages, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, Leads, ChatSessions, ChatMessages, Media, Users],
   globals: [CompanySettings],
   editor: lexicalEditor(),
   db: postgresAdapter({

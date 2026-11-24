@@ -10,7 +10,7 @@ export const ChatSessions: CollectionConfig = {
   slug: 'chat-sessions',
   labels: { singular: 'Диалог', plural: 'Диалоги' },
   access,
-  admin: { defaultColumns: ['id', 'status', 'updatedAt'] },
+  admin: { group: 'Обращения', defaultColumns: ['id', 'status', 'updatedAt'] },
   fields: [
     secret,
     { name: 'status', type: 'select', options: ['new', 'active', 'closed'], defaultValue: 'new', required: true },
@@ -24,7 +24,7 @@ export const ChatMessages: CollectionConfig = {
   slug: 'chat-messages',
   labels: { singular: 'Сообщение чата', plural: 'Сообщения чата' },
   access: { ...access, update: () => false },
-  admin: { defaultColumns: ['session', 'author', 'text', 'createdAt'] },
+  admin: { group: 'Обращения', defaultColumns: ['session', 'author', 'text', 'createdAt'] },
   indexes: [
     { fields: ['session', 'clientKey'], unique: true },
     { fields: ['telegramGroup', 'telegramMessage'], unique: true },

@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import type { SerializedBlockNode } from '@payloadcms/richtext-lexical'
 import { RichText, type JSXConverterArgs, type JSXConvertersFunction } from '@payloadcms/richtext-lexical/react'
-import type { CategoryServicesBlock } from '../../payload-types'
-import { CallbackForm } from '../../src/App'
-import { ServiceCategorySection } from '../../src/ServiceCategoryGrid'
-import SiteApp from '../../src/SiteApp'
-import { getPublishedPage, getServiceCatalog, relationshipID } from '../../src/lib/cms'
+import type { CategoryServicesBlock } from '../../../payload-types'
+import { CallbackForm } from '@/App'
+import { ServiceCategorySection } from '@/ServiceCategoryGrid'
+import SiteApp from '@/SiteApp'
+import { getPublishedPage, getServiceCatalog, relationshipID } from '@/lib/cms'
 
 type PageProps = {
   params: Promise<{ slug: string }>

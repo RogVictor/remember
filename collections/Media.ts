@@ -4,6 +4,7 @@ import { isAdminUser } from './access'
 export const Media: CollectionConfig = {
   slug: 'media',
   labels: { singular: 'Файл', plural: 'Медиафайлы' },
+  admin: { group: 'Система' },
   upload: {
     staticDir: 'media',
     mimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'image/avif'],

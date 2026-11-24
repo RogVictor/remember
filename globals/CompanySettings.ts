@@ -4,6 +4,7 @@ import { isAdminUser } from '../collections/access'
 export const CompanySettings: GlobalConfig = {
   slug: 'company-settings',
   label: 'Настройки компании',
+  admin: { group: 'Система' },
   access: {
     read: () => true,
     update: ({ req }) => isAdminUser(req.user),

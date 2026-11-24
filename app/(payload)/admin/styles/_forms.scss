@@ -1,0 +1,63 @@
+@mixin styles {
+  .field-label { color: var(--rg-text); font-weight: 600; }
+
+  .field-description {
+    color: var(--rg-muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .field-type :is(input:not([type]), input[type='text'], input[type='email'], input[type='password'], input[type='number'], input[type='date'], textarea, .rs__control) {
+    border-radius: var(--style-radius-m);
+  }
+
+  .field-type :is(input:not([type]), input[type='text'], input[type='email'], input[type='password'], input[type='number'], input[type='date'], .rs__control) {
+    min-height: var(--rg-control-height);
+  }
+
+  .field-type.number:not(.has-many) input { max-width: 24ch; }
+  .field-type.text :is(#field-slug, #field-linkSlug, #field-seoTitle) { max-width: 68ch; }
+  .react-datepicker-wrapper { width: min(100%, 24rem); }
+  .rs__input-container input { min-height: 0; }
+
+  .relationship-add-new__tooltip {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    transform: translateY(calc(-1 * var(--caret-size)));
+
+    &::after {
+      inset-inline-start: auto;
+      inset-inline-end: 14px;
+      transform: translateY(100%);
+    }
+  }
+
+  .field-type input[type='checkbox'], .table input[type='checkbox'] { accent-color: var(--rg-accent); }
+  .checkbox-input__icon { border-radius: 5px; }
+
+  .field-type.error :is(input, textarea, .rs__control) { border-color: var(--rg-error); }
+  .field-error { color: var(--rg-error-ink); }
+
+  .upload__dropzoneContent {
+    border-radius: var(--rg-panel-radius);
+    background: var(--rg-hover);
+  }
+
+  .doc-controls { background: var(--rg-canvas); }
+  .doc-tab--active { color: var(--rg-accent); }
+
+  :is(.popup__content, .rs__menu, .confirmation-modal) {
+    border-radius: var(--rg-panel-radius);
+  }
+
+  .drawer__content { background: var(--rg-canvas); }
+  .drawer__header { border-bottom: 1px solid var(--rg-border); }
+
+  .lexical-rich-text .editor-container {
+    max-width: 100%;
+    border-radius: var(--style-radius-m);
+  }
+
+  .lexical-rich-text .ContentEditable__root { overflow-wrap: anywhere; }
+  .lexical-rich-text .editor-container:focus-within { border-color: var(--rg-accent); }
+}

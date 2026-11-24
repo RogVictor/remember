@@ -1,5 +1,5 @@
-import SiteApp from '../src/SiteApp'
-import { getFAQs, getPriceItems, getServices } from '../src/lib/cms'
+import SiteApp from '@/SiteApp'
+import { getFAQs, getPriceItems, getServices } from '@/lib/cms'
 
 export const dynamic = 'force-dynamic'
 

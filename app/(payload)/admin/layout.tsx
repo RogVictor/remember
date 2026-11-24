@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import type { ServerFunctionClient } from 'payload'
 import config from '@payload-config'
 import '@payloadcms/next/css'
+import './custom.scss'
 import { RootLayout, handleServerFunctions } from '@payloadcms/next/layouts'
 import { importMap } from './importMap.js'
 
@@ -24,6 +25,7 @@ export default function PayloadAdminLayout({
   return RootLayout({
     children,
     config,
+    htmlProps: { className: 'ritual-admin' },
     importMap,
     serverFunction,
   })
