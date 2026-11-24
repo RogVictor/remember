@@ -85,6 +85,14 @@ function Header({ page, company, serviceLinks }: { page: PageKey; company: CMSCo
           <details
             key={key}
             className="services-nav"
+            onPointerEnter={({ currentTarget, pointerType }) => {
+              if (pointerType === 'mouse') currentTarget.open = true
+            }}
+            onPointerLeave={({ currentTarget, pointerType }) => {
+              if (pointerType === 'mouse' && !currentTarget.querySelector('.services-nav-links:focus-within')) {
+                currentTarget.open = false
+              }
+            }}
             onBlur={({ currentTarget, relatedTarget }) => {
               if (relatedTarget && !currentTarget.contains(relatedTarget)) currentTarget.open = false
             }}
@@ -97,7 +105,14 @@ function Header({ page, company, serviceLinks }: { page: PageKey; company: CMSCo
               }
             }}
           >
-            <summary className={page === key ? 'active' : ''}>{label}</summary>
+            <summary
+              className={page === key ? 'active' : ''}
+              onClick={({ nativeEvent, preventDefault }) => {
+                if ('pointerType' in nativeEvent && nativeEvent.pointerType === 'mouse') preventDefault()
+              }}
+            >
+              {label}
+            </summary>
             <ul className="services-nav-links">
               <li><a href={pagePath(key)} aria-current={page === key ? 'page' : undefined}>Все услуги</a></li>
               {serviceLinks.map(({ id, title, href }) => <li key={id}><a href={href}>{title}</a></li>)}
