@@ -321,7 +321,7 @@ function Contacts({ company }: { company: CMSCompanySettings }) {
   </PageShell>
 }
 
-function CallbackForm() {
+export function CallbackForm({ source = '/contacts#callback' }: { source?: string }) {
   const [sent, setSent] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -357,7 +357,7 @@ function CallbackForm() {
       <label>Оставьте это поле пустым<input name="website" tabIndex={-1} autoComplete="off"/></label>
     </div>
     <input type="hidden" name="requestType" value="callback"/>
-    <input type="hidden" name="source" value="/contacts#callback"/>
+    <input type="hidden" name="source" value={source}/>
     <label className="consent"><input type="checkbox" name="personalDataConsent" value="true" required/> <span>Согласен на обработку персональных данных</span></label>
     <Button type="submit" disabled={submitting || sent}>
       {submitting ? 'Отправка…' : sent ? 'Заявка отправлена' : 'Заказать звонок'}

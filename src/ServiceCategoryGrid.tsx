@@ -1,34 +1,40 @@
 import type { CMSService } from './lib/cms-types'
+import type { ServiceCategoryGroup } from './lib/service-categories'
 
-type CategoryService = Pick<CMSService, 'id' | 'title' | 'category' | 'sortOrder'>
+type ServiceLinks = ReadonlyMap<CMSService['id'], string>
 
-export default function ServiceCategoryGrid({ services, links }: {
-  services: readonly CategoryService[]
-  links: ReadonlyMap<CMSService['id'], string>
+export function ServiceCategorySection({ group, links, href }: {
+  group: ServiceCategoryGroup
+  links: ServiceLinks
+  href?: string
 }) {
-  const categories = new Map<string, { title: string; services: CategoryService[] }>()
+  return (
+    <section className="service-category">
+      <h2>{href ? <a className="service-category-title" href={href}>{group.title}</a> : group.title}</h2>
+      <ul>
+        {group.services.map(({ id, title }) => {
+          const serviceHref = links.get(id)
+          return <li key={id}>{serviceHref ? <a href={serviceHref}>{title}</a> : <span>{title}</span>}</li>
+        })}
+      </ul>
+    </section>
+  )
+}
 
-  // The first service in each group determines the category order.
-  for (const service of [...services].sort((a, b) => a.sortOrder - b.sortOrder)) {
-    const title = service.category?.replace(/\s+/g, ' ').trim() || 'Другие услуги'
-    const key = title.toLocaleLowerCase('ru')
-    const category = categories.get(key)
-    if (category) category.services.push(service)
-    else categories.set(key, { title, services: [service] })
-  }
-
+export default function ServiceCategoryGrid({ groups, serviceLinks, categoryLinks }: {
+  groups: readonly ServiceCategoryGroup[]
+  serviceLinks: ServiceLinks
+  categoryLinks: ServiceLinks
+}) {
   return (
     <div className="service-category-grid">
-      {[...categories].map(([key, category]) => (
-        <section className="service-category" key={key}>
-          <h2>{category.title}</h2>
-          <ul>
-            {category.services.map(({ id, title }) => {
-              const href = links.get(id)
-              return <li key={id}>{href ? <a href={href}>{title}</a> : <span>{title}</span>}</li>
-            })}
-          </ul>
-        </section>
+      {groups.map(group => (
+        <ServiceCategorySection
+          key={group.key}
+          group={group}
+          links={serviceLinks}
+          href={group.categoryId == null ? undefined : categoryLinks.get(group.categoryId)}
+        />
       ))}
     </div>
   )

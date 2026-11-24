@@ -7,6 +7,7 @@ import sharp from 'sharp'
 import { Users } from './collections/Users'
 import { Pages } from './collections/Pages'
 import { Services } from './collections/Services'
+import { ServiceCategories } from './collections/ServiceCategories'
 import { Products } from './collections/Products'
 import { PriceItems } from './collections/PriceItems'
 import { FAQs } from './collections/FAQs'
@@ -56,7 +57,7 @@ export default buildConfig({
     user: Users.slug,
     importMap: { baseDir: dirname },
   },
-  collections: [Users, Pages, InfoArticles, Services, Products, PriceItems, FAQs, Media, Leads, ChatSessions, ChatMessages],
+  collections: [Users, Pages, InfoArticles, Services, ServiceCategories, Products, PriceItems, FAQs, Media, Leads, ChatSessions, ChatMessages],
   globals: [CompanySettings],
   editor: lexicalEditor(),
   db: postgresAdapter({
@@ -68,5 +69,5 @@ export default buildConfig({
     push: process.env.NODE_ENV !== 'production',
   }),
   sharp,
-  typescript: { outputFile: path.resolve(dirname, 'payload-types.ts') },
+  typescript: { declare: false, outputFile: path.resolve(dirname, 'payload-types.ts') },
 })

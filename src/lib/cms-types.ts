@@ -17,9 +17,17 @@ export type CMSService = CMSPrice & {
   id: number | string
   image: CMSMedia | null
   linkSlug: string | null
+  serviceCategoryId: number | string | null
   sortOrder: number
   summary: string | null
   title: string
+}
+
+export type CMSServiceCategory = {
+  id: number | string
+  title: string
+  pageSlug: string | null
+  linkSlug: string | null
 }
 
 export type CMSProduct = CMSPrice & {

@@ -5,6 +5,7 @@ import config from '@payload-config'
 import { getPayload } from 'payload'
 import { unstable_noStore as noStore } from 'next/cache'
 import { DEFAULT_COMPANY_SETTINGS } from './cms-types'
+import { groupServices } from './service-categories'
 import type {
   CMSFAQ,
   CMSCompanySettings,
@@ -16,6 +17,7 @@ import type {
   CMSProduct,
   CMSResult,
   CMSService,
+  CMSServiceCategory,
 } from './cms-types'
 
 type RecordValue = Record<string, unknown>
@@ -25,6 +27,14 @@ const isRecord = (value: unknown): value is RecordValue =>
 
 const text = (value: unknown): string | null =>
   typeof value === 'string' && value.trim() !== '' ? value.trim() : null
+
+export const relationshipID = (value: unknown): string | number | null => {
+  const id = isRecord(value) ? value.id : value
+  return typeof id === 'string' || typeof id === 'number' ? id : null
+}
+
+const publishedPageSlug = (value: unknown) =>
+  isRecord(value) && value._status === 'published' ? text(value.slug) : null
 
 const optionalText = (value: unknown, fallback: string): string =>
   typeof value === 'string' ? value.trim() : fallback
@@ -105,7 +115,7 @@ export const getPublishedPage = cache(async (slug: string): Promise<CMSPage | nu
     const payload = await getPayload({ config })
     const result = await payload.find({
       collection: 'pages',
-      depth: 0,
+      depth: 1,
       draft: false,
       limit: 1,
       overrideAccess: false,
@@ -120,7 +130,7 @@ export const getPublishedPage = cache(async (slug: string): Promise<CMSPage | nu
     if (!doc) return null
 
     return {
-      content: doc.content,
+      content: doc.content ?? null,
       id: typeof doc.id === 'number' || typeof doc.id === 'string' ? doc.id : doc.title,
       seoDescription: text(doc.seoDescription),
       seoTitle: text(doc.seoTitle),
@@ -219,7 +229,7 @@ export const getCompanySettings = cache(async (): Promise<CMSCompanySettings> =>
   }
 })
 
-export const getServices = async (): Promise<CMSResult<CMSService>> => {
+export const getServices = cache(async (): Promise<CMSResult<CMSService>> => {
   noStore()
   try {
     const docs = await documents('services')
@@ -229,7 +239,6 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
         if (!isRecord(doc)) return []
         const title = text(doc.title)
         if (!title) return []
-        const linkedPage = isRecord(doc.page) && doc.page._status === 'published' ? doc.page : null
 
         return [{
           id: typeof doc.id === 'number' || typeof doc.id === 'string' ? doc.id : title,
@@ -239,7 +248,8 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
           summary: text(doc.summary),
           description: richText(doc.description),
           image: media(doc.image),
-          linkSlug: doc.page == null ? text(doc.linkSlug) : text(linkedPage?.slug),
+          linkSlug: doc.page == null ? text(doc.linkSlug) : publishedPageSlug(doc.page),
+          serviceCategoryId: relationshipID(doc.serviceCategory),
           sortOrder: sortOrder(doc.sortOrder),
           ...price(doc),
         }]
@@ -249,18 +259,47 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
     reportLoadFailure('services')
     return { data: [], error: true }
   }
+})
+
+async function getServiceCategories(): Promise<CMSServiceCategory[]> {
+  noStore()
+  try {
+    const payload = await getPayload({ config })
+    const { docs } = await payload.find({
+      collection: 'service-categories',
+      depth: 1,
+      draft: false,
+      limit: 0,
+      overrideAccess: false,
+      populate: { pages: { slug: true, _status: true } },
+      where: { active: { equals: true } },
+    })
+    return docs.flatMap(doc => {
+      const id = relationshipID(doc.id)
+      const title = text(doc.title)
+      return id == null || !title ? [] : [{
+        id,
+        title,
+        pageSlug: publishedPageSlug(doc.page),
+        linkSlug: text(doc.linkSlug),
+      }]
+    })
+  } catch {
+    reportLoadFailure('service-categories')
+    return []
+  }
 }
 
 const staticServiceTargets = new Set([
   'about', 'contacts', 'faq', 'funeral', 'info', 'legal', 'prices', 'products', 'services',
 ])
 
-export async function getServiceCategoryLinks(services: CMSService[]): Promise<Map<CMSService['id'], string>> {
-  noStore()
-  const candidates = [...new Set(services.flatMap(({ linkSlug, fallbackSlug }) =>
-    [linkSlug, fallbackSlug].filter((slug): slug is string =>
-      Boolean(slug && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) && !staticServiceTargets.has(slug)),
-    ),
+async function getCatalogLinks(services: CMSService[], categories: CMSServiceCategory[]) {
+  const candidates = [...new Set([
+    ...services.flatMap(({ linkSlug, fallbackSlug }) => [linkSlug, fallbackSlug]),
+    ...categories.flatMap(({ pageSlug, linkSlug }) => [pageSlug, linkSlug]),
+  ].filter((slug): slug is string =>
+    Boolean(slug && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) && !staticServiceTargets.has(slug)),
   ))]
   const publishedSlugs = new Set<string>()
 
@@ -285,16 +324,29 @@ export async function getServiceCategoryLinks(services: CMSService[]): Promise<M
     }
   }
 
-  const links = new Map<CMSService['id'], string>()
+  const isExistingRoute = (slug: string) => staticServiceTargets.has(slug) || publishedSlugs.has(slug)
+  const serviceLinks = new Map<CMSService['id'], string>()
   for (const { id, linkSlug, fallbackSlug } of services) {
-    if (linkSlug && (staticServiceTargets.has(linkSlug) || publishedSlugs.has(linkSlug))) {
-      links.set(id, `/${linkSlug}`)
+    if (linkSlug && isExistingRoute(linkSlug)) {
+      serviceLinks.set(id, `/${linkSlug}`)
     } else if (fallbackSlug && publishedSlugs.has(fallbackSlug)) {
-      links.set(id, `/${fallbackSlug}`)
+      serviceLinks.set(id, `/${fallbackSlug}`)
     }
   }
-  return links
+  const categoryLinks = new Map<CMSServiceCategory['id'], string>()
+  for (const { id, pageSlug, linkSlug } of categories) {
+    if (pageSlug && publishedSlugs.has(pageSlug)) categoryLinks.set(id, `/${pageSlug}`)
+    else if (linkSlug && isExistingRoute(linkSlug)) categoryLinks.set(id, `/${linkSlug}`)
+  }
+  return { serviceLinks, categoryLinks }
 }
+
+export const getServiceCatalog = cache(async () => {
+  const [services, categories] = await Promise.all([getServices(), getServiceCategories()])
+  const groups = groupServices(services.data, categories)
+  const links = await getCatalogLinks(services.data, categories)
+  return { services, groups, ...links }
+})
 
 export const getProducts = async (): Promise<CMSResult<CMSProduct>> => {
   noStore()

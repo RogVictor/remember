@@ -3,6 +3,7 @@ import * as migration_20261119_130931 from './20261119_130931';
 import * as migration_20261119_233002_chat from './20261119_233002_chat';
 import * as migration_20261124_111651_hero_image from './20261124_111651_hero_image';
 import * as migration_20261124_115231_service_page from './20261124_115231_service_page';
+import * as migration_20261124_151531_service_categories from './20261124_151531_service_categories';
 
 export const migrations = [
   {
@@ -28,6 +29,11 @@ export const migrations = [
   {
     up: migration_20261124_115231_service_page.up,
     down: migration_20261124_115231_service_page.down,
-    name: '20261124_115231_service_page'
+    name: '20261124_115231_service_page',
+  },
+  {
+    up: migration_20261124_151531_service_categories.up,
+    down: migration_20261124_151531_service_categories.down,
+    name: '20261124_151531_service_categories'
   },
 ];

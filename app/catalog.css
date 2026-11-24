@@ -103,6 +103,21 @@
   transition: background-color 160ms ease, color 160ms ease;
 }
 
+.service-category .service-category-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cms-page img {
+  max-width: 100%;
+  height: auto;
+}
+
 .service-category a::after {
   content: '';
   flex: 0 0 6px;

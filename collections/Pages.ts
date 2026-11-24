@@ -1,5 +1,7 @@
 import type { CollectionConfig } from 'payload'
+import { BlocksFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
 import { isAdminUser } from './access'
+import { CategoryServicesBlock } from './ServiceCategories'
 
 const reservedSlugs = new Set([
   'about',
@@ -45,7 +47,25 @@ export const Pages: CollectionConfig = {
         return true
       },
     },
-    { name: 'content', type: 'richText', label: 'Содержимое' },
+    {
+      name: 'content',
+      type: 'richText',
+      label: 'Содержимое',
+      editor: lexicalEditor({
+        features: ({ defaultFeatures }) => [
+          ...defaultFeatures,
+          BlocksFeature({ blocks: [
+            CategoryServicesBlock,
+            {
+              slug: 'callback-form',
+              interfaceName: 'CallbackFormBlock',
+              labels: { singular: 'Заказать звонок', plural: 'Формы обратной связи' },
+              fields: [],
+            },
+          ] }),
+        ],
+      }),
+    },
     { name: 'seoTitle', type: 'text', label: 'SEO title' },
     { name: 'seoDescription', type: 'textarea', label: 'SEO description' },
     { name: 'ogImage', type: 'upload', relationTo: 'media', label: 'Open Graph изображение' },
