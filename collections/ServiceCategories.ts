@@ -20,7 +20,8 @@ export const ServiceCategories: CollectionConfig = {
       type: 'relationship',
       relationTo: 'pages',
       label: 'Страница категории',
-      filterOptions: { _status: { equals: 'published' } },
+      filterOptions: ({ siblingData }) =>
+        (siblingData as { active?: boolean })?.active === false || { _status: { equals: 'published' } },
       admin: { allowCreate: true, allowEdit: true },
     },
     {
@@ -42,12 +43,22 @@ export const CategoryServicesBlock: Block = {
   labels: { singular: 'Услуги категории', plural: 'Услуги категории' },
   fields: [
     {
+      name: 'layout',
+      type: 'select',
+      label: 'Представление',
+      defaultValue: 'list',
+      options: [
+        { value: 'list', label: 'Список услуг' },
+        { value: 'sections', label: 'Заголовки со ссылками и описаниями' },
+      ],
+    },
+    {
       name: 'category',
       type: 'relationship',
       relationTo: 'service-categories',
       required: true,
       label: 'Категория услуг',
-      filterOptions: { active: { equals: true } },
+      admin: { description: 'Раздел появится на сайте, когда категория активна и у услуг доступны страницы.' },
     },
   ],
 }

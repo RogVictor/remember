@@ -1,0 +1,5463 @@
+[
+  {
+    "kind": "category",
+    "category": {
+      "title": "Организация прощания",
+      "active": false
+    },
+    "page": {
+      "title": "Организация прощания",
+      "slug": "organizaciya-proshchaniya",
+      "_status": "draft",
+      "seoTitle": "Организация прощания в Москве и Московской области",
+      "seoDescription": "Как организовать прощание в Москве и Подмосковье. Выбор зала, порядок выступлений, помощь носильщиков и участие священника или музыкантов.",
+      "focusKeyword": "организация церемонии прощания в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "формат прощания с умершим"
+        },
+        {
+          "keyword": "порядок памятной церемонии"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "какой встречи хочет семья"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "mixed",
+      "seoNotes": "Основной запрос — «организация церемонии прощания в Москве». Раскрыть формат прощания с умершим; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "OfferCatalog",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/organizaciya-proshchaniya.webp",
+      "openGraph": {
+        "title": "Организация прощания — RitualGroup24",
+        "description": "Как организовать прощание в Москве и Подмосковье. Выбор зала, порядок выступлений, помощь носильщиков и участие священника или музыкантов.",
+        "image": "og/organizaciya-proshchaniya.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подготовка церемонии памяти в выбранном формате."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/organizaciya-proshchaniya.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какой встречи хочет семья"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Близкие могут выбрать несколько слов в тишине, богослужение по своей традиции или гражданскую церемонию с выступлениями. Сначала узнайте, кто хочет присутствовать рядом, кто предпочитает ждать вне зала и кто готов встречать гостей. Согласуйте с площадкой момент входа и выхода. Затем решите, нужны ли ведущий, живая музыка, перенос гроба и запись. Так заказ будет отражать желания семьи и реальные условия выбранного места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "category-services",
+                "category": "organizaciya-proshchaniya",
+                "layout": "sections"
+              }
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Камерное прощание без ведущего"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Небольшая семья может провести встречу сама. Попросите одного человека встретить гостей, другого — согласовать с площадкой выход и подачу машины. Подготовьте короткое приглашение пройти в зал и скажите, когда будет время для личного прощания. Если никто не хочет выступать публично, можно оставить тишину или согласованную музыку. Для такого формата особенно важны спокойный вход и отсутствие лишних объявлений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если выступления собирают несколько родственников"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите передать все пожелания одному человеку. Он уточнит, кого приглашать к слову обязательно, кто хочет прочитать текст другого участника и в какой части допустимы записи. Сверьте произношение имён до встречи. Если время зала ограничено, часть воспоминаний можно передать в семейный архив или произнести позднее за поминальным столом с согласия семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если гостям нужен общий переезд после прощания, заранее согласуйте "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "пассажирский транспорт"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "transport-dlya-rodstvennikov"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как составить программу, если длительность встречи ограничена"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните время, в которое зал станет доступен, и момент, к которому его нужно освободить. Внутри этого промежутка учтите вход и выход, переход к микрофону, включение музыки и паузы. Выберите несколько эпизодов, которые особенно важны семье, а остальные оставьте для следующей встречи или личного архива. Назначьте того, кто спокойно сообщит участникам о сокращении программы, если начало сдвинется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать при оформлении цветами"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку, где допускаются композиции и какие подставки она предоставляет. Назовите габариты и число крупных венков, уточните, куда их переместят после окончания и чей транспорт их заберёт. Проход носильщиков и место для участников должны оставаться свободными. Если родственники приносят свои цветы, назначьте встречающего, который подскажет, где их оставить, не отвлекая семью от прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что проверить на пробе звука"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите включить микрофон и короткий фрагмент музыки на той громкости, которая будет использоваться. Послушайте его из последнего ряда и у места семьи. Слова должны оставаться разборчивыми без резкого начала. Для трансляции проверьте звук отдельно на устройстве удалённого слушателя. Договоритесь, у кого будет резервный файл и кто сможет сразу остановить воспроизведение по просьбе близких."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если семья пока не выбрала между гражданской церемонией и службой, что можно подготовить?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните круг приглашённых, доступность зала и путь от места выдачи. Эти сведения нужны в обоих случаях. Отдельно спросите близких о воле умершего и дайте им время поговорить с общиной. Репертуар, речи и приглашение ведущего лучше подтвердить после выбора формата."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что сообщить людям, которые хотят приехать только на короткое прощание?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Укажите конкретный вход и период, когда можно подойти, если его подтвердила площадка. Объясните, где оставить цветы и куда пройти после выхода. Дайте контакт человека, который сможет ответить без участия ближайших родственников. В маленьком зале это также поможет избежать скопления людей у двери."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовить один экземпляр программы для исполнителей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите очередность событий, имя ответственного за каждый переход и понятный сигнал начала. Отметьте места, в которых нужно дождаться семьи, завершения речи или прибытия транспорта. Ведущему и музыкантам удобно видеть одну версию с датой последнего изменения. Семейные подробности в такой рабочий лист включать необязательно. Для гостей достаточно короткой памятки о месте и времени."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие сведения можно дать встречающему без семейных подробностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Гостям и водителю обычно достаточно адреса, входа, времени сбора и имени того, кто их встретит. Пришлите схему пути от остановки или парковки и поясните, в каком месте группа соберётся после выхода. Отдельно спросите у человека с ограниченной подвижностью, какая помощь ему нужна. Эти сведения с его согласия передают тому, кто поможет на месте, без рассылки личных обстоятельств всем участникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как организовать возвращение для тех, кто уедет раньше?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Выясните до поездки, кто останется на всю церемонию, а кому нужен короткий маршрут. Укажите отдельную точку высадки или ближайший доступный транспорт. На кладбище с несколькими воротами выберите один понятный выход и сообщите его водителю и пассажиру. Пожилому человеку лучше дать бумажную запись с адресом и номером близкого. Убедитесь, что у оставшейся группы сохраняется необходимое число мест."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как узнать, успеют ли близкие выступить?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите площадку обозначить фактически доступное время с учётом входа и выхода. Расставьте выступления по очереди и оставьте время на молчание и личное прощание. Подготовьте короткий вариант программы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если два гостя подготовили одинаковое воспоминание?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Ведущий может заранее предложить каждому свой эпизод, сохранив смысл обеих речей. Если совпадение обнаружилось уже на месте, необязательно прерывать говорящего. Следующему гостю можно тихо предложить короткое дополнение."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как пригласить людей, которые никогда не были на отпевании?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите адрес входа, ожидаемое время и к кому можно обратиться с вопросом на месте. Дайте гостям возможность присутствовать спокойно и оставить личное слово для семейной части церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать, если площадка меняется в последний момент?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите ответственному новый вход и условия подъезда, спросите, нужна ли повторная оценка прохода. До его ответа попросите гостей оставить свободное место у двери и не перемещать подставки самостоятельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Траурный зал",
+      "slug": "traurnyi-zal",
+      "sortOrder": 710,
+      "serviceCategory": "organizaciya-proshchaniya",
+      "summary": "Траурный зал выбирают по вместимости, доступности и времени, а не только по интерьеру. Важно уточнить, что входит в аренду. Сообщите число гостей, желаемую продолжительность, формат церемонии и потребности в доступности.",
+      "image": "images/traurnyi-zal.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Траурный зал",
+      "slug": "traurnyi-zal",
+      "_status": "draft",
+      "seoTitle": "Траурный зал в Москве и Московской области",
+      "seoDescription": "Как выбрать траурный зал. Вместимость, доступный вход, места для ожидания и фактическое время для личного прощания с учётом входа и выхода гостей.",
+      "focusKeyword": "траурный зал в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "выбор зала прощания"
+        },
+        {
+          "keyword": "места для гостей в траурном зале"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "зал глазами человека, который приедет впервые"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «траурный зал в Москве». Раскрыть выбор зала прощания; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/traurnyi-zal.webp",
+      "openGraph": {
+        "title": "Траурный зал — RitualGroup24",
+        "description": "Как выбрать траурный зал. Вместимость, доступный вход, места для ожидания и фактическое время для личного прощания с учётом входа и выхода гостей.",
+        "image": "og/traurnyi-zal.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подбор помещения для прощания. Траурный зал выбирают по вместимости, доступности и времени, а не только по интерьеру. Важно уточнить, что входит в аренду."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/traurnyi-zal.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Зал глазами человека, который приедет впервые"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Пройдите путь от ближайшей точки высадки до зала. Отметьте ступени, тяжёлую дверь, гардероб и место, где можно спокойно посидеть вне церемонии. Узнайте, открыта ли дверь между соседними залами, кто встречает гостей и где люди смогут подождать при задержке. Для большого круга приглашённых полезно согласовать очередность входа заранее."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите число гостей, желаемую продолжительность, формат церемонии и потребности в доступности."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/traurnyi-zal-extra-65.webp"
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/traurnyi-zal-extra-67.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отдельно уточняют аренду, дополнительное время, оборудование и оформление."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для светского памятного слова можно согласовать "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "гражданскую панихиду"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "grazhdanskaya-panihida"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как составить программу, если длительность встречи ограничена"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните время, в которое зал станет доступен, и момент, к которому его нужно освободить. Внутри этого промежутка учтите вход и выход, переход к микрофону, включение музыки и паузы. Выберите несколько эпизодов, которые особенно важны семье, а остальные оставьте для следующей встречи или личного архива. Назначьте того, кто спокойно сообщит участникам о сокращении программы, если начало сдвинется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать при оформлении цветами"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку, где допускаются композиции и какие подставки она предоставляет. Назовите габариты и число крупных венков, уточните, куда их переместят после окончания и чей транспорт их заберёт. Проход носильщиков и место для участников должны оставаться свободными. Если родственники приносят свои цветы, назначьте встречающего, который подскажет, где их оставить, не отвлекая семью от прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что проверить на пробе звука"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите включить микрофон и короткий фрагмент музыки на той громкости, которая будет использоваться. Послушайте его из последнего ряда и у места семьи. Слова должны оставаться разборчивыми без резкого начала. Для трансляции проверьте звук отдельно на устройстве удалённого слушателя. Договоритесь, у кого будет резервный файл и кто сможет сразу остановить воспроизведение по просьбе близких."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как узнать, успеют ли близкие выступить?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите площадку обозначить фактически доступное время с учётом входа и выхода. Расставьте выступления по очереди и оставьте время на молчание и личное прощание. Подготовьте короткий вариант программы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать при осмотре зала с ограниченным временем аренды?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните, входит ли в доступный промежуток расстановка цветов, проверка звука, сбор гостей и освобождение помещения. Спросите, можно ли проводить часть подготовки до начала и где спокойно дождаться приглашения. Сравнивайте варианты по времени, реально доступному близким внутри зала."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить доступность зала для слабослышащего гостя?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С его согласия выберите место, откуда видно лицо выступающего и хорошо слышно речь. Во время осмотра попросите проверить микрофон на обычной громкости. Если записи будут звучать через другую систему, уточните и её возможности. Оставьте проход свободным, чтобы человек мог пересесть."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие сведения можно дать встречающему без семейных подробностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Гостям и водителю обычно достаточно адреса, входа, времени сбора и имени того, кто их встретит. Пришлите схему пути от остановки или парковки и поясните, в каком месте группа соберётся после выхода. Отдельно спросите у человека с ограниченной подвижностью, какая помощь ему нужна. Эти сведения с его согласия передают тому, кто поможет на месте, без рассылки личных обстоятельств всем участникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как поступить, если родственнику трудно войти в зал?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите заранее выбрать, в какой части встречи он хочет участвовать. Можно дождаться остальных у выхода, зайти с близким позже или ограничиться личным словом в другом месте. Узнайте у площадки, есть ли спокойное пространство рядом и свободен ли путь к нему во время церемонии. Попросите одного человека быть на связи. Не обещайте всем родственникам одинаковую длительность доступа, пока учреждение не подтвердило порядок."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как организовать возвращение для тех, кто уедет раньше?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Выясните до поездки, кто останется на всю церемонию, а кому нужен короткий маршрут. Укажите отдельную точку высадки или ближайший доступный транспорт. На кладбище с несколькими воротами выберите один понятный выход и сообщите его водителю и пассажиру. Пожилому человеку лучше дать бумажную запись с адресом и номером близкого. Убедитесь, что у оставшейся группы сохраняется необходимое число мест."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует речь или музыку непосредственно на площадке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Семья выбирает личные слова и музыку в пределах правил конкретного места. Отправьте ответственному короткий план, список исполнителей и предполагаемую длительность. В храме программу согласуют с духовным представителем, в гражданском зале — с администрацией и ведущим. Принятые изменения передайте музыкантам и выступающим одновременно. Устная договорённость с одним участником может быть неизвестна тем, кто откроет зал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли принести фотографии?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласуйте правила площадки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предусмотрены ли места для сидения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте оснащение выбранного зала."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Гражданская панихида",
+      "slug": "grazhdanskaya-panihida",
+      "sortOrder": 720,
+      "serviceCategory": "organizaciya-proshchaniya",
+      "summary": "Гражданская панихида позволяет построить прощание вокруг воспоминаний, музыки и слов близких без обязательного религиозного сценария. Обсудите, кто хочет выступить, какие фотографии и музыку можно использовать и сколько времени отведено.",
+      "image": "images/grazhdanskaya-panihida.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Гражданская панихида",
+      "slug": "grazhdanskaya-panihida",
+      "_status": "draft",
+      "seoTitle": "Гражданская панихида в Москве и Московской области",
+      "seoDescription": "Подготовка гражданской панихиды. Семейные воспоминания, очередность выступлений, памятное слово от отсутствующего гостя и паузы для близких.",
+      "focusKeyword": "гражданская панихида в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "светская церемония прощания"
+        },
+        {
+          "keyword": "памятные речи близких"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "слова, которые семья хочет услышать"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «гражданская панихида в Москве». Раскрыть светская церемония прощания; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/grazhdanskaya-panihida.webp",
+      "openGraph": {
+        "title": "Гражданская панихида — RitualGroup24",
+        "description": "Подготовка гражданской панихиды. Семейные воспоминания, очередность выступлений, памятное слово от отсутствующего гостя и паузы для близких.",
+        "image": "og/grazhdanskaya-panihida.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Светская церемония памяти без обязательного религиозного обряда. Гражданская панихида позволяет построить прощание вокруг воспоминаний, музыки и слов близких без обязательного религиозного сценария."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/grazhdanskaya-panihida.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Слова, которые семья хочет услышать"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите родных, какое воспоминание лучше всего передаёт характер человека. Два конкретных эпизода о работе, доме или дружбе часто понятнее длинного перечня биографических дат. Передайте выступающим согласованную очередность и спросите, хотят ли они говорить сами. Человек может передать записку ведущему или отказаться от выступления уже в зале."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обсудите, кто хочет выступить, какие фотографии и музыку можно использовать и сколько времени отведено."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают зал, ведущего, оборудование и продолжительность."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Порядок выступлений и пауз можно согласовать с "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "церемониймейстером"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "ceremoniimeister"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что проверить на пробе звука"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите включить микрофон и короткий фрагмент музыки на той громкости, которая будет использоваться. Послушайте его из последнего ряда и у места семьи. Слова должны оставаться разборчивыми без резкого начала. Для трансляции проверьте звук отдельно на устройстве удалённого слушателя. Договоритесь, у кого будет резервный файл и кто сможет сразу остановить воспроизведение по просьбе близких."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сохранить семейные воспоминания с согласия участников"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните, для кого собирают записи, кому их передадут и разрешено ли дальнейшее копирование. Воспоминание, произнесённое за семейным столом, человек может не хотеть видеть в записи. Назначьте того, кто соберёт разрешённые материалы и исключит нежелательные фрагменты до передачи. Для пожилых близких спросите, в каком виде им удобнее получить результат — отдельную фотографию, аудиофайл или личную встречу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если два гостя подготовили одинаковое воспоминание?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Ведущий может заранее предложить каждому свой эпизод, сохранив смысл обеих речей. Если совпадение обнаружилось уже на месте, необязательно прерывать говорящего. Следующему гостю можно тихо предложить короткое дополнение."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нужна ли поминутная речь каждому приглашённому?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Заранее выясните, кто хочет говорить, и обозначьте примерную длительность выступления. Родственнику достаточно подготовить одно воспоминание или передать его другому человеку. Попросите ведущего оставить паузу после последней речи. Плотное расписание не должно вынуждать гостя выступать, если он передумал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как поступить с семейной фотографией в гражданской церемонии?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Выберите изображение, на показ которого согласны близкие, и уточните у площадки наличие стойки или экрана. Если на снимке есть другие люди, обсудите приемлемость показа. Согласуйте момент появления фотографии и человека, который заберёт оригинал или удалит рабочий файл после встречи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовить один экземпляр программы для исполнителей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите очередность событий, имя ответственного за каждый переход и понятный сигнал начала. Отметьте места, в которых нужно дождаться семьи, завершения речи или прибытия транспорта. Ведущему и музыкантам удобно видеть одну версию с датой последнего изменения. Семейные подробности в такой рабочий лист включать необязательно. Для гостей достаточно короткой памятки о месте и времени."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Где разместить оборудование, чтобы сохранить проход?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Вместе с представителем площадки пройдите путь от входа к первым рядам и выходу. Отметьте места для стойки микрофона, инструмента или камеры и отдельно место для человека с тростью или креслом. Уточните, кто вправе передвигать мебель и какие части помещения должны оставаться свободными. Перед началом попросите ответственных проверить проход ещё раз, когда появятся композиции с цветами и придут первые гости."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует речь или музыку непосредственно на площадке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Семья выбирает личные слова и музыку в пределах правил конкретного места. Отправьте ответственному короткий план, список исполнителей и предполагаемую длительность. В храме программу согласуют с духовным представителем, в гражданском зале — с администрацией и ведущим. Принятые изменения передайте музыкантам и выступающим одновременно. Устная договорённость с одним участником может быть неизвестна тем, кто откроет зал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как составить программу, если длительность встречи ограничена?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните время, в которое зал станет доступен, и момент, к которому его нужно освободить. Внутри этого промежутка учтите вход и выход, переход к микрофону, включение музыки и паузы. Выберите несколько эпизодов, которые особенно важны семье, а остальные оставьте для следующей встречи или личного архива. Назначьте того, кто спокойно сообщит участникам о сокращении программы, если начало сдвинется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обязателен ли ведущий?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нет, формат выбирает семья."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Могут ли выступить близкие?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Да, предусмотрите время в программе."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Отпевание",
+      "slug": "otpevanie",
+      "sortOrder": 730,
+      "serviceCategory": "organizaciya-proshchaniya",
+      "summary": "Отпевание относится к православной церковной практике; возможность и порядок совершения определяет священнослужитель, а не ритуальная компания. Свяжитесь с приходом, сообщите известные сведения и пожелания семьи, уточните место и время.",
+      "image": "images/otpevanie.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Отпевание",
+      "slug": "otpevanie",
+      "_status": "draft",
+      "seoTitle": "Отпевание в Москве и Московской области",
+      "seoDescription": "Как согласовать отпевание с приходом, выбрать время и подготовить приглашённых. Что обсудить со священником до заказа транспорта и зала.",
+      "focusKeyword": "организация отпевания в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "согласование отпевания с приходом"
+        },
+        {
+          "keyword": "отпевание перед погребением"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "разговор с приходом до брони зала"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «организация отпевания в Москве». Раскрыть согласование отпевания с приходом; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/otpevanie.webp",
+      "openGraph": {
+        "title": "Отпевание — RitualGroup24",
+        "description": "Как согласовать отпевание с приходом, выбрать время и подготовить приглашённых. Что обсудить со священником до заказа транспорта и зала.",
+        "image": "og/otpevanie.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласование православного заупокойного обряда. Отпевание относится к православной церковной практике; возможность и порядок совершения определяет священнослужитель, а не ритуальная компания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/otpevanie.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Разговор с приходом до брони зала"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Свяжитесь с приходом, к которому обращается семья. Объясните, где планируется прощание, как далеко место погребения и есть ли уже подтверждённое время. Возможность и порядок отпевания обсуждают со священником. Передайте ведущему момент перехода к молитве и заранее предупредите фотографа об ограничениях храма и семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Свяжитесь с приходом, сообщите известные сведения и пожелания семьи, уточните место и время."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/otpevanie-extra-21.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Разделите расходы на транспорт и организацию от вопросов пожертвований или условий прихода."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Остальные решения семьи описаны в разделе "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "о православных похоронах"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "pravoslavnye-pohorony"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как развести время религиозного обряда и время работы учреждения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите два независимых подтверждения. Представитель общины уточняет возможное время и порядок религиозной части, а администрация учреждения — выдачу, приём и доступ на территорию. Сопоставьте оба ответа с дорогой и временем для близких. Если одно окно не подходит, попросите общину помочь выбрать допустимый вариант и только затем передайте обновлённое расписание гостям. Один согласованный звонок не заменяет второго."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как договориться о съёмке во время религиозного прощания"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Задайте вопрос отдельно семье, духовному представителю и площадке. Даже когда камера допустима в здании, отдельные моменты или участники могут требовать полной приватности. Согласуйте общие планы, место для оператора и сигнал немедленной остановки. При сомнениях исключите спорный эпизод из программы съёмки. Родственникам, которые не приедут, можно передать личное сообщение или согласованную фотографию места после церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как помочь гостям с разными убеждениями"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В приглашении укажите, в какое время начинается общая часть, кто встретит у входа и когда можно будет подойти к семье. Уточните у общины простые правила посещения для тех, кто впервые будет присутствовать. Не требуйте от гостей объяснять свои убеждения или участвовать в действии, которое им незнакомо. Назначьте близкого, который сможет тихо помочь с вопросами на месте, не прерывая службу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как пригласить людей, которые никогда не были на отпевании?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите адрес входа, ожидаемое время и к кому можно обратиться с вопросом на месте. Дайте гостям возможность присутствовать спокойно и оставить личное слово для семейной части церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что уточнить, если отпевание планируют вне храма?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите приходу фактическое место, предполагаемое время и условия доступа. Возможность и уместный порядок определит священник после разговора с семьёй. Отдельно получите согласование площадки и сообщите ведущему границы этой части встречи. Не печатайте приглашение до подтверждения места служения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать просьбу родных о присутствии детей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите в приходе о продолжительности и условиях конкретной службы. Объясните сопровождающему взрослому, где можно стоять и выйти при необходимости. Близким стоит заранее решить, кто останется с ребёнком вне помещения, если ему будет трудно присутствовать. Присутствие каждого обсуждают индивидуально."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать участие духовного представителя в подготовке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала спросите у семьи, кого она хочет пригласить. Сообщите учреждению имя и роль этого человека и попросите объяснить, возможен ли доступ, в какое помещение и в какое время. Представитель общины может обсудить с ответственным сотрудником допустимые действия до начала подготовки. Пожелания, которые не удаётся выполнить на месте, обсудите с близкими заранее, чтобы осталось время выбрать другой порядок прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С чего начать, если родные не знают общины умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких друзей и родственников, говорил ли сам человек о приходе, мечети, синагоге или духовном наставнике. Когда связаться с привычной общиной не получается, расскажите об обстоятельствах представителю той общины, к которой семья собирается обратиться. Попросите назвать человека, уполномоченного обсудить порядок. Не выводите религиозную принадлежность и желаемый обряд только из фамилии или происхождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать до заказа принадлежностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расскажите представителю общины, где состоятся подготовка, прощание и погребение и какие решения уже приняты. Обсудите одежду, допустимое оформление, участие родственников и то, что подготовит сама община. Попросите отметить вещи, которые семья может принести из дома. Перед заказом в магазине сверьте список с учреждением и площадкой. Описание товара как «традиционного» само по себе не подтверждает, что он уместен в вашем случае."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли провести обряд вне храма?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Возможность определяет священнослужитель."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто отвечает на вопросы о допустимости обряда?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Священнослужитель выбранного прихода."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Носильщики",
+      "slug": "nosilshchiki",
+      "sortOrder": 740,
+      "serviceCategory": "organizaciya-proshchaniya",
+      "summary": "Работа носильщиков связана с безопасным перемещением гроба на согласованных участках маршрута. Количество людей зависит от условий и веса. Сообщите о лестницах, узких проходах, расстоянии до автомобиля и особенностях площадки.",
+      "image": "images/nosilshchiki.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Носильщики",
+      "slug": "nosilshchiki",
+      "_status": "draft",
+      "seoTitle": "Носильщики в Москве и Московской области",
+      "seoDescription": "Что сообщить бригаде носильщиков о маршруте и условиях переноса гроба. Двери, лестницы, встреча машины и передача между площадками.",
+      "focusKeyword": "носильщики гроба в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "перенос гроба на церемонии"
+        },
+        {
+          "keyword": "оценка прохода для бригады"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "перенос на разных участках маршрута"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «носильщики гроба в Москве». Раскрыть перенос гроба на церемонии; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/nosilshchiki.webp",
+      "openGraph": {
+        "title": "Носильщики — RitualGroup24",
+        "description": "Что сообщить бригаде носильщиков о маршруте и условиях переноса гроба. Двери, лестницы, встреча машины и передача между площадками.",
+        "image": "og/nosilshchiki.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Помощь в переносе гроба во время церемонии. Работа носильщиков связана с безопасным перемещением гроба на согласованных участках маршрута. Количество людей зависит от условий и веса."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/nosilshchiki.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Перенос на разных участках маршрута"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласуйте все точки, где понадобится помощь, от выхода из учреждения до места в зале, автомобиля и прохода на кладбище. Назовите ширину дверей, наличие ступеней, поворотов и покрытия дорожки. Руководитель бригады определяет безопасный способ переноса после оценки условий. Семье полезно знать, где её встретят и какие проходы оставить свободными."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите о лестницах, узких проходах, расстоянии до автомобиля и особенностях площадки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают число сотрудников, продолжительность и сложность доступа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Осмотр переходов и подвижных препятствий"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Покажите ответственному не только главный вход, но и тот путь, по которому фактически разрешат проход. На нём могут оказаться поворот за тамбуром, высокая ступень или временная стойка для венков. Уточните, кто откроет двери, кто сможет убрать стулья и где бригада дождётся сигнала от ведущего. Не рассчитывайте число людей по фотографии места. Исполнитель оценивает состав команды по реальным условиям и согласованному объёму. Попросите подтвердить его до оформления заказа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если близкий хочет участвовать в переносе"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите обсудить пожелание с руководителем бригады и администрацией площадки заранее. Оставьте человеку возможность передумать уже в день похорон. Его участие может принять другую форму: нести цветы, проводить старшего родственника, встретить семью у входа. Когда решение принято, сообщите его ведущему, чтобы тот не приглашал людей к переносу вслух без их согласия. На случай изменения маршрута у семьи должен быть один контакт человека, который отвечает за безопасность перемещения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передача между двумя бригадами"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если в здании и на кладбище работают разные люди, укажите в заказах точное место окончания первого переноса и начала второго. Спросите, кто встречает машину у ворот, знает ли он номер участка и как свяжется с водителем при задержке. Сверьте необходимость ожидания и повторного выезда для каждой команды отдельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Время подачи транспорта сверяют с "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "заказом катафалка"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "zakaz-katafalka"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать, если площадка меняется в последний момент?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите ответственному новый вход и условия подъезда, спросите, нужна ли повторная оценка прохода. До его ответа попросите гостей оставить свободное место у двери и не перемещать подставки самостоятельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто определит, возможно ли участие родственников вместе с бригадой?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите об этом пожелании до выезда. Ответственный за перенос оценивает маршрут, доступ и безопасное распределение ролей. Уточните, как участники поймут его команды и когда родственнику можно отказаться. Семья может выбрать и другую форму участия, если проход узкий или нужно преодолевать лестницу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что спросить при смене машины во время маршрута?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните, сохраняются ли высота и условия передачи, где встанет новый транспорт и кто подаст сигнал. Сообщите бригаде точные данные и контакт водителя. Встречающих гостей не следует направлять к месту манёвра. Если изменился въезд, заново согласуйте подход с ответственным на площадке."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие адреса нужны, кроме отметки на карте?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите улицу, корпус, назначение въезда и ориентир у двери. Узнайте, где разрешена остановка и можно ли подъехать достаточно близко для посадки или передачи вещей. У морга, храма и кладбища правила могут различаться. Если требуется пропуск, уточните, кто передаёт данные машины и к какому моменту. Отправьте маршрут водителю одной записью, указав порядок точек, а не несколькими сообщениями из разных переписок."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Где разместить венки, стойки и личные сумки?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала посчитайте людей и отдельно перечислите габаритные предметы. Покажите перевозчику размеры стоек, если они уже выбраны. Уточните, что допускается в салоне и что должно ехать отдельной доставкой. Оставьте проход и места посадки свободными. Для каждой крупной вещи назначьте получателя в конечной точке, иначе после высадки пассажиров она может остаться в машине, которая уже уезжает на другой адрес."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Где разместить оборудование, чтобы сохранить проход?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Вместе с представителем площадки пройдите путь от входа к первым рядам и выходу. Отметьте места для стойки микрофона, инструмента или камеры и отдельно место для человека с тростью или креслом. Уточните, кто вправе передвигать мебель и какие части помещения должны оставаться свободными. Перед началом попросите ответственных проверить проход ещё раз, когда появятся композиции с цветами и придут первые гости."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать при оформлении цветами?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку, где допускаются композиции и какие подставки она предоставляет. Назовите габариты и число крупных венков, уточните, куда их переместят после окончания и чей транспорт их заберёт. Проход носильщиков и место для участников должны оставаться свободными. Если родственники приносят свои цветы, назначьте встречающего, который подскажет, где их оставить, не отвлекая семью от прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Могут ли близкие участвовать?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Это согласуют с организатором с учетом безопасности."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нужна ли предварительная оценка маршрута?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Да, особенно при лестницах и узких проходах."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Могут ли родственники участвовать?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обсудите это с ответственным за безопасность."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Церемониймейстер",
+      "slug": "ceremoniimeister",
+      "sortOrder": 750,
+      "serviceCategory": "organizaciya-proshchaniya",
+      "summary": "Церемониймейстер ведет порядок прощания, помогает согласовать выступления и паузы, не заменяя священнослужителя или организатора всех похорон. Передайте согласованные имена, произношение, пожелания к тону и список выступающих.",
+      "image": "images/ceremoniimeister.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Церемониймейстер",
+      "slug": "ceremoniimeister",
+      "_status": "draft",
+      "seoTitle": "Церемониймейстер в Москве и Московской области",
+      "seoDescription": "Как подготовить сценарий для церемониймейстера. Имена и ударения, выступления близких, сигналы музыкантам и изменение программы на месте.",
+      "focusKeyword": "церемониймейстер на похороны в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "ведущий траурной церемонии"
+        },
+        {
+          "keyword": "сценарий для ведущего прощания"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "сценарий, в котором допустима тишина"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «церемониймейстер на похороны в Москве». Раскрыть ведущий траурной церемонии; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/ceremoniimeister.webp",
+      "openGraph": {
+        "title": "Церемониймейстер — RitualGroup24",
+        "description": "Как подготовить сценарий для церемониймейстера. Имена и ударения, выступления близких, сигналы музыкантам и изменение программы на месте.",
+        "image": "og/ceremoniimeister.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Ведение церемонии прощания с учетом пожеланий семьи. Церемониймейстер ведет порядок прощания, помогает согласовать выступления и паузы, не заменяя священнослужителя или организатора всех похорон."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/ceremoniimeister.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сценарий, в котором допустима тишина"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте ведущему лист с именами, ударениями, очередностью речей и темами, которые семья предпочитает оставить личными. Запишите, у кого спросить разрешение на изменение порядка уже во время прощания. Ведущий может заранее предложить нейтральный переход от музыки к молчанию, чтобы близким не пришлось принимать решение у микрофона."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте согласованные имена, произношение, пожелания к тону и список выступающих."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "На расчет влияют подготовка сценария, длительность и дополнительные площадки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если все речи составляют отдельную часть встречи, пригодится раздел "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "о гражданской панихиде"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "grazhdanskaya-panihida"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как составить программу, если длительность встречи ограничена"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните время, в которое зал станет доступен, и момент, к которому его нужно освободить. Внутри этого промежутка учтите вход и выход, переход к микрофону, включение музыки и паузы. Выберите несколько эпизодов, которые особенно важны семье, а остальные оставьте для следующей встречи или личного архива. Назначьте того, кто спокойно сообщит участникам о сокращении программы, если начало сдвинется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать при оформлении цветами"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку, где допускаются композиции и какие подставки она предоставляет. Назовите габариты и число крупных венков, уточните, куда их переместят после окончания и чей транспорт их заберёт. Проход носильщиков и место для участников должны оставаться свободными. Если родственники приносят свои цветы, назначьте встречающего, который подскажет, где их оставить, не отвлекая семью от прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сохранить семейные воспоминания с согласия участников"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните, для кого собирают записи, кому их передадут и разрешено ли дальнейшее копирование. Воспоминание, произнесённое за семейным столом, человек может не хотеть видеть в записи. Назначьте того, кто соберёт разрешённые материалы и исключит нежелательные фрагменты до передачи. Для пожилых близких спросите, в каком виде им удобнее получить результат — отдельную фотографию, аудиофайл или личную встречу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли передать обращение человека, который не приехал?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Договоритесь о длине сообщения и о том, кто его прочтёт. Для аудио нужна проверка слышимости в зале. Согласуйте, оставить ли запись у семьи или удалить рабочую копию после церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что дать ведущему вместо подробной биографии?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Напишите имя с ударением, короткое обращение от семьи, два важных воспоминания и темы, которых лучше не касаться. Укажите, чьи слова ведущий читает дословно. Этого достаточно для первого обсуждения сценария. Черновик можно проверить у родственника, который хорошо знал человека."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как заменить запланированную речь минутой молчания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Заранее согласуйте с ведущим тихий сигнал от представителя семьи. В сценарии обозначьте точку, где он сможет завершить музыкальный фрагмент и пригласить гостей помолчать. Не требуется объявлять в зале причину изменения. Следующему выступающему можно передать новую очерёдность лично."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовить один экземпляр программы для исполнителей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите очередность событий, имя ответственного за каждый переход и понятный сигнал начала. Отметьте места, в которых нужно дождаться семьи, завершения речи или прибытия транспорта. Ведущему и музыкантам удобно видеть одну версию с датой последнего изменения. Семейные подробности в такой рабочий лист включать необязательно. Для гостей достаточно короткой памятки о месте и времени."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие сведения можно дать встречающему без семейных подробностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Гостям и водителю обычно достаточно адреса, входа, времени сбора и имени того, кто их встретит. Пришлите схему пути от остановки или парковки и поясните, в каком месте группа соберётся после выхода. Отдельно спросите у человека с ограниченной подвижностью, какая помощь ему нужна. Эти сведения с его согласия передают тому, кто поможет на месте, без рассылки личных обстоятельств всем участникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует речь или музыку непосредственно на площадке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Семья выбирает личные слова и музыку в пределах правил конкретного места. Отправьте ответственному короткий план, список исполнителей и предполагаемую длительность. В храме программу согласуют с духовным представителем, в гражданском зале — с администрацией и ведущим. Принятые изменения передайте музыкантам и выступающим одновременно. Устная договорённость с одним участником может быть неизвестна тем, кто откроет зал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли согласовать текст заранее?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Да, это помогает избежать нежелательных формулировок."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли отказаться от длинной речи?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Формат определяется семьей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Оркестр",
+      "slug": "traurnyi-orkestr",
+      "sortOrder": 760,
+      "serviceCategory": "organizaciya-proshchaniya",
+      "summary": "Музыкальное сопровождение может быть камерным или оркестровым; выбор зависит от пожеланий семьи, акустики и правил места. Уточните предпочтения по репертуару, место выступления, длительность и ограничения по звуку.",
+      "image": "images/traurnyi-orkestr.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Траурный оркестр",
+      "slug": "traurnyi-orkestr",
+      "_status": "draft",
+      "seoTitle": "Траурный оркестр в Москве и Московской области",
+      "seoDescription": "Как согласовать траурный оркестр. Выбор произведений и аранжировок, размещение музыкантов, живая музыка в зале и резервный вариант для улицы.",
+      "focusKeyword": "траурный оркестр в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "живая музыка на похоронах"
+        },
+        {
+          "keyword": "репертуар траурных музыкантов"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "репертуар по моментам церемонии"
+        },
+        {
+          "keyword": "место"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «траурный оркестр в Москве». Раскрыть живая музыка на похоронах; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/traurnyi-orkestr.webp",
+      "openGraph": {
+        "title": "Траурный оркестр — RitualGroup24",
+        "description": "Как согласовать траурный оркестр. Выбор произведений и аранжировок, размещение музыкантов, живая музыка в зале и резервный вариант для улицы.",
+        "image": "og/traurnyi-orkestr.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Живое музыкальное сопровождение прощания. Музыкальное сопровождение может быть камерным или оркестровым; выбор зависит от пожеланий семьи, акустики и правил места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/traurnyi-orkestr.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Репертуар по моментам церемонии"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого музыкального фрагмента укажите название, исполнение или аранжировку и момент начала. Если близким знакома определённая версия, передайте ссылку или запись и уточните, возможна ли она для выбранного состава. Назначьте человека, который покажет знак начала и окончания. В паузе для личного прощания семья может предпочесть тишину."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните предпочтения по репертуару, место выступления, длительность и ограничения по звуку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают состав, длительность, выезд и необходимое оборудование."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Выбор версии произведения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Название мелодии может быть общим для оркестровой, вокальной и инструментальной версий. Дайте музыкантам ориентир для темпа и согласуйте, нужен ли полный номер или короткий фрагмент на вход и выход. Спросите, как закончить исполнение, если семья готова перейти к следующей части раньше. Если в программе одновременно есть запись и живой состав, уточните у площадки, кто отвечает за громкость и переключение. У ведущего останется возможность выдержать тишину, пока родственник говорит последние слова."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Переходы между речами и музыкой согласует "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "ведущий церемонии"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "ceremoniimeister"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что проверить на пробе звука"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите включить микрофон и короткий фрагмент музыки на той громкости, которая будет использоваться. Послушайте его из последнего ряда и у места семьи. Слова должны оставаться разборчивыми без резкого начала. Для трансляции проверьте звук отдельно на устройстве удалённого слушателя. Договоритесь, у кого будет резервный файл и кто сможет сразу остановить воспроизведение по просьбе близких."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовиться к смене погоды?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у площадки возможность укрытия, правила работы аппаратуры и резервный вариант без усиления или с записью. Решение о переносе музыкантов удобнее принять до сбора гостей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто подаст знак оркестру на выходе из зала?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Укажите в программе конкретного человека и видимый музыкантам сигнал. Сверьте, будет ли семья выходить сразу или сначала подойдут участники с цветами. Полезно проговорить короткое окончание произведения и более длинный вариант. Тогда изменение темпа выхода не потребует устных команд во время прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли исполнять музыку в небольшой комнате без усиления?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку о допустимой громкости, а музыкантов — о составе и возможностях конкретных инструментов. На пробе послушайте музыку с места ближайших родственников. Если звук заполняет всё помещение и мешает речи, обсудите меньший состав или короткое исполнение только на вход и выход."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовить один экземпляр программы для исполнителей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите очередность событий, имя ответственного за каждый переход и понятный сигнал начала. Отметьте места, в которых нужно дождаться семьи, завершения речи или прибытия транспорта. Ведущему и музыкантам удобно видеть одну версию с датой последнего изменения. Семейные подробности в такой рабочий лист включать необязательно. Для гостей достаточно короткой памятки о месте и времени."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Где разместить оборудование, чтобы сохранить проход?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Вместе с представителем площадки пройдите путь от входа к первым рядам и выходу. Отметьте места для стойки микрофона, инструмента или камеры и отдельно место для человека с тростью или креслом. Уточните, кто вправе передвигать мебель и какие части помещения должны оставаться свободными. Перед началом попросите ответственных проверить проход ещё раз, когда появятся композиции с цветами и придут первые гости."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует речь или музыку непосредственно на площадке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Семья выбирает личные слова и музыку в пределах правил конкретного места. Отправьте ответственному короткий план, список исполнителей и предполагаемую длительность. В храме программу согласуют с духовным представителем, в гражданском зале — с администрацией и ведущим. Принятые изменения передайте музыкантам и выступающим одновременно. Устная договорённость с одним участником может быть неизвестна тем, кто откроет зал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как составить программу, если длительность встречи ограничена?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните время, в которое зал станет доступен, и момент, к которому его нужно освободить. Внутри этого промежутка учтите вход и выход, переход к микрофону, включение музыки и паузы. Выберите несколько эпизодов, которые особенно важны семье, а остальные оставьте для следующей встречи или личного архива. Назначьте того, кто спокойно сообщит участникам о сокращении программы, если начало сдвинется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать при оформлении цветами?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку, где допускаются композиции и какие подставки она предоставляет. Назовите габариты и число крупных венков, уточните, куда их переместят после окончания и чей транспорт их заберёт. Проход носильщиков и место для участников должны оставаться свободными. Если родственники приносят свои цветы, назначьте встречающего, который подскажет, где их оставить, не отвлекая семью от прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли выбрать конкретное произведение?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните репертуар и возможность подготовки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли играть на улице?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывайте погоду и правила площадки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

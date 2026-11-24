@@ -1,0 +1,4737 @@
+[
+  {
+    "kind": "category",
+    "category": {
+      "title": "Мемориальные услуги",
+      "active": false
+    },
+    "page": {
+      "title": "Мемориальные услуги",
+      "slug": "memorialnye-uslugi",
+      "_status": "draft",
+      "seoTitle": "Мемориальные услуги в Москве и Московской области",
+      "seoDescription": "Уход и оформление места памяти. Как выбрать между уборкой, благоустройством, изготовлением и установкой памятника и принять результат на участке.",
+      "focusKeyword": "мемориальные услуги в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "план работ на семейном участке"
+        },
+        {
+          "keyword": "уход и оформление места памяти"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "составление задания для конкретного участка"
+        },
+        {
+          "keyword": "состояние участка"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "mixed",
+      "seoNotes": "Основной запрос — «мемориальные услуги в Москве». Раскрыть план работ на семейном участке; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "OfferCatalog",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/memorialnye-uslugi.webp",
+      "openGraph": {
+        "title": "Мемориальные услуги — RitualGroup24",
+        "description": "Уход и оформление места памяти. Как выбрать между уборкой, благоустройством, изготовлением и установкой памятника и принять результат на участке.",
+        "image": "og/memorialnye-uslugi.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сохранение и обустройство места памяти."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/memorialnye-uslugi.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составление задания для конкретного участка"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Начните с вида работ и состояния места. Для ухода нужен перечень того, что убрать и сохранить, для нового памятника — проверенный текст и согласованные размеры, для установки — осмотр доступа и основания. Разделите семейные пожелания по очередности: безопасность и свободный проход, сохранение имеющегося, затем новое оформление. Если заказ оформляют дистанционно, попросите исполнителя показать один общий вид с подходом к участку и несколько кадров важных деталей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "category-services",
+                "category": "memorialnye-uslugi",
+                "layout": "sections"
+              }
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Хранение эскизов и актов"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "После работ оставьте в семейном архиве одобренный эскиз, размеры, название материала и контакт исполнителя. Через несколько сезонов эта запись поможет подобрать уход, заменить отдельный элемент или добавить надпись. Если работы принимал другой родственник, передайте ему копию фотографий и отметьте, где лежит документ с окончательным перечнем выполненного."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/memorialnye-uslugi-extra-11.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда участком занимаются две семьи"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните сведения об ответственном за место и попросите близких согласовать общий перечень изменений до заказа. Для одной стороны важны старые посадки, для другой — доступ к соседней плите. Отметьте обе просьбы на схеме и отдельно согласуйте судьбу каждого памятного предмета. Даже при общей оплате исполнителю нужен понятный ответ, кто утверждает эскиз и кто принимает результат."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/memorialnye-uslugi-extra-25.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Постепенное оформление участка"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если большой проект пока не нужен, начните с осмотра и задания на безопасный уход. Сохраните фотографии и схему, чтобы позже обсудить покрытие или памятник с учётом уже сделанного. Узнайте, какие элементы можно установить независимо, а какие требуют единого основания. Такой порядок позволяет избежать ситуации, когда недавно уложенную плитку приходится разбирать ради следующего этапа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Порядок доступа и полномочия ответственного за место можно уточнить в разделе "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "о кладбищенских услугах"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "kladbishchenskie-uslugi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что полезно оставить родственнику, который будет заниматься участком после вас?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте схему, размеры деталей, перечень растений, сведения о материале памятника и контакт исполнителя. Отметьте, где лежат согласованные эскизы и бумаги по месту. Это поможет отделить обычный уход от ремонта, когда спустя несколько лет понадобится заменить вазу или добавить надпись."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как выбрать между разовым выездом и работой над новым оформлением?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите показать фактическое состояние участка. Если нужно только убрать растительные остатки и привести цветник в порядок, задачу можно описать перечнем действий. Если меняются размеры, покрытия или надгробие, нужен согласованный проект. Семье удобно принимать эти решения в разное время."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто уберёт упаковку и остатки после работ?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В задании перечислите, что останется на участке, что нужно передать семье и что разрешено вывезти. Старая ваза, табличка или садовый инструмент могут иметь для близких ценность. Уточните, где находятся разрешённые места сбора и включён ли вывоз крупных остатков. При дистанционной приёмке попросите общий снимок участка и прохода. Если какой-то предмет остаётся временно, отметьте ответственного за следующую поездку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать изменение размеров после осмотра?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите исполнителя отметить причину прямо на эскизе. Это может быть граница участка, препятствие для прохода или состояние основания. Зафиксируйте исходный и предложенный размер, влияние на внешний вид, комплектность и стоимость. Новый вариант должен согласовать человек, который утвердил заказ. Если изготовление и монтаж ведут разные исполнители, передайте одинаковую редакцию обоим до резки камня или подготовки основания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как принимать работу, выполненную в несколько этапов?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого этапа запишите измеримый результат и способ его проверить. Для эскиза это утверждённая надпись и размеры, для поставки — состояние деталей, для работ на участке — соответствие схеме и свободный проход. Не объединяйте приёмку скрытых и видимых частей в один финальный снимок. Попросите зафиксировать этап, который позже закроет облицовка, и получить рекомендации по дальнейшему уходу за конкретным материалом."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать работы к семейной дате?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала решите, что должно быть готово к посещению, а что можно выполнить позже. Уборка дорожки и цветы не требуют того же согласования, что изменение покрытия или установка сооружения. Обсудите влияние погоды, режима доступа и состояния участка. Если дата особенно важна, заранее предусмотрите скромный резервный вариант и согласуйте его с родственником. Не обещайте участникам увидеть законченное оформление до подтверждения исполнителя."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить состояние участка до и после ухода?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите общий вид с одной и той же стороны, снимок прохода и отдельный кадр оговорённой проблемной зоны. Избегайте публикации имён на соседних памятниках. На фотографиях можно отметить оставшиеся задачи для следующего посещения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать сохранение старого цветника?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нанесите его контур на утверждаемый эскиз и укажите, какие растения остаются. Спросите, как защитят корни при доставке материалов и какие посадки придётся временно переместить. Решение запишите до начала работ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как оставить место для будущей надписи?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обсудите это в момент выбора размера стелы. Попросите показать свободное поле на утверждаемом макете и уточните, как позднее выполнить дополнительную работу с учётом доступа к участку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что зафиксировать при приёмке установки?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Общий вид памятника, положение элементов относительно утверждённого эскиза, состояние швов, покрытия и свободного прохода. Получите рекомендации по первому уходу и контакт, по которому принимают замечания с фотографиями."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если выбранных цветов к дате не будет?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите допустимые оттенки и виды замены или прямо попросите сначала связаться с семьёй. Для памятной композиции важен также размер вазы и возможность закрепить букет по правилам кладбища."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Уход за могилами",
+      "slug": "uhod-za-mogilami",
+      "sortOrder": 910,
+      "serviceCategory": "memorialnye-uslugi",
+      "summary": "Уход за могилой отличается от капитального благоустройства: уборка не должна незаметно превращаться в ремонт или демонтаж памятника. Уточните кладбище, участок, состояние места и желаемую периодичность посещений.",
+      "image": "images/uhod-za-mogilami.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Уход за могилами",
+      "slug": "uhod-za-mogilami",
+      "_status": "draft",
+      "seoTitle": "Уход за могилами в Москве и Московской области",
+      "seoDescription": "Как заказать уход за могилой в Москве и области. Разовая или сезонная уборка, сохранение растений и личных вещей, приёмка по фотографиям.",
+      "focusKeyword": "уход за могилами в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "сезонная уборка захоронения"
+        },
+        {
+          "keyword": "удалённая приёмка ухода за участком"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "что сохранить во время уборки"
+        },
+        {
+          "keyword": "состояние участка"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «уход за могилами в Москве». Раскрыть сезонная уборка захоронения; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/uhod-za-mogilami.webp",
+      "openGraph": {
+        "title": "Уход за могилами — RitualGroup24",
+        "description": "Как заказать уход за могилой в Москве и области. Разовая или сезонная уборка, сохранение растений и личных вещей, приёмка по фотографиям.",
+        "image": "og/uhod-za-mogilami.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Разовый или регулярный уход за захоронением. Уход за могилой отличается от капитального благоустройства: уборка не должна незаметно превращаться в ремонт или демонтаж памятника."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/uhod-za-mogilami.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что сохранить во время уборки"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите родных отметить на снимке растения, которые посадила семья, памятные предметы и старые таблички. На сезонном участке молодые многолетники легко принять за сорную поросль. Подпишите также зоны, к которым нельзя прикасаться, например расшатанный фрагмент облицовки. Для деликатной поверхности уточните способ очистки и возможность пробы на незаметном месте."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните кладбище, участок, состояние места и желаемую периодичность посещений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/uhod-za-mogilami-extra-31.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают площадь, загрязнение, сезон и частоту посещений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уход в разные сезоны"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Весной попросите сначала оценить состояние дорожки и устойчивость предметов после снега. Летом обсудите полив и то, как часто семья реально сможет приезжать. Осенью имеет смысл заранее решить, какие растения и памятные композиции оставить. Одинаковый перечень на весь год может включать лишние работы. Попросите привязать конкретный выезд к состоянию участка и возможности доступа в выбранный день."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда уборку лучше остановить"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если при осмотре обнаружена подвижная плита, накренившийся памятник или разрушившееся крепление, уточните у ответственного, какие зоны безопасно обслужить. Попросите обозначить проблему на фотографии и отдельно согласуйте осмотр для ремонта. Переставлять тяжёлый элемент в рамках обычной уборки не следует."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Замена покрытия и постоянных элементов относится к "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "благоустройству захоронения"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "blagoustroistvo-zahoronenii"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить состояние участка до и после ухода?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите общий вид с одной и той же стороны, снимок прохода и отдельный кадр оговорённой проблемной зоны. Избегайте публикации имён на соседних памятниках. На фотографиях можно отметить оставшиеся задачи для следующего посещения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что отмечать в задании на очистку старого памятника?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назовите материал, если он известен, покажите надписи, портрет и ослабленные элементы. Попросите объяснить, какие зоны исполнитель сможет безопасно обработать и где понадобится консультация мастера. Не включайте восстановление букв или перемещение плиты в обычную мойку без отдельного согласования."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать пожелание сохранить старые посадки?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отметьте их на фотографии или простой схеме, назовите вид растения, если он известен, и сообщите, где весной могут появиться новые побеги. Для спорных участков оставьте указание остановиться и уточнить у семьи. При разовой уборке полезнее сохранить сомнительный куст, чем удалить памятное растение без решения близких."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие фотографии нужны для осмысленного задания исполнителю?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Снимите общий вид участка от входа, проход между элементами и отдельно предмет, с которым предстоит работать. Добавьте ориентир масштаба или точные размеры при наличии, отметьте хрупкие детали и желаемые изменения. Снимок крупным планом не показывает, сможет ли человек пройти рядом или занести материалы. Согласуйте дату снимков и выясните необходимость осмотра на месте. Фотографии соседних надписей не требуется рассылать."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как отличить обслуживание от изменения сооружения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Опишите желаемый результат конкретно. Очистка поверхности, замена плиты, перемещение стелы и переустройство основания требуют разного подхода. Узнайте в администрации, какие действия допустимы и как допускают подрядчика на территорию. Попросите исполнителя разделить согласованные этапы в заказе. Тогда семья сможет принять, например, сезонную уборку отдельно от более позднего ремонта и не оплачивать неутверждённую замену деталей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто уберёт упаковку и остатки после работ?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В задании перечислите, что останется на участке, что нужно передать семье и что разрешено вывезти. Старая ваза, табличка или садовый инструмент могут иметь для близких ценность. Уточните, где находятся разрешённые места сбора и включён ли вывоз крупных остатков. При дистанционной приёмке попросите общий снимок участка и прохода. Если какой-то предмет остаётся временно, отметьте ответственного за следующую поездку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как принимать работу, выполненную в несколько этапов?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого этапа запишите измеримый результат и способ его проверить. Для эскиза это утверждённая надпись и размеры, для поставки — состояние деталей, для работ на участке — соответствие схеме и свободный проход. Не объединяйте приёмку скрытых и видимых частей в один финальный снимок. Попросите зафиксировать этап, который позже закроет облицовка, и получить рекомендации по дальнейшему уходу за конкретным материалом."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать работы к семейной дате?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала решите, что должно быть готово к посещению, а что можно выполнить позже. Уборка дорожки и цветы не требуют того же согласования, что изменение покрытия или установка сооружения. Обсудите влияние погоды, режима доступа и состояния участка. Если дата особенно важна, заранее предусмотрите скромный резервный вариант и согласуйте его с родственником. Не обещайте участникам увидеть законченное оформление до подтверждения исполнителя."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли заказать удаленно?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните возможность по данным участка."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить результат?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласуйте формат фотоотчета заранее."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Благоустройство",
+      "slug": "blagoustroistvo-zahoronenii",
+      "sortOrder": 920,
+      "serviceCategory": "memorialnye-uslugi",
+      "summary": "Благоустройство включает изменения участка, поэтому необходимо учитывать его границы, состояние грунта и требования кладбища. Подготовьте фотографии, размеры, пожелания к покрытию и сведения о существующих сооружениях.",
+      "image": "images/blagoustroistvo-zahoronenii.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Благоустройство захоронений",
+      "slug": "blagoustroistvo-zahoronenii",
+      "_status": "draft",
+      "seoTitle": "Благоустройство захоронений в Москве и Московской области",
+      "seoDescription": "Как составить план благоустройства захоронения. Размеры участка, проход, устройство цветника и покрытия, согласование изменений после осмотра.",
+      "focusKeyword": "благоустройство захоронения в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "эскиз покрытия и цветника"
+        },
+        {
+          "keyword": "сохранение элементов участка"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "план участка с учётом будущих посещений"
+        },
+        {
+          "keyword": "состояние участка"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «благоустройство захоронения в Москве». Раскрыть эскиз покрытия и цветника; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/blagoustroistvo-zahoronenii.webp",
+      "openGraph": {
+        "title": "Благоустройство захоронений — RitualGroup24",
+        "description": "Как составить план благоустройства захоронения. Размеры участка, проход, устройство цветника и покрытия, согласование изменений после осмотра.",
+        "image": "og/blagoustroistvo-zahoronenii.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Благоустройство участка захоронения. Благоустройство включает изменения участка, поэтому необходимо учитывать его границы, состояние грунта и требования кладбища."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/blagoustroistvo-zahoronenii.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "План участка с учётом будущих посещений"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отметьте на схеме существующий памятник, цветник, вход и место, где человек сможет развернуться с садовым инвентарём. Продумайте, куда стекает вода и как открывается калитка. Проверьте границы у администрации до выбора размеров плит. Сравните варианты по возможности ухода зимой и замены отдельного элемента при повреждении."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подготовьте фотографии, размеры, пожелания к покрытию и сведения о существующих сооружениях."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "На расчет влияют площадь, основание, материалы, доставка и демонтаж."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для сезонного обслуживания после работ подойдёт "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "уход за могилой"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "uhod-za-mogilami"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто уберёт упаковку и остатки после работ"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В задании перечислите, что останется на участке, что нужно передать семье и что разрешено вывезти. Старая ваза, табличка или садовый инструмент могут иметь для близких ценность. Уточните, где находятся разрешённые места сбора и включён ли вывоз крупных остатков. При дистанционной приёмке попросите общий снимок участка и прохода. Если какой-то предмет остаётся временно, отметьте ответственного за следующую поездку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать изменение размеров после осмотра"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите исполнителя отметить причину прямо на эскизе. Это может быть граница участка, препятствие для прохода или состояние основания. Зафиксируйте исходный и предложенный размер, влияние на внешний вид, комплектность и стоимость. Новый вариант должен согласовать человек, который утвердил заказ. Если изготовление и монтаж ведут разные исполнители, передайте одинаковую редакцию обоим до резки камня или подготовки основания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как принимать работу, выполненную в несколько этапов"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого этапа запишите измеримый результат и способ его проверить. Для эскиза это утверждённая надпись и размеры, для поставки — состояние деталей, для работ на участке — соответствие схеме и свободный проход. Не объединяйте приёмку скрытых и видимых частей в один финальный снимок. Попросите зафиксировать этап, который позже закроет облицовка, и получить рекомендации по дальнейшему уходу за конкретным материалом."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать сохранение старого цветника?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нанесите его контур на утверждаемый эскиз и укажите, какие растения остаются. Спросите, как защитят корни при доставке материалов и какие посадки придётся временно переместить. Решение запишите до начала работ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как выбрать покрытие для участка, который редко посещают?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сравните варианты по уходу за швами, возможности убрать листья и заменить отдельный элемент. Уточните, что произойдёт с отводом воды и сохранится ли доступ к памятнику. Попросите показать на схеме вход и место, где человек сможет поставить сумку или инвентарь, не наступая на цветник."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что нанести на эскиз до выбора материалов?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Границы, подтверждённые администрацией, размеры уже установленных элементов, положение калитки и направление прохода. Отметьте уклон и места, которые семья хочет сохранить. После этого сравните размеры предлагаемых плит с доступной площадью. Внешний образец без плана участка для такого выбора недостаточен."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как зафиксировать, что подрядчик может перемещать на участке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Во время осмотра отметьте на фотографии то, что остаётся на месте, что временно снимают и что семья разрешает вывезти. Отдельно запишите состояние старых креплений, ограды и плит. Укажите место хранения снятых деталей и ответственного за их возвращение. Если одна из деталей может разрушиться при демонтаже, согласуйте порядок действий с заказчиком до начала работ. Для соседней территории уточните границы у администрации."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто отвечает за состояние дорожки и соседнего места после работ?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До начала попросите показать путь доставки материалов и место для временного складирования. Уточните у администрации, где можно поставить оборудование и куда вывозить остатки. Зафиксируйте состояние смежной территории на общих снимках. При передаче результата проверьте свободный проход и отсутствие материалов на чужой территории. Замечание с датой и фотографией передайте ответственному исполнителю, сохранив копию у семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие фотографии нужны для осмысленного задания исполнителю?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Снимите общий вид участка от входа, проход между элементами и отдельно предмет, с которым предстоит работать. Добавьте ориентир масштаба или точные размеры при наличии, отметьте хрупкие детали и желаемые изменения. Снимок крупным планом не показывает, сможет ли человек пройти рядом или занести материалы. Согласуйте дату снимков и выясните необходимость осмотра на месте. Фотографии соседних надписей не требуется рассылать."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как отличить обслуживание от изменения сооружения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Опишите желаемый результат конкретно. Очистка поверхности, замена плиты, перемещение стелы и переустройство основания требуют разного подхода. Узнайте в администрации, какие действия допустимы и как допускают подрядчика на территорию. Попросите исполнителя разделить согласованные этапы в заказе. Тогда семья сможет принять, например, сезонную уборку отдельно от более позднего ремонта и не оплачивать неутверждённую замену деталей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли изменить ограду?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте допустимые размеры и разрешения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда лучше проводить работы?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывайте сезон и состояние грунта."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Изготовление памятников",
+      "slug": "izgotovlenie-pamyatnikov",
+      "sortOrder": 930,
+      "serviceCategory": "memorialnye-uslugi",
+      "summary": "При изготовлении памятника важно сначала согласовать эскиз, размеры и надписи. Ошибки в именах и датах лучше исключить до обработки материала. Подготовьте точное написание имен, даты, фотографии и требования кладбища к размерам.",
+      "image": "images/izgotovlenie-pamyatnikov.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Изготовление памятников",
+      "slug": "izgotovlenie-pamyatnikov",
+      "_status": "draft",
+      "seoTitle": "Изготовление памятников в Москве и Московской области",
+      "seoDescription": "Изготовление памятника в Москве и области. Как выбрать фотографию, проверить надпись на макете и передать готовые детали установщику.",
+      "focusKeyword": "изготовление памятника на могилу в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "макет надписи на стеле"
+        },
+        {
+          "keyword": "согласование портрета для камня"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "как утвердить надпись и портрет"
+        },
+        {
+          "keyword": "состояние участка"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «изготовление памятника на могилу в Москве». Раскрыть макет надписи на стеле; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/izgotovlenie-pamyatnikov.webp",
+      "openGraph": {
+        "title": "Изготовление памятников — RitualGroup24",
+        "description": "Изготовление памятника в Москве и области. Как выбрать фотографию, проверить надпись на макете и передать готовые детали установщику.",
+        "image": "og/izgotovlenie-pamyatnikov.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подготовка индивидуального надгробного памятника. При изготовлении памятника важно сначала согласовать эскиз, размеры и надписи. Ошибки в именах и датах лучше исключить до обработки материала."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/izgotovlenie-pamyatnikov.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как утвердить надпись и портрет"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте надпись одним текстом с прописными буквами, датами и знаками препинания. Попросите макет в масштабе и проверьте расположение строк вместе с родственником. Для портрета лучше исходный файл или оригинальная фотография, чем переснятая распечатка. Уточните, какие детали можно восстановить и покажут ли семье образец до переноса изображения на камень."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подготовьте точное написание имен, даты, фотографии и требования кладбища к размерам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают материал, размеры, обработку, гравировку и доставку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Портрет, который узнают близкие"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите родных вместе выбрать один исходный снимок. Для оценки пригодятся резкость глаз, видимые контуры лица и отсутствие бликов. Если другого изображения нет, сообщите об этом мастерской и попросите показать, как будет выглядеть обработанная версия. Не утверждайте портрет только по маленькой картинке в переписке. Посмотрите его в предполагаемом размере, при возможности на пробе материала. Отдельно согласуйте одежду, фон и допустимую ретушь: близким важнее сходство с человеком, чем условно идеальное изображение."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Две проверки текста перед изготовлением"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Первый человек сверяет фамилию, имя, отчество и даты с семейными документами. Второй читает весь текст уже на макете, включая разбивку строк, знаки и расстояния между буквами. Для текста на другом языке привлеките человека, которому доверяет семья. Согласованный файл датируйте. Если меняется даже одна цифра, попросите новый полный макет и подтвердите его повторно. Такой порядок особенно важен, когда договор подписывает один родственник, а надпись согласуют несколько."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передача готовой стелы установщику"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До выдачи узнайте габариты и массу каждой детали, комплектность и способ упаковки. Передайте эти сведения мастеру по установке, который осматривал участок. Сверьте сроки хранения и доступность транспорта для разгрузки у кладбища. Если установку откладывают, уточните у мастерской допустимые условия хранения и порядок осмотра при получении. Зафиксируйте на снимках кромки и поверхность изделия до передачи следующему исполнителю."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Одна надпись на нескольких деталях"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если портрет и текст размещают на разных элементах, посмотрите общий эскиз в собранном виде. Проверьте, не закрывает ли цветник часть строки и читается ли текст с доступной стороны дорожки. Эти изменения проще обсудить до утверждения размеров."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Размер и массу изделия важно передать исполнителю "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "установки памятника"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "ustanovka-pamyatnikov"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как оставить место для будущей надписи?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обсудите это в момент выбора размера стелы. Попросите показать свободное поле на утверждаемом макете и уточните, как позднее выполнить дополнительную работу с учётом доступа к участку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать нестандартное написание имени?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте мастерской утверждённый семьёй текст в одном файле. Если используются две письменности или редкий знак, проверьте, поддерживает ли шрифт нужные буквы, и попросите макет всей надписи, а не отдельного слова. Подтвердите расположение и начертание до начала переноса на камень."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что из мастерской пригодится при дальнейшем уходе?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите точное название материала и вида обработки поверхности, рекомендуемый способ очистки и ограничения для портрета и надписей. Сохраните эскиз с размерами. Позднее эти сведения помогут подобрать совместимый элемент и объяснить задачу другому мастеру без повторных замеров всей композиции."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как отличить обслуживание от изменения сооружения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Опишите желаемый результат конкретно. Очистка поверхности, замена плиты, перемещение стелы и переустройство основания требуют разного подхода. Узнайте в администрации, какие действия допустимы и как допускают подрядчика на территорию. Попросите исполнителя разделить согласованные этапы в заказе. Тогда семья сможет принять, например, сезонную уборку отдельно от более позднего ремонта и не оплачивать неутверждённую замену деталей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать изменение размеров после осмотра?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите исполнителя отметить причину прямо на эскизе. Это может быть граница участка, препятствие для прохода или состояние основания. Зафиксируйте исходный и предложенный размер, влияние на внешний вид, комплектность и стоимость. Новый вариант должен согласовать человек, который утвердил заказ. Если изготовление и монтаж ведут разные исполнители, передайте одинаковую редакцию обоим до резки камня или подготовки основания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как принимать работу, выполненную в несколько этапов?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого этапа запишите измеримый результат и способ его проверить. Для эскиза это утверждённая надпись и размеры, для поставки — состояние деталей, для работ на участке — соответствие схеме и свободный проход. Не объединяйте приёмку скрытых и видимых частей в один финальный снимок. Попросите зафиксировать этап, который позже закроет облицовка, и получить рекомендации по дальнейшему уходу за конкретным материалом."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли утвердить эскиз?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Да, до начала изготовления."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить надпись?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сверьте имена и даты с документами семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли заказать только изготовление?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните состав договора и условия передачи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Входит ли установка в цену?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте это отдельной строкой сметы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Установка памятников",
+      "slug": "ustanovka-pamyatnikov",
+      "sortOrder": 940,
+      "serviceCategory": "memorialnye-uslugi",
+      "summary": "Монтаж памятника требует оценки основания, веса конструкции и состояния грунта. Даже готовый памятник нельзя устанавливать без учета правил участка. Сообщите размеры и вес изделия, состояние основания, данные кладбища и доступ для доставки.",
+      "image": "images/ustanovka-pamyatnikov.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Установка памятников",
+      "slug": "ustanovka-pamyatnikov",
+      "_status": "draft",
+      "seoTitle": "Установка памятников в Москве и Московской области",
+      "seoDescription": "Как подготовить участок к установке памятника. Осмотр основания, приём деталей из мастерской, доступ для монтажа и проверка результата.",
+      "focusKeyword": "установка памятника на кладбище в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "монтаж готового надгробия"
+        },
+        {
+          "keyword": "приёмка основания и стелы"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "приём изделия перед монтажом"
+        },
+        {
+          "keyword": "состояние участка"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «установка памятника на кладбище в Москве». Раскрыть монтаж готового надгробия; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/ustanovka-pamyatnikov.webp",
+      "openGraph": {
+        "title": "Установка памятников — RitualGroup24",
+        "description": "Как подготовить участок к установке памятника. Осмотр основания, приём деталей из мастерской, доступ для монтажа и проверка результата.",
+        "image": "og/ustanovka-pamyatnikov.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Монтаж памятника на подготовленном основании. Монтаж памятника требует оценки основания, веса конструкции и состояния грунта. Даже готовый памятник нельзя устанавливать без учета правил участка."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/ustanovka-pamyatnikov.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Приём изделия перед монтажом"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сверьте маркировку деталей, состояние кромок и комплектность с документом от мастерской. Спросите, кто принимает камень при доставке и отвечает за хранение до монтажа. При осмотре участка исполнитель уточняет размеры основания, устойчивость грунта и доступ оборудования. Не назначайте дату по одному только возрасту захоронения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите размеры и вес изделия, состояние основания, данные кладбища и доступ для доставки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают основание, доставку, вес, доступ и дополнительные работы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если изделие ещё в работе, согласуйте размеры на этапе "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "изготовления памятника"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "izgotovlenie-pamyatnikov"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто уберёт упаковку и остатки после работ"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В задании перечислите, что останется на участке, что нужно передать семье и что разрешено вывезти. Старая ваза, табличка или садовый инструмент могут иметь для близких ценность. Уточните, где находятся разрешённые места сбора и включён ли вывоз крупных остатков. При дистанционной приёмке попросите общий снимок участка и прохода. Если какой-то предмет остаётся временно, отметьте ответственного за следующую поездку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать изменение размеров после осмотра"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите исполнителя отметить причину прямо на эскизе. Это может быть граница участка, препятствие для прохода или состояние основания. Зафиксируйте исходный и предложенный размер, влияние на внешний вид, комплектность и стоимость. Новый вариант должен согласовать человек, который утвердил заказ. Если изготовление и монтаж ведут разные исполнители, передайте одинаковую редакцию обоим до резки камня или подготовки основания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как принимать работу, выполненную в несколько этапов"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого этапа запишите измеримый результат и способ его проверить. Для эскиза это утверждённая надпись и размеры, для поставки — состояние деталей, для работ на участке — соответствие схеме и свободный проход. Не объединяйте приёмку скрытых и видимых частей в один финальный снимок. Попросите зафиксировать этап, который позже закроет облицовка, и получить рекомендации по дальнейшему уходу за конкретным материалом."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что зафиксировать при приёмке установки?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Общий вид памятника, положение элементов относительно утверждённого эскиза, состояние швов, покрытия и свободного прохода. Получите рекомендации по первому уходу и контакт, по которому принимают замечания с фотографиями."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если при доставке обнаружен скол?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Зафиксируйте состояние до установки и свяжитесь с поставщиком и заказчиком. Запишите, какая именно деталь повреждена и кто принял её на хранение. Согласуйте дальнейшее решение отдельно. После монтажа установить момент и обстоятельства появления повреждения будет сложнее."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие места нужно увидеть на фотографиях промежуточного этапа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите показать подготовленное основание и примыкания до того, как их закроют детали оформления. Для дистанционной приёмки полезен общий кадр с привязкой к участку и отдельные снимки согласованных узлов. Оценку технической пригодности основания поручают ответственному специалисту."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как зафиксировать, что подрядчик может перемещать на участке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Во время осмотра отметьте на фотографии то, что остаётся на месте, что временно снимают и что семья разрешает вывезти. Отдельно запишите состояние старых креплений, ограды и плит. Укажите место хранения снятых деталей и ответственного за их возвращение. Если одна из деталей может разрушиться при демонтаже, согласуйте порядок действий с заказчиком до начала работ. Для соседней территории уточните границы у администрации."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто отвечает за состояние дорожки и соседнего места после работ?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До начала попросите показать путь доставки материалов и место для временного складирования. Уточните у администрации, где можно поставить оборудование и куда вывозить остатки. Зафиксируйте состояние смежной территории на общих снимках. При передаче результата проверьте свободный проход и отсутствие материалов на чужой территории. Замечание с датой и фотографией передайте ответственному исполнителю, сохранив копию у семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие фотографии нужны для осмысленного задания исполнителю?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Снимите общий вид участка от входа, проход между элементами и отдельно предмет, с которым предстоит работать. Добавьте ориентир масштаба или точные размеры при наличии, отметьте хрупкие детали и желаемые изменения. Снимок крупным планом не показывает, сможет ли человек пройти рядом или занести материалы. Согласуйте дату снимков и выясните необходимость осмотра на месте. Фотографии соседних надписей не требуется рассылать."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как отличить обслуживание от изменения сооружения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Опишите желаемый результат конкретно. Очистка поверхности, замена плиты, перемещение стелы и переустройство основания требуют разного подхода. Узнайте в администрации, какие действия допустимы и как допускают подрядчика на территорию. Попросите исполнителя разделить согласованные этапы в заказе. Тогда семья сможет принять, например, сезонную уборку отдельно от более позднего ремонта и не оплачивать неутверждённую замену деталей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда можно устанавливать памятник?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Срок зависит от грунта и требований кладбища."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нужно ли осматривать участок?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предварительный осмотр помогает определить способ монтажа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Возложение цветов",
+      "slug": "vozlozhenie-cvetov",
+      "sortOrder": 950,
+      "serviceCategory": "memorialnye-uslugi",
+      "summary": "Возложение цветов подходит для памятной даты, когда семья не может посетить кладбище лично. Важно точно определить место и допустимый формат композиции. Передайте данные участка, дату, пожелания к цветам и контакт для подтверждения.",
+      "image": "images/vozlozhenie-cvetov.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Возложение цветов",
+      "slug": "vozlozhenie-cvetov",
+      "_status": "draft",
+      "seoTitle": "Возложение цветов в Москве и Московской области",
+      "seoDescription": "Возложение цветов к памятной дате. Как точно указать участок, согласовать букет и текст записки, выбрать способ подтверждения доставки.",
+      "focusKeyword": "возложение цветов на могилу в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "букет на кладбище к памятной дате"
+        },
+        {
+          "keyword": "доставка цветов на конкретный участок"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "доставка цветов к конкретному месту"
+        },
+        {
+          "keyword": "состояние участка"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «возложение цветов на могилу в Москве». Раскрыть букет на кладбище к памятной дате; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/vozlozhenie-cvetov.webp",
+      "openGraph": {
+        "title": "Возложение цветов — RitualGroup24",
+        "description": "Возложение цветов к памятной дате. Как точно указать участок, согласовать букет и текст записки, выбрать способ подтверждения доставки.",
+        "image": "og/vozlozhenie-cvetov.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Возложение цветов на место памяти по согласованной дате. Возложение цветов подходит для памятной даты, когда семья не может посетить кладбище лично. Важно точно определить место и допустимый формат композиции."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/vozlozhenie-cvetov.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Доставка цветов к конкретному месту"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При удалённом заказе одного названия кладбища бывает мало. Передайте номер сектора и ряд, ориентир от входа и снимок нужного памятника в личном сообщении. Согласуйте, можно ли убрать прежний букет, использовать семейную вазу и оставлять упаковку. В жару или холод спросите флориста, какие цветы подходят для предполагаемого времени на открытом воздухе."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте данные участка, дату, пожелания к цветам и контакт для подтверждения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают цветы, доставку, расстояние и дополнительные пожелания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Композиция для плиты и букет для вазы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "У цветочного оформления могут быть разные задачи. На узкой полке ниши крупная композиция может не поместиться, а на открытом участке высокий букет легко опрокинется. Перед заказом сообщите размеры доступного места и наличие держателя. Уточните у администрации допустимый способ размещения. Если для семьи важна конкретная разновидность цветов, обсудите, как поступить при отсутствии свежих цветов к нужной дате и кто вправе разрешить замену."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Записка от семьи и подтверждение доставки"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте текст без сокращений и попросите прочитать его обратно до изготовления ленты или карточки. Обсудите, должна ли записка остаться видимой и нет ли в ней личных сведений, которые семья хотела бы сохранить. Для отчёта достаточно общего вида композиции в согласованном месте. Если родственникам неприятно получать фото могилы, замените его сообщением о выполнении или передайте снимок только названному получателю."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что будет с букетом позднее"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласуйте, оставляют ли вазу, кто сможет убрать увядшие цветы и допустимо ли сдвигать ранее принесённые композиции. Для разового заказа запишите, когда заканчивается поручение. Последующий уход за местом лучше заранее обсудить с человеком, который посещает кладбище."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если нужен порядок на всём участке к дате, можно отдельно согласовать "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "разовый уход за могилой"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "uhod-za-mogilami"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если выбранных цветов к дате не будет?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите допустимые оттенки и виды замены или прямо попросите сначала связаться с семьёй. Для памятной композиции важен также размер вазы и возможность закрепить букет по правилам кладбища."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сообщить флористу о предпочтении семьи без точного названия цветка?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте цветовую гамму, размер, форму композиции и фотографию вазы или места, где будет букет. Отметьте, какие замены допустимы, а какие нужно согласовать. Если есть памятный цветок, назовите его отдельно и попросите сообщить о наличии до подтверждения заказа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если исполнитель не уверен в правильности участка?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите приостановить возложение и связаться с представителем семьи. Сверьте ряд, ориентиры и изображение нужного места, при необходимости обратитесь к администрации. Цветы не стоит оставлять у похожего памятника. Заранее обсудите, как поступить с композицией, если место в этот визит установить не удастся."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать при оформлении цветами?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите площадку, где допускаются композиции и какие подставки она предоставляет. Назовите габариты и число крупных венков, уточните, куда их переместят после окончания и чей транспорт их заберёт. Проход носильщиков и место для участников должны оставаться свободными. Если родственники приносят свои цветы, назначьте встречающего, который подскажет, где их оставить, не отвлекая семью от прощания."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие фотографии нужны для осмысленного задания исполнителю?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Снимите общий вид участка от входа, проход между элементами и отдельно предмет, с которым предстоит работать. Добавьте ориентир масштаба или точные размеры при наличии, отметьте хрупкие детали и желаемые изменения. Снимок крупным планом не показывает, сможет ли человек пройти рядом или занести материалы. Согласуйте дату снимков и выясните необходимость осмотра на месте. Фотографии соседних надписей не требуется рассылать."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто уберёт упаковку и остатки после работ?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В задании перечислите, что останется на участке, что нужно передать семье и что разрешено вывезти. Старая ваза, табличка или садовый инструмент могут иметь для близких ценность. Уточните, где находятся разрешённые места сбора и включён ли вывоз крупных остатков. При дистанционной приёмке попросите общий снимок участка и прохода. Если какой-то предмет остаётся временно, отметьте ответственного за следующую поездку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать работы к семейной дате?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала решите, что должно быть готово к посещению, а что можно выполнить позже. Уборка дорожки и цветы не требуют того же согласования, что изменение покрытия или установка сооружения. Обсудите влияние погоды, режима доступа и состояния участка. Если дата особенно важна, заранее предусмотрите скромный резервный вариант и согласуйте его с родственником. Не обещайте участникам увидеть законченное оформление до подтверждения исполнителя."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли заказать к памятной дате?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Дату согласуют заранее."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли приложить записку?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните формат композиции и правила места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли выбрать живые цветы?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните сезонную доступность и правила места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

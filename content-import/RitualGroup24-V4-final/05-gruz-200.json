@@ -1,0 +1,3878 @@
+[
+  {
+    "kind": "category",
+    "category": {
+      "title": "Груз 200",
+      "active": false
+    },
+    "page": {
+      "title": "Груз 200",
+      "slug": "gruz-200",
+      "_status": "draft",
+      "seoTitle": "Груз 200 в Москве и Московской области",
+      "seoDescription": "Груз 200 из Москвы и в Москву. Как выбрать наземный или воздушный маршрут, распределить участки перевозки и подтвердить передачу получателю.",
+      "focusKeyword": "организация перевозки груза 200",
+      "secondaryKeywords": [
+        {
+          "keyword": "выбор маршрута для перевозки умершего"
+        },
+        {
+          "keyword": "передача документов получателю"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "как описать задачу перевозчику"
+        },
+        {
+          "keyword": "маршрут"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "mixed",
+      "seoNotes": "Основной запрос — «организация перевозки груза 200». Раскрыть выбор маршрута для перевозки умершего; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "OfferCatalog",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/gruz-200.webp",
+      "openGraph": {
+        "title": "Груз 200 — RitualGroup24",
+        "description": "Груз 200 из Москвы и в Москву. Как выбрать наземный или воздушный маршрут, распределить участки перевозки и подтвердить передачу получателю.",
+        "image": "og/gruz-200.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Перевозка умершего в другой город или страну требует согласования двух сторон: места отправления и места назначения. До выбора транспорта важно определить, кто принимает умершего, где состоится прощание и какие документы нужны на каждом участке маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/gruz-200.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как описать задачу перевозчику"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Начните с формы перевозки, точки выдачи, места приёма и лица, которое сможет получить отправление. Если направление ещё выбирают, сравните наземный и воздушный варианты целиком, от учреждения до учреждения. Уточните путь оригиналов документов. Для международной поездки выделите перечни требований страны отправления, транзита и назначения. Организация прощания в конечном городе зависит от получения, которое подтверждает принимающая сторона."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "category-services",
+                "category": "gruz-200",
+                "layout": "sections"
+              }
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как выбрать маршрут"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Автомобильная перевозка позволяет согласовать адресную доставку без пересадки между терминалами. Авиационный вариант стоит рассматривать при больших расстояниях, учитывая наземные участки и график грузовых рейсов. Сравнивать следует полную стоимость и время от передачи до получения, а не только продолжительность движения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Документы и ответственность"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте перечень документов вместе с отправителем, перевозчиком и принимающей стороной. Уточните, кому передаются оригиналы, кто оформляет транспортные документы и кто отвечает за получение. Для международного маршрута дополнительно проверяются требования страны назначения и транзита."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласование расходов"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запросите раздельную смету подготовки к перевозке, упаковки, наземных участков, тарифа перевозчика, терминальных сборов и выдачи. Уточните порядок оплаты хранения при задержке и условия изменения маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Два конверта сведений для разных участников"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для семьи в городе отправления важны выдача, подготовка, место передачи и подтверждение приёма перевозчиком. Для семьи в городе назначения — статус отправления, полномочия получателя, режим терминала и конечный адрес. Назначьте по одному человеку с каждой стороны, которые сверят записи до выезда. Если сопровождающий везёт документы лично, выясните, какие оригиналы должны следовать с отправлением независимо от него."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что изменится при отказе от перелёта в пользу дороги"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте, какие уже сделанные заказы ещё пригодятся. Терминальная доставка и выдача могут отпасть, но остаются подтверждение приёма в другом городе и допустимые условия транспортировки. Сверьте новую смету с прежней по участкам, а не только по общей цене. Свяжитесь с конечным получателем до заказа машины, поскольку дата и время передачи могут измениться."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "После прибытия может понадобиться отдельная "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "перевозка между учреждениями"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "perevozka-umershego"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли сравнить два маршрута только по времени в пути?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для каждого варианта соберите продолжительность наземного участка, ожидание приёма, движение и передачу после прибытия. Выясните, в какой точке возможна задержка при несовпадении часов работы. Семье важнее время, когда получатель сможет принять отправление, чем время между вылетом и посадкой."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что спросить у организатора, который отвечает только за отправку?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите назвать точку окончания его обязанностей и документ, который получит семья. Уточните, кто уведомляет получателя и каким образом передают сведения о новом рейсе или маршруте. Дальнейшую встречу согласуйте с названным принимающим исполнителем, прежде чем назначать церемонию в конечном городе."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что спросить об упаковке до её заказа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте перевозчику вид отправления, направление, наличие пересадки и сведения о принимающем учреждении. Попросите письменные условия по таре и подтверждающим документам для конкретного рейса или перевозки. Передайте этот ответ специалисту, который будет заниматься подготовкой. Семье полезно проверить, что исполнитель понял требования и сможет выдать нужные документы. Покупать тару по фотографии с другого маршрута рискованно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить прямой маршрут и маршрут с пересадкой?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте доступность не только рейсов, но и грузового приёма на каждом участке. Узнайте, кто отвечает за согласование стыковки, сколько отдельных выдач предполагается и где будут оригиналы документов во время передачи. Уточните действия при отмене первого или второго участка. Даже при близкой стоимости выбор может зависеть от того, сможет ли принимающая сторона встретить отправление в нужный день."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что будет подтверждением отправки для семьи в другом городе?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите отправителя передать номер перевозочного документа, фактическую дату отправления и контакт службы, которая проверяет статус. Если поездка автомобильная, согласуйте сообщение о выезде и следующий момент связи с диспетчером. Получателю также нужен адрес учреждения назначения и способ уведомить о завершении передачи. Разошлите эти сведения только тем, кто участвует в приёме, сохранив один актуальный экземпляр маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать прощание при изменении рейса?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте человека, который проверит новый маршрут у перевозчика и передаст подтверждение принимающей стороне. До этого не переносите церемонию на основании времени из общего расписания. Нужно учесть выдачу на терминале и дорогу от него, а при транзите — согласование следующего участка. Площадке полезно сообщить о возможном изменении сразу, указав, когда семья сможет дать более точный ответ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать время в разных часовых поясах?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Рядом с каждой точкой запишите город и местное время. Попросите принимающего повторить дату и время прибытия по своим часам. Ночной переход особенно важен, если к приезду приурочено прощание."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что меняется при замене пересадки?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обновлённый маршрут заново направляют перевозчику и принимающей стороне. Даже при прежних начальной и конечной точках транзит через другую страну может потребовать иной проверки документов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что указывать встречающему помимо номера рейса?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите номер грузового документа, название терминала, данные указанного получателя и контакт агента. Пассажирское табло показывает движение самолёта. О готовности к выдаче уточняют у грузовой службы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда вызывать машину к терминалу?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните отдельно время посадки самолёта и готовность груза к выдаче. Согласуйте с водителем точку ожидания и порядок расчёта, если оформление займёт больше времени. Не назначайте семейную встречу в зоне погрузки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли ехать вместе с грузом?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Пассажирская поездка оформляется отдельно; возможность совпадения маршрутов уточняется заранее."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Перевозка по России",
+      "slug": "perevozka-umershih-po-rossii",
+      "sortOrder": 510,
+      "serviceCategory": "gruz-200",
+      "summary": "При перевозке умершего между регионами России важно заранее определить адрес выдачи и конечную точку. Если семья находится в другом городе, полезно назначить одного представителя для согласования маршрута и передачи информации.",
+      "image": "images/perevozka-umershih-po-rossii.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Перевозка умерших по России",
+      "slug": "perevozka-umershih-po-rossii",
+      "_status": "draft",
+      "seoTitle": "Перевозка умерших по России в Москве и Московской области",
+      "seoDescription": "Междугородняя перевозка умершего по России. Как сравнить дорогу и перелёт, согласовать время по городам и подготовить принимающую сторону.",
+      "focusKeyword": "перевозка умершего из Москвы по России",
+      "secondaryKeywords": [
+        {
+          "keyword": "междугородняя перевозка умершего"
+        },
+        {
+          "keyword": "приём в другом регионе"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "дорога между регионами"
+        },
+        {
+          "keyword": "маршрут"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «перевозка умершего из Москвы по России». Раскрыть междугородняя перевозка умершего; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/perevozka-umershih-po-rossii.webp",
+      "openGraph": {
+        "title": "Перевозка умерших по России — RitualGroup24",
+        "description": "Междугородняя перевозка умершего по России. Как сравнить дорогу и перелёт, согласовать время по городам и подготовить принимающую сторону.",
+        "image": "og/perevozka-umershih-po-rossii.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При перевозке умершего между регионами России важно заранее определить адрес выдачи и конечную точку. Если семья находится в другом городе, полезно назначить одного представителя для согласования маршрута и передачи информации."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/perevozka-umershih-po-rossii.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Дорога между регионами"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При автомобильной поездке свяжите точку выдачи с конкретным местом приёма в другом городе. Спросите, кто сможет оформить передачу, если машина прибудет позже ожидаемого. При сравнении с авиарейсом добавьте оба наземных участка и время работы терминалов. Родственникам полезно получать сообщения о выезде и передаче, а не постоянно звонить водителю."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Автомобиль или самолёт"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для наземного маршрута уточните возможность доставки непосредственно до принимающей организации. При авиационной перевозке отдельно планируются поездки до аэропорта и от него. Учитывайте расстояние, дорожные условия и время оформления."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подготовка к отправлению"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните готовность документов о смерти, порядок выдачи и требования к подготовке и упаковке. Не заказывайте дополнительные процедуры без объяснения их назначения и необходимости для выбранного маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Приём в другом регионе"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте получателю контакт ответственного за перевозку, согласованное место встречи и перечень передаваемых документов. Время церемонии лучше подтвердить после уточнения прибытия."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если семья ждёт в конечном городе, отдельно обсудите "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "встречу и передачу"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "vstrecha-i-otpravka-gruza-200"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что будет подтверждением отправки для семьи в другом городе"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите отправителя передать номер перевозочного документа, фактическую дату отправления и контакт службы, которая проверяет статус. Если поездка автомобильная, согласуйте сообщение о выезде и следующий момент связи с диспетчером. Получателю также нужен адрес учреждения назначения и способ уведомить о завершении передачи. Разошлите эти сведения только тем, кто участвует в приёме, сохранив один актуальный экземпляр маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать прощание при изменении рейса"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте человека, который проверит новый маршрут у перевозчика и передаст подтверждение принимающей стороне. До этого не переносите церемонию на основании времени из общего расписания. Нужно учесть выдачу на терминале и дорогу от него, а при транзите — согласование следующего участка. Площадке полезно сообщить о возможном изменении сразу, указав, когда семья сможет дать более точный ответ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать время в разных часовых поясах?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Рядом с каждой точкой запишите город и местное время. Попросите принимающего повторить дату и время прибытия по своим часам. Ночной переход особенно важен, если к приезду приурочено прощание."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "О чём спросить учреждение в другом регионе до выезда?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назовите отправителя и предполагаемый способ поездки. Узнайте, примут ли умершего по конкретному адресу, кто уполномочен подтвердить передачу и что делать при прибытии вне обычного времени. Передайте ответ водителю или грузовому агенту и оставьте копию близкому в городе назначения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что учитывать, если родственник хочет ехать вместе с автомобилем?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у перевозчика возможность сопровождающего и наличие оборудованного пассажирского места. Отдельно обсудите посадку, остановки и конечную точку для этого человека. Если он поедет самостоятельно, назначьте момент связи в дороге и сообщите, кто встретит его в городе назначения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как провести границу между перевозкой и приёмом?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте маршрут по участкам с указанием ответственных сторон. Отдельными строками обозначьте передачу из учреждения, путь к терминалу, перевозку и выдачу получателю. Для каждой передачи укажите, кто проверяет документы и кому сообщает о завершении. Если один исполнитель называет услугу «до города», выясните точное место окончания. От терминала до кладбища или морга может потребоваться заранее согласованный наземный транспорт."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как оформлять смену получателя в пути?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала обратитесь к стороне, которая уже приняла отправление. Уточните, кто может подать изменение, где его зарегистрируют и каким способом сообщат терминалу назначения. Перешлите подтверждение новому получателю и попросите сверить написание его имени. Даже если человек близкий родственник, выдача может зависеть от данных перевозочного документа. Планируйте поездку к терминалу после подтверждения внесённых изменений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что спросить об упаковке до её заказа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте перевозчику вид отправления, направление, наличие пересадки и сведения о принимающем учреждении. Попросите письменные условия по таре и подтверждающим документам для конкретного рейса или перевозки. Передайте этот ответ специалисту, который будет заниматься подготовкой. Семье полезно проверить, что исполнитель понял требования и сможет выдать нужные документы. Покупать тару по фотографии с другого маршрута рискованно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить прямой маршрут и маршрут с пересадкой?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте доступность не только рейсов, но и грузового приёма на каждом участке. Узнайте, кто отвечает за согласование стыковки, сколько отдельных выдач предполагается и где будут оригиналы документов во время передачи. Уточните действия при отмене первого или второго участка. Даже при близкой стоимости выбор может зависеть от того, сможет ли принимающая сторона встретить отправление в нужный день."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли доставить в небольшой населённый пункт?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Возможность подъезда и адрес уточняют до заказа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто определяет упаковку?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Требования согласуют с перевозчиком."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Международная перевозка",
+      "slug": "mezhdunarodnaya-perevozka-umershih",
+      "sortOrder": 520,
+      "serviceCategory": "gruz-200",
+      "summary": "Международная перевозка умершего требует проверки правил нескольких юрисдикций. Условия вывоза, ввоза и транзита могут различаться, поэтому подготовка начинается с уточнения страны назначения, маршрута и принимающей организации.",
+      "image": "images/mezhdunarodnaya-perevozka-umershih.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Международная перевозка умерших",
+      "slug": "mezhdunarodnaya-perevozka-umershih",
+      "_status": "draft",
+      "seoTitle": "Международная перевозка умерших в Москве и Московской области",
+      "seoDescription": "Как согласовать международную перевозку умершего. Страны отправления и транзита, запрос в консульство, перевод документов и связь с получателем.",
+      "focusKeyword": "международная перевозка умершего из Москвы",
+      "secondaryKeywords": [
+        {
+          "keyword": "консульские требования для репатриации"
+        },
+        {
+          "keyword": "транзит и перевод документов"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "маршрут через границу"
+        },
+        {
+          "keyword": "маршрут"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «международная перевозка умершего из Москвы». Раскрыть консульские требования для репатриации; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/mezhdunarodnaya-perevozka-umershih.webp",
+      "openGraph": {
+        "title": "Международная перевозка умерших — RitualGroup24",
+        "description": "Как согласовать международную перевозку умершего. Страны отправления и транзита, запрос в консульство, перевод документов и связь с получателем.",
+        "image": "og/mezhdunarodnaya-perevozka-umershih.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Международная перевозка умершего требует проверки правил нескольких юрисдикций. Условия вывоза, ввоза и транзита могут различаться, поэтому подготовка начинается с уточнения страны назначения, маршрута и принимающей организации."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/mezhdunarodnaya-perevozka-umershih.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Маршрут через границу"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назовите консульству страну отправления, назначения и каждую страну пересадки. Правила для праха и для перевозки тела могут различаться. Попросите принимающую сторону проверить написание имени латиницей и требования к переводу до его оплаты. Запишите, кому предъявят оригиналы на границе и кто передаст их семье после прибытия."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Транспорт и транзит"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте возможность перевозки на каждом участке, включая пересадки и пересечение границ. Требования к упаковке и сопроводительным документам согласуются до бронирования. При изменении транзитной страны проверку следует повторить."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/mezhdunarodnaya-perevozka-umershih-detail.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расходы и получение"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В смете разделите расходы на оформление, перевод, подготовку, перевозку и услуги принимающей стороны. Согласуйте валюту расчётов и порядок действий при задержке на границе или отмене рейса."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Перевозку до и после аэропорта увязывают с "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "согласованием рейса"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "aviacionnaya-perevozka-umershih"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что меняется при замене пересадки?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обновлённый маршрут заново направляют перевозчику и принимающей стороне. Даже при прежних начальной и конечной точках транзит через другую страну может потребовать иной проверки документов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить перевод до заверения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Получите у принимающего учреждения требования к языку, написанию имени и форме документа. Дайте переводчику согласованный образец написания по документу, который будут предъявлять в пункте назначения. Сверьте также названия городов и даты. При расхождении запросите разъяснение до заверения окончательной версии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Достаточно ли согласования консульства для выбора рейса?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Консульские разъяснения помогают разобраться с въездом и документами. Возможность принять конкретное отправление на рейс подтверждает авиакомпания или её грузовой агент. Сопоставьте оба ответа, включая транзит, и попросите принимающую сторону проверить, сможет ли она оформить выдачу по этому маршруту."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать незавершённые дела другому родственнику?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Напишите короткую запись с датой. Укажите, что уже оплачено, какие оригиналы у кого находятся и ответа от какого учреждения вы ждёте. Приложите номер обращения, часы приёма и имя контактного лица. Подчеркните, какие договорённости были только устными. Если следующий шаг требует личного присутствия или полномочий представителя, проверьте их до того, как новый организатор отправится в дорогу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как провести границу между перевозкой и приёмом?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте маршрут по участкам с указанием ответственных сторон. Отдельными строками обозначьте передачу из учреждения, путь к терминалу, перевозку и выдачу получателю. Для каждой передачи укажите, кто проверяет документы и кому сообщает о завершении. Если один исполнитель называет услугу «до города», выясните точное место окончания. От терминала до кладбища или морга может потребоваться заранее согласованный наземный транспорт."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как оформлять смену получателя в пути?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала обратитесь к стороне, которая уже приняла отправление. Уточните, кто может подать изменение, где его зарегистрируют и каким способом сообщат терминалу назначения. Перешлите подтверждение новому получателю и попросите сверить написание его имени. Даже если человек близкий родственник, выдача может зависеть от данных перевозочного документа. Планируйте поездку к терминалу после подтверждения внесённых изменений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что спросить об упаковке до её заказа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте перевозчику вид отправления, направление, наличие пересадки и сведения о принимающем учреждении. Попросите письменные условия по таре и подтверждающим документам для конкретного рейса или перевозки. Передайте этот ответ специалисту, который будет заниматься подготовкой. Семье полезно проверить, что исполнитель понял требования и сможет выдать нужные документы. Покупать тару по фотографии с другого маршрута рискованно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить прямой маршрут и маршрут с пересадкой?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте доступность не только рейсов, но и грузового приёма на каждом участке. Узнайте, кто отвечает за согласование стыковки, сколько отдельных выдач предполагается и где будут оригиналы документов во время передачи. Уточните действия при отмене первого или второго участка. Даже при близкой стоимости выбор может зависеть от того, сможет ли принимающая сторона встретить отправление в нужный день."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что будет подтверждением отправки для семьи в другом городе?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите отправителя передать номер перевозочного документа, фактическую дату отправления и контакт службы, которая проверяет статус. Если поездка автомобильная, согласуйте сообщение о выезде и следующий момент связи с диспетчером. Получателю также нужен адрес учреждения назначения и способ уведомить о завершении передачи. Разошлите эти сведения только тем, кто участвует в приёме, сохранив один актуальный экземпляр маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать прощание при изменении рейса?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте человека, который проверит новый маршрут у перевозчика и передаст подтверждение принимающей стороне. До этого не переносите церемонию на основании времени из общего расписания. Нужно учесть выдачу на терминале и дорогу от него, а при транзите — согласование следующего участка. Площадке полезно сообщить о возможном изменении сразу, указав, когда семья сможет дать более точный ответ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Авиационная перевозка",
+      "slug": "aviacionnaya-perevozka-umershih",
+      "sortOrder": 530,
+      "serviceCategory": "gruz-200",
+      "summary": "Авиационная перевозка умершего организуется через грузовые службы перевозчиков. Пассажирский билет сам по себе не подтверждает возможность отправки груза. Необходимо согласовать аэропорты, доступность грузового обслуживания и условия приёма.",
+      "image": "images/aviacionnaya-perevozka-umershih.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Авиационная перевозка умерших",
+      "slug": "aviacionnaya-perevozka-umershih",
+      "_status": "draft",
+      "seoTitle": "Авиационная перевозка умерших в Москве и Московской области",
+      "seoDescription": "Что проверить до авиационной перевозки умершего. Грузовое бронирование, требования выбранной авиакомпании, оформление и выдача на терминале.",
+      "focusKeyword": "авиаперевозка умершего из Москвы",
+      "secondaryKeywords": [
+        {
+          "keyword": "грузовое бронирование для перевозки тела"
+        },
+        {
+          "keyword": "согласование с авиакомпанией"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "пассажирский билет и грузовое бронирование"
+        },
+        {
+          "keyword": "маршрут"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «авиаперевозка умершего из Москвы». Раскрыть грузовое бронирование для перевозки тела; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/aviacionnaya-perevozka-umershih.webp",
+      "openGraph": {
+        "title": "Авиационная перевозка умерших — RitualGroup24",
+        "description": "Что проверить до авиационной перевозки умершего. Грузовое бронирование, требования выбранной авиакомпании, оформление и выдача на терминале.",
+        "image": "og/aviacionnaya-perevozka-umershih.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Авиационная перевозка умершего организуется через грузовые службы перевозчиков. Пассажирский билет сам по себе не подтверждает возможность отправки груза. Необходимо согласовать аэропорты, доступность грузового обслуживания и условия приёма."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/aviacionnaya-perevozka-umershih.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Пассажирский билет и грузовое бронирование"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Даже если родственник летит тем же рейсом, груз оформляют по правилам выбранной авиакомпании. До покупки билета получите подтверждение возможности перевозки и уточните время приёма на грузовом терминале. У S7 отдельно описаны условия для гроба и для урны. Запросите действующую редакцию для своего случая и передайте ответ тому, кто организует наземный участок."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До бронирования"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните, принимает ли перевозчик такой груз на выбранном направлении, какие документы и упаковка требуются, когда груз должен поступить в терминал. Согласуйте наземную доставку и получателя."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В аэропорту"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предусмотрите время на приём и оформление груза. Уточните, кто отвечает за передачу документов, оплату терминальных услуг и получение транспортной накладной. Не назначайте церемонию только по времени посадки самолёта."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "После прибытия"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Получатель должен знать место выдачи, порядок доступа и контакты грузовой службы. При пересадках заранее уточните ответственность за передачу между перевозчиками."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если груз и семья вылетают отдельно"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте одному родственнику копию маршрута с датой, кодами аэропортов и местным временем. Уточните, у кого находятся оригиналы, нужные для выдачи, и как их получит адресат. При смене рейса проверьте сообщение о перебронировании груза отдельно от изменения пассажирского билета. Для наземного перевозчика важна готовность терминала к выдаче, поэтому договоритесь о способе повторного вызова машины."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Маршрут получателя разобран на странице "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "о встрече груза"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "vstrecha-i-otpravka-gruza-200"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что указывать встречающему помимо номера рейса?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите номер грузового документа, название терминала, данные указанного получателя и контакт агента. Пассажирское табло показывает движение самолёта. О готовности к выдаче уточняют у грузовой службы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как объяснить семье разницу между посадкой самолёта и выдачей груза?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Покажите в расписании две отдельные точки. После посадки терминалу предстоит принять отправление и оформить выдачу указанному получателю. Семья узнаёт готовность через грузовую службу по номеру документа. Заказывать поминальную встречу или подъезд машины ровно к времени посадки без такого согласования не стоит."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто проверяет возможность перевозки урны в салоне?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обратитесь к авиакомпании с указанием рейса, вида ёмкости и маршрута. Условия для урны отличаются от условий перевозки тела и могут зависеть от направления. Запросите ответ о документах и допустимом способе перевозки, сохраните его у пассажира и проверьте отдельно правила транзита."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как оформлять смену получателя в пути?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала обратитесь к стороне, которая уже приняла отправление. Уточните, кто может подать изменение, где его зарегистрируют и каким способом сообщат терминалу назначения. Перешлите подтверждение новому получателю и попросите сверить написание его имени. Даже если человек близкий родственник, выдача может зависеть от данных перевозочного документа. Планируйте поездку к терминалу после подтверждения внесённых изменений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что спросить об упаковке до её заказа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте перевозчику вид отправления, направление, наличие пересадки и сведения о принимающем учреждении. Попросите письменные условия по таре и подтверждающим документам для конкретного рейса или перевозки. Передайте этот ответ специалисту, который будет заниматься подготовкой. Семье полезно проверить, что исполнитель понял требования и сможет выдать нужные документы. Покупать тару по фотографии с другого маршрута рискованно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить прямой маршрут и маршрут с пересадкой?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте доступность не только рейсов, но и грузового приёма на каждом участке. Узнайте, кто отвечает за согласование стыковки, сколько отдельных выдач предполагается и где будут оригиналы документов во время передачи. Уточните действия при отмене первого или второго участка. Даже при близкой стоимости выбор может зависеть от того, сможет ли принимающая сторона встретить отправление в нужный день."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что будет подтверждением отправки для семьи в другом городе?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите отправителя передать номер перевозочного документа, фактическую дату отправления и контакт службы, которая проверяет статус. Если поездка автомобильная, согласуйте сообщение о выезде и следующий момент связи с диспетчером. Получателю также нужен адрес учреждения назначения и способ уведомить о завершении передачи. Разошлите эти сведения только тем, кто участвует в приёме, сохранив один актуальный экземпляр маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать прощание при изменении рейса?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте человека, который проверит новый маршрут у перевозчика и передаст подтверждение принимающей стороне. До этого не переносите церемонию на основании времени из общего расписания. Нужно учесть выдачу на терминале и дорогу от него, а при транзите — согласование следующего участка. Площадке полезно сообщить о возможном изменении сразу, указав, когда семья сможет дать более точный ответ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли отправить любым рейсом?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нет, возможность подтверждает грузовая служба."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что влияет на тариф?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Маршрут, параметры груза и условия перевозчика."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Встреча и отправка",
+      "slug": "vstrecha-i-otpravka-gruza-200",
+      "sortOrder": 540,
+      "serviceCategory": "gruz-200",
+      "summary": "Встреча и отправка груза 200 — отдельные этапы перевозки, которые могут заказываться независимо от основного маршрута. Главная задача — обеспечить согласованную передачу умершего и документов между ответственными сторонами.",
+      "image": "images/vstrecha-i-otpravka-gruza-200.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Встреча и отправка груза 200",
+      "slug": "vstrecha-i-otpravka-gruza-200",
+      "_status": "draft",
+      "seoTitle": "Встреча и отправка груза 200 в Москве и Московской области",
+      "seoDescription": "Как подготовить встречу или отправку груза 200. Данные получателя, номер перевозочного документа, готовность к выдаче и дальнейшая поездка.",
+      "focusKeyword": "встреча груза 200 в аэропорту Москвы",
+      "secondaryKeywords": [
+        {
+          "keyword": "выдача груза 200 получателю"
+        },
+        {
+          "keyword": "наземный транспорт из грузового терминала"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "смена ответственного в пункте прибытия"
+        },
+        {
+          "keyword": "маршрут"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «встреча груза 200 в аэропорту Москвы». Раскрыть выдача груза 200 получателю; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/vstrecha-i-otpravka-gruza-200.webp",
+      "openGraph": {
+        "title": "Встреча и отправка груза 200 — RitualGroup24",
+        "description": "Как подготовить встречу или отправку груза 200. Данные получателя, номер перевозочного документа, готовность к выдаче и дальнейшая поездка.",
+        "image": "og/vstrecha-i-otpravka-gruza-200.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Встреча и отправка груза 200 — отдельные этапы перевозки, которые могут заказываться независимо от основного маршрута. Главная задача — обеспечить согласованную передачу умершего и документов между ответственными сторонами."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/vstrecha-i-otpravka-gruza-200.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Смена ответственного в пункте прибытия"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Перед отправкой уточните написание имени получателя и документы, с которыми он придёт. Передайте ему номер отправки и адрес грузового терминала. Если встречающий заболел, свяжитесь с перевозчиком до выдачи и узнайте порядок замены. Знакомство с семьёй само по себе не помогает терминалу установить полномочия."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отправление"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До выезда уточните адрес выдачи, готовность документов и время приёма перевозчиком. Согласуйте, кто сопровождает передачу и получает подтверждение приёма."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Встреча"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Получателю необходимо знать номер транспортного документа, место выдачи и контакт отправителя. Уточните полномочия представителя, часы работы терминала и возможность дальнейшей доставки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если график меняется"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте ответственного за связь между отправителем, терминалом и получателем. При задержке согласуйте место хранения, новое время выдачи и возможные дополнительные расходы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Финальное сообщение о передаче"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда принимающее учреждение подтвердит прибытие, сообщите об этом отправителю. Сверьте, у кого остались сопровождающие оригиналы и какой документ понадобится для следующего этапа. Если родственники находятся в разных часовых поясах, оставьте им письменную запись с городом и местным временем передачи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Общий порядок оформления описан в разделе "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "«Груз 200»"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "gruz-200"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как планировать прощание при изменении рейса"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте человека, который проверит новый маршрут у перевозчика и передаст подтверждение принимающей стороне. До этого не переносите церемонию на основании времени из общего расписания. Нужно учесть выдачу на терминале и дорогу от него, а при транзите — согласование следующего участка. Площадке полезно сообщить о возможном изменении сразу, указав, когда семья сможет дать более точный ответ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда вызывать машину к терминалу?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните отдельно время посадки самолёта и готовность груза к выдаче. Согласуйте с водителем точку ожидания и порядок расчёта, если оформление займёт больше времени. Не назначайте семейную встречу в зоне погрузки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что передать водителю, который не является грузополучателем?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Адрес грузового въезда, время готовности к подаче, контакт получателя и адрес следующей передачи. Оформление выдачи остаётся за лицом, признанным терминалом. Согласуйте место, в котором водитель сможет законно ожидать, и попросите получателя сообщить, когда документы приняты."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как поступить при расхождении в номере отправления?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Не направляйте встречающего по похожему номеру из семейной переписки. Свяжитесь с отправителем и запросите копию или точные реквизиты перевозочного документа. Сверьте город, дату, данные получателя и сообщите правильный номер терминалу. После этого замените старую запись у ответственного родственника."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать замену машины или водителя?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите диспетчера, кто подтвердит замену и как получить новые данные. Сохраните путь связи с диспетчером на случай, если водитель занят в дороге. При замене повторно проверьте вместимость, доступ к нужному въезду, сведения для пропуска и время подачи. Принятое изменение передайте встречающему одним сообщением. Не пересылайте гостям устаревший номер машины, даже если место встречи осталось прежним."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как провести границу между перевозкой и приёмом?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте маршрут по участкам с указанием ответственных сторон. Отдельными строками обозначьте передачу из учреждения, путь к терминалу, перевозку и выдачу получателю. Для каждой передачи укажите, кто проверяет документы и кому сообщает о завершении. Если один исполнитель называет услугу «до города», выясните точное место окончания. От терминала до кладбища или морга может потребоваться заранее согласованный наземный транспорт."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как оформлять смену получателя в пути?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сначала обратитесь к стороне, которая уже приняла отправление. Уточните, кто может подать изменение, где его зарегистрируют и каким способом сообщат терминалу назначения. Перешлите подтверждение новому получателю и попросите сверить написание его имени. Даже если человек близкий родственник, выдача может зависеть от данных перевозочного документа. Планируйте поездку к терминалу после подтверждения внесённых изменений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить прямой маршрут и маршрут с пересадкой?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверьте доступность не только рейсов, но и грузового приёма на каждом участке. Узнайте, кто отвечает за согласование стыковки, сколько отдельных выдач предполагается и где будут оригиналы документов во время передачи. Уточните действия при отмене первого или второго участка. Даже при близкой стоимости выбор может зависеть от того, сможет ли принимающая сторона встретить отправление в нужный день."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что будет подтверждением отправки для семьи в другом городе?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите отправителя передать номер перевозочного документа, фактическую дату отправления и контакт службы, которая проверяет статус. Если поездка автомобильная, согласуйте сообщение о выезде и следующий момент связи с диспетчером. Получателю также нужен адрес учреждения назначения и способ уведомить о завершении передачи. Разошлите эти сведения только тем, кто участвует в приёме, сохранив один актуальный экземпляр маршрута."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно заказать только встречу?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Да, если возможность и условия согласованы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что сообщить заранее?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Маршрут, данные отправления, получателя и адрес доставки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

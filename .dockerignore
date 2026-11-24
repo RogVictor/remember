@@ -10,3 +10,7 @@ app.zip
 pnpm-lock.yaml
 yarn.lock
 *.tsbuildinfo
+backups/
+content-import/**
+!content-import/RitualGroup24-V4-final/
+!content-import/RitualGroup24-V4-final/**

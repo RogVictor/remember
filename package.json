@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "content:check": "node --import=./scripts/payload-cli-loader.mjs scripts/content-v4/import.mjs --dry-run",
+    "content:import": "node --import=./scripts/payload-cli-loader.mjs scripts/content-v4/import.mjs --apply",
+    "test:content": "tsx --test tests/content-v4.test.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

@@ -1,0 +1,1190 @@
+[
+  {
+    "slug": "organizaciya-pohoron",
+    "title": "Организация похорон",
+    "focusKeyword": "как организовать похороны в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "выбор способа погребения"
+      },
+      {
+        "keyword": "согласование похорон в Подмосковье"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "с чего начать семейное обсуждение"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "pohorony-pod-klyuch",
+    "title": "Похороны под ключ",
+    "focusKeyword": "похороны под ключ в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "единая смета на похороны"
+      },
+      {
+        "keyword": "согласование всех этапов погребения"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "один заказ при нескольких исполнителях"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "organizaciya-zahoroneniya",
+    "title": "Организация захоронения",
+    "focusKeyword": "организация захоронения в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "порядок погребения в гробу"
+      },
+      {
+        "keyword": "маршрут на кладбище в день похорон"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "от места выдачи до участка"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "organizaciya-kremacii",
+    "title": "Организация кремации",
+    "focusKeyword": "организация кремации в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "прощание перед кремацией"
+      },
+      {
+        "keyword": "получение праха в крематории"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "две встречи с крематорием"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "socialnye-pohorony",
+    "title": "Социальные похороны",
+    "focusKeyword": "социальные похороны в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "гарантированный перечень услуг по погребению"
+      },
+      {
+        "keyword": "выбор пособия или услуг"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "выбор формы поддержки до заказа"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "voennye-pohorony",
+    "title": "Военные похороны",
+    "focusKeyword": "организация военных похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "согласование воинских почестей"
+      },
+      {
+        "keyword": "ведомственное сопровождение погребения"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "согласование ведомственной и семейной частей"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "prizhiznennyi-dogovor",
+    "title": "Прижизненный договор",
+    "focusKeyword": "прижизненный договор на ритуальные услуги",
+    "secondaryKeywords": [
+      {
+        "keyword": "изменение пожеланий по договору"
+      },
+      {
+        "keyword": "хранение договора на погребение"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "как близкие найдут договор"
+      },
+      {
+        "keyword": "семейные пожелания"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "ritualny-agent",
+    "title": "Ритуальный агент",
+    "focusKeyword": "услуги ритуального агента в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "полномочия похоронного агента"
+      },
+      {
+        "keyword": "поручения представителю семьи"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "первый звонок и границы поручения"
+      },
+      {
+        "keyword": "планирование"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "vyzov-ritualnogo-agenta",
+    "title": "Вызов ритуального агента",
+    "focusKeyword": "вызов ритуального агента в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "первая встреча с похоронным агентом"
+      },
+      {
+        "keyword": "выезд агента на консультацию"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "первая встреча по приглашению семьи"
+      },
+      {
+        "keyword": "планирование"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "soprovozhdenie-pohoron",
+    "title": "Сопровождение похорон",
+    "focusKeyword": "сопровождение похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "координация в день погребения"
+      },
+      {
+        "keyword": "встреча гостей на кладбище"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "если две группы едут разными маршрутами"
+      },
+      {
+        "keyword": "планирование"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "oformlenie-dokumentov-dlya-pohoron",
+    "title": "Оформление документов для похорон",
+    "focusKeyword": "оформление документов для похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "документы организатора погребения"
+      },
+      {
+        "keyword": "представитель для подачи документов"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "папка для нескольких учреждений"
+      },
+      {
+        "keyword": "планирование"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "uslugi-morga",
+    "title": "Услуги морга",
+    "focusKeyword": "услуги морга в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "порядок обращения родственников в морг"
+      },
+      {
+        "keyword": "согласование подготовки в морге"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "подготовка к разговору с учреждением"
+      },
+      {
+        "keyword": "выдача тела"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "podgotovka-tela-k-pogrebeniyu",
+    "title": "Подготовка тела к погребению",
+    "focusKeyword": "подготовка тела к погребению в морге",
+    "secondaryKeywords": [
+      {
+        "keyword": "одежда для прощания"
+      },
+      {
+        "keyword": "передача личных вещей в морг"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "передача одежды и личных вещей"
+      },
+      {
+        "keyword": "выдача тела"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "balzamirovanie",
+    "title": "Бальзамирование",
+    "focusKeyword": "бальзамирование для прощания в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "согласование бальзамирования с моргом"
+      },
+      {
+        "keyword": "подготовка к дальней перевозке"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "вопросы учреждению перед согласованием"
+      },
+      {
+        "keyword": "выдача тела"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "posmertnyi-makiyazh",
+    "title": "Посмертный макияж",
+    "focusKeyword": "посмертный макияж в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "естественный образ для прощания"
+      },
+      {
+        "keyword": "фотография для специалиста по макияжу"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "ориентиры для естественного образа"
+      },
+      {
+        "keyword": "выдача тела"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "sanitarnaya-obrabotka-tela",
+    "title": "Санитарная обработка тела",
+    "focusKeyword": "санитарная обработка тела в морге",
+    "secondaryKeywords": [
+      {
+        "keyword": "состав санитарной подготовки"
+      },
+      {
+        "keyword": "согласование обработки с учреждением"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "что входит в заказ морга"
+      },
+      {
+        "keyword": "выдача тела"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "ritualny-transport",
+    "title": "Ритуальный транспорт",
+    "focusKeyword": "ритуальный транспорт в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "маршруты ритуального транспорта"
+      },
+      {
+        "keyword": "транспорт в день погребения"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "маршрут семьи, умершего и принадлежностей"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "zakaz-katafalka",
+    "title": "Заказ катафалка",
+    "focusKeyword": "заказ катафалка в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "подача катафалка к моргу"
+      },
+      {
+        "keyword": "места и ожидание катафалка"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "подача к нужному выходу"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "transport-dlya-rodstvennikov",
+    "title": "Транспорт для родственников",
+    "focusKeyword": "транспорт для родственников на похороны",
+    "secondaryKeywords": [
+      {
+        "keyword": "микроавтобус для участников прощания"
+      },
+      {
+        "keyword": "обратная поездка с кладбища"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "посадка без переклички у входа"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "perevozka-umershego",
+    "title": "Перевозка умершего",
+    "focusKeyword": "перевозка умершего между учреждениями",
+    "secondaryKeywords": [
+      {
+        "keyword": "передача умершего принимающему учреждению"
+      },
+      {
+        "keyword": "согласование выдачи и приёма"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "передача между двумя учреждениями"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "dostavka-ritualnyh-prinadlezhnostei",
+    "title": "Доставка ритуальных принадлежностей",
+    "focusKeyword": "доставка ритуальных принадлежностей в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "доставка венков к церемонии"
+      },
+      {
+        "keyword": "получение принадлежностей в зале"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "доставка по нескольким адресам"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "gruz-200",
+    "title": "Груз 200",
+    "focusKeyword": "организация перевозки груза 200",
+    "secondaryKeywords": [
+      {
+        "keyword": "выбор маршрута для перевозки умершего"
+      },
+      {
+        "keyword": "передача документов получателю"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "как описать задачу перевозчику"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "perevozka-umershih-po-rossii",
+    "title": "Перевозка умерших по России",
+    "focusKeyword": "перевозка умершего из Москвы по России",
+    "secondaryKeywords": [
+      {
+        "keyword": "междугородняя перевозка умершего"
+      },
+      {
+        "keyword": "приём в другом регионе"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "дорога между регионами"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "mezhdunarodnaya-perevozka-umershih",
+    "title": "Международная перевозка умерших",
+    "focusKeyword": "международная перевозка умершего из Москвы",
+    "secondaryKeywords": [
+      {
+        "keyword": "консульские требования для репатриации"
+      },
+      {
+        "keyword": "транзит и перевод документов"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "маршрут через границу"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "aviacionnaya-perevozka-umershih",
+    "title": "Авиационная перевозка умерших",
+    "focusKeyword": "авиаперевозка умершего из Москвы",
+    "secondaryKeywords": [
+      {
+        "keyword": "грузовое бронирование для перевозки тела"
+      },
+      {
+        "keyword": "согласование с авиакомпанией"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "пассажирский билет и грузовое бронирование"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "vstrecha-i-otpravka-gruza-200",
+    "title": "Встреча и отправка груза 200",
+    "focusKeyword": "встреча груза 200 в аэропорту Москвы",
+    "secondaryKeywords": [
+      {
+        "keyword": "выдача груза 200 получателю"
+      },
+      {
+        "keyword": "наземный транспорт из грузового терминала"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "смена ответственного в пункте прибытия"
+      },
+      {
+        "keyword": "маршрут"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "kladbishchenskie-uslugi",
+    "title": "Кладбищенские услуги",
+    "focusKeyword": "кладбищенские услуги в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "работы на участке кладбища"
+      },
+      {
+        "keyword": "согласование работ с администрацией"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "сначала определить место и полномочия"
+      },
+      {
+        "keyword": "право на участок"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "rodstvennoe-zahoronenie",
+    "title": "Родственное захоронение",
+    "focusKeyword": "родственное захоронение в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "подтверждение родства для захоронения"
+      },
+      {
+        "keyword": "данные ответственного за могилу"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "как восстановить сведения об участке"
+      },
+      {
+        "keyword": "право на участок"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "kopka-mogily",
+    "title": "Копка могилы",
+    "focusKeyword": "копка могилы на кладбище",
+    "secondaryKeywords": [
+      {
+        "keyword": "подготовка участка к погребению"
+      },
+      {
+        "keyword": "доступ для земляных работ"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "осмотр до земляных работ"
+      },
+      {
+        "keyword": "право на участок"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "zahoronenie-urny",
+    "title": "Захоронение урны",
+    "focusKeyword": "захоронение урны с прахом в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "размещение урны в колумбарии"
+      },
+      {
+        "keyword": "погребение праха в семейную могилу"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "место для урны и доступ к нему"
+      },
+      {
+        "keyword": "право на участок"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "eksgumaciya-i-perezahoronenie",
+    "title": "Эксгумация и перезахоронение",
+    "focusKeyword": "согласование эксгумации и перезахоронения",
+    "secondaryKeywords": [
+      {
+        "keyword": "перенос захоронения на другое кладбище"
+      },
+      {
+        "keyword": "оформление нового места погребения"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "два места и одна последовательность решений"
+      },
+      {
+        "keyword": "право на участок"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "organizaciya-proshchaniya",
+    "title": "Организация прощания",
+    "focusKeyword": "организация церемонии прощания в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "формат прощания с умершим"
+      },
+      {
+        "keyword": "порядок памятной церемонии"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "какой встречи хочет семья"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "traurnyi-zal",
+    "title": "Траурный зал",
+    "focusKeyword": "траурный зал в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "выбор зала прощания"
+      },
+      {
+        "keyword": "места для гостей в траурном зале"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "зал глазами человека, который приедет впервые"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "grazhdanskaya-panihida",
+    "title": "Гражданская панихида",
+    "focusKeyword": "гражданская панихида в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "светская церемония прощания"
+      },
+      {
+        "keyword": "памятные речи близких"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "слова, которые семья хочет услышать"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "otpevanie",
+    "title": "Отпевание",
+    "focusKeyword": "организация отпевания в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "согласование отпевания с приходом"
+      },
+      {
+        "keyword": "отпевание перед погребением"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "разговор с приходом до брони зала"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "nosilshchiki",
+    "title": "Носильщики",
+    "focusKeyword": "носильщики гроба в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "перенос гроба на церемонии"
+      },
+      {
+        "keyword": "оценка прохода для бригады"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "перенос на разных участках маршрута"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "ceremoniimeister",
+    "title": "Церемониймейстер",
+    "focusKeyword": "церемониймейстер на похороны в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "ведущий траурной церемонии"
+      },
+      {
+        "keyword": "сценарий для ведущего прощания"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "сценарий, в котором допустима тишина"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "traurnyi-orkestr",
+    "title": "Траурный оркестр",
+    "focusKeyword": "траурный оркестр в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "живая музыка на похоронах"
+      },
+      {
+        "keyword": "репертуар траурных музыкантов"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "репертуар по моментам церемонии"
+      },
+      {
+        "keyword": "место"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "religioznye-pohorony",
+    "title": "Религиозные похороны",
+    "focusKeyword": "организация религиозных похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "участие общины в погребении"
+      },
+      {
+        "keyword": "согласование семейной традиции"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "как найти человека для разговора о традиции"
+      },
+      {
+        "keyword": "община"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "pravoslavnye-pohorony",
+    "title": "Православные похороны",
+    "focusKeyword": "организация православных похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "порядок прощания в приходе"
+      },
+      {
+        "keyword": "участие семьи в православном погребении"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "один маршрут для семьи и прихода"
+      },
+      {
+        "keyword": "община"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "musulmanskie-pohorony",
+    "title": "Мусульманские похороны",
+    "focusKeyword": "организация мусульманских похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "погребение с участием имама"
+      },
+      {
+        "keyword": "координация с мусульманской общиной"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "согласование с семьёй и мусульманской общиной"
+      },
+      {
+        "keyword": "община"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "iudeiskie-pohorony",
+    "title": "Иудейские похороны",
+    "focusKeyword": "организация иудейских похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "обращение к раввину для погребения"
+      },
+      {
+        "keyword": "согласование с еврейской общиной"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "решения, которые семья передаёт общине"
+      },
+      {
+        "keyword": "община"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "katolicheskie-pohorony",
+    "title": "Католические похороны",
+    "focusKeyword": "организация католических похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "прощание в католическом приходе"
+      },
+      {
+        "keyword": "погребальная служба и семейная встреча"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "порядок службы и дорога из храма"
+      },
+      {
+        "keyword": "община"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "memorialnye-uslugi",
+    "title": "Мемориальные услуги",
+    "focusKeyword": "мемориальные услуги в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "план работ на семейном участке"
+      },
+      {
+        "keyword": "уход и оформление места памяти"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "составление задания для конкретного участка"
+      },
+      {
+        "keyword": "состояние участка"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "uhod-za-mogilami",
+    "title": "Уход за могилами",
+    "focusKeyword": "уход за могилами в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "сезонная уборка захоронения"
+      },
+      {
+        "keyword": "удалённая приёмка ухода за участком"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "что сохранить во время уборки"
+      },
+      {
+        "keyword": "состояние участка"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "blagoustroistvo-zahoronenii",
+    "title": "Благоустройство захоронений",
+    "focusKeyword": "благоустройство захоронения в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "эскиз покрытия и цветника"
+      },
+      {
+        "keyword": "сохранение элементов участка"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "план участка с учётом будущих посещений"
+      },
+      {
+        "keyword": "состояние участка"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "izgotovlenie-pamyatnikov",
+    "title": "Изготовление памятников",
+    "focusKeyword": "изготовление памятника на могилу в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "макет надписи на стеле"
+      },
+      {
+        "keyword": "согласование портрета для камня"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "как утвердить надпись и портрет"
+      },
+      {
+        "keyword": "состояние участка"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "ustanovka-pamyatnikov",
+    "title": "Установка памятников",
+    "focusKeyword": "установка памятника на кладбище в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "монтаж готового надгробия"
+      },
+      {
+        "keyword": "приёмка основания и стелы"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "приём изделия перед монтажом"
+      },
+      {
+        "keyword": "состояние участка"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "vozlozhenie-cvetov",
+    "title": "Возложение цветов",
+    "focusKeyword": "возложение цветов на могилу в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "букет на кладбище к памятной дате"
+      },
+      {
+        "keyword": "доставка цветов на конкретный участок"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "доставка цветов к конкретному месту"
+      },
+      {
+        "keyword": "состояние участка"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "dopolnitelnye-uslugi",
+    "title": "Дополнительные услуги",
+    "focusKeyword": "дополнительные услуги при организации похорон",
+    "secondaryKeywords": [
+      {
+        "keyword": "отдельные поручения семьи после утраты"
+      },
+      {
+        "keyword": "доступ и приватность памятной встречи"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "как распределить самостоятельные поручения"
+      },
+      {
+        "keyword": "поминальная встреча"
+      }
+    ],
+    "searchIntent": "mixed"
+  },
+  {
+    "slug": "pominki",
+    "title": "Поминки",
+    "focusKeyword": "организация поминок в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "выбор зала для поминальной трапезы"
+      },
+      {
+        "keyword": "меню поминальной встречи"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "поминальная встреча после дороги"
+      },
+      {
+        "keyword": "поминальная встреча"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "dezinfekciya-pomeshcheniya",
+    "title": "Дезинфекция помещения после смерти",
+    "focusKeyword": "дезинфекция помещения после смерти в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "согласование обработки квартиры"
+      },
+      {
+        "keyword": "приёмка помещения после обработки"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "доступ в квартиру и сохранность вещей"
+      },
+      {
+        "keyword": "поминальная встреча"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "foto-i-videosemka-pohoron",
+    "title": "Фото- и видеосъёмка похорон",
+    "focusKeyword": "фото и видеосъёмка похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "семейный архив прощания"
+      },
+      {
+        "keyword": "согласие на съёмку церемонии"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "кадры для семейного архива"
+      },
+      {
+        "keyword": "поминальная встреча"
+      }
+    ],
+    "searchIntent": "commercial"
+  },
+  {
+    "slug": "online-translyaciya-pohoron",
+    "title": "Онлайн-трансляция похорон",
+    "focusKeyword": "закрытая трансляция похорон в Москве",
+    "secondaryKeywords": [
+      {
+        "keyword": "доступ близких к эфиру прощания"
+      },
+      {
+        "keyword": "проверка звука и связи в зале"
+      }
+    ],
+    "relatedKeywords": [
+      {
+        "keyword": "доступ к эфиру и резервная запись"
+      },
+      {
+        "keyword": "поминальная встреча"
+      }
+    ],
+    "searchIntent": "commercial"
+  }
+]

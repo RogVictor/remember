@@ -1,0 +1,3472 @@
+[
+  {
+    "kind": "category",
+    "category": {
+      "title": "Ритуальный агент",
+      "active": false
+    },
+    "page": {
+      "title": "Ритуальный агент",
+      "slug": "ritualny-agent",
+      "_status": "draft",
+      "seoTitle": "Ритуальный агент в Москве и Московской области",
+      "seoDescription": "Какие поручения можно передать ритуальному агенту. Первая встреча, проверка полномочий, работа с документами и сопровождение семьи в день похорон.",
+      "focusKeyword": "услуги ритуального агента в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "полномочия похоронного агента"
+        },
+        {
+          "keyword": "поручения представителю семьи"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "первый звонок и границы поручения"
+        },
+        {
+          "keyword": "планирование"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "mixed",
+      "seoNotes": "Основной запрос — «услуги ритуального агента в Москве». Раскрыть полномочия похоронного агента; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "OfferCatalog",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/ritualny-agent.webp",
+      "openGraph": {
+        "title": "Ритуальный агент — RitualGroup24",
+        "description": "Какие поручения можно передать ритуальному агенту. Первая встреча, проверка полномочий, работа с документами и сопровождение семьи в день похорон.",
+        "image": "og/ritualny-agent.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Консультация и координация действий семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/ritualny-agent.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Первый звонок и границы поручения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Агент может получить от семьи одно поручение или сопровождать несколько этапов. Начните с результата, необходимого сейчас: узнать порядок выдачи, сверить уже имеющиеся бумаги или согласовать переезд. Перед описанием личных обстоятельств попросите представиться и назовите только те сведения, которые нужны для ответа. У близких останется возможность прочитать проект заказа вместе и передать исполнителю конкретный перечень действий."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "category-services",
+                "category": "ritualny-agent",
+                "layout": "sections"
+              }
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как распределить обязанности в семье"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Выберите человека, который будет согласовывать расходы и получать подтверждения от исполнителей. Другим родственникам можно поручить оповещение гостей, подготовку фотографий и обсуждение церемонии. Если решения принимают несколько человек, заранее определите, кто утверждает изменения заказа."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить полномочия представителя"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Узнайте полное наименование исполнителя, данные сотрудника и основание его полномочий. Проверьте сведения через самостоятельно найденные контакты организации. Не передавайте оригиналы документов без понимания цели передачи и порядка возврата. Не соглашайтесь на услуги незнакомого человека только потому, что он знает обстоятельства смерти."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что согласовать до заключения договора"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Разделите консультацию, оформление документов, транспорт и присутствие на церемонии на самостоятельные позиции. Попросите указать исполнителя каждой работы, условия отмены и доплаты. Если часть услуг уже заказана, внесите это в план, чтобы избежать повторных расходов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Москва и Московская область"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При поездках между городом и областью учитывайте разные администрации кладбищ, время приема документов и дорожную обстановку. Правила конкретного учреждения уточняют до бронирования транспорта и зала."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Два разных поручения в одном разговоре"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Родственник может попросить агента узнать порядок выдачи и одновременно подобрать зал. Запишите разные результаты. В первом случае нужен ответ учреждения и перечень действий заявителя. Во втором — подходящее время, условия посещения и расчёт площадки. Не связывайте получение первого ответа с обязательным заказом второй услуги. Если семья решит искать зал самостоятельно, результат разговора с учреждением всё равно должен остаться у неё."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что сказать человеку, который позвонил первым"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Необязательно пересказывать обстоятельства смерти незнакомому собеседнику. Запишите, кто звонит и какую услугу предлагает, и возьмите время на проверку. Если семья решит продолжить разговор с организацией, обратитесь по контакту, который нашли сами. На встрече попросите представить поручение в письменном виде. Так проще установить, какой специалист отвечает за обещанное действие."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда поручения затрагивают весь день, их удобно сверить с порядком "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "комплексной организации"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "pohorony-pod-klyuch"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать незавершённые дела другому родственнику"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Напишите короткую запись с датой. Укажите, что уже оплачено, какие оригиналы у кого находятся и ответа от какого учреждения вы ждёте. Приложите номер обращения, часы приёма и имя контактного лица. Подчеркните, какие договорённости были только устными. Если следующий шаг требует личного присутствия или полномочий представителя, проверьте их до того, как новый организатор отправится в дорогу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать при задержке в первой точке маршрута"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Об изменении первым узнаёт человек, который ведёт расписание. Он уточняет у следующей площадки, сохраняется ли время приёма, а у водителя — где можно ждать и как это учитывается в заказе. Только после этого родным сообщают обновлённое место и время сбора. Не просите водителя компенсировать задержку скоростью. Если ожидание стало платным, согласуйте с заказчиком изменение до продолжения поездки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В каких случаях удобнее назначить встречу вне дома?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда семье трудно принимать посетителей или нужно вместе прочитать документы, попросите согласовать нейтральное место, удобное время и присутствие доверенного родственника. Назначьте встречу по самостоятельно выбранному контакту. Решите заранее, какие вопросы достаточно обсудить устно и какой документ вы ожидаете получить."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как завершить работу с агентом после последнего поручения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сверьте перечень задач с фактическими результатами. Заберите оригиналы, контакты учреждений и подтверждения оплат. Если остаётся одно незавершённое действие, например получение документа, запишите, кто отвечает за него и как узнать результат. Перечень пригодится, даже если дальнейшими вопросами займётся другой близкий."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли взять время на решение по необязательным позициям?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите указать, от чего реально зависит срок выбора. Готовность зала и доставка индивидуальной надписи требуют разных согласований. Отметьте позиции, без которых нельзя подтвердить следующий шаг, и те, к которым семья сможет вернуться позже. Если решение нужно принять сейчас, выясните причину и последствия отказа. Сохраните перечень уже принятых решений у одного родственника, чтобы другой случайно не оформил второй заказ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как распределить работу между агентом и теми, кто помогает семье?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте короткий список по исполнителям. Один человек общается с моргом, другой — с площадкой, третий встречает гостей. В строке агента перечислите действия, которые ему действительно поручили, и результат каждого поручения, например подтверждение времени или получение документа. Если поручение выполнил родственник, сообщите об этом агенту. Копия такого списка помогает подменить организатора в течение дня."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить, что поручение действительно выполнено?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При передаче задачи договоритесь, по какому признаку она считается завершённой. Для брони зала это ответ площадки с датой и временем, для подачи заявления — подтверждение приёма, для доставки — сообщение получателя. Слова «вопрос решён» могут означать лишь предварительный разговор. Попросите контакт ответственной стороны, если семье предстоит обратиться туда повторно, и отметьте, какой следующий шаг остаётся за вами."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как поступить, если договор называют обязательным для получения документа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у самого учреждения, какие действия входят в его обычный порядок и что требуется от заявителя. Перезвоните по номеру из официального справочника, который нашли самостоятельно. Попросите отделить оформление документа от коммерческой помощи с поездкой или подачей. Сохраните имя сотрудника и дату разъяснения. Если вам предлагают подписать сразу несколько бланков, возьмите время на чтение каждого."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что взять на встречу, если семья ещё ничего не заказала?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Достаточно списка известных учреждений, контакта представителя семьи и нескольких вопросов. Объём полномочий, передачу оригиналов и оплату обсуждают после того, как понятна конкретная задача."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что дать гостю, который приедет позже?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте адрес следующей точки и телефон встречающего. В часы прощания удобнее отправить короткое сообщение с ориентиром, чем прерывать церемонию звонками разным родственникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как действовать, если два учреждения просят один оригинал в один день?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Узнайте, где оригинал только сверяют, а где его оставляют, и в каком порядке лучше прийти. До передачи запишите название получателя и способ получения обратно. Уточните отдельно, примут ли заверенную копию."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли начать с телефонной консультации?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните доступный формат обращения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Вызов ритуального агента",
+      "slug": "vyzov-ritualnogo-agenta",
+      "sortOrder": 210,
+      "serviceCategory": "ritualny-agent",
+      "summary": "Агент помогает разобраться в последовательности действий, но семья сохраняет право самостоятельно выбирать исполнителей и не подписывать документы на первой встрече. Назовите удобный способ связи, район и уже выполненные действия; не сообщайте банковские коды и лишние персональные данные.",
+      "image": "images/vyzov-ritualnogo-agenta.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Вызов ритуального агента",
+      "slug": "vyzov-ritualnogo-agenta",
+      "_status": "draft",
+      "seoTitle": "Вызов ритуального агента в Москве и Московской области",
+      "seoDescription": "Как пригласить ритуального агента, проверить, кто пришёл, и подготовиться к встрече. Вопросы к проекту заказа для семьи в Москве и области.",
+      "focusKeyword": "вызов ритуального агента в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "первая встреча с похоронным агентом"
+        },
+        {
+          "keyword": "выезд агента на консультацию"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "первая встреча по приглашению семьи"
+        },
+        {
+          "keyword": "планирование"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «вызов ритуального агента в Москве». Раскрыть первая встреча с похоронным агентом; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/vyzov-ritualnogo-agenta.webp",
+      "openGraph": {
+        "title": "Вызов ритуального агента — RitualGroup24",
+        "description": "Как пригласить ритуального агента, проверить, кто пришёл, и подготовиться к встрече. Вопросы к проекту заказа для семьи в Москве и области.",
+        "image": "og/vyzov-ritualnogo-agenta.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Персональная консультация по организации похорон. Агент помогает разобраться в последовательности действий, но семья сохраняет право самостоятельно выбирать исполнителей и не подписывать документы на первой встрече."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/vyzov-ritualnogo-agenta.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Первая встреча по приглашению семьи"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Перед встречей запишите номер, по которому сами обратились, имя приглашённого специалиста и место разговора. Если пришёл другой человек, перезвоните по сохранённому контакту. Начать можно с одного конкретного вопроса. Удобно попросить оставить проект заказа родственнику, который сможет спокойно прочитать условия вместе с вами."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назовите удобный способ связи, район и уже выполненные действия; не сообщайте банковские коды и лишние персональные данные."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/vyzov-ritualnogo-agenta-extra-40.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните, оплачивается ли сам выезд отдельно от дальнейшего сопровождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда обращаться за консультацией"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если смерть произошла дома и еще не была констатирована, сначала обратитесь в экстренные службы по номеру 112. Ритуальный агент не заменяет медицинских работников. Если о смерти сообщили из больницы, уточните подразделение, где находится умерший, и порядок получения документов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовиться к первой встрече"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите вопросы, которые требуют решения: способ погребения, наличие семейной могилы, пожелания о прощании и предполагаемое число участников. Не обязательно заранее выбирать гроб или согласовывать все расходы. Попросите специалиста объяснить зависимости между решениями."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сравнить предложения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сравнивайте не только итоговую сумму, но и перечень работ. Выясните, входит ли выезд в стоимость дальнейшего заказа, оплачивается ли повторная встреча, какие платежи перечисляются другим учреждениям. Сохраните письменный расчет."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если семья находится в другом городе"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Начните с уточнения доступности дистанционной консультации. Определите, кто сможет лично посещать учреждения, и какие полномочия понадобятся представителю. Не отправляйте сканы паспортов в непроверенные чаты."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "День церемонии и "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "сопровождение на маршруте"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "soprovozhdenie-pohoron"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": " можно поручить отдельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить, что поручение действительно выполнено"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При передаче задачи договоритесь, по какому признаку она считается завершённой. Для брони зала это ответ площадки с датой и временем, для подачи заявления — подтверждение приёма, для доставки — сообщение получателя. Слова «вопрос решён» могут означать лишь предварительный разговор. Попросите контакт ответственной стороны, если семье предстоит обратиться туда повторно, и отметьте, какой следующий шаг остаётся за вами."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как поступить, если договор называют обязательным для получения документа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у самого учреждения, какие действия входят в его обычный порядок и что требуется от заявителя. Перезвоните по номеру из официального справочника, который нашли самостоятельно. Попросите отделить оформление документа от коммерческой помощи с поездкой или подачей. Сохраните имя сотрудника и дату разъяснения. Если вам предлагают подписать сразу несколько бланков, возьмите время на чтение каждого."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие сведения можно дать встречающему без семейных подробностей"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Гостям и водителю обычно достаточно адреса, входа, времени сбора и имени того, кто их встретит. Пришлите схему пути от остановки или парковки и поясните, в каком месте группа соберётся после выхода. Отдельно спросите у человека с ограниченной подвижностью, какая помощь ему нужна. Эти сведения с его согласия передают тому, кто поможет на месте, без рассылки личных обстоятельств всем участникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что взять на встречу, если семья ещё ничего не заказала?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Достаточно списка известных учреждений, контакта представителя семьи и нескольких вопросов. Объём полномочий, передачу оригиналов и оплату обсуждают после того, как понятна конкретная задача."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если специалист на пороге называет имя умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Знание имени не подтверждает, что семья приглашала этого человека. Проверьте запись о вызове и свяжитесь с организацией по собственному сохранённому номеру. Пока личность посетителя и цель встречи неясны, обсуждение можно перенести. Договоритесь, чтобы на разговоре присутствовал близкий, которому вы доверяете."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать в первые минуты встречи?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите специалиста назвать поручение, которое он предлагает принять, и результат для семьи. Уточните, есть ли более простой вариант для одной задачи и кому предстоит платить за услуги учреждения. Если нужна лишь консультация, согласуйте её условия прежде, чем переходить к заказу товаров и транспорта."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сохранить подтверждения, если расходы несут разные люди?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Храните заказы, чеки и акты вместе с отметкой о том, кто и за что заплатил. Если семья планирует обращаться за выплатой или возмещением, уточните у уполномоченного органа, кому подавать заявление и как подтвердить именно его расходы. Не делайте вывод о размере выплаты по итогу коммерческой сметы. Оставьте копии переданных документов и сведения о том, какое учреждение получило оригиналы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли взять время на решение по необязательным позициям?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите указать, от чего реально зависит срок выбора. Готовность зала и доставка индивидуальной надписи требуют разных согласований. Отметьте позиции, без которых нельзя подтвердить следующий шаг, и те, к которым семья сможет вернуться позже. Если решение нужно принять сейчас, выясните причину и последствия отказа. Сохраните перечень уже принятых решений у одного родственника, чтобы другой случайно не оформил второй заказ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как распределить работу между агентом и теми, кто помогает семье?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте короткий список по исполнителям. Один человек общается с моргом, другой — с площадкой, третий встречает гостей. В строке агента перечислите действия, которые ему действительно поручили, и результат каждого поручения, например подтверждение времени или получение документа. Если поручение выполнил родственник, сообщите об этом агенту. Копия такого списка помогает подменить организатора в течение дня."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нужно ли подписывать договор сразу?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нет, сначала изучите условия."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить агента?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните его данные через официальный контакт службы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Сопровождение похорон",
+      "slug": "soprovozhdenie-pohoron",
+      "sortOrder": 220,
+      "serviceCategory": "ritualny-agent",
+      "summary": "Сопровождение особенно полезно при нескольких площадках: морге, зале, храме и кладбище. Оно отличается от первоначальной консультации тем, что сосредоточено на ходе дня. Подготовьте расписание, контакты ответственных и сведения о гостях с ограниченной мобильностью.",
+      "image": "images/soprovozhdenie-pohoron.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Сопровождение похорон",
+      "slug": "soprovozhdenie-pohoron",
+      "_status": "draft",
+      "seoTitle": "Сопровождение похорон в Москве и Московской области",
+      "seoDescription": "Как организовать сопровождение семьи у зала и кладбища, распределить встречающих и передать гостям изменения в расписании.",
+      "focusKeyword": "сопровождение похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "координация в день погребения"
+        },
+        {
+          "keyword": "встреча гостей на кладбище"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "если две группы едут разными маршрутами"
+        },
+        {
+          "keyword": "планирование"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «сопровождение похорон в Москве». Раскрыть координация в день погребения; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/soprovozhdenie-pohoron.webp",
+      "openGraph": {
+        "title": "Сопровождение похорон — RitualGroup24",
+        "description": "Как организовать сопровождение семьи у зала и кладбища, распределить встречающих и передать гостям изменения в расписании.",
+        "image": "og/soprovozhdenie-pohoron.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Координация участников в день церемонии. Сопровождение особенно полезно при нескольких площадках: морге, зале, храме и кладбище. Оно отличается от первоначальной консультации тем, что сосредоточено на ходе дня."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/soprovozhdenie-pohoron.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если две группы едут разными маршрутами"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте по одному связному у зала и у кладбища. Первый сообщает о выезде последней машины, второй встречает тех, кто приехал напрямую. Договоритесь, кто остаётся с участником, которому тяжело идти, и как ему вернуться домой. Водителю передайте ориентир у ворот, а ведущему — сигнал, что близкие готовы войти."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Подготовьте расписание, контакты ответственных и сведения о гостях с ограниченной мобильностью."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните длительность присутствия специалиста, количество остановок и условия дополнительного времени."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "План дня и резерв времени"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте расписание с адресами, контактами площадок, временем подачи транспорта и ожидаемой продолжительностью прощания. Отдельно выделите время на посадку пожилых гостей и переходы между помещениями. Не планируйте стыковки без запаса."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Взаимодействие с другими исполнителями"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До начала церемонии уточните, кто принимает ритуальные принадлежности, встречает транспорт, руководит прощанием и связывается с администрацией кладбища. Сопровождающий специалист не должен автоматически заменять церемониймейстера или водителя: обязанности согласовывают отдельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если расписание меняется"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При задержке сначала уточняют возможность переноса у следующей площадки и перевозчика. Затем сообщают обновленный план ответственному родственнику. Для гостей удобно использовать один согласованный канал оповещения, чтобы не распространять противоречивые сведения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Завершение сопровождения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните заранее, заканчивается ли работа после погребения или включает координацию поминальной трапезы. Сверьте выполненные позиции, получите оставшиеся документы и согласуйте передачу личных вещей."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Маршрут для гостей можно разобрать при выборе "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "пассажирского транспорта"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "transport-dlya-rodstvennikov"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что дать гостю, который приедет позже?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте адрес следующей точки и телефон встречающего. В часы прощания удобнее отправить короткое сообщение с ориентиром, чем прерывать церемонию звонками разным родственникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как встретить человека, который не успел к началу прощания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назначьте встречающего, который сможет тихо выйти из зала или отправить сообщение. Дайте опоздавшему следующий ориентир и поясните, в какой момент можно присоединиться, не прерывая выступление или молитву. При закрытом доступе на площадку встречающий согласует вход с её сотрудником."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто сопровождает гостя между залом и микроавтобусом?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Договоритесь отдельно о человеке, который поможет пройти от кресла до посадки. Уточните, где он подождёт, может ли водитель приблизиться к выходу и где разместить средство передвижения. Перед отправлением связной у автобуса сообщает организатору, что нужный пассажир на месте."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как распределить работу между агентом и теми, кто помогает семье?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте короткий список по исполнителям. Один человек общается с моргом, другой — с площадкой, третий встречает гостей. В строке агента перечислите действия, которые ему действительно поручили, и результат каждого поручения, например подтверждение времени или получение документа. Если поручение выполнил родственник, сообщите об этом агенту. Копия такого списка помогает подменить организатора в течение дня."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить, что поручение действительно выполнено?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При передаче задачи договоритесь, по какому признаку она считается завершённой. Для брони зала это ответ площадки с датой и временем, для подачи заявления — подтверждение приёма, для доставки — сообщение получателя. Слова «вопрос решён» могут означать лишь предварительный разговор. Попросите контакт ответственной стороны, если семье предстоит обратиться туда повторно, и отметьте, какой следующий шаг остаётся за вами."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие сведения можно дать встречающему без семейных подробностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Гостям и водителю обычно достаточно адреса, входа, времени сбора и имени того, кто их встретит. Пришлите схему пути от остановки или парковки и поясните, в каком месте группа соберётся после выхода. Отдельно спросите у человека с ограниченной подвижностью, какая помощь ему нужна. Эти сведения с его согласия передают тому, кто поможет на месте, без рассылки личных обстоятельств всем участникам."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать незавершённые дела другому родственнику?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Напишите короткую запись с датой. Укажите, что уже оплачено, какие оригиналы у кого находятся и ответа от какого учреждения вы ждёте. Приложите номер обращения, часы приёма и имя контактного лица. Подчеркните, какие договорённости были только устными. Если следующий шаг требует личного присутствия или полномочий представителя, проверьте их до того, как новый организатор отправится в дорогу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать при задержке в первой точке маршрута?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Об изменении первым узнаёт человек, который ведёт расписание. Он уточняет у следующей площадки, сохраняется ли время приёма, а у водителя — где можно ждать и как это учитывается в заказе. Только после этого родным сообщают обновлённое место и время сбора. Не просите водителя компенсировать задержку скоростью. Если ожидание стало платным, согласуйте с заказчиком изменение до продолжения поездки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли изменить маршрут?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Изменения согласуют с транспортом и площадками."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто встречает участников?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Это определяют заранее в плане церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Оформление документов для похорон",
+      "slug": "oformlenie-dokumentov-dlya-pohoron",
+      "sortOrder": 230,
+      "serviceCategory": "ritualny-agent",
+      "summary": "Медицинское свидетельство о смерти и документ о государственной регистрации смерти имеют разные назначения. Состав остальных документов зависит от способа погребения и конкретной процедуры. Соберите имеющиеся документы и сведения о заявителе; уточните, где оформлено медицинское свидетельство.",
+      "image": "images/oformlenie-dokumentov-dlya-pohoron.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Оформление документов для похорон",
+      "slug": "oformlenie-dokumentov-dlya-pohoron",
+      "_status": "draft",
+      "seoTitle": "Документы для похорон в Москве и Московской области",
+      "seoDescription": "Какие документы уточнить для морга, кладбища и крематория. Как проверить написание имени, полномочия представителя и порядок возврата оригиналов.",
+      "focusKeyword": "оформление документов для похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "документы организатора погребения"
+        },
+        {
+          "keyword": "представитель для подачи документов"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "папка для нескольких учреждений"
+        },
+        {
+          "keyword": "планирование"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «оформление документов для похорон в Москве». Раскрыть документы организатора погребения; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/oformlenie-dokumentov-dlya-pohoron.webp",
+      "openGraph": {
+        "title": "Документы для похорон — RitualGroup24",
+        "description": "Какие документы уточнить для морга, кладбища и крематория. Как проверить написание имени, полномочия представителя и порядок возврата оригиналов.",
+        "image": "og/oformlenie-dokumentov-dlya-pohoron.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Помощь в определении необходимых документов и последовательности обращений. Медицинское свидетельство о смерти и документ о государственной регистрации смерти имеют разные назначения. Состав остальных документов зависит от способа погребения и конкретной процедуры."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/oformlenie-dokumentov-dlya-pohoron.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Папка для нескольких учреждений"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Разложите бумаги по назначению. Одни нужны для регистрации смерти, другие — для выдачи в морге, третьи — для оформления места. Рядом положите лист с отметками, где предъявлен оригинал и кому он возвращён. Если написание фамилии в старом семейном документе отличается, покажите расхождение учреждению до поездки на кладбище."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Соберите имеющиеся документы и сведения о заявителе; уточните, где оформлено медицинское свидетельство."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/oformlenie-dokumentov-dlya-pohoron-extra-14.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните стоимость помощи отдельно от официальных платежей, если они применимы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Различие документов о смерти"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Медицинское свидетельство служит основанием для государственной регистрации смерти, а свидетельство о государственной регистрации используется при дальнейших административных процедурах. Не следует считать эти документы взаимозаменяемыми."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Документы для выбранного способа погребения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для оформления захоронения уточняют требования администрации кладбища. При родственном захоронении могут понадобиться документы о родстве и существующей могиле. Для кремации и последующего захоронения праха действуют отдельные процедуры. Проверяйте перечни у принимающей организации."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Оформление через представителя"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "До передачи документов выясните, вправе ли представитель выполнить конкретное действие, нужна ли доверенность и в какой форме. Запишите, какие оригиналы переданы, кому и когда они должны быть возвращены. Не подписывайте незаполненные бланки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Проверка перед подачей"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сверьте написание фамилии, имени, отчества, даты и другие сведения в документах. При расхождении обратитесь в выдавшее документ учреждение. Не исправляйте официальные документы самостоятельно. Храните подтверждения обращений и платежей отдельно от рекламных предложений."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для погребения на старом участке может понадобиться "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "проверка сведений о родственном захоронении"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "rodstvennoe-zahoronenie"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать незавершённые дела другому родственнику"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Напишите короткую запись с датой. Укажите, что уже оплачено, какие оригиналы у кого находятся и ответа от какого учреждения вы ждёте. Приложите номер обращения, часы приёма и имя контактного лица. Подчеркните, какие договорённости были только устными. Если следующий шаг требует личного присутствия или полномочий представителя, проверьте их до того, как новый организатор отправится в дорогу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как действовать, если два учреждения просят один оригинал в один день?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Узнайте, где оригинал только сверяют, а где его оставляют, и в каком порядке лучше прийти. До передачи запишите название получателя и способ получения обратно. Уточните отдельно, примут ли заверенную копию."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что записать, если оригинал передаётся представителю?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назовите документ и учреждение, для которого он нужен, дату передачи, получателя и порядок возврата. Отдельно отметьте срок, когда документ понадобится семье в другой точке. Если передаются несколько оригиналов, сверяйте их по перечню вместе с представителем в момент выдачи и возврата."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как обратиться за разъяснением опечатки в имени?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Покажите расхождение органу, выдавшему документ, и учреждению, которому он нужен. Уточните порядок исправления и допустимость дальнейших действий на время проверки. Сохраните ответ и номер обращения. Исправлять официальный документ самостоятельно или переносить ошибку в следующий заказ не следует."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как распределить работу между агентом и теми, кто помогает семье?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Составьте короткий список по исполнителям. Один человек общается с моргом, другой — с площадкой, третий встречает гостей. В строке агента перечислите действия, которые ему действительно поручили, и результат каждого поручения, например подтверждение времени или получение документа. Если поручение выполнил родственник, сообщите об этом агенту. Копия такого списка помогает подменить организатора в течение дня."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как проверить, что поручение действительно выполнено?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "При передаче задачи договоритесь, по какому признаку она считается завершённой. Для брони зала это ответ площадки с датой и временем, для подачи заявления — подтверждение приёма, для доставки — сообщение получателя. Слова «вопрос решён» могут означать лишь предварительный разговор. Попросите контакт ответственной стороны, если семье предстоит обратиться туда повторно, и отметьте, какой следующий шаг остаётся за вами."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как поступить, если договор называют обязательным для получения документа?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у самого учреждения, какие действия входят в его обычный порядок и что требуется от заявителя. Перезвоните по номеру из официального справочника, который нашли самостоятельно. Попросите отделить оформление документа от коммерческой помощи с поездкой или подачей. Сохраните имя сотрудника и дату разъяснения. Если вам предлагают подписать сразу несколько бланков, возьмите время на чтение каждого."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли поручить оформление другому лицу?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Это зависит от процедуры и необходимых полномочий."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нужны ли оригиналы?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Требования уточняют в организации, принимающей документы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

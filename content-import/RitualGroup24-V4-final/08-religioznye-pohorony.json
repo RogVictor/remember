@@ -1,0 +1,3863 @@
+[
+  {
+    "kind": "category",
+    "category": {
+      "title": "Религиозные похороны",
+      "active": false
+    },
+    "page": {
+      "title": "Религиозные похороны",
+      "slug": "religioznye-pohorony",
+      "_status": "draft",
+      "seoTitle": "Религиозные похороны в Москве и Московской области",
+      "seoDescription": "Как организовать религиозное прощание по пожеланиям семьи. Контакт с общиной, согласование обряда с учреждениями и участие гостей разных убеждений.",
+      "focusKeyword": "организация религиозных похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "участие общины в погребении"
+        },
+        {
+          "keyword": "согласование семейной традиции"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "как найти человека для разговора о традиции"
+        },
+        {
+          "keyword": "община"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "mixed",
+      "seoNotes": "Основной запрос — «организация религиозных похорон в Москве». Раскрыть участие общины в погребении; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "OfferCatalog",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/religioznye-pohorony.webp",
+      "openGraph": {
+        "title": "Религиозные похороны — RitualGroup24",
+        "description": "Как организовать религиозное прощание по пожеланиям семьи. Контакт с общиной, согласование обряда с учреждениями и участие гостей разных убеждений.",
+        "image": "og/religioznye-pohorony.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Организация прощания с уважением к вероисповеданию умершего."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/religioznye-pohorony.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как найти человека для разговора о традиции"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Вначале имеет значение воля умершего и связь семьи с конкретной общиной. Обычай может различаться даже у семей, которые относят себя к одной традиции. Спросите, кому близкие доверяют обсудить религиозную часть, и договоритесь о прямом разговоре с этим человеком. Сотруднику морга, администрации кладбища и перевозчику передают согласованные практические условия. Обращаться к ним за толкованием обряда семье не требуется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "category-services",
+                "category": "religioznye-pohorony",
+                "layout": "sections"
+              }
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если семья участвует в двух встречах"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Одна встреча может состояться в общине, другая — дома или в светском зале. Уточните, как назвать каждую в приглашении и куда можно прийти людям, которые хотят поддержать родных, но не участвуют в обряде. Для второго места отдельно проверьте правила посещения, съёмки и передачи цветов. Не переносите условие одного учреждения на другое без согласования с принимающей стороной."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда разные родственники называют разные обычаи"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сохраните в отдельной записи то, что рассказывал сам умерший, и пожелания близких. Попросите представителя общины объяснить, какие решения определяет религиозный порядок, а какие семья может принять сама. Если разногласие касается места или способа погребения, не бронируйте спорную услугу только на основании мнения одного исполнителя. Выясните порядок обращения и дайте близким возможность обсудить ответ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как подготовить памятку для учреждения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Внесите в неё только согласованные практические просьбы: кто участвует в подготовке, кому дать доступ, что передать с личными вещами и какое время рассматривать для выдачи. Вопросы о молитве, чтениях и традиции остаются у духовного представителя. Если невозможно выполнить одну просьбу, попросите сообщить об этом заранее и свяжите ответственного сотрудника с семьёй. Для гостей подобная служебная памятка не требуется."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нужное семье время на службе учитывают в "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "общем плане прощания"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "organizaciya-proshchaniya"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать, если у семьи есть традиция, но нет привычного места для прощания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Назовите представителю общины предполагаемый район, условия выдачи и круг родственников. Спросите, какие части возможны в доступной площадке и что нужно согласовать с её администрацией. Уточните напрямую, кто отвечает за обряд. Наличие подходящего интерьера само по себе не подтверждает возможность службы."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как записать пожелания близких, живущих в другой стране?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Выберите человека в семье, который сможет точно передать ответы общине и получить обратное разъяснение. Уточните язык, способ связи и время для разговора с учётом часового пояса. Отделите уже известную волю умершего от новых предложений родственников, чтобы не превратить обсуждение в спор о традиции."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как выбрать между местом, которое удобно сегодня, и местом для будущих посещений?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обсудите с близкими, кто сможет приезжать через год и кому тяжело преодолевать длинные дорожки или ступени. Узнайте порядок доступа зимой, возможность размещать цветы и кто принимает обращения об уходе. Для ниши проверьте высоту, для участка — путь от входа и правила содержания. Если семья живёт в разных городах, передайте схему всем, кому это важно, и оставьте сведения о месте в семейных документах."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С чего начать, если родные не знают общины умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких друзей и родственников, говорил ли сам человек о приходе, мечети, синагоге или духовном наставнике. Когда связаться с привычной общиной не получается, расскажите об обстоятельствах представителю той общины, к которой семья собирается обратиться. Попросите назвать человека, уполномоченного обсудить порядок. Не выводите религиозную принадлежность и желаемый обряд только из фамилии или происхождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать до заказа принадлежностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расскажите представителю общины, где состоятся подготовка, прощание и погребение и какие решения уже приняты. Обсудите одежду, допустимое оформление, участие родственников и то, что подготовит сама община. Попросите отметить вещи, которые семья может принести из дома. Перед заказом в магазине сверьте список с учреждением и площадкой. Описание товара как «традиционного» само по себе не подтверждает, что он уместен в вашем случае."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как развести время религиозного обряда и время работы учреждения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите два независимых подтверждения. Представитель общины уточняет возможное время и порядок религиозной части, а администрация учреждения — выдачу, приём и доступ на территорию. Сопоставьте оба ответа с дорогой и временем для близких. Если одно окно не подходит, попросите общину помочь выбрать допустимый вариант и только затем передайте обновлённое расписание гостям. Один согласованный звонок не заменяет второго."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как помочь гостям с разными убеждениями?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В приглашении укажите, в какое время начинается общая часть, кто встретит у входа и когда можно будет подойти к семье. Уточните у общины простые правила посещения для тех, кто впервые будет присутствовать. Не требуйте от гостей объяснять свои убеждения или участвовать в действии, которое им незнакомо. Назначьте близкого, который сможет тихо помочь с вопросами на месте, не прерывая службу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать с иконой или личной вещью после прощания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Ещё до церемонии спросите в приходе и у ответственного за погребение о допустимых действиях. Если вещь должна остаться в семье, назначьте человека, который получит её и положит в отдельную сумку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто подготовит гостей к молитве?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите представителя общины объяснить порядок тем, кто присутствует впервые. Достаточно короткой памятки о месте сбора, времени и допустимости съёмки. Семье не нужно самостоятельно толковать религиозные правила для всех приглашённых."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сообщить о прощании коллегам и соседям?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С разрешения семьи передайте точку сбора и часть встречи, на которую их приглашают. Уточните у представителя общины, какие знаки внимания уместны. Возможность личного визита после погребения лучше обсудить с близкими отдельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать просьбу прочитать текст на другом языке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите её священнику заранее и передайте сам текст. Уточните, где чтение будет уместно и кто поможет родственникам понять последовательность службы. Для личных воспоминаний можно предусмотреть встречу после неё."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Православные",
+      "slug": "pravoslavnye-pohorony",
+      "sortOrder": 810,
+      "serviceCategory": "religioznye-pohorony",
+      "summary": "Православное прощание может включать молитву и отпевание, но конкретный порядок следует согласовывать с приходом с учетом обстоятельств и пожеланий умершего. Уточните сведения, необходимые священнослужителю, пожелания семьи и предполагаемое место погребения.",
+      "image": "images/pravoslavnye-pohorony.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Православные похороны",
+      "slug": "pravoslavnye-pohorony",
+      "_status": "draft",
+      "seoTitle": "Православные похороны в Москве и Московской области",
+      "seoDescription": "Православные похороны в Москве и Подмосковье. Как согласовать приход, прощание и маршрут на кладбище, учесть пожелания близких и гостей.",
+      "focusKeyword": "организация православных похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "порядок прощания в приходе"
+        },
+        {
+          "keyword": "участие семьи в православном погребении"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "один маршрут для семьи и прихода"
+        },
+        {
+          "keyword": "община"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «организация православных похорон в Москве». Раскрыть порядок прощания в приходе; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/pravoslavnye-pohorony.webp",
+      "openGraph": {
+        "title": "Православные похороны — RitualGroup24",
+        "description": "Православные похороны в Москве и Подмосковье. Как согласовать приход, прощание и маршрут на кладбище, учесть пожелания близких и гостей.",
+        "image": "og/pravoslavnye-pohorony.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Православные похороны с согласованием церковного обряда. Православное прощание может включать молитву и отпевание, но конкретный порядок следует согласовывать с приходом с учетом обстоятельств и пожеланий умершего."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/pravoslavnye-pohorony.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Один маршрут для семьи и прихода"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких, был ли у умершего свой приход и кому он доверял. Согласуйте с приходом службу, с моргом — выдачу, с кладбищем — время прибытия. Запишите эти подтверждения отдельно. Если в семье люди разных убеждений, расскажите гостям, где можно присоединиться к общей встрече и где лучше оставить время близким и священнику."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните сведения, необходимые священнослужителю, пожелания семьи и предполагаемое место погребения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/pravoslavnye-pohorony-extra-10.webp"
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/pravoslavnye-pohorony-extra-53.webp"
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/pravoslavnye-pohorony-extra-54.webp"
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/pravoslavnye-pohorony-extra-61.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отдельно уточняют организационные расходы и условия прихода."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "О порядке согласования службы подробнее рассказывает страница "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "об отпевании"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "otpevanie"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать до заказа принадлежностей"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расскажите представителю общины, где состоятся подготовка, прощание и погребение и какие решения уже приняты. Обсудите одежду, допустимое оформление, участие родственников и то, что подготовит сама община. Попросите отметить вещи, которые семья может принести из дома. Перед заказом в магазине сверьте список с учреждением и площадкой. Описание товара как «традиционного» само по себе не подтверждает, что он уместен в вашем случае."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как развести время религиозного обряда и время работы учреждения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите два независимых подтверждения. Представитель общины уточняет возможное время и порядок религиозной части, а администрация учреждения — выдачу, приём и доступ на территорию. Сопоставьте оба ответа с дорогой и временем для близких. Если одно окно не подходит, попросите общину помочь выбрать допустимый вариант и только затем передайте обновлённое расписание гостям. Один согласованный звонок не заменяет второго."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как договориться о съёмке во время религиозного прощания"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Задайте вопрос отдельно семье, духовному представителю и площадке. Даже когда камера допустима в здании, отдельные моменты или участники могут требовать полной приватности. Согласуйте общие планы, место для оператора и сигнал немедленной остановки. При сомнениях исключите спорный эпизод из программы съёмки. Родственникам, которые не приедут, можно передать личное сообщение или согласованную фотографию места после церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать с иконой или личной вещью после прощания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Ещё до церемонии спросите в приходе и у ответственного за погребение о допустимых действиях. Если вещь должна остаться в семье, назначьте человека, который получит её и положит в отдельную сумку."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоит ли заказывать принадлежности до разговора со священником?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Если для семьи важен определённый приход, сначала уточните в нём, что понадобится и что будет на месте. Попросите отметить вещи, которые близкие хотели бы сохранить после прощания. Затем согласуйте передачу с моргом или залом. Не покупайте одинаковые предметы одновременно через учреждение и через организатора."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как быть, если часть гостей приедет прямо к храму?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отправьте им название прихода, адрес фактического входа и время, которое подтвердил ответственный. Если рядом есть несколько зданий, добавьте ориентир и имя встречающего. Близкому, который будет на службе, звонить в этот период неудобно. Пусть организационные сообщения принимает другой человек."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как выбрать между местом, которое удобно сегодня, и местом для будущих посещений?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обсудите с близкими, кто сможет приезжать через год и кому тяжело преодолевать длинные дорожки или ступени. Узнайте порядок доступа зимой, возможность размещать цветы и кто принимает обращения об уходе. Для ниши проверьте высоту, для участка — путь от входа и правила содержания. Если семья живёт в разных городах, передайте схему всем, кому это важно, и оставьте сведения о месте в семейных документах."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует речь или музыку непосредственно на площадке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Семья выбирает личные слова и музыку в пределах правил конкретного места. Отправьте ответственному короткий план, список исполнителей и предполагаемую длительность. В храме программу согласуют с духовным представителем, в гражданском зале — с администрацией и ведущим. Принятые изменения передайте музыкантам и выступающим одновременно. Устная договорённость с одним участником может быть неизвестна тем, кто откроет зал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С чего начать, если родные не знают общины умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких друзей и родственников, говорил ли сам человек о приходе, мечети, синагоге или духовном наставнике. Когда связаться с привычной общиной не получается, расскажите об обстоятельствах представителю той общины, к которой семья собирается обратиться. Попросите назвать человека, уполномоченного обсудить порядок. Не выводите религиозную принадлежность и желаемый обряд только из фамилии или происхождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Обязательно ли отпевание?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Решение обсуждают с семьей и священнослужителем."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что подготовить для обряда?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Перечень уточняют в приходе."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Мусульманские",
+      "slug": "musulmanskie-pohorony",
+      "sortOrder": 820,
+      "serviceCategory": "religioznye-pohorony",
+      "summary": "В мусульманской традиции важны согласование омовения, погребальной молитвы и места захоронения; конкретные требования определяет община, а не универсальный коммерческий пакет. Свяжитесь с представителем общины, уточните пожелания семьи и ограничения учреждения.",
+      "image": "images/musulmanskie-pohorony.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Мусульманские похороны",
+      "slug": "musulmanskie-pohorony",
+      "_status": "draft",
+      "seoTitle": "Мусульманские похороны в Москве и Московской области",
+      "seoDescription": "Организация мусульманского погребения. Как связать семью, имама, учреждение и кладбище, согласовать подготовку и сообщить близким время молитвы.",
+      "focusKeyword": "организация мусульманских похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "погребение с участием имама"
+        },
+        {
+          "keyword": "координация с мусульманской общиной"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "согласование с семьёй и мусульманской общиной"
+        },
+        {
+          "keyword": "община"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «организация мусульманских похорон в Москве». Раскрыть погребение с участием имама; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/musulmanskie-pohorony.webp",
+      "openGraph": {
+        "title": "Мусульманские похороны — RitualGroup24",
+        "description": "Организация мусульманского погребения. Как связать семью, имама, учреждение и кладбище, согласовать подготовку и сообщить близким время молитвы.",
+        "image": "og/musulmanskie-pohorony.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Мусульманские похороны с учетом требований общины. В мусульманской традиции важны согласование омовения, погребальной молитвы и места захоронения; конкретные требования определяет община, а не универсальный коммерческий пакет."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/musulmanskie-pohorony.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Согласование с семьёй и мусульманской общиной"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Узнайте, с каким имамом или общиной близкие хотят связаться. Одним разговором с моргом уточните возможное время передачи и условия участия приглашённых общиной людей. Другим — с кладбищем — проверьте место, подъезд и ответственного за приём. Если родные стремятся провести погребение без промедления, сообщайте им отдельно подтверждённые и ещё ожидаемые решения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Свяжитесь с представителем общины, уточните пожелания семьи и ограничения учреждения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Учитывают транспорт, разрешенные работы и условия выбранного места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Когда семья и община находятся в разных городах"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите родственников назвать одного человека, который уже общался с имамом, и получить согласие на прямой контакт между общиной по месту нахождения умершего и теми, кто встретит его на кладбище. Сообщите каждой стороне только сведения, необходимые для её участия. Отдельно проверьте, кто и где может выполнить согласованную подготовку и какие принадлежности нужны. Если есть пожелание провести погребение в другом регионе, выясните условия передачи до покупки билетов. Не назначайте точный час только потому, что семья уже готова к выезду."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Место встречи с общиной"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите назвать точку, где родственников встретит представитель общины. Запишите её отдельно от адреса кладбища и сообщите, кому звонить, если семья задержится на выдаче в морге."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Доступ к участку и время работ согласуют при "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "организации захоронения"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "organizaciya-zahoroneniya"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто подготовит гостей к молитве?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите представителя общины объяснить порядок тем, кто присутствует впервые. Достаточно короткой памятки о месте сбора, времени и допустимости съёмки. Семье не нужно самостоятельно толковать религиозные правила для всех приглашённых."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С кем согласовывать участие в подготовке по обычаю семьи?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте имаму или представителю общины сведения о морге и о том, какие действия уже выполнены. Попросите уточнить, кто сможет участвовать и какие условия доступа нужно обсудить со специалистом учреждения. До согласования не включайте принадлежности или дополнительные процедуры в коммерческий заказ."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что сообщить родственникам, которые хотят присоединиться к молитве?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните в общине место, время сбора и того, кто подскажет порядок участникам. Передайте гостям эти сведения кратко, согласовав допустимость фото и видео. Если родственники едут только на кладбище, дайте им отдельную точку встречи. У них могут быть другие условия входа и парковки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С чего начать, если родные не знают общины умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких друзей и родственников, говорил ли сам человек о приходе, мечети, синагоге или духовном наставнике. Когда связаться с привычной общиной не получается, расскажите об обстоятельствах представителю той общины, к которой семья собирается обратиться. Попросите назвать человека, уполномоченного обсудить порядок. Не выводите религиозную принадлежность и желаемый обряд только из фамилии или происхождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать до заказа принадлежностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расскажите представителю общины, где состоятся подготовка, прощание и погребение и какие решения уже приняты. Обсудите одежду, допустимое оформление, участие родственников и то, что подготовит сама община. Попросите отметить вещи, которые семья может принести из дома. Перед заказом в магазине сверьте список с учреждением и площадкой. Описание товара как «традиционного» само по себе не подтверждает, что он уместен в вашем случае."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как развести время религиозного обряда и время работы учреждения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите два независимых подтверждения. Представитель общины уточняет возможное время и порядок религиозной части, а администрация учреждения — выдачу, приём и доступ на территорию. Сопоставьте оба ответа с дорогой и временем для близких. Если одно окно не подходит, попросите общину помочь выбрать допустимый вариант и только затем передайте обновлённое расписание гостям. Один согласованный звонок не заменяет второго."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как договориться о съёмке во время религиозного прощания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Задайте вопрос отдельно семье, духовному представителю и площадке. Даже когда камера допустима в здании, отдельные моменты или участники могут требовать полной приватности. Согласуйте общие планы, место для оператора и сигнал немедленной остановки. При сомнениях исключите спорный эпизод из программы съёмки. Родственникам, которые не приедут, можно передать личное сообщение или согласованную фотографию места после церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как помочь гостям с разными убеждениями?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В приглашении укажите, в какое время начинается общая часть, кто встретит у входа и когда можно будет подойти к семье. Уточните у общины простые правила посещения для тех, кто впервые будет присутствовать. Не требуйте от гостей объяснять свои убеждения или участвовать в действии, которое им незнакомо. Назначьте близкого, который сможет тихо помочь с вопросами на месте, не прерывая службу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто определяет порядок обряда?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Представитель общины с учетом традиции семьи."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как согласовать дату?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С учетом требований общины и возможностей кладбища."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Иудейские",
+      "slug": "iudeiskie-pohorony",
+      "sortOrder": 830,
+      "serviceCategory": "religioznye-pohorony",
+      "summary": "Иудейские похороны могут предполагать особый порядок подготовки и погребения; практика различается между общинами, поэтому согласование необходимо начинать с представителя семьи и общины. Уточните принадлежность к общине, пожелания умершего и предполагаемое место захоронения.",
+      "image": "images/iudeiskie-pohorony.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Иудейские похороны",
+      "slug": "iudeiskie-pohorony",
+      "_status": "draft",
+      "seoTitle": "Иудейские похороны в Москве и Московской области",
+      "seoDescription": "Организация иудейских похорон с участием общины. Что уточнить у раввина, как передать согласованные пожелания учреждению и пригласить близких.",
+      "focusKeyword": "организация иудейских похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "обращение к раввину для погребения"
+        },
+        {
+          "keyword": "согласование с еврейской общиной"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "решения, которые семья передаёт общине"
+        },
+        {
+          "keyword": "община"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «организация иудейских похорон в Москве». Раскрыть обращение к раввину для погребения; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/iudeiskie-pohorony.webp",
+      "openGraph": {
+        "title": "Иудейские похороны — RitualGroup24",
+        "description": "Организация иудейских похорон с участием общины. Что уточнить у раввина, как передать согласованные пожелания учреждению и пригласить близких.",
+        "image": "og/iudeiskie-pohorony.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Иудейские похороны с учетом религиозной практики семьи. Иудейские похороны могут предполагать особый порядок подготовки и погребения; практика различается между общинами, поэтому согласование необходимо начинать с представителя семьи и общины."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/iudeiskie-pohorony.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Решения, которые семья передаёт общине"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Узнайте, есть ли у семьи контакт раввина или общины умершего. Передайте ему сведения о месте нахождения тела, предполагаемом погребении и пожеланиях близких о присутствии на прощании. Попросите определить ответственного за взаимодействие с учреждением. До этого не заказывайте оформление зала, музыку и съёмку по готовому церемониальному пакету."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните принадлежность к общине, пожелания умершего и предполагаемое место захоронения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отдельно уточняют организационные работы, транспорт и условия места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Несколько языков в одной семье"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите близких, на каком языке им проще обсудить условия и кому передать объяснение общины. Для приезжающих родственников запишите понятное название места и ориентир у входа. Если имя человека в семье произносили иначе, чем его обычно читают по документам, уточните желаемое произношение у близких и передайте представителю общины лично."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Отдельно уточняют "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "транспорт для родственников"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "transport-dlya-rodstvennikov"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": ", если гости едут на кладбище вместе."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как помочь гостям с разными убеждениями"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В приглашении укажите, в какое время начинается общая часть, кто встретит у входа и когда можно будет подойти к семье. Уточните у общины простые правила посещения для тех, кто впервые будет присутствовать. Не требуйте от гостей объяснять свои убеждения или участвовать в действии, которое им незнакомо. Назначьте близкого, который сможет тихо помочь с вопросами на месте, не прерывая службу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как сообщить о прощании коллегам и соседям?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С разрешения семьи передайте точку сбора и часть встречи, на которую их приглашают. Уточните у представителя общины, какие знаки внимания уместны. Возможность личного визита после погребения лучше обсудить с близкими отдельно."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что делать с предложением провести церемонию по готовому сценарию?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте краткое описание раввину или ответственному в общине и спросите, что соответствует пожеланиям семьи и практике общины. До ответа отложите заказ музыки, украшений или съёмки. Часть семейных воспоминаний можно оставить для отдельной встречи, если в выбранном обряде для них нет места."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как помочь близким, которые не знакомы с обычаями общины?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Попросите представителя семьи составить короткое приглашение по согласованному порядку. Назовите вход, время и человека для вопросов о присутствии и знаках внимания. Если кто-то хочет передать поддержку после погребения, уточните у семьи подходящий способ и время личного обращения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С чего начать, если родные не знают общины умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких друзей и родственников, говорил ли сам человек о приходе, мечети, синагоге или духовном наставнике. Когда связаться с привычной общиной не получается, расскажите об обстоятельствах представителю той общины, к которой семья собирается обратиться. Попросите назвать человека, уполномоченного обсудить порядок. Не выводите религиозную принадлежность и желаемый обряд только из фамилии или происхождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать до заказа принадлежностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расскажите представителю общины, где состоятся подготовка, прощание и погребение и какие решения уже приняты. Обсудите одежду, допустимое оформление, участие родственников и то, что подготовит сама община. Попросите отметить вещи, которые семья может принести из дома. Перед заказом в магазине сверьте список с учреждением и площадкой. Описание товара как «традиционного» само по себе не подтверждает, что он уместен в вашем случае."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как развести время религиозного обряда и время работы учреждения?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите два независимых подтверждения. Представитель общины уточняет возможное время и порядок религиозной части, а администрация учреждения — выдачу, приём и доступ на территорию. Сопоставьте оба ответа с дорогой и временем для близких. Если одно окно не подходит, попросите общину помочь выбрать допустимый вариант и только затем передайте обновлённое расписание гостям. Один согласованный звонок не заменяет второго."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как договориться о съёмке во время религиозного прощания?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Задайте вопрос отдельно семье, духовному представителю и площадке. Даже когда камера допустима в здании, отдельные моменты или участники могут требовать полной приватности. Согласуйте общие планы, место для оператора и сигнал немедленной остановки. При сомнениях исключите спорный эпизод из программы съёмки. Родственникам, которые не приедут, можно передать личное сообщение или согласованную фотографию места после церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Одинаковы ли обычаи всех общин?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Нет, порядок следует уточнять в конкретной общине."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует церемонию?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Представитель общины и ответственный организатор."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "kind": "service",
+    "service": {
+      "title": "Католические",
+      "slug": "katolicheskie-pohorony",
+      "sortOrder": 840,
+      "serviceCategory": "religioznye-pohorony",
+      "summary": "Католическое прощание может включать заупокойную мессу или другую форму молитвы; конкретный порядок определяет приход. Свяжитесь с приходом, сообщите пожелания семьи и уточните доступность храма или другой площадки.",
+      "image": "images/katolicheskie-pohorony.webp",
+      "priceType": "on-request",
+      "_status": "draft"
+    },
+    "page": {
+      "title": "Католические похороны",
+      "slug": "katolicheskie-pohorony",
+      "_status": "draft",
+      "seoTitle": "Католические похороны в Москве и Московской области",
+      "seoDescription": "Католические похороны в Москве и области. Как связаться с приходом, согласовать службу, чтения и музыку и выделить время для семейной встречи.",
+      "focusKeyword": "организация католических похорон в Москве",
+      "secondaryKeywords": [
+        {
+          "keyword": "прощание в католическом приходе"
+        },
+        {
+          "keyword": "погребальная служба и семейная встреча"
+        }
+      ],
+      "relatedKeywords": [
+        {
+          "keyword": "порядок службы и дорога из храма"
+        },
+        {
+          "keyword": "община"
+        }
+      ],
+      "targetRegions": [
+        {
+          "region": "Москва"
+        },
+        {
+          "region": "Московская область"
+        }
+      ],
+      "searchIntent": "commercial",
+      "seoNotes": "Основной запрос — «организация католических похорон в Москве». Раскрыть прощание в католическом приходе; точные условия согласовываются по месту обращения. Частотность не измерена.",
+      "schemaType": "Service",
+      "robots": {
+        "index": false,
+        "follow": false
+      },
+      "canonicalOverride": null,
+      "ogImage": "images/katolicheskie-pohorony.webp",
+      "openGraph": {
+        "title": "Католические похороны — RitualGroup24",
+        "description": "Католические похороны в Москве и области. Как связаться с приходом, согласовать службу, чтения и музыку и выделить время для семейной встречи.",
+        "image": "og/katolicheskie-pohorony.webp"
+      },
+      "content": {
+        "root": {
+          "type": "root",
+          "version": 1,
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "children": [
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Католические похороны с согласованием заупокойной службы. Католическое прощание может включать заупокойную мессу или другую форму молитвы; конкретный порядок определяет приход."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "upload",
+              "version": 3,
+              "format": "",
+              "fields": {},
+              "relationTo": "media",
+              "value": "images/katolicheskie-pohorony.webp"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Порядок службы и дорога из храма"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Свяжитесь с приходом и объясните, кого семья хотела бы видеть на службе, планируется ли погребение или кремация и когда возможен приезд из морга. Состав и место молитвы согласует священник. Семейные речи, музыку и время для тех, кто не участвует в богослужении, удобнее обсудить отдельно, сохранив время на переход к машине."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что важно определить до заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Свяжитесь с приходом, сообщите пожелания семьи и уточните доступность храма или другой площадки."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Стоимость и состав заказа"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Разделите расходы на организацию, транспорт и условия прихода."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Для встречи после службы семьи отдельно организуют "
+                },
+                {
+                  "type": "link",
+                  "version": 3,
+                  "direction": "ltr",
+                  "format": "",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "version": 1,
+                      "format": 0,
+                      "detail": 0,
+                      "mode": "normal",
+                      "style": "",
+                      "text": "поминальную трапезу"
+                    }
+                  ],
+                  "fields": {
+                    "linkType": "internal",
+                    "newTab": false,
+                    "doc": {
+                      "relationTo": "pages",
+                      "value": "pominki"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как развести время религиозного обряда и время работы учреждения"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Запишите два независимых подтверждения. Представитель общины уточняет возможное время и порядок религиозной части, а администрация учреждения — выдачу, приём и доступ на территорию. Сопоставьте оба ответа с дорогой и временем для близких. Если одно окно не подходит, попросите общину помочь выбрать допустимый вариант и только затем передайте обновлённое расписание гостям. Один согласованный звонок не заменяет второго."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как договориться о съёмке во время религиозного прощания"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Задайте вопрос отдельно семье, духовному представителю и площадке. Даже когда камера допустима в здании, отдельные моменты или участники могут требовать полной приватности. Согласуйте общие планы, место для оператора и сигнал немедленной остановки. При сомнениях исключите спорный эпизод из программы съёмки. Родственникам, которые не приедут, можно передать личное сообщение или согласованную фотографию места после церемонии."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как помочь гостям с разными убеждениями"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "В приглашении укажите, в какое время начинается общая часть, кто встретит у входа и когда можно будет подойти к семье. Уточните у общины простые правила посещения для тех, кто впервые будет присутствовать. Не требуйте от гостей объяснять свои убеждения или участвовать в действии, которое им незнакомо. Назначьте близкого, который сможет тихо помочь с вопросами на месте, не прерывая службу."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Частые вопросы"
+                }
+              ],
+              "tag": "h2"
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как передать просьбу прочитать текст на другом языке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Сообщите её священнику заранее и передайте сам текст. Уточните, где чтение будет уместно и кто поможет родственникам понять последовательность службы. Для личных воспоминаний можно предусмотреть встречу после неё."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто определит, уместна ли выбранная музыка в храме?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Передайте священнику или указанному приходом ответственному название произведения, версию и предполагаемый момент. Согласуйте возможность живого исполнения или записи. Если произведение важно близким, но не подходит для службы, выделите для него время на отдельной семейной встрече."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Что уточнить о языке чтений и обращений?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Спросите приход, кто может читать согласованный текст и на каком языке. Уточните у семьи произношение имени и кому понадобится краткое объяснение хода службы. Передайте ведущему светской части отдельный список обращений, чтобы личные слова не повторяли уже согласованные чтения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Кто согласует речь или музыку непосредственно на площадке?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Семья выбирает личные слова и музыку в пределах правил конкретного места. Отправьте ответственному короткий план, список исполнителей и предполагаемую длительность. В храме программу согласуют с духовным представителем, в гражданском зале — с администрацией и ведущим. Принятые изменения передайте музыкантам и выступающим одновременно. Устная договорённость с одним участником может быть неизвестна тем, кто откроет зал."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Как включить в прощание человека, которому трудно говорить вслух?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Предложите несколько вариантов личного участия. Можно передать записку близкому, заранее записать короткое обращение или попросить ведущего прочитать текст без указания автора. Сначала спросите согласия человека на выбранную форму. Для службы уточните у духовного представителя, уместны ли такие слова в храме или лучше оставить их для семейной встречи. Отказ от выступления в последний момент стоит принять без расспросов."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "С чего начать, если родные не знают общины умершего?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Уточните у близких друзей и родственников, говорил ли сам человек о приходе, мечети, синагоге или духовном наставнике. Когда связаться с привычной общиной не получается, расскажите об обстоятельствах представителю той общины, к которой семья собирается обратиться. Попросите назвать человека, уполномоченного обсудить порядок. Не выводите религиозную принадлежность и желаемый обряд только из фамилии или происхождения."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Какие вопросы задать до заказа принадлежностей?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Расскажите представителю общины, где состоятся подготовка, прощание и погребение и какие решения уже приняты. Обсудите одежду, допустимое оформление, участие родственников и то, что подготовит сама община. Попросите отметить вещи, которые семья может принести из дома. Перед заказом в магазине сверьте список с учреждением и площадкой. Описание товара как «традиционного» само по себе не подтверждает, что он уместен в вашем случае."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Где проводится служба?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Место согласуют с приходом."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "heading",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Можно ли провести семейное прощание отдельно?"
+                }
+              ],
+              "tag": "h3"
+            },
+            {
+              "type": "paragraph",
+              "version": 1,
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "text",
+                  "version": 1,
+                  "format": 0,
+                  "detail": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Да, если это согласовано с участниками и площадками."
+                }
+              ],
+              "textFormat": 0,
+              "textStyle": ""
+            },
+            {
+              "type": "block",
+              "version": 2,
+              "format": "",
+              "fields": {
+                "blockType": "callback-form"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

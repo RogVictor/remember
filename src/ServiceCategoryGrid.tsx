@@ -3,6 +3,18 @@ import type { ServiceCategoryGroup } from './lib/service-categories'
 
 type ServiceLinks = ReadonlyMap<CMSService['id'], string>
 
+export function ServiceCategoryHeadings({ group, links }: { group: ServiceCategoryGroup; links: ServiceLinks }) {
+  const linked = group.services.filter(service => links.has(service.id))
+  if (!linked.length) return null
+  return <section>
+    <h2>Услуги направления</h2>
+    {linked.map(service => <section key={service.id}>
+      <h3><a href={links.get(service.id)}>{service.pageTitle || service.title}</a></h3>
+      {service.summary && <p>{service.summary}</p>}
+    </section>)}
+  </section>
+}
+
 export function ServiceCategorySection({ group, links, href }: {
   group: ServiceCategoryGroup
   links: ServiceLinks

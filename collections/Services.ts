@@ -27,11 +27,11 @@ export const Services: CollectionConfig = {
       type: 'relationship',
       relationTo: 'pages',
       label: 'Страница услуги',
-      filterOptions: { _status: { equals: 'published' } },
+      filterOptions: ({ data }) => data?._status === 'draft' || { _status: { equals: 'published' } },
       admin: {
         allowCreate: true,
         allowEdit: true,
-        description: 'Выберите опубликованную страницу или создайте и опубликуйте новую прямо здесь.',
+        description: 'В черновике можно связать страницу до публикации.',
       },
     },
     {
@@ -53,7 +53,7 @@ export const Services: CollectionConfig = {
       type: 'relationship',
       relationTo: 'service-categories',
       label: 'Категория из справочника',
-      filterOptions: { active: { equals: true } },
+      filterOptions: ({ data }) => data?._status === 'draft' || { active: { equals: true } },
       admin: { description: 'Если не выбрана, каталог подберёт категорию по названию из текстового поля.' },
     },
     { name: 'summary', type: 'textarea', label: 'Краткое описание' },

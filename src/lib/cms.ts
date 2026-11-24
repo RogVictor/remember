@@ -100,7 +100,7 @@ const documents = async (collection: 'services' | 'products' | 'price-items' | '
     depth: 1,
     draft: false,
     ...(collection === 'services'
-      ? { limit: 0, populate: { pages: { slug: true, _status: true } } }
+      ? { limit: 0, populate: { pages: { slug: true, title: true, _status: true } } }
       : { limit: 200 }),
     overrideAccess: false,
     sort: 'sortOrder',
@@ -258,6 +258,7 @@ export const getServices = cache(async (): Promise<CMSResult<CMSService>> => {
           title,
           category: text(doc.category),
           fallbackSlug: doc.page == null ? text(doc.slug) : null,
+          pageTitle: isRecord(doc.page) ? text(doc.page.title) : null,
           summary: text(doc.summary),
           seoTitle: text(doc.seoTitle),
           seoDescription: text(doc.seoDescription),

@@ -1,0 +1,879 @@
+{
+  "date": "2026-11-25",
+  "inputArchives": [
+    {
+      "name": "RitualGroup24-content-v2.zip",
+      "bytes": 171597,
+      "sha256": "4e313de57998c188f86f98f6ede0aff15d113d6301f6317c68aaf41972000b07"
+    },
+    {
+      "name": "RitualGroup24-V3-preview.zip",
+      "bytes": 8040485,
+      "sha256": "7e9ee176b1f155990f63947bebef75e25e5bbe59a109b26b113bed2f3fd7a8ae"
+    },
+    {
+      "name": "RitualGroup24-v3-review.zip",
+      "bytes": 13379072,
+      "sha256": "cc97d31809504dfe07cf9e3af612cd7c4e4930dc7611f412bd8704746a4bc1b6"
+    },
+    {
+      "name": "RitualGroup24-V4-WIP.zip",
+      "bytes": 139772,
+      "sha256": "20e0c70fb62debdbd7021a494851969b047b088f2153eb597db6dfddf983ad71"
+    }
+  ],
+  "scope": "Локальный комплект V4 и отдельная PostgreSQL 18 на loopback.",
+  "totals": {
+    "pages": 54,
+    "categories": 10,
+    "services": 44,
+    "faq": 525,
+    "visibleCharacters": 305712,
+    "originalImages": 74,
+    "covers": 54,
+    "additional": 20,
+    "openGraph": 54,
+    "archivalCopiesOfCrops": 6,
+    "mediaUploads": 128,
+    "headingLinks": 44,
+    "contextLinks": 57
+  },
+  "visibleTextMethod": "H1 и видимые H2, H3, абзацы и FAQ, включая H3 и описания услуг блока. Между соседними текстовыми элементами один перенос. SEO, ALT, HTML, форма, меню, служебные поля и автоматическая навигация сайта исключены. Значения независимо сверены с DOM браузера.",
+  "ranges": {
+    "categoryCharacters": [
+      7054,
+      8138
+    ],
+    "serviceCharacters": [
+      5021,
+      6013
+    ],
+    "categoryFaq": [
+      10,
+      11
+    ],
+    "serviceFaq": [
+      8,
+      10
+    ]
+  },
+  "checks": {
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "eslintChangedFiles": "passed",
+    "eslintRepository": {
+      "errors": 1,
+      "baseline": "tests/chat-telegram-fixture.cjs:2  @typescript-eslint/no-require-imports",
+      "sameBeforeAndAfter": true
+    },
+    "tests": {
+      "leads": 14,
+      "seo": 4,
+      "telegram": 2,
+      "chat": 7,
+      "content": 2,
+      "failures": 0
+    },
+    "json": "passed",
+    "lexical": "passed",
+    "catalogIdentity": "V2 — полное совпадение slug, порядка и подписей карточек. Полные H1 сохранены из Pages.",
+    "seo": "54 уникальных focusKeyword, title и description; robots index=false, follow=false; canonical по штатному маршруту; Open Graph из Media.",
+    "media": "SHA-256, тип и размеры проверены для каждого из 128 файлов для CMS. Визуально просмотрены оригиналы, шесть кадрирований и все производные Open Graph. Две новые обложки сгенерированы для V4.",
+    "links": "44 H3 проверены через серверный React-рендер с разрешёнными адресами. Оба вида ссылок ведут прямо на валидный landingPath. У целей нет промежуточных редиректов в реализации маршрутов проекта.",
+    "offlinePreview": {
+      "engine": "Microsoft Edge, file://",
+      "pagesOpened": 54,
+      "headingLinks": 44,
+      "contextLinks": 57,
+      "decodedImages": 128,
+      "forms": 0,
+      "externalResourceRequests": 0
+    },
+    "localImport": {
+      "offlineDryRun": "passed",
+      "databaseDryRun": "passed",
+      "created": {
+        "pages": 54,
+        "services": 44,
+        "inactiveCategories": 10,
+        "media": 128
+      },
+      "secondRun": {
+        "created": 0,
+        "updated": 0,
+        "skipped": 236,
+        "documentIdsAndTimestampsSha256Before": "417337ca96ff724848564790433f59be40554aec1bf7c84109bf8fa8282f7374",
+        "documentIdsAndTimestampsSha256After": "417337ca96ff724848564790433f59be40554aec1bf7c84109bf8fa8282f7374"
+      },
+      "confirmedDraftUpdate": {
+        "pages": 54,
+        "services": 44,
+        "categoriesModified": 0,
+        "mediaModified": 0
+      },
+      "persisted": "Через Local API сверены все узлы Lexical с реальными ID, SEO, ALT встроенных изображений, связи карточек и порядок всех 44 услуг. Публичное чтение вернуло 0 страниц, 0 услуг и 0 категорий.",
+      "recovery": "Во время разработки неподходящий фильтр черновой Page привёл к откату транзакции. После исправления фильтра загрузки Media использованы повторно. Финальная версия прошла с пустой базы по графу контента."
+    }
+  },
+  "pages": [
+    {
+      "slug": "organizaciya-pohoron",
+      "title": "Организация похорон",
+      "kind": "category",
+      "characters": 7587,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 6,
+      "contextLinks": 1,
+      "contextTargets": [
+        "ritualny-agent"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "pohorony-pod-klyuch",
+      "title": "Похороны под ключ",
+      "kind": "service",
+      "characters": 5261,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 3,
+      "contextTargets": [
+        "vyzov-ritualnogo-agenta",
+        "zakaz-katafalka",
+        "organizaciya-proshchaniya"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "organizaciya-zahoroneniya",
+      "title": "Организация захоронения",
+      "kind": "service",
+      "characters": 5110,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "rodstvennoe-zahoronenie"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "organizaciya-kremacii",
+      "title": "Организация кремации",
+      "kind": "service",
+      "characters": 5044,
+      "faq": 10,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "zahoronenie-urny"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "socialnye-pohorony",
+      "title": "Социальные похороны",
+      "kind": "service",
+      "characters": 5250,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "oformlenie-dokumentov-dlya-pohoron"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "voennye-pohorony",
+      "title": "Военные похороны",
+      "kind": "service",
+      "characters": 5069,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "ceremoniimeister"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "prizhiznennyi-dogovor",
+      "title": "Прижизненный договор",
+      "kind": "service",
+      "characters": 5158,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "pohorony-pod-klyuch"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "ritualny-agent",
+      "title": "Ритуальный агент",
+      "kind": "category",
+      "characters": 8138,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 3,
+      "contextLinks": 1,
+      "contextTargets": [
+        "pohorony-pod-klyuch"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "vyzov-ritualnogo-agenta",
+      "title": "Вызов ритуального агента",
+      "kind": "service",
+      "characters": 6013,
+      "faq": 8,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "soprovozhdenie-pohoron"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "soprovozhdenie-pohoron",
+      "title": "Сопровождение похорон",
+      "kind": "service",
+      "characters": 5368,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "transport-dlya-rodstvennikov"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "oformlenie-dokumentov-dlya-pohoron",
+      "title": "Оформление документов для похорон",
+      "kind": "service",
+      "characters": 5191,
+      "faq": 8,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "rodstvennoe-zahoronenie"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "uslugi-morga",
+      "title": "Услуги морга",
+      "kind": "category",
+      "characters": 7234,
+      "faq": 10,
+      "images": 3,
+      "headingLinks": 4,
+      "contextLinks": 1,
+      "contextTargets": [
+        "gruz-200"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "podgotovka-tela-k-pogrebeniyu",
+      "title": "Подготовка тела к погребению",
+      "kind": "service",
+      "characters": 5772,
+      "faq": 8,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "posmertnyi-makiyazh"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "balzamirovanie",
+      "title": "Бальзамирование",
+      "kind": "service",
+      "characters": 5246,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "aviacionnaya-perevozka-umershih"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "posmertnyi-makiyazh",
+      "title": "Посмертный макияж",
+      "kind": "service",
+      "characters": 5132,
+      "faq": 9,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "podgotovka-tela-k-pogrebeniyu"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "sanitarnaya-obrabotka-tela",
+      "title": "Санитарная обработка тела",
+      "kind": "service",
+      "characters": 5165,
+      "faq": 8,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "uslugi-morga"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "ritualny-transport",
+      "title": "Ритуальный транспорт",
+      "kind": "category",
+      "characters": 7252,
+      "faq": 11,
+      "images": 1,
+      "headingLinks": 4,
+      "contextLinks": 1,
+      "contextTargets": [
+        "soprovozhdenie-pohoron"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "zakaz-katafalka",
+      "title": "Заказ катафалка",
+      "kind": "service",
+      "characters": 5213,
+      "faq": 10,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "transport-dlya-rodstvennikov"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "transport-dlya-rodstvennikov",
+      "title": "Транспорт для родственников",
+      "kind": "service",
+      "characters": 5219,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "soprovozhdenie-pohoron"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "perevozka-umershego",
+      "title": "Перевозка умершего",
+      "kind": "service",
+      "characters": 5302,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "perevozka-umershih-po-rossii"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "dostavka-ritualnyh-prinadlezhnostei",
+      "title": "Доставка ритуальных принадлежностей",
+      "kind": "service",
+      "characters": 5199,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "vozlozhenie-cvetov"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "gruz-200",
+      "title": "Груз 200",
+      "kind": "category",
+      "characters": 7317,
+      "faq": 11,
+      "images": 1,
+      "headingLinks": 4,
+      "contextLinks": 1,
+      "contextTargets": [
+        "perevozka-umershego"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "perevozka-umershih-po-rossii",
+      "title": "Перевозка умерших по России",
+      "kind": "service",
+      "characters": 5291,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "vstrecha-i-otpravka-gruza-200"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "mezhdunarodnaya-perevozka-umershih",
+      "title": "Международная перевозка умерших",
+      "kind": "service",
+      "characters": 5332,
+      "faq": 10,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "aviacionnaya-perevozka-umershih"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "aviacionnaya-perevozka-umershih",
+      "title": "Авиационная перевозка умерших",
+      "kind": "service",
+      "characters": 5233,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "vstrecha-i-otpravka-gruza-200"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "vstrecha-i-otpravka-gruza-200",
+      "title": "Встреча и отправка груза 200",
+      "kind": "service",
+      "characters": 5433,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "gruz-200"
+      ],
+      "sourceEdition": "V4-intermediate"
+    },
+    {
+      "slug": "kladbishchenskie-uslugi",
+      "title": "Кладбищенские услуги",
+      "kind": "category",
+      "characters": 7255,
+      "faq": 11,
+      "images": 2,
+      "headingLinks": 4,
+      "contextLinks": 1,
+      "contextTargets": [
+        "blagoustroistvo-zahoronenii"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "rodstvennoe-zahoronenie",
+      "title": "Родственное захоронение",
+      "kind": "service",
+      "characters": 5021,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 2,
+      "contextTargets": [
+        "kopka-mogily",
+        "zahoronenie-urny"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "kopka-mogily",
+      "title": "Копка могилы",
+      "kind": "service",
+      "characters": 5224,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "rodstvennoe-zahoronenie"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "zahoronenie-urny",
+      "title": "Захоронение урны",
+      "kind": "service",
+      "characters": 5200,
+      "faq": 10,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "organizaciya-kremacii"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "eksgumaciya-i-perezahoronenie",
+      "title": "Эксгумация и перезахоронение",
+      "kind": "service",
+      "characters": 5076,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "rodstvennoe-zahoronenie"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "organizaciya-proshchaniya",
+      "title": "Организация прощания",
+      "kind": "category",
+      "characters": 7887,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 6,
+      "contextLinks": 1,
+      "contextTargets": [
+        "transport-dlya-rodstvennikov"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "traurnyi-zal",
+      "title": "Траурный зал",
+      "kind": "service",
+      "characters": 5131,
+      "faq": 9,
+      "images": 3,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "grazhdanskaya-panihida"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "grazhdanskaya-panihida",
+      "title": "Гражданская панихида",
+      "kind": "service",
+      "characters": 5236,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "ceremoniimeister"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "otpevanie",
+      "title": "Отпевание",
+      "kind": "service",
+      "characters": 5315,
+      "faq": 9,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "pravoslavnye-pohorony"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "nosilshchiki",
+      "title": "Носильщики",
+      "kind": "service",
+      "characters": 5277,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "zakaz-katafalka"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "ceremoniimeister",
+      "title": "Церемониймейстер",
+      "kind": "service",
+      "characters": 5207,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "grazhdanskaya-panihida"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "traurnyi-orkestr",
+      "title": "Траурный оркестр",
+      "kind": "service",
+      "characters": 5142,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "ceremoniimeister"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "religioznye-pohorony",
+      "title": "Религиозные похороны",
+      "kind": "category",
+      "characters": 7236,
+      "faq": 11,
+      "images": 1,
+      "headingLinks": 4,
+      "contextLinks": 1,
+      "contextTargets": [
+        "organizaciya-proshchaniya"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "pravoslavnye-pohorony",
+      "title": "Православные похороны",
+      "kind": "service",
+      "characters": 5394,
+      "faq": 9,
+      "images": 5,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "otpevanie"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "musulmanskie-pohorony",
+      "title": "Мусульманские похороны",
+      "kind": "service",
+      "characters": 5241,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "organizaciya-zahoroneniya"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "iudeiskie-pohorony",
+      "title": "Иудейские похороны",
+      "kind": "service",
+      "characters": 5310,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "transport-dlya-rodstvennikov"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "katolicheskie-pohorony",
+      "title": "Католические похороны",
+      "kind": "service",
+      "characters": 5261,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "pominki"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "memorialnye-uslugi",
+      "title": "Мемориальные услуги",
+      "kind": "category",
+      "characters": 7054,
+      "faq": 11,
+      "images": 3,
+      "headingLinks": 5,
+      "contextLinks": 1,
+      "contextTargets": [
+        "kladbishchenskie-uslugi"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "uhod-za-mogilami",
+      "title": "Уход за могилами",
+      "kind": "service",
+      "characters": 5156,
+      "faq": 10,
+      "images": 2,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "blagoustroistvo-zahoronenii"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "blagoustroistvo-zahoronenii",
+      "title": "Благоустройство захоронений",
+      "kind": "service",
+      "characters": 5300,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "uhod-za-mogilami"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "izgotovlenie-pamyatnikov",
+      "title": "Изготовление памятников",
+      "kind": "service",
+      "characters": 5317,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "ustanovka-pamyatnikov"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "ustanovka-pamyatnikov",
+      "title": "Установка памятников",
+      "kind": "service",
+      "characters": 5343,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "izgotovlenie-pamyatnikov"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "vozlozhenie-cvetov",
+      "title": "Возложение цветов",
+      "kind": "service",
+      "characters": 5190,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "uhod-za-mogilami"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "dopolnitelnye-uslugi",
+      "title": "Дополнительные услуги",
+      "kind": "category",
+      "characters": 7270,
+      "faq": 11,
+      "images": 1,
+      "headingLinks": 4,
+      "contextLinks": 1,
+      "contextTargets": [
+        "organizaciya-proshchaniya"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "pominki",
+      "title": "Поминки",
+      "kind": "service",
+      "characters": 5225,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "transport-dlya-rodstvennikov"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "dezinfekciya-pomeshcheniya",
+      "title": "Дезинфекция помещения после смерти",
+      "kind": "service",
+      "characters": 5276,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "dopolnitelnye-uslugi"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "foto-i-videosemka-pohoron",
+      "title": "Фото- и видеосъёмка похорон",
+      "kind": "service",
+      "characters": 5265,
+      "faq": 10,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "online-translyaciya-pohoron"
+      ],
+      "sourceEdition": "V2-unchanged"
+    },
+    {
+      "slug": "online-translyaciya-pohoron",
+      "title": "Онлайн-трансляция похорон",
+      "kind": "service",
+      "characters": 5374,
+      "faq": 9,
+      "images": 1,
+      "headingLinks": 0,
+      "contextLinks": 1,
+      "contextTargets": [
+        "foto-i-videosemka-pohoron"
+      ],
+      "sourceEdition": "V2-unchanged"
+    }
+  ]
+}

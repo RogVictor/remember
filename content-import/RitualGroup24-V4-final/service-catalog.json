@@ -1,0 +1,292 @@
+[
+  {
+    "category": "Организация похорон",
+    "categorySlug": "organizaciya-pohoron",
+    "sortOrder": 10,
+    "services": [
+      {
+        "title": "Похороны под ключ",
+        "slug": "pohorony-pod-klyuch",
+        "sortOrder": 10
+      },
+      {
+        "title": "Организация захоронения",
+        "slug": "organizaciya-zahoroneniya",
+        "sortOrder": 20
+      },
+      {
+        "title": "Организация кремации",
+        "slug": "organizaciya-kremacii",
+        "sortOrder": 30
+      },
+      {
+        "title": "Социальные похороны",
+        "slug": "socialnye-pohorony",
+        "sortOrder": 40
+      },
+      {
+        "title": "Военные похороны",
+        "slug": "voennye-pohorony",
+        "sortOrder": 50
+      },
+      {
+        "title": "Прижизненный договор",
+        "slug": "prizhiznennyi-dogovor",
+        "sortOrder": 60
+      }
+    ]
+  },
+  {
+    "category": "Ритуальный агент",
+    "categorySlug": "ritualny-agent",
+    "sortOrder": 20,
+    "services": [
+      {
+        "title": "Вызов ритуального агента",
+        "slug": "vyzov-ritualnogo-agenta",
+        "sortOrder": 10
+      },
+      {
+        "title": "Сопровождение похорон",
+        "slug": "soprovozhdenie-pohoron",
+        "sortOrder": 20
+      },
+      {
+        "title": "Оформление документов для похорон",
+        "slug": "oformlenie-dokumentov-dlya-pohoron",
+        "sortOrder": 30
+      }
+    ]
+  },
+  {
+    "category": "Услуги морга",
+    "categorySlug": "uslugi-morga",
+    "sortOrder": 30,
+    "services": [
+      {
+        "title": "Подготовка тела к погребению",
+        "slug": "podgotovka-tela-k-pogrebeniyu",
+        "sortOrder": 10
+      },
+      {
+        "title": "Бальзамирование",
+        "slug": "balzamirovanie",
+        "sortOrder": 20
+      },
+      {
+        "title": "Посмертный макияж",
+        "slug": "posmertnyi-makiyazh",
+        "sortOrder": 30
+      },
+      {
+        "title": "Санитарная обработка тела",
+        "slug": "sanitarnaya-obrabotka-tela",
+        "sortOrder": 40
+      }
+    ]
+  },
+  {
+    "category": "Ритуальный транспорт",
+    "categorySlug": "ritualny-transport",
+    "sortOrder": 40,
+    "services": [
+      {
+        "title": "Заказ катафалка",
+        "slug": "zakaz-katafalka",
+        "sortOrder": 10
+      },
+      {
+        "title": "Транспорт для родственников",
+        "slug": "transport-dlya-rodstvennikov",
+        "sortOrder": 20
+      },
+      {
+        "title": "Перевозка умершего",
+        "slug": "perevozka-umershego",
+        "sortOrder": 30
+      },
+      {
+        "title": "Доставка ритуальных принадлежностей",
+        "slug": "dostavka-ritualnyh-prinadlezhnostei",
+        "sortOrder": 40
+      }
+    ]
+  },
+  {
+    "category": "Груз 200",
+    "categorySlug": "gruz-200",
+    "sortOrder": 50,
+    "services": [
+      {
+        "title": "Перевозка по России",
+        "slug": "perevozka-umershih-po-rossii",
+        "sortOrder": 10
+      },
+      {
+        "title": "Международная перевозка",
+        "slug": "mezhdunarodnaya-perevozka-umershih",
+        "sortOrder": 20
+      },
+      {
+        "title": "Авиационная перевозка",
+        "slug": "aviacionnaya-perevozka-umershih",
+        "sortOrder": 30
+      },
+      {
+        "title": "Встреча и отправка",
+        "slug": "vstrecha-i-otpravka-gruza-200",
+        "sortOrder": 40
+      }
+    ]
+  },
+  {
+    "category": "Кладбищенские услуги",
+    "categorySlug": "kladbishchenskie-uslugi",
+    "sortOrder": 60,
+    "services": [
+      {
+        "title": "Родственное захоронение",
+        "slug": "rodstvennoe-zahoronenie",
+        "sortOrder": 10
+      },
+      {
+        "title": "Копка могилы",
+        "slug": "kopka-mogily",
+        "sortOrder": 20
+      },
+      {
+        "title": "Захоронение урны",
+        "slug": "zahoronenie-urny",
+        "sortOrder": 30
+      },
+      {
+        "title": "Эксгумация и перезахоронение",
+        "slug": "eksgumaciya-i-perezahoronenie",
+        "sortOrder": 40
+      }
+    ]
+  },
+  {
+    "category": "Организация прощания",
+    "categorySlug": "organizaciya-proshchaniya",
+    "sortOrder": 70,
+    "services": [
+      {
+        "title": "Траурный зал",
+        "slug": "traurnyi-zal",
+        "sortOrder": 10
+      },
+      {
+        "title": "Гражданская панихида",
+        "slug": "grazhdanskaya-panihida",
+        "sortOrder": 20
+      },
+      {
+        "title": "Отпевание",
+        "slug": "otpevanie",
+        "sortOrder": 30
+      },
+      {
+        "title": "Носильщики",
+        "slug": "nosilshchiki",
+        "sortOrder": 40
+      },
+      {
+        "title": "Церемониймейстер",
+        "slug": "ceremoniimeister",
+        "sortOrder": 50
+      },
+      {
+        "title": "Оркестр",
+        "slug": "traurnyi-orkestr",
+        "sortOrder": 60
+      }
+    ]
+  },
+  {
+    "category": "Религиозные похороны",
+    "categorySlug": "religioznye-pohorony",
+    "sortOrder": 80,
+    "services": [
+      {
+        "title": "Православные",
+        "slug": "pravoslavnye-pohorony",
+        "sortOrder": 10
+      },
+      {
+        "title": "Мусульманские",
+        "slug": "musulmanskie-pohorony",
+        "sortOrder": 20
+      },
+      {
+        "title": "Иудейские",
+        "slug": "iudeiskie-pohorony",
+        "sortOrder": 30
+      },
+      {
+        "title": "Католические",
+        "slug": "katolicheskie-pohorony",
+        "sortOrder": 40
+      }
+    ]
+  },
+  {
+    "category": "Мемориальные услуги",
+    "categorySlug": "memorialnye-uslugi",
+    "sortOrder": 90,
+    "services": [
+      {
+        "title": "Уход за могилами",
+        "slug": "uhod-za-mogilami",
+        "sortOrder": 10
+      },
+      {
+        "title": "Благоустройство",
+        "slug": "blagoustroistvo-zahoronenii",
+        "sortOrder": 20
+      },
+      {
+        "title": "Изготовление памятников",
+        "slug": "izgotovlenie-pamyatnikov",
+        "sortOrder": 30
+      },
+      {
+        "title": "Установка памятников",
+        "slug": "ustanovka-pamyatnikov",
+        "sortOrder": 40
+      },
+      {
+        "title": "Возложение цветов",
+        "slug": "vozlozhenie-cvetov",
+        "sortOrder": 50
+      }
+    ]
+  },
+  {
+    "category": "Дополнительные услуги",
+    "categorySlug": "dopolnitelnye-uslugi",
+    "sortOrder": 100,
+    "services": [
+      {
+        "title": "Поминки",
+        "slug": "pominki",
+        "sortOrder": 10
+      },
+      {
+        "title": "Дезинфекция",
+        "slug": "dezinfekciya-pomeshcheniya",
+        "sortOrder": 20
+      },
+      {
+        "title": "Фото- и видеосъёмка",
+        "slug": "foto-i-videosemka-pohoron",
+        "sortOrder": 30
+      },
+      {
+        "title": "Онлайн-трансляция",
+        "slug": "online-translyaciya-pohoron",
+        "sortOrder": 40
+      }
+    ]
+  }
+]

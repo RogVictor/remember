@@ -1106,6 +1106,7 @@ export interface CollectionsWidget {
  * via the `definition` "CategoryServicesBlock".
  */
 export interface CategoryServicesBlock {
+  layout?: ('list' | 'sections') | null;
   category: number | ServiceCategory;
   id?: string | null;
   blockName?: string | null;

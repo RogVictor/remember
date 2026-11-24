@@ -1,0 +1,266 @@
+[
+  {
+    "category": "organizaciya-pohoron",
+    "service": "pohorony-pod-klyuch",
+    "title": "Похороны под ключ",
+    "href": "/pohorony-pod-klyuch"
+  },
+  {
+    "category": "organizaciya-pohoron",
+    "service": "organizaciya-zahoroneniya",
+    "title": "Организация захоронения",
+    "href": "/organizaciya-zahoroneniya"
+  },
+  {
+    "category": "organizaciya-pohoron",
+    "service": "organizaciya-kremacii",
+    "title": "Организация кремации",
+    "href": "/organizaciya-kremacii"
+  },
+  {
+    "category": "organizaciya-pohoron",
+    "service": "socialnye-pohorony",
+    "title": "Социальные похороны",
+    "href": "/socialnye-pohorony"
+  },
+  {
+    "category": "organizaciya-pohoron",
+    "service": "voennye-pohorony",
+    "title": "Военные похороны",
+    "href": "/voennye-pohorony"
+  },
+  {
+    "category": "organizaciya-pohoron",
+    "service": "prizhiznennyi-dogovor",
+    "title": "Прижизненный договор",
+    "href": "/prizhiznennyi-dogovor"
+  },
+  {
+    "category": "ritualny-agent",
+    "service": "vyzov-ritualnogo-agenta",
+    "title": "Вызов ритуального агента",
+    "href": "/vyzov-ritualnogo-agenta"
+  },
+  {
+    "category": "ritualny-agent",
+    "service": "soprovozhdenie-pohoron",
+    "title": "Сопровождение похорон",
+    "href": "/soprovozhdenie-pohoron"
+  },
+  {
+    "category": "ritualny-agent",
+    "service": "oformlenie-dokumentov-dlya-pohoron",
+    "title": "Оформление документов для похорон",
+    "href": "/oformlenie-dokumentov-dlya-pohoron"
+  },
+  {
+    "category": "uslugi-morga",
+    "service": "podgotovka-tela-k-pogrebeniyu",
+    "title": "Подготовка тела к погребению",
+    "href": "/podgotovka-tela-k-pogrebeniyu"
+  },
+  {
+    "category": "uslugi-morga",
+    "service": "balzamirovanie",
+    "title": "Бальзамирование",
+    "href": "/balzamirovanie"
+  },
+  {
+    "category": "uslugi-morga",
+    "service": "posmertnyi-makiyazh",
+    "title": "Посмертный макияж",
+    "href": "/posmertnyi-makiyazh"
+  },
+  {
+    "category": "uslugi-morga",
+    "service": "sanitarnaya-obrabotka-tela",
+    "title": "Санитарная обработка тела",
+    "href": "/sanitarnaya-obrabotka-tela"
+  },
+  {
+    "category": "ritualny-transport",
+    "service": "zakaz-katafalka",
+    "title": "Заказ катафалка",
+    "href": "/zakaz-katafalka"
+  },
+  {
+    "category": "ritualny-transport",
+    "service": "transport-dlya-rodstvennikov",
+    "title": "Транспорт для родственников",
+    "href": "/transport-dlya-rodstvennikov"
+  },
+  {
+    "category": "ritualny-transport",
+    "service": "perevozka-umershego",
+    "title": "Перевозка умершего",
+    "href": "/perevozka-umershego"
+  },
+  {
+    "category": "ritualny-transport",
+    "service": "dostavka-ritualnyh-prinadlezhnostei",
+    "title": "Доставка ритуальных принадлежностей",
+    "href": "/dostavka-ritualnyh-prinadlezhnostei"
+  },
+  {
+    "category": "gruz-200",
+    "service": "perevozka-umershih-po-rossii",
+    "title": "Перевозка умерших по России",
+    "href": "/perevozka-umershih-po-rossii"
+  },
+  {
+    "category": "gruz-200",
+    "service": "mezhdunarodnaya-perevozka-umershih",
+    "title": "Международная перевозка умерших",
+    "href": "/mezhdunarodnaya-perevozka-umershih"
+  },
+  {
+    "category": "gruz-200",
+    "service": "aviacionnaya-perevozka-umershih",
+    "title": "Авиационная перевозка умерших",
+    "href": "/aviacionnaya-perevozka-umershih"
+  },
+  {
+    "category": "gruz-200",
+    "service": "vstrecha-i-otpravka-gruza-200",
+    "title": "Встреча и отправка груза 200",
+    "href": "/vstrecha-i-otpravka-gruza-200"
+  },
+  {
+    "category": "kladbishchenskie-uslugi",
+    "service": "rodstvennoe-zahoronenie",
+    "title": "Родственное захоронение",
+    "href": "/rodstvennoe-zahoronenie"
+  },
+  {
+    "category": "kladbishchenskie-uslugi",
+    "service": "kopka-mogily",
+    "title": "Копка могилы",
+    "href": "/kopka-mogily"
+  },
+  {
+    "category": "kladbishchenskie-uslugi",
+    "service": "zahoronenie-urny",
+    "title": "Захоронение урны",
+    "href": "/zahoronenie-urny"
+  },
+  {
+    "category": "kladbishchenskie-uslugi",
+    "service": "eksgumaciya-i-perezahoronenie",
+    "title": "Эксгумация и перезахоронение",
+    "href": "/eksgumaciya-i-perezahoronenie"
+  },
+  {
+    "category": "organizaciya-proshchaniya",
+    "service": "traurnyi-zal",
+    "title": "Траурный зал",
+    "href": "/traurnyi-zal"
+  },
+  {
+    "category": "organizaciya-proshchaniya",
+    "service": "grazhdanskaya-panihida",
+    "title": "Гражданская панихида",
+    "href": "/grazhdanskaya-panihida"
+  },
+  {
+    "category": "organizaciya-proshchaniya",
+    "service": "otpevanie",
+    "title": "Отпевание",
+    "href": "/otpevanie"
+  },
+  {
+    "category": "organizaciya-proshchaniya",
+    "service": "nosilshchiki",
+    "title": "Носильщики",
+    "href": "/nosilshchiki"
+  },
+  {
+    "category": "organizaciya-proshchaniya",
+    "service": "ceremoniimeister",
+    "title": "Церемониймейстер",
+    "href": "/ceremoniimeister"
+  },
+  {
+    "category": "organizaciya-proshchaniya",
+    "service": "traurnyi-orkestr",
+    "title": "Траурный оркестр",
+    "href": "/traurnyi-orkestr"
+  },
+  {
+    "category": "religioznye-pohorony",
+    "service": "pravoslavnye-pohorony",
+    "title": "Православные похороны",
+    "href": "/pravoslavnye-pohorony"
+  },
+  {
+    "category": "religioznye-pohorony",
+    "service": "musulmanskie-pohorony",
+    "title": "Мусульманские похороны",
+    "href": "/musulmanskie-pohorony"
+  },
+  {
+    "category": "religioznye-pohorony",
+    "service": "iudeiskie-pohorony",
+    "title": "Иудейские похороны",
+    "href": "/iudeiskie-pohorony"
+  },
+  {
+    "category": "religioznye-pohorony",
+    "service": "katolicheskie-pohorony",
+    "title": "Католические похороны",
+    "href": "/katolicheskie-pohorony"
+  },
+  {
+    "category": "memorialnye-uslugi",
+    "service": "uhod-za-mogilami",
+    "title": "Уход за могилами",
+    "href": "/uhod-za-mogilami"
+  },
+  {
+    "category": "memorialnye-uslugi",
+    "service": "blagoustroistvo-zahoronenii",
+    "title": "Благоустройство захоронений",
+    "href": "/blagoustroistvo-zahoronenii"
+  },
+  {
+    "category": "memorialnye-uslugi",
+    "service": "izgotovlenie-pamyatnikov",
+    "title": "Изготовление памятников",
+    "href": "/izgotovlenie-pamyatnikov"
+  },
+  {
+    "category": "memorialnye-uslugi",
+    "service": "ustanovka-pamyatnikov",
+    "title": "Установка памятников",
+    "href": "/ustanovka-pamyatnikov"
+  },
+  {
+    "category": "memorialnye-uslugi",
+    "service": "vozlozhenie-cvetov",
+    "title": "Возложение цветов",
+    "href": "/vozlozhenie-cvetov"
+  },
+  {
+    "category": "dopolnitelnye-uslugi",
+    "service": "pominki",
+    "title": "Поминки",
+    "href": "/pominki"
+  },
+  {
+    "category": "dopolnitelnye-uslugi",
+    "service": "dezinfekciya-pomeshcheniya",
+    "title": "Дезинфекция помещения после смерти",
+    "href": "/dezinfekciya-pomeshcheniya"
+  },
+  {
+    "category": "dopolnitelnye-uslugi",
+    "service": "foto-i-videosemka-pohoron",
+    "title": "Фото- и видеосъёмка похорон",
+    "href": "/foto-i-videosemka-pohoron"
+  },
+  {
+    "category": "dopolnitelnye-uslugi",
+    "service": "online-translyaciya-pohoron",
+    "title": "Онлайн-трансляция похорон",
+    "href": "/online-translyaciya-pohoron"
+  }
+]

@@ -4,7 +4,7 @@ import type { SerializedBlockNode } from '@payloadcms/richtext-lexical'
 import { RichText, type JSXConverterArgs, type JSXConvertersFunction } from '@payloadcms/richtext-lexical/react'
 import type { CategoryServicesBlock } from '../../../payload-types'
 import { CallbackForm } from '@/App'
-import { ServiceCategorySection } from '@/ServiceCategoryGrid'
+import { ServiceCategoryHeadings, ServiceCategorySection } from '@/ServiceCategoryGrid'
 import SiteApp from '@/SiteApp'
 import { getServiceCatalog, relationshipID } from '@/lib/cms'
 import { JsonLd } from '@/seo/JsonLd'
@@ -23,9 +23,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return seo ? metadata(seo.input, seo.type === 'Article') : { robots: { index: false, follow: false } }
 }
 
-async function CategoryServices({ categoryId }: { categoryId: number | string }) {
+async function CategoryServices({ categoryId, layout }: { categoryId: number | string; layout?: CategoryServicesBlock['layout'] }) {
   const { groups, serviceLinks } = await getServiceCatalog()
   const group = groups.find(item => item.categoryId === categoryId)
+  if (group && layout === 'sections') {
+    return <ServiceCategoryHeadings group={group} links={serviceLinks} />
+  }
   return group ? <ServiceCategorySection group={group} links={serviceLinks} /> : null
 }
 
@@ -59,7 +62,7 @@ export default async function CMSPageRoute({ params }: PageProps) {
     blocks: {
       'category-services': ({ node }: JSXConverterArgs<SerializedBlockNode<CategoryServicesBlock>>) => {
         const categoryId = relationshipID(node.fields.category)
-        return categoryId == null ? null : <CategoryServices categoryId={categoryId} />
+        return categoryId == null ? null : <CategoryServices categoryId={categoryId} layout={node.fields.layout} />
       },
       'callback-form': () => <CallbackForm source={`/${page.slug}`} />,
     },

@@ -1,0 +1,158 @@
+{
+  "researchDate": "2026-11-24",
+  "sources": [
+    {
+      "id": "moscow-permit",
+      "publisher": "ГБУ «Ритуал»",
+      "title": "Оформление разрешения на захоронение",
+      "url": "https://ritual.mos.ru/services/poluchenie-razresheniya-na-zakhoronenie",
+      "scope": "Обращение к администрации кладбища. Вид места и статус заявителя уточняют до заказа работ.",
+      "pages": [
+        "organizaciya-pohoron",
+        "organizaciya-zahoroneniya",
+        "oformlenie-dokumentov-dlya-pohoron",
+        "kladbishchenskie-uslugi",
+        "rodstvennoe-zahoronenie",
+        "kopka-mogily",
+        "zahoronenie-urny",
+        "eksgumaciya-i-perezahoronenie"
+      ]
+    },
+    {
+      "id": "moscow-family",
+      "publisher": "Правительство Москвы",
+      "title": "Как организовать похороны",
+      "url": "https://www.mos.ru/upload/documents/files/129/Kakorganizovatpohroni.pdf",
+      "scope": "Официальная памятка. Различает документы для родственного места и захоронения урны. Актуальный перечень проверяют в учреждении.",
+      "pages": [
+        "organizaciya-pohoron",
+        "organizaciya-zahoroneniya",
+        "organizaciya-kremacii",
+        "ritualny-agent",
+        "oformlenie-dokumentov-dlya-pohoron",
+        "rodstvennoe-zahoronenie",
+        "zahoronenie-urny"
+      ]
+    },
+    {
+      "id": "moscow-grounds",
+      "publisher": "ГБУ «Ритуал»",
+      "title": "Виды деятельности",
+      "url": "https://ritual.mos.ru/about-actions",
+      "scope": "Общие территории и работы на индивидуальном участке. Местные условия доступа и допустимые действия уточняют у администрации.",
+      "pages": [
+        "kladbishchenskie-uslugi",
+        "kopka-mogily",
+        "memorialnye-uslugi",
+        "uhod-za-mogilami",
+        "blagoustroistvo-zahoronenii",
+        "izgotovlenie-pamyatnikov",
+        "ustanovka-pamyatnikov",
+        "vozlozhenie-cvetov"
+      ]
+    },
+    {
+      "id": "oblast",
+      "publisher": "Портал государственных и муниципальных услуг Московской области",
+      "title": "Вопросы по оформлению семейных (родовых) захоронений",
+      "url": "https://uslugi.mosreg.ru/services/22143/faq",
+      "scope": "Региональная услуга с определённой областью применения. Пример различий в порядке обращения и подтверждения полномочий.",
+      "pages": [
+        "organizaciya-pohoron",
+        "organizaciya-zahoroneniya",
+        "oformlenie-dokumentov-dlya-pohoron",
+        "kladbishchenskie-uslugi",
+        "rodstvennoe-zahoronenie",
+        "zahoronenie-urny",
+        "eksgumaciya-i-perezahoronenie",
+        "memorialnye-uslugi"
+      ]
+    },
+    {
+      "id": "law",
+      "publisher": "Социальный фонд России",
+      "title": "Федеральный закон от 12.01.1996 № 8-ФЗ",
+      "url": "https://sfr.gov.ru/order/temporary_disability/federal_laws/~11219",
+      "scope": "Нормативная основа по погребению и государственной поддержке. Индивидуальное право на выплаты и ведомственные почести не устанавливалось.",
+      "pages": [
+        "organizaciya-pohoron",
+        "socialnye-pohorony",
+        "voennye-pohorony",
+        "prizhiznennyi-dogovor"
+      ]
+    },
+    {
+      "id": "sfr",
+      "publisher": "Социальный фонд России",
+      "title": "Порядок выплаты социального пособия на погребение",
+      "url": "https://sfr.gov.ru/branches/saratov/info/~/12157",
+      "scope": "Федеральная процедура обращения за пособием или выпиской по гарантированному перечню. В каталог не переносились региональные суммы.",
+      "pages": [
+        "organizaciya-pohoron",
+        "socialnye-pohorony",
+        "voennye-pohorony",
+        "oformlenie-dokumentov-dlya-pohoron"
+      ]
+    },
+    {
+      "id": "s7",
+      "publisher": "S7 Cargo",
+      "title": "Урны с прахом и гробы",
+      "url": "https://cargo.s7.ru/information/urnys-prahom-i-groby",
+      "scope": "Различия между грузом в гробу и урной, роль грузополучателя и условия перевозчика. Для заказа требуется подтверждение конкретного направления.",
+      "pages": [
+        "balzamirovanie",
+        "perevozka-umershego",
+        "gruz-200",
+        "perevozka-umershih-po-rossii",
+        "mezhdunarodnaya-perevozka-umershih",
+        "aviacionnaya-perevozka-umershih",
+        "vstrecha-i-otpravka-gruza-200",
+        "zahoronenie-urny"
+      ]
+    },
+    {
+      "id": "utair",
+      "publisher": "Авиакомпания «ЮТэйр»",
+      "title": "Перевозка иных грузов",
+      "url": "https://info.utair.ru/information/transport-regulations/shipment/transportation-other",
+      "scope": "Условия приёма груза 200 и ограничения церемоний в зоне погрузки. Порядок одного перевозчика не распространяется на всех.",
+      "pages": [
+        "gruz-200",
+        "perevozka-umershih-po-rossii",
+        "mezhdunarodnaya-perevozka-umershih",
+        "aviacionnaya-perevozka-umershih",
+        "vstrecha-i-otpravka-gruza-200"
+      ]
+    },
+    {
+      "id": "market",
+      "publisher": "Городская похоронная служба",
+      "title": "Обзор структуры предложения",
+      "url": "https://mospohorony.ru/",
+      "scope": "Для сравнения изучены комплексный заказ, кремация и встреча груза. Для V4 отдельно описаны обязанности отправителя, получателя и семьи. Тарифы, рекламные обещания и слова о собственной инфраструктуре не заимствовались.",
+      "pages": [
+        "organizaciya-pohoron",
+        "pohorony-pod-klyuch",
+        "organizaciya-kremacii",
+        "ritualny-agent",
+        "ritualny-transport",
+        "gruz-200",
+        "vstrecha-i-otpravka-gruza-200"
+      ]
+    }
+  ],
+  "editorialScope": "Практические сценарии и вопросы для разговора с учреждением написаны редакционно. Доступность конкретного помещения, условия выдачи морга, порядок общины, условия консульства и перевозчика уточняют по месту. Компания и её имущество не изображены как подтверждённые реальные объекты.",
+  "generatedIllustrations": [
+    {
+      "file": "images/mezhdunarodnaya-perevozka-umershih.webp",
+      "tool": "ImageGen",
+      "prompt": "Editorial photorealistic landscape 3:2 image for a respectful Russian-language funeral services information page. International repatriation logistics: quiet cargo apron with one unbranded plain sealed air-freight transport case secured on a low ground trolley, distant neutral cargo aircraft near a hangar, soft overcast daylight, restrained natural gray olive colors. No visible body, people, text, logos, watermarks, insignia, visible coffin or religious symbols. Natural believable photography."
+    },
+    {
+      "file": "images/zahoronenie-urny.webp",
+      "tool": "ImageGen",
+      "prompt": "Editorial photorealistic landscape 3:2 image for a Russian-language funeral services information page on burial of ashes. Peaceful outdoor columbarium garden, orderly grid of small natural gray stone niche covers on a low wall, gravel walking path, single small arrangement of white flowers, trees, muted natural colors and soft overcast light. Stone covers blank or seen obliquely with no readable engraving. No people, logos, watermarks, religious icons or dramatic effects."
+    }
+  ]
+}
