@@ -62,6 +62,7 @@ export type CMSCompanySettings = {
   city: string
   companyName: string
   email: string
+  heroImage: CMSMedia | null
   logo: CMSMedia | null
   messengerUrl: string
   phone: string
@@ -75,6 +76,7 @@ export const DEFAULT_COMPANY_SETTINGS: CMSCompanySettings = {
   city: 'Москва',
   companyName: 'Ритуальная служба «Память»',
   email: '',
+  heroImage: null,
   logo: null,
   messengerUrl: '',
   phone: '+7 (000) 000-00-00',

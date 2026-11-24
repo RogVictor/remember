@@ -161,7 +161,18 @@ function Home({
   faqs: CMSResult<CMSFAQ>
 }) {
   return <>
-    <section className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Button secondary onClick={() => go('services')}>Все услуги</Button></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a></div><div className="hero-image"><img src="https://images.unsplash.com/photo-1532276958900-0036587925c8?auto=format&fit=crop&w=1000&q=85" alt="Белые цветы в спокойной светлой композиции"/><span>Помощь с уважением и вниманием к каждой семье</span></div></div></section>
+    <section className="hero">
+      <div className="container hero-grid">
+        <div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Button secondary onClick={() => go('services')}>Все услуги</Button></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a></div>
+        <div className="hero-image">
+          <img
+            src={company.heroImage?.url ?? 'https://images.unsplash.com/photo-1532276958900-0036587925c8?auto=format&fit=crop&w=1000&q=85'}
+            alt={company.heroImage?.alt ?? 'Белые цветы в спокойной светлой композиции'}
+          />
+          <span>Помощь с уважением и вниманием к каждой семье</span>
+        </div>
+      </div>
+    </section>
     <section className="section container"><SectionTitle eyebrow="Основные направления">Наши услуги</SectionTitle><ServiceGrid result={services} limit={8}/><div className="center"><Button secondary onClick={() => go('services')}>Смотреть все услуги</Button></div></section>
     <section className="advantages"><div className="container"><SectionTitle>Почему обращаются к нам</SectionTitle><div className="adv-grid">{['Круглосуточная консультация','Комплексный подход','Понятная стоимость услуг','Сопровождение на этапах'].map((x,i)=><div className="adv" key={x}><span>0{i+1}</span><h3>{x}</h3><p>{['Принимаем обращения 24 часа, без выходных.','Помогаем согласовать услуги в одном месте.','Объясняем, из чего складывается итоговая сумма.','Остаёмся на связи в согласованном порядке.'][i]}</p></div>)}</div></div></section>
     <section className="section container"><SectionTitle eyebrow="Порядок действий">Как организовать похороны</SectionTitle><div className="steps">{['Свяжитесь с нами','Обсудите необходимые услуги','Согласуйте стоимость и порядок','Получите помощь в организации'].map((x,i)=><div className="step" key={x}><span>{i+1}</span><strong>{x}</strong></div>)}</div></section>

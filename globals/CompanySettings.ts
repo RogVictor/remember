@@ -13,6 +13,7 @@ export const CompanySettings: GlobalConfig = {
     { name: 'city', type: 'text', required: true, defaultValue: 'Москва', label: 'Город' },
     { name: 'brandSlogan', type: 'text', defaultValue: 'Ритуальная служба', label: 'Девиз под названием компании' },
     { name: 'logo', type: 'upload', relationTo: 'media', label: 'Логотип компании' },
+    { name: 'heroImage', type: 'upload', relationTo: 'media', label: 'Изображение первого экрана' },
     { name: 'phone', type: 'text', defaultValue: '+7 (000) 000-00-00', label: 'Основной телефон' },
     { name: 'additionalPhone', type: 'text', defaultValue: '+7 (000) 000-00-01', label: 'Дополнительный телефон' },
     { name: 'email', type: 'email', label: 'Email' },

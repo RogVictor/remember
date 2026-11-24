@@ -205,6 +205,7 @@ export const getCompanySettings = cache(async (): Promise<CMSCompanySettings> =>
       city: text(values.city) ?? DEFAULT_COMPANY_SETTINGS.city,
       companyName: text(values.companyName) ?? DEFAULT_COMPANY_SETTINGS.companyName,
       email: optionalText(values.email, DEFAULT_COMPANY_SETTINGS.email),
+      heroImage: media(values.heroImage),
       logo: media(values.logo),
       messengerUrl: optionalText(values.messengerUrl, DEFAULT_COMPANY_SETTINGS.messengerUrl),
       phone: text(values.phone) ?? DEFAULT_COMPANY_SETTINGS.phone,
