@@ -235,6 +235,7 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
           id: typeof doc.id === 'number' || typeof doc.id === 'string' ? doc.id : title,
           title,
           category: text(doc.category),
+          fallbackSlug: doc.page == null ? text(doc.slug) : null,
           summary: text(doc.summary),
           description: richText(doc.description),
           image: media(doc.image),
@@ -248,6 +249,51 @@ export const getServices = async (): Promise<CMSResult<CMSService>> => {
     reportLoadFailure('services')
     return { data: [], error: true }
   }
+}
+
+const staticServiceTargets = new Set([
+  'about', 'contacts', 'faq', 'funeral', 'info', 'legal', 'prices', 'products', 'services',
+])
+
+export async function getServiceCategoryLinks(services: CMSService[]): Promise<Map<CMSService['id'], string>> {
+  noStore()
+  const candidates = [...new Set(services.flatMap(({ linkSlug, fallbackSlug }) =>
+    [linkSlug, fallbackSlug].filter((slug): slug is string =>
+      Boolean(slug && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) && !staticServiceTargets.has(slug)),
+    ),
+  ))]
+  const publishedSlugs = new Set<string>()
+
+  if (candidates.length > 0) {
+    try {
+      const payload = await getPayload({ config })
+      const { docs } = await payload.find({
+        collection: 'pages',
+        depth: 0,
+        draft: false,
+        limit: 0,
+        overrideAccess: false,
+        select: { slug: true },
+        where: { slug: { in: candidates }, _status: { equals: 'published' } },
+      })
+      for (const doc of docs) {
+        const slug = text(doc.slug)
+        if (slug) publishedSlugs.add(slug)
+      }
+    } catch (error) {
+      console.error('[CMS] Could not verify service page links.', error)
+    }
+  }
+
+  const links = new Map<CMSService['id'], string>()
+  for (const { id, linkSlug, fallbackSlug } of services) {
+    if (linkSlug && (staticServiceTargets.has(linkSlug) || publishedSlugs.has(linkSlug))) {
+      links.set(id, `/${linkSlug}`)
+    } else if (fallbackSlug && publishedSlugs.has(fallbackSlug)) {
+      links.set(id, `/${fallbackSlug}`)
+    }
+  }
+  return links
 }
 
 export const getProducts = async (): Promise<CMSResult<CMSProduct>> => {

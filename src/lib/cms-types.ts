@@ -13,6 +13,7 @@ export type CMSMedia = {
 export type CMSService = CMSPrice & {
   category: string | null
   description: string | null
+  fallbackSlug: string | null
   id: number | string
   image: CMSMedia | null
   linkSlug: string | null

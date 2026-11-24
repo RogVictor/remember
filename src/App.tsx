@@ -246,14 +246,22 @@ function CatalogPage({
   type,
   services,
   products,
+  children,
 }: {
   company: CMSCompanySettings
   type: 'services' | 'products'
   services: CMSResult<CMSService>
   products: CMSResult<CMSProduct>
+  children?: React.ReactNode
 }) {
   return <PageShell company={company} title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Оказываем комплексную помощь в организации похорон. Специалист подробно объяснит порядок действий и поможет выбрать только необходимые услуги.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
-    {type === 'services' ? <ServiceGrid result={services}/> : products.error
+    {type === 'services' ? (
+      services.error
+        ? <EmptyState>Не удалось загрузить услуги. Попробуйте открыть страницу позже.</EmptyState>
+        : services.data.length === 0
+          ? <EmptyState>Информация об услугах скоро появится.</EmptyState>
+          : children
+    ) : products.error
       ? <EmptyState>Не удалось загрузить каталог. Попробуйте открыть страницу позже.</EmptyState>
       : products.data.length === 0
         ? <EmptyState>В каталоге пока нет доступных товаров.</EmptyState>
@@ -390,7 +398,7 @@ export default function App({
 }) {
   let content: React.ReactNode
   if(page==='home') content=<Home company={company} services={services} priceItems={priceItems} faqs={faqs}/>
-  else if(page==='services') content=<CatalogPage company={company} type="services" services={services} products={products}/>
+  else if(page==='services') content=<CatalogPage company={company} type="services" services={services} products={products}>{children}</CatalogPage>
   else if(page==='products') content=<CatalogPage company={company} type="products" services={services} products={products}/>
   else if(page==='funeral') content=<FuneralPage company={company}/>
   else if(page==='prices') content=<PageShell company={company} title="Цены на ритуальные услуги" intro="Актуальные позиции и стоимость услуг из нашего прайс-листа."><PriceTable result={priceItems}/><div className="note price-note"><strong>Обратите внимание</strong><p>Итоговая сумма зависит от выбранного состава услуг, принадлежностей и индивидуальных условий. Точную стоимость специалист согласует до оформления.</p></div></PageShell>
