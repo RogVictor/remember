@@ -1,10 +1,8 @@
-import type { Metadata } from 'next'
+import { staticMetadata } from '@/seo/public'
 import SiteApp from '@/SiteApp'
 import { getProducts } from '@/lib/cms'
 
-export const metadata: Metadata = {
-  title: 'Ритуальные товары',
-}
+export const generateMetadata = staticMetadata('/products')
 
 export const dynamic = 'force-dynamic'
 

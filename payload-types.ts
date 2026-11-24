@@ -67,18 +67,19 @@ export interface Config {
   };
   blocks: {};
   collections: {
-    users: User;
     pages: Page;
+    'site-seo': SiteSeo;
     'info-articles': InfoArticle;
-    services: Service;
+    faqs: Faq;
     'service-categories': ServiceCategory;
+    services: Service;
     products: Product;
     'price-items': PriceItem;
-    faqs: Faq;
-    media: Media;
     leads: Lead;
     'chat-sessions': ChatSession;
     'chat-messages': ChatMessage;
+    media: Media;
+    users: User;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -90,18 +91,19 @@ export interface Config {
     };
   };
   collectionsSelect: {
-    users: UsersSelect<false> | UsersSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
+    'site-seo': SiteSeoSelect<false> | SiteSeoSelect<true>;
     'info-articles': InfoArticlesSelect<false> | InfoArticlesSelect<true>;
-    services: ServicesSelect<false> | ServicesSelect<true>;
+    faqs: FaqsSelect<false> | FaqsSelect<true>;
     'service-categories': ServiceCategoriesSelect<false> | ServiceCategoriesSelect<true>;
+    services: ServicesSelect<false> | ServicesSelect<true>;
     products: ProductsSelect<false> | ProductsSelect<true>;
     'price-items': PriceItemsSelect<false> | PriceItemsSelect<true>;
-    faqs: FaqsSelect<false> | FaqsSelect<true>;
-    media: MediaSelect<false> | MediaSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'chat-sessions': ChatSessionsSelect<false> | ChatSessionsSelect<true>;
     'chat-messages': ChatMessagesSelect<false> | ChatMessagesSelect<true>;
+    media: MediaSelect<false> | MediaSelect<true>;
+    users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -147,34 +149,6 @@ export interface UserAuthOperations {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users".
- */
-export interface User {
-  id: number;
-  name?: string | null;
-  role: 'admin' | 'editor';
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  resetPasswordRequestedAt?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  sessions?:
-    | {
-        id: string;
-        createdAt?: string | null;
-        expiresAt: string;
-      }[]
-    | null;
-  password?: string | null;
-  collection: 'users';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "pages".
  */
 export interface Page {
@@ -199,6 +173,42 @@ export interface Page {
   seoTitle?: string | null;
   seoDescription?: string | null;
   ogImage?: (number | null) | Media;
+  focusKeyword?: string | null;
+  focusKeywordKey?: string | null;
+  secondaryKeywords?:
+    | {
+        keyword?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  relatedKeywords?:
+    | {
+        keyword?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  searchIntent?: ('commercial' | 'informational' | 'transactional' | 'navigational' | 'mixed') | null;
+  targetRegions?:
+    | {
+        region?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  seoNotes?: string | null;
+  openGraph?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Рекомендуемый размер 1200 × 630 px.
+     */
+    image?: (number | null) | Media;
+  };
+  canonicalOverride?: string | null;
+  robots?: {
+    index?: boolean | null;
+    follow?: boolean | null;
+  };
+  schemaType?: ('auto' | 'WebPage' | 'Service' | 'OfferCatalog' | 'Article' | 'FAQPage') | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -209,7 +219,11 @@ export interface Page {
  */
 export interface Media {
   id: number;
-  alt: string;
+  /**
+   * Опишите содержание изображения. Для декоративного изображения оставьте поле пустым и отметьте его ниже.
+   */
+  alt?: string | null;
+  decorative?: boolean | null;
   caption?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -243,6 +257,57 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-seo".
+ */
+export interface SiteSeo {
+  id: number;
+  route:
+    '/' | '/services' | '/funeral' | '/products' | '/prices' | '/about' | '/info' | '/faq' | '/contacts' | '/legal';
+  seoTitle?: string | null;
+  seoDescription?: string | null;
+  ogImage?: (number | null) | Media;
+  focusKeyword?: string | null;
+  focusKeywordKey?: string | null;
+  secondaryKeywords?:
+    | {
+        keyword?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  relatedKeywords?:
+    | {
+        keyword?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  searchIntent?: ('commercial' | 'informational' | 'transactional' | 'navigational' | 'mixed') | null;
+  targetRegions?:
+    | {
+        region?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  seoNotes?: string | null;
+  openGraph?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Рекомендуемый размер 1200 × 630 px.
+     */
+    image?: (number | null) | Media;
+  };
+  canonicalOverride?: string | null;
+  robots?: {
+    index?: boolean | null;
+    follow?: boolean | null;
+  };
+  schemaType?: ('auto' | 'WebPage' | 'Service' | 'OfferCatalog' | 'Article' | 'FAQPage') | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "info-articles".
  */
 export interface InfoArticle {
@@ -254,6 +319,35 @@ export interface InfoArticle {
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faqs".
+ */
+export interface Faq {
+  id: number;
+  question: string;
+  answer: string;
+  sortOrder?: number | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "service-categories".
+ */
+export interface ServiceCategory {
+  id: number;
+  title: string;
+  active?: boolean | null;
+  page?: (number | null) | Page;
+  /**
+   * Резервный адрес существующей страницы или раздела, например funeral.
+   */
+  linkSlug?: string | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -303,22 +397,6 @@ export interface Service {
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "service-categories".
- */
-export interface ServiceCategory {
-  id: number;
-  title: string;
-  active?: boolean | null;
-  page?: (number | null) | Page;
-  /**
-   * Резервный адрес существующей страницы или раздела, например funeral.
-   */
-  linkSlug?: string | null;
-  updatedAt: string;
-  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -385,19 +463,6 @@ export interface PriceItem {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "faqs".
- */
-export interface Faq {
-  id: number;
-  question: string;
-  answer: string;
-  sortOrder?: number | null;
-  updatedAt: string;
-  createdAt: string;
-  _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "leads".
  */
 export interface Lead {
@@ -455,6 +520,34 @@ export interface ChatMessage {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: number;
+  name?: string | null;
+  role: 'admin' | 'editor';
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  resetPasswordRequestedAt?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  sessions?:
+    | {
+        id: string;
+        createdAt?: string | null;
+        expiresAt: string;
+      }[]
+    | null;
+  password?: string | null;
+  collection: 'users';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -478,24 +571,28 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
-        relationTo: 'users';
-        value: number | User;
-      } | null)
-    | ({
         relationTo: 'pages';
         value: number | Page;
+      } | null)
+    | ({
+        relationTo: 'site-seo';
+        value: number | SiteSeo;
       } | null)
     | ({
         relationTo: 'info-articles';
         value: number | InfoArticle;
       } | null)
     | ({
-        relationTo: 'services';
-        value: number | Service;
+        relationTo: 'faqs';
+        value: number | Faq;
       } | null)
     | ({
         relationTo: 'service-categories';
         value: number | ServiceCategory;
+      } | null)
+    | ({
+        relationTo: 'services';
+        value: number | Service;
       } | null)
     | ({
         relationTo: 'products';
@@ -504,14 +601,6 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'price-items';
         value: number | PriceItem;
-      } | null)
-    | ({
-        relationTo: 'faqs';
-        value: number | Faq;
-      } | null)
-    | ({
-        relationTo: 'media';
-        value: number | Media;
       } | null)
     | ({
         relationTo: 'leads';
@@ -524,6 +613,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'chat-messages';
         value: number | ChatMessage;
+      } | null)
+    | ({
+        relationTo: 'media';
+        value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'users';
+        value: number | User;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -569,31 +666,6 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users_select".
- */
-export interface UsersSelect<T extends boolean = true> {
-  name?: T;
-  role?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  resetPasswordRequestedAt?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
-  sessions?:
-    | T
-    | {
-        id?: T;
-        createdAt?: T;
-        expiresAt?: T;
-      };
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "pages_select".
  */
 export interface PagesSelect<T extends boolean = true> {
@@ -603,6 +675,93 @@ export interface PagesSelect<T extends boolean = true> {
   seoTitle?: T;
   seoDescription?: T;
   ogImage?: T;
+  focusKeyword?: T;
+  focusKeywordKey?: T;
+  secondaryKeywords?:
+    | T
+    | {
+        keyword?: T;
+        id?: T;
+      };
+  relatedKeywords?:
+    | T
+    | {
+        keyword?: T;
+        id?: T;
+      };
+  searchIntent?: T;
+  targetRegions?:
+    | T
+    | {
+        region?: T;
+        id?: T;
+      };
+  seoNotes?: T;
+  openGraph?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  canonicalOverride?: T;
+  robots?:
+    | T
+    | {
+        index?: T;
+        follow?: T;
+      };
+  schemaType?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-seo_select".
+ */
+export interface SiteSeoSelect<T extends boolean = true> {
+  route?: T;
+  seoTitle?: T;
+  seoDescription?: T;
+  ogImage?: T;
+  focusKeyword?: T;
+  focusKeywordKey?: T;
+  secondaryKeywords?:
+    | T
+    | {
+        keyword?: T;
+        id?: T;
+      };
+  relatedKeywords?:
+    | T
+    | {
+        keyword?: T;
+        id?: T;
+      };
+  searchIntent?: T;
+  targetRegions?:
+    | T
+    | {
+        region?: T;
+        id?: T;
+      };
+  seoNotes?: T;
+  openGraph?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  canonicalOverride?: T;
+  robots?:
+    | T
+    | {
+        index?: T;
+        follow?: T;
+      };
+  schemaType?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -619,6 +778,30 @@ export interface InfoArticlesSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faqs_select".
+ */
+export interface FaqsSelect<T extends boolean = true> {
+  question?: T;
+  answer?: T;
+  sortOrder?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "service-categories_select".
+ */
+export interface ServiceCategoriesSelect<T extends boolean = true> {
+  title?: T;
+  active?: T;
+  page?: T;
+  linkSlug?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -644,18 +827,6 @@ export interface ServicesSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "service-categories_select".
- */
-export interface ServiceCategoriesSelect<T extends boolean = true> {
-  title?: T;
-  active?: T;
-  page?: T;
-  linkSlug?: T;
-  updatedAt?: T;
-  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -700,61 +871,6 @@ export interface PriceItemsSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "faqs_select".
- */
-export interface FaqsSelect<T extends boolean = true> {
-  question?: T;
-  answer?: T;
-  sortOrder?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  _status?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "media_select".
- */
-export interface MediaSelect<T extends boolean = true> {
-  alt?: T;
-  caption?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
-  sizes?:
-    | T
-    | {
-        thumbnail?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        card?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -805,6 +921,75 @@ export interface ChatMessagesSelect<T extends boolean = true> {
   attempts?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media_select".
+ */
+export interface MediaSelect<T extends boolean = true> {
+  alt?: T;
+  decorative?: T;
+  caption?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+  sizes?:
+    | T
+    | {
+        thumbnail?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        card?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  name?: T;
+  role?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  resetPasswordRequestedAt?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+  sessions?:
+    | T
+    | {
+        id?: T;
+        createdAt?: T;
+        expiresAt?: T;
+      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -863,6 +1048,19 @@ export interface CompanySetting {
   address?: string | null;
   workingHours?: string | null;
   messengerUrl?: string | null;
+  /**
+   * Выбирайте FuneralHome, если организация действительно работает как похоронное бюро.
+   */
+  schemaOrganizationType?: ('Organization' | 'FuneralHome') | null;
+  /**
+   * В Schema.org используются эти регионы. Если список пуст, используется город компании.
+   */
+  serviceRegions?:
+    | {
+        region: string;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -882,6 +1080,13 @@ export interface CompanySettingsSelect<T extends boolean = true> {
   address?: T;
   workingHours?: T;
   messengerUrl?: T;
+  schemaOrganizationType?: T;
+  serviceRegions?:
+    | T
+    | {
+        region?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

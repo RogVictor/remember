@@ -21,5 +21,15 @@ export const CompanySettings: GlobalConfig = {
     { name: 'address', type: 'text', defaultValue: 'Адрес офиса уточняется', label: 'Адрес' },
     { name: 'workingHours', type: 'text', defaultValue: 'Круглосуточно, без выходных', label: 'Режим работы' },
     { name: 'messengerUrl', type: 'text', label: 'Ссылка на мессенджер' },
+    {
+      name: 'schemaOrganizationType', type: 'select', label: 'Тип организации для Schema.org',
+      defaultValue: 'Organization', options: ['Organization', 'FuneralHome'],
+      admin: { description: 'Выбирайте FuneralHome, если организация действительно работает как похоронное бюро.' },
+    },
+    {
+      name: 'serviceRegions', type: 'array', label: 'Подтверждённые регионы обслуживания',
+      admin: { description: 'В Schema.org используются эти регионы. Если список пуст, используется город компании.' },
+      fields: [{ name: 'region', type: 'text', label: 'Регион', required: true }],
+    },
   ],
 }

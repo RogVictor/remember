@@ -20,7 +20,8 @@ export const Media: CollectionConfig = {
     delete: ({ req }) => isAdminUser(req.user),
   },
   fields: [
-    { name: 'alt', type: 'text', label: 'Alt-текст', required: true },
+    { name: 'alt', type: 'text', label: 'Alt-текст', admin: { description: 'Опишите содержание изображения. Для декоративного изображения оставьте поле пустым и отметьте его ниже.' } },
+    { name: 'decorative', type: 'checkbox', label: 'Декоративное изображение', defaultValue: false },
     { name: 'caption', type: 'text', label: 'Подпись' },
   ],
 }

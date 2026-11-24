@@ -2,20 +2,10 @@ import type { CollectionConfig } from 'payload'
 import { BlocksFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
 import { isAdminUser } from './access'
 import { CategoryServicesBlock } from './ServiceCategories'
-
-const reservedSlugs = new Set([
-  'about',
-  'contacts',
-  'faq',
-  'funeral',
-  'info',
-  'legal',
-  'prices',
-  'products',
-  'services',
-  'admin',
-  'api',
-])
+import { seoTab } from '../src/seo/fields'
+import { siteOrigin } from '../src/seo/config'
+import { landingPath } from '../src/seo/routes'
+import { keywordConflicts } from '../src/seo/keywords'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -28,7 +18,8 @@ export const Pages: CollectionConfig = {
     delete: ({ req }) => isAdminUser(req.user),
   },
   versions: { drafts: true },
-  fields: [
+  endpoints: [keywordConflicts],
+  fields: [{ type: 'tabs', tabs: [{ label: 'Контент', fields: [
     { name: 'title', type: 'text', required: true, label: 'Заголовок' },
     {
       name: 'slug',
@@ -41,7 +32,7 @@ export const Pages: CollectionConfig = {
         if (typeof value !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value)) {
           return 'Используйте строчные латинские буквы, цифры и дефисы.'
         }
-        if (reservedSlugs.has(value)) {
+        if (!landingPath(value)) {
           return 'Этот адрес уже занят существующим разделом сайта.'
         }
         return true
@@ -66,8 +57,5 @@ export const Pages: CollectionConfig = {
         ],
       }),
     },
-    { name: 'seoTitle', type: 'text', label: 'SEO title' },
-    { name: 'seoDescription', type: 'textarea', label: 'SEO description' },
-    { name: 'ogImage', type: 'upload', relationTo: 'media', label: 'Open Graph изображение' },
-  ],
+  ] }, seoTab(siteOrigin())] }],
 }

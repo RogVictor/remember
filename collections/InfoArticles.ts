@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 import { isAdminUser } from './access'
+import { linkedSeoTab } from '../src/seo/fields'
 
 export const InfoArticles: CollectionConfig = {
   slug: 'info-articles',
@@ -20,7 +21,7 @@ export const InfoArticles: CollectionConfig = {
     delete: ({ req }) => isAdminUser(req.user),
   },
   versions: { drafts: true },
-  fields: [
+  fields: [{ type: 'tabs', tabs: [{ label: 'Материал', fields: [
     { name: 'title', type: 'text', required: true, label: 'Заголовок карточки' },
     { name: 'summary', type: 'textarea', label: 'Краткое описание' },
     {
@@ -32,5 +33,5 @@ export const InfoArticles: CollectionConfig = {
       filterOptions: { _status: { equals: 'published' } },
     },
     { name: 'sortOrder', type: 'number', defaultValue: 0, label: 'Порядок отображения' },
-  ],
+  ] }, linkedSeoTab()] }],
 }

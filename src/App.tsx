@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import type { Breadcrumb } from './seo/structuredData'
 import type {
   CMSCompanySettings,
   CMSFAQ,
@@ -187,8 +188,13 @@ function ContactAside({ company }: { company: CMSCompanySettings }) {
   return <aside className="contact-aside"><span>Консультация · {company.workingHours}</span><a href={phoneHref(company.phone)}>{company.phone}</a><p>Специалист ответит на вопросы и поможет определить порядок действий.</p><Button onClick={() => go('contacts')}>Связаться с нами</Button></aside>
 }
 
-function Breadcrumbs({ title }: { title: string }) {
-  return <div className="breadcrumbs"><button onClick={() => go('home')}>Главная</button><span>/</span><span>{title}</span></div>
+function Breadcrumbs({ title, parents = [] }: { title: string; parents?: Breadcrumb[] }) {
+  return <nav className="breadcrumbs" aria-label="Хлебные крошки">
+    {[{ title: 'Главная', path: '/' }, ...parents].map(parent => <span key={parent.path} className="breadcrumb-parent">
+      <a href={parent.path}>{parent.title}</a><span aria-hidden="true">/</span>
+    </span>)}
+    <span aria-current="page">{title}</span>
+  </nav>
 }
 
 function Home({
@@ -285,8 +291,8 @@ function CatalogPage({
   </PageShell>
 }
 
-function PageShell({ company, title, intro, children, aside = true }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean }) {
-  return <main className="page container"><Breadcrumbs title={title}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
+function PageShell({ company, title, intro, children, aside = true, breadcrumbs }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean; breadcrumbs?: Breadcrumb[] }) {
+  return <main className="page container"><Breadcrumbs title={title} parents={breadcrumbs}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
 }
 
 function FuneralPage({ company }: { company: CMSCompanySettings }) {
@@ -304,7 +310,7 @@ function FaqList({ result, limit }: { result: CMSResult<CMSFAQ>; limit?: number 
   if (result.error) return <EmptyState>Не удалось загрузить частые вопросы. Попробуйте открыть страницу позже.</EmptyState>
   if (result.data.length === 0) return <EmptyState>Частые вопросы скоро появятся.</EmptyState>
 
-  return <div className="faq">{result.data.slice(0,limit).map(({ question, answer, id },i)=><div className="faq-item" key={id}><button onClick={()=>setActive(active===i?-1:i)}><span>{question}</span><b>{active===i?'−':'+'}</b></button>{active===i&&<p>{answer}</p>}</div>)}</div>
+  return <div className="faq">{result.data.slice(0,limit).map(({ question, answer, id },i)=><div className="faq-item" key={id}><button aria-expanded={active===i} onClick={()=>setActive(active===i?-1:i)}><span>{question}</span><b>{active===i?'−':'+'}</b></button><p hidden={active!==i}>{answer}</p></div>)}</div>
 }
 
 function InfoPage({ company, articles }: { company: CMSCompanySettings; articles: CMSInfoArticle[] }) {
@@ -382,6 +388,7 @@ export default function App({
   priceItems = { data: [], error: false },
   faqs = { data: [], error: false },
   cmsTitle,
+  breadcrumbs,
   infoArticles = [],
   children,
 }: {
@@ -393,6 +400,7 @@ export default function App({
   priceItems?: CMSResult<CMSPriceItem>
   faqs?: CMSResult<CMSFAQ>
   cmsTitle?: string
+  breadcrumbs?: Breadcrumb[]
   infoArticles?: CMSInfoArticle[]
   children?: React.ReactNode
 }) {
@@ -407,6 +415,6 @@ export default function App({
   else if(page==='faq') content=<PageShell company={company} title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
   else if(page==='contacts') content=<Contacts company={company}/>
   else if(page==='legal') content=<PageShell company={company} title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>
-  else content=<PageShell company={company} title={cmsTitle || ''}><article className="editorial cms-page">{children}</article></PageShell>
+  else content=<PageShell company={company} title={cmsTitle || ''} breadcrumbs={breadcrumbs}><article className="editorial cms-page">{children}</article></PageShell>
   return <><Header page={page} company={company} serviceLinks={serviceLinks}/>{content}<Footer company={company}/></>
 }

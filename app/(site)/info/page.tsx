@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
+import { staticMetadata } from '@/seo/public'
 import SiteApp from '@/SiteApp'
 import { getPublishedInfoArticles } from '@/lib/cms'
 
-export const metadata: Metadata = { title: 'Полезная информация' }
+export const generateMetadata = staticMetadata('/info')
 
 export default async function Page() {
   const infoArticles = await getPublishedInfoArticles()

@@ -17,6 +17,8 @@ export type CMSService = CMSPrice & {
   id: number | string
   image: CMSMedia | null
   linkSlug: string | null
+  seoTitle?: string | null
+  seoDescription?: string | null
   serviceCategoryId: number | string | null
   sortOrder: number
   summary: string | null
@@ -65,6 +67,8 @@ export type CMSInfoArticle = {
 }
 
 export type CMSCompanySettings = {
+  schemaOrganizationType?: 'Organization' | 'FuneralHome'
+  serviceRegions?: string[]
   additionalPhone: string
   address: string
   brandSlogan: string
@@ -92,17 +96,7 @@ export const DEFAULT_COMPANY_SETTINGS: CMSCompanySettings = {
   workingHours: 'Круглосуточно, без выходных',
 }
 
-export type CMSPage = {
-  content: SerializedEditorState | null
-  id: number | string
-  seoDescription: string | null
-  seoTitle: string | null
-  slug: string
-  title: string
-}
-
 export type CMSResult<T> = {
   data: T[]
   error: boolean
 }
-import type { SerializedEditorState } from 'lexical'

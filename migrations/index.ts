@@ -4,6 +4,7 @@ import * as migration_20261119_233002_chat from './20261119_233002_chat';
 import * as migration_20261124_111651_hero_image from './20261124_111651_hero_image';
 import * as migration_20261124_115231_service_page from './20261124_115231_service_page';
 import * as migration_20261124_151531_service_categories from './20261124_151531_service_categories';
+import * as migration_20261124_162717_seo_module from './20261124_162717_seo_module';
 
 export const migrations = [
   {
@@ -34,6 +35,11 @@ export const migrations = [
   {
     up: migration_20261124_151531_service_categories.up,
     down: migration_20261124_151531_service_categories.down,
-    name: '20261124_151531_service_categories'
+    name: '20261124_151531_service_categories',
+  },
+  {
+    up: migration_20261124_162717_seo_module.up,
+    down: migration_20261124_162717_seo_module.down,
+    name: '20261124_162717_seo_module'
   },
 ];

@@ -1,11 +1,9 @@
-import type { Metadata } from 'next'
+import { staticMetadata } from '@/seo/public'
 import SiteApp from '@/SiteApp'
 import ServiceCategoryGrid from '@/ServiceCategoryGrid'
 import { getServiceCatalog } from '@/lib/cms'
 
-export const metadata: Metadata = {
-  title: 'Ритуальные услуги',
-}
+export const generateMetadata = staticMetadata('/services')
 
 export const dynamic = 'force-dynamic'
 

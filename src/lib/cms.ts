@@ -6,12 +6,13 @@ import { getPayload } from 'payload'
 import { unstable_noStore as noStore } from 'next/cache'
 import { DEFAULT_COMPANY_SETTINGS } from './cms-types'
 import { groupServices } from './service-categories'
+import { landingPath, isStaticRoute, type StaticRoute } from '../seo/routes'
+import type { CompanySetting, Page, SiteSeo } from '../../payload-types'
 import type {
   CMSFAQ,
   CMSCompanySettings,
   CMSInfoArticle,
   CMSMedia,
-  CMSPage,
   CMSPrice,
   CMSPriceItem,
   CMSProduct,
@@ -89,7 +90,7 @@ const media = (value: unknown): CMSMedia | null => {
   if (!isRecord(value)) return null
   const url = text(value.url)
   if (!url) return null
-  return { url, alt: text(value.alt) ?? '' }
+  return { url, alt: value.decorative === true ? '' : text(value.alt) ?? '' }
 }
 
 const documents = async (collection: 'services' | 'products' | 'price-items' | 'faqs') => {
@@ -109,7 +110,8 @@ const documents = async (collection: 'services' | 'products' | 'price-items' | '
   return result.docs
 }
 
-export const getPublishedPage = cache(async (slug: string): Promise<CMSPage | null> => {
+export const getPublishedPage = cache(async (slug: string): Promise<Page | null> => {
+  if (!landingPath(slug)) return null
   noStore()
   try {
     const payload = await getPayload({ config })
@@ -126,47 +128,56 @@ export const getPublishedPage = cache(async (slug: string): Promise<CMSPage | nu
         ],
       },
     })
-    const doc = result.docs[0]
-    if (!doc) return null
-
-    return {
-      content: doc.content ?? null,
-      id: typeof doc.id === 'number' || typeof doc.id === 'string' ? doc.id : doc.title,
-      seoDescription: text(doc.seoDescription),
-      seoTitle: text(doc.seoTitle),
-      slug: doc.slug,
-      title: doc.title,
-    }
+    return (result.docs[0] as Page | undefined) ?? null
   } catch (error) {
     console.error(`[CMS] Could not load published page with slug "${slug}" from Payload.`, error)
     throw new Error(`Could not load published page "${slug}".`, { cause: error })
   }
 })
 
-export const getPublishedPageSlugs = async (): Promise<string[]> => {
+export const getPublicSeoEntries = async () => {
   noStore()
-  try {
-    const payload = await getPayload({ config })
-    const result = await payload.find({
-      collection: 'pages',
-      depth: 0,
-      draft: false,
-      limit: 1000,
-      overrideAccess: false,
-      select: { slug: true },
-      where: { _status: { equals: 'published' } },
-    })
-    return result.docs.flatMap(({ slug }) => {
-      const value = text(slug)
-      return value ? [value] : []
-    })
-  } catch (error) {
-    console.error('[CMS] Could not load published page slugs from Payload.', error)
-    throw new Error('Could not load published page slugs.', { cause: error })
+  const payload = await getPayload({ config })
+  const options = { depth: 0, draft: false, pagination: false, limit: 0, overrideAccess: false,
+    where: { _status: { equals: 'published' } } } as const
+  const [pages, sections] = await Promise.all([
+    payload.find({ ...options, collection: 'pages',
+      select: { slug: true, updatedAt: true, canonicalOverride: true, robots: true } }),
+    payload.find({ ...options, collection: 'site-seo',
+      select: { route: true, updatedAt: true, canonicalOverride: true, robots: true } }),
+  ])
+  return {
+    pages: pages.docs as Pick<Page, 'id' | 'slug' | 'updatedAt' | 'canonicalOverride' | 'robots'>[],
+    sections: sections.docs as Pick<SiteSeo, 'route' | 'updatedAt' | 'canonicalOverride' | 'robots'>[],
   }
 }
 
-export const getPublishedInfoArticles = async (): Promise<CMSInfoArticle[]> => {
+export const getStaticSeo = cache(async (route: StaticRoute): Promise<SiteSeo | null> => {
+  noStore()
+  const payload = await getPayload({ config })
+  const { docs } = await payload.find({ collection: 'site-seo', depth: 1, draft: false, limit: 1,
+    overrideAccess: false, where: { route: { equals: route }, _status: { equals: 'published' } } })
+  return (docs[0] as SiteSeo | undefined) ?? null
+})
+
+// Inactive directory entries are hidden by public access. Read only the
+// association and its state to keep those landings out of search.
+export const getInactiveLandingIds = cache(async () => {
+  noStore()
+  const payload = await getPayload({ config })
+  const { docs } = await payload.find({ collection: 'service-categories', depth: 0, pagination: false,
+    overrideAccess: true, select: { page: true, active: true }, where: { page: { exists: true } } })
+  const inactive = new Set<string | number>()
+  const active = new Set<string | number>()
+  for (const doc of docs) {
+    const id = relationshipID(doc.page)
+    if (id !== null) (doc.active ? active : inactive).add(id)
+  }
+  for (const id of active) inactive.delete(id)
+  return inactive
+})
+
+export const getPublishedInfoArticles = cache(async (): Promise<CMSInfoArticle[]> => {
   noStore()
   try {
     const payload = await getPayload({ config })
@@ -193,7 +204,7 @@ export const getPublishedInfoArticles = async (): Promise<CMSInfoArticle[]> => {
     console.error('[CMS] Could not load published info articles from Payload.', error)
     throw new Error('Could not load published info articles.', { cause: error })
   }
-}
+})
 
 const reportLoadFailure = (collection: string): void => {
   console.error(`[CMS] Could not load published ${collection} from Payload.`)
@@ -207,7 +218,7 @@ export const getCompanySettings = cache(async (): Promise<CMSCompanySettings> =>
       slug: 'company-settings',
       depth: 1,
       overrideAccess: false,
-    })
+    }) as CompanySetting
     const values: RecordValue = isRecord(settings) ? settings : {}
 
     return {
@@ -221,6 +232,8 @@ export const getCompanySettings = cache(async (): Promise<CMSCompanySettings> =>
       logo: media(values.logo),
       messengerUrl: optionalText(values.messengerUrl, DEFAULT_COMPANY_SETTINGS.messengerUrl),
       phone: text(values.phone) ?? DEFAULT_COMPANY_SETTINGS.phone,
+      schemaOrganizationType: settings.schemaOrganizationType === 'FuneralHome' ? 'FuneralHome' : 'Organization',
+      serviceRegions: (settings.serviceRegions ?? []).flatMap(({ region }) => text(region) ?? []),
       workingHours: text(values.workingHours) ?? DEFAULT_COMPANY_SETTINGS.workingHours,
     }
   } catch (error) {
@@ -246,6 +259,8 @@ export const getServices = cache(async (): Promise<CMSResult<CMSService>> => {
           category: text(doc.category),
           fallbackSlug: doc.page == null ? text(doc.slug) : null,
           summary: text(doc.summary),
+          seoTitle: text(doc.seoTitle),
+          seoDescription: text(doc.seoDescription),
           description: richText(doc.description),
           image: media(doc.image),
           linkSlug: doc.page == null ? text(doc.linkSlug) : publishedPageSlug(doc.page),
@@ -290,16 +305,14 @@ async function getServiceCategories(): Promise<CMSServiceCategory[]> {
   }
 }
 
-const staticServiceTargets = new Set([
-  'about', 'contacts', 'faq', 'funeral', 'info', 'legal', 'prices', 'products', 'services',
-])
+const isStaticServiceTarget = (slug: string) => isStaticRoute(`/${slug}`)
 
 async function getCatalogLinks(services: CMSService[], categories: CMSServiceCategory[]) {
   const candidates = [...new Set([
     ...services.flatMap(({ linkSlug, fallbackSlug }) => [linkSlug, fallbackSlug]),
     ...categories.flatMap(({ pageSlug, linkSlug }) => [pageSlug, linkSlug]),
   ].filter((slug): slug is string =>
-    Boolean(slug && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) && !staticServiceTargets.has(slug)),
+    Boolean(landingPath(slug)),
   ))]
   const publishedSlugs = new Set<string>()
 
@@ -324,7 +337,7 @@ async function getCatalogLinks(services: CMSService[], categories: CMSServiceCat
     }
   }
 
-  const isExistingRoute = (slug: string) => staticServiceTargets.has(slug) || publishedSlugs.has(slug)
+  const isExistingRoute = (slug: string) => isStaticServiceTarget(slug) || publishedSlugs.has(slug)
   const serviceLinks = new Map<CMSService['id'], string>()
   for (const { id, linkSlug, fallbackSlug } of services) {
     if (linkSlug && isExistingRoute(linkSlug)) {

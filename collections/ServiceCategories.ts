@@ -1,5 +1,6 @@
 import type { Block, CollectionConfig } from 'payload'
 import { isAdminUser } from './access'
+import { linkedSeoTab } from '../src/seo/fields'
 
 export const ServiceCategories: CollectionConfig = {
   slug: 'service-categories',
@@ -11,7 +12,7 @@ export const ServiceCategories: CollectionConfig = {
     update: ({ req }) => isAdminUser(req.user),
     delete: ({ req }) => isAdminUser(req.user),
   },
-  fields: [
+  fields: [{ type: 'tabs', tabs: [{ label: 'Категория', fields: [
     { name: 'title', type: 'text', required: true, unique: true, label: 'Название' },
     { name: 'active', type: 'checkbox', defaultValue: true, label: 'Активна' },
     {
@@ -32,7 +33,7 @@ export const ServiceCategories: CollectionConfig = {
           ? true
           : 'Используйте строчные латинские буквы, цифры и дефисы.',
     },
-  ],
+  ] }, linkedSeoTab()] }],
 }
 
 export const CategoryServicesBlock: Block = {

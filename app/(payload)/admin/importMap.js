@@ -22,6 +22,9 @@ import { BlockquoteFeatureClient as BlockquoteFeatureClient_e70f5e05f09f93e00b99
 import { UploadFeatureClient as UploadFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { HorizontalRuleFeatureClient as HorizontalRuleFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { InlineToolbarFeatureClient as InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
+import { SeoPreview as SeoPreview_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
+import { SeoAnalyzer as SeoAnalyzer_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
+import { LinkedSeo as LinkedSeo_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
 import { AdminIcon as AdminIcon_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
 import { AdminLogo as AdminLogo_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
 import { default as default_ec5dfb78f51b4fc2967471716a8f9625 } from '../../../app/(payload)/admin/components/ThemeToggle'
@@ -56,6 +59,9 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#UploadFeatureClient": UploadFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#HorizontalRuleFeatureClient": HorizontalRuleFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#InlineToolbarFeatureClient": InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
+  "/app/(payload)/admin/components/Seo#SeoPreview": SeoPreview_eb490e1e244f90749abf42e67d39acbf,
+  "/app/(payload)/admin/components/Seo#SeoAnalyzer": SeoAnalyzer_eb490e1e244f90749abf42e67d39acbf,
+  "/app/(payload)/admin/components/Seo#LinkedSeo": LinkedSeo_eb490e1e244f90749abf42e67d39acbf,
   "/app/(payload)/admin/components/Brand#AdminIcon": AdminIcon_e4149f270c1248a497447691509288a3,
   "/app/(payload)/admin/components/Brand#AdminLogo": AdminLogo_e4149f270c1248a497447691509288a3,
   "/app/(payload)/admin/components/ThemeToggle#default": default_ec5dfb78f51b4fc2967471716a8f9625,

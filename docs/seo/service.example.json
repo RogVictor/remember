@@ -1,0 +1,43 @@
+{
+  "kind": "service",
+  "service": {
+    "title": "Помощь с похоронными документами",
+    "slug": "pomosch-s-pohoronnymi-dokumentami",
+    "summary": "Помощь с перечнем документов и порядком обращения.",
+    "serviceCategory": 101,
+    "priceType": "on-request",
+    "_status": "draft"
+  },
+  "page": {
+    "title": "Помощь с похоронными документами",
+    "slug": "pomosch-s-pohoronnymi-dokumentami",
+    "_status": "draft",
+    "seoTitle": "Помощь с оформлением документов для похорон в Москве",
+    "seoDescription": "Какие документы могут понадобиться для организации похорон и как уточнить порядок оформления в Москве и Московской области.",
+    "focusKeyword": "документы для организации похорон",
+    "searchIntent": "commercial",
+    "canonicalOverride": null,
+    "robots": { "index": true, "follow": true },
+    "schemaType": "Service",
+    "content": {
+      "root": {
+        "type": "root", "version": 1, "direction": "ltr", "format": "", "indent": 0,
+        "children": [
+          {
+            "type": "heading", "tag": "h2", "version": 1, "direction": "ltr", "format": "", "indent": 0,
+            "children": [
+              { "type": "text", "version": 1, "format": 0, "detail": 0, "mode": "normal", "style": "", "text": "С чего начать оформление" }
+            ]
+          },
+          {
+            "type": "paragraph", "version": 1, "direction": "ltr", "format": "", "indent": 0, "textFormat": 0, "textStyle": "",
+            "children": [
+              { "type": "text", "version": 1, "format": 0, "detail": 0, "mode": "normal", "style": "", "text": "Уточните перечень документов и порядок обращений применительно к вашей ситуации." }
+            ]
+          },
+          { "type": "block", "version": 2, "format": "", "fields": { "blockType": "callback-form" } }
+        ]
+      }
+    }
+  }
+}

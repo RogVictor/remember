@@ -11,5 +11,49 @@
     @include collections.styles;
     @include forms.styles;
     @include dashboard.styles;
+
+    .rg-seo-section .field-type :is(input[type='text'], textarea) {
+      background-color: var(--rg-canvas);
+      color: var(--rg-text);
+    }
+
+    .rg-seo {
+      color: var(--rg-text);
+      overflow-wrap: anywhere;
+    }
+
+    .rg-seo__counts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      color: var(--rg-muted);
+    }
+
+    .rg-seo__preview {
+      display: grid;
+      gap: 6px;
+      margin-block: 12px;
+      padding: 16px;
+      border: 1px solid var(--rg-border);
+      border-radius: var(--rg-panel-radius);
+      background: var(--rg-surface);
+    }
+
+    .rg-seo__preview strong { color: var(--rg-accent); font-size: 1.2rem; }
+    .rg-seo__preview small { color: var(--rg-muted); }
+    .rg-seo__preview p { margin: 0; }
+    .rg-seo__checks { padding: 0; list-style: none; }
+    .rg-seo__checks li {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+      padding-block: 8px;
+      border-bottom: 1px solid var(--rg-border);
+    }
+    .rg-seo__status { padding: 2px 8px; border-radius: 5px; background: var(--rg-hover); }
+    .rg-seo__status--pass { background: var(--rg-success-soft); color: var(--rg-success-ink); }
+    .rg-seo__status--tip { background: var(--rg-warning-soft); color: var(--rg-warning); }
+    .rg-seo__status--problem { background: var(--rg-error-soft); color: var(--rg-error-ink); }
   }
 }

@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { isAdminUser } from './access'
 import { createPriceFields } from './priceFields'
+import { linkedSeoTab } from '../src/seo/fields'
 
 export const Services: CollectionConfig = {
   slug: 'services',
@@ -18,7 +19,7 @@ export const Services: CollectionConfig = {
     delete: ({ req }) => isAdminUser(req.user),
   },
   versions: { drafts: true },
-  fields: [
+  fields: [{ type: 'tabs', tabs: [{ label: 'Услуга', fields: [
     { name: 'title', type: 'text', required: true, label: 'Название' },
     { name: 'slug', type: 'text', required: true, unique: true, index: true, label: 'URL (slug)' },
     {
@@ -29,6 +30,7 @@ export const Services: CollectionConfig = {
       filterOptions: { _status: { equals: 'published' } },
       admin: {
         allowCreate: true,
+        allowEdit: true,
         description: 'Выберите опубликованную страницу или создайте и опубликуйте новую прямо здесь.',
       },
     },
@@ -59,7 +61,5 @@ export const Services: CollectionConfig = {
     { name: 'image', type: 'upload', relationTo: 'media', label: 'Изображение' },
     ...createPriceFields(),
     { name: 'sortOrder', type: 'number', defaultValue: 0, label: 'Порядок отображения' },
-    { name: 'seoTitle', type: 'text', label: 'SEO title' },
-    { name: 'seoDescription', type: 'textarea', label: 'SEO description' },
-  ],
+  ] }, linkedSeoTab(true)] }],
 }

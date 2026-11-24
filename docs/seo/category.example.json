@@ -1,0 +1,32 @@
+{
+  "kind": "category",
+  "category": { "title": "Организация похорон", "active": true },
+  "page": {
+    "title": "Услуги по организации похорон",
+    "slug": "organizaciya-pohoron",
+    "_status": "draft",
+    "seoTitle": "Услуги по организации похорон в Москве",
+    "seoDescription": "Услуги по организации похорон в Москве и Московской области. Информация о доступных услугах и порядке обращения.",
+    "focusKeyword": "организация похорон в Москве",
+    "secondaryKeywords": [{ "keyword": "услуги по организации похорон" }],
+    "relatedKeywords": [{ "keyword": "порядок организации церемонии" }],
+    "searchIntent": "commercial",
+    "targetRegions": [{ "region": "Москва" }, { "region": "Московская область" }],
+    "robots": { "index": true, "follow": true },
+    "schemaType": "OfferCatalog",
+    "content": {
+      "root": {
+        "type": "root", "version": 1, "direction": "ltr", "format": "", "indent": 0,
+        "children": [
+          {
+            "type": "paragraph", "version": 1, "direction": "ltr", "format": "", "indent": 0, "textFormat": 0, "textStyle": "",
+            "children": [
+              { "type": "text", "version": 1, "format": 0, "detail": 0, "mode": "normal", "style": "", "text": "В этом разделе собраны услуги по организации похорон." }
+            ]
+          },
+          { "type": "block", "version": 2, "format": "", "fields": { "blockType": "category-services", "category": 101 } }
+        ]
+      }
+    }
+  }
+}

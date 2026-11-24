@@ -17,6 +17,8 @@ import { Media } from './collections/Media'
 import { Leads } from './collections/Leads'
 import { ChatSessions, ChatMessages } from './collections/Chat'
 import { CompanySettings } from './globals/CompanySettings'
+import { SiteSeo } from './collections/SiteSeo'
+import { siteOrigin as getSiteOrigin } from './src/seo/config'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -24,8 +26,7 @@ const secret = process.env.PAYLOAD_SECRET
 const databaseURL = process.env.DATABASE_URL
 const isNextBuildPhase = process.env.NEXT_PHASE === 'phase-production-build'
 const configuredSiteURL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL
-const siteURL = configuredSiteURL || 'http://localhost:3000'
-const siteOrigin = new URL(siteURL).origin
+const siteOrigin = getSiteOrigin()
 const extraOrigins = (process.env.PAYLOAD_EXTRA_ORIGINS || '')
   .split(',')
   .map((origin) => origin.trim())
@@ -69,7 +70,7 @@ export default buildConfig({
       },
     },
   },
-  collections: [Pages, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, Leads, ChatSessions, ChatMessages, Media, Users],
+  collections: [Pages, SiteSeo, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, Leads, ChatSessions, ChatMessages, Media, Users],
   globals: [CompanySettings],
   editor: lexicalEditor(),
   db: postgresAdapter({

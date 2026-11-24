@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
+import { staticMetadata } from '@/seo/public'
 import SiteApp from '@/SiteApp'
 
-export const metadata: Metadata = { title: 'О компании' }
+export const generateMetadata = staticMetadata('/about')
 
 export default function Page() { return <SiteApp page="about" /> }

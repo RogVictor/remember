@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '../globals.css'
 import '../catalog.css'
 import { getCompanySettings } from '@/lib/cms'
+import { siteOrigin } from '@/seo/config'
 
 export async function generateMetadata(): Promise<Metadata> {
   const company = await getCompanySettings()
@@ -11,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${company.companyName}`,
     },
     description: `Информация об услугах по организации похорон, ритуальных принадлежностях и порядке обращения. ${company.city}.`,
-    metadataBase: new URL(process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+    metadataBase: new URL(siteOrigin()),
     robots: { index: false, follow: false },
     icons: {
       icon: '/ritualgroup24_favicon.png',
