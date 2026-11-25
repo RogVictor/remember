@@ -1,5 +1,4 @@
 'use client'
-
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import ServicesNavigation, { type NavigationCategory } from './ServicesNavigation'
@@ -15,6 +14,7 @@ import type {
 } from './lib/cms-types'
 import { DEFAULT_COMPANY_SETTINGS } from './lib/cms-types'
 import './navigation.css'
+import './contacts.css'
 
 type PageKey = 'home' | 'services' | 'funeral' | 'products' | 'prices' | 'about' | 'info' | 'faq' | 'contacts' | 'legal' | 'cms'
 
@@ -55,10 +55,11 @@ function Button({ children, secondary = false, onClick, type = 'button', disable
   return <button className={secondary ? 'btn btn-secondary' : 'btn'} onClick={onClick} type={type} disabled={disabled}>{children}</button>
 }
 
-function Icon({ name }: { name: 'phone' | 'clock' | 'menu' | 'close' | 'check' | 'arrow' }) {
+function Icon({ name }: { name: 'phone' | 'clock' | 'location' | 'menu' | 'close' | 'check' | 'arrow' }) {
   const paths = {
     phone: <path d="M6.6 10.8a15.8 15.8 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.3.56 3.6.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.56 3.56a1 1 0 0 1-.25 1.02L6.6 10.8Z" />,
     clock: <><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></>,
+    location: <><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></>,
     menu: <path d="M4 7h16M4 12h16M4 17h16"/>,
     close: <path d="m6 6 12 12M18 6 6 18"/>,
     check: <path d="m5 12 4 4L19 6"/>,
@@ -103,12 +104,25 @@ function Header({ page, company, navigation }: { page: PageKey; company: CMSComp
   </>
 }
 
+function publicAddress(company: CMSCompanySettings) {
+  const address = company.address.trim()
+  return address === DEFAULT_COMPANY_SETTINGS.address ? '' : address
+}
+
 function Footer({ company }: { company: CMSCompanySettings }) {
+  const address = publicAddress(company)
   return <footer><div className="container footer-grid">
     <div><div className="footer-brand"><BrandMark company={company}/><strong>{company.companyName}</strong></div><p>Комплексная помощь в организации похорон и решении сопутствующих вопросов.</p></div>
     <div><h3>Услуги</h3><button onClick={() => go('funeral')}>Организация похорон</button><button onClick={() => go('products')}>Ритуальные товары</button><button onClick={() => go('prices')}>Цены на услуги</button></div>
     <div><h3>Информация</h3><button onClick={() => go('about')}>О компании</button><button onClick={() => go('faq')}>Частые вопросы</button><button onClick={() => go('legal')}>Политика конфиденциальности</button></div>
-    <div><h3>Контакты</h3><a className="footer-phone" href={phoneHref(company.phone)}>{company.phone}</a>{company.additionalPhone && <p><a href={phoneHref(company.additionalPhone)}>{company.additionalPhone}</a></p>}<p>{company.address && <>{company.address}<br/></>}{company.workingHours}</p>{company.email && <a href={`mailto:${company.email}`}>{company.email}</a>}{company.messengerUrl && <p><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></p>}</div>
+    <div><h3>Контакты</h3>
+      <a className="footer-phone" href={phoneHref(company.phone)}>{company.phone}</a>
+      {company.additionalPhone && <p><a className="footer-phone" href={phoneHref(company.additionalPhone)}>{company.additionalPhone}</a></p>}
+      {address && <p>{address}</p>}
+      {company.workingHours && <p>{company.workingHours}</p>}
+      {company.email && <a href={`mailto:${company.email}`}>{company.email}</a>}
+      {company.messengerUrl && <p><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></p>}
+    </div>
   </div><div className="container copyright">© 2026 {company.companyName}. Информация на сайте не является публичной офертой.</div></footer>
 }
 
@@ -307,8 +321,26 @@ function InfoPage({ company, articles }: { company: CMSCompanySettings; articles
 }
 
 function Contacts({ company }: { company: CMSCompanySettings }) {
+  const address = publicAddress(company)
   return <PageShell company={company} title="Контакты" intro="Мы готовы ответить на вопросы и помочь определить дальнейший порядок действий." aside={false}>
-    <div className="contacts-grid"><div className="contact-details"><div><small>Основной телефон</small><a href={phoneHref(company.phone)}>{company.phone}</a></div>{company.additionalPhone && <div><small>Дополнительный телефон</small><a href={phoneHref(company.additionalPhone)}>{company.additionalPhone}</a></div>}{company.email && <div><small>Email</small><a href={`mailto:${company.email}`}>{company.email}</a></div>}{company.address && <div><small>Адрес</small><strong>{company.address}</strong></div>}<div><small>Режим работы</small><strong>{company.workingHours}</strong></div>{company.messengerUrl && <div><small>Мессенджер</small><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать нам</a></div>}<div className="map">Место для карты</div></div><CallbackForm/></div>
+    <div className="contact-panels">
+      <section className="contact-info" aria-labelledby="contact-info-title">
+        <h2 id="contact-info-title">Контактная информация</h2>
+        <div className="contact-row">
+          <Icon name="phone"/>
+          <div className="contact-numbers">
+            <div><span>Основной телефон</span><a href={phoneHref(company.phone)}>{company.phone}</a></div>
+            {company.additionalPhone && <div><span>Дополнительный телефон</span><a href={phoneHref(company.additionalPhone)}>{company.additionalPhone}</a></div>}
+          </div>
+        </div>
+        {company.workingHours && <div className="contact-row"><Icon name="clock"/><div><span>Режим работы</span>{company.workingHours}</div></div>}
+        {address && <div className="contact-row"><Icon name="location"/><div><span>Адрес</span>{address}</div></div>}
+        {company.email && <div className="contact-channel"><span>Электронная почта</span><a href={`mailto:${company.email}`}>{company.email}</a></div>}
+        {company.messengerUrl && <div className="contact-channel"><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></div>}
+        <p className="contact-note">Если помощь нужна срочно, позвоните нам.</p>
+      </section>
+      <CallbackForm/>
+    </div>
   </PageShell>
 }
 
@@ -344,12 +376,12 @@ export function CallbackForm({ source = '/contacts#callback' }: { source?: strin
     <p>Оставьте номер — специалист свяжется с вами для консультации.</p>
     <label>Ваше имя<input name="name" required maxLength={120} placeholder="Как к вам обращаться"/></label>
     <label>Телефон<input name="phone" type="tel" required maxLength={40} placeholder="+7 (___) ___-__-__"/></label>
-    <div className="lead-honeypot" aria-hidden="true">
+    <div className="lead-honeypot" hidden aria-hidden="true">
       <label>Оставьте это поле пустым<input name="website" tabIndex={-1} autoComplete="off"/></label>
     </div>
     <input type="hidden" name="requestType" value="callback"/>
     <input type="hidden" name="source" value={source}/>
-    <label className="consent"><input type="checkbox" name="personalDataConsent" value="true" required/> <span>Согласен на обработку персональных данных</span></label>
+    <label className="consent"><input type="checkbox" name="personalDataConsent" value="true" required/> <span>Согласен на обработку персональных данных в соответствии с <a href={pagePath('legal')}>политикой конфиденциальности</a></span></label>
     <Button type="submit" disabled={submitting || sent}>
       {submitting ? 'Отправка…' : sent ? 'Заявка отправлена' : 'Заказать звонок'}
     </Button>
