@@ -42,6 +42,7 @@ COPY --from=builder /app/tsconfig.json ./tsconfig.json
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/package-lock.json ./package-lock.json
 RUN mkdir -p /app/migrations /app/media && chown -R node:node /app/media
+RUN mkdir -p /app/.next/cache/images && chown node:node /app/.next/cache/images && chmod 700 /app/.next/cache/images
 USER node
 EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=90s --retries=3 CMD ["node", "-e", "fetch('http://127.0.0.1:3000/api/health').then((r) => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
