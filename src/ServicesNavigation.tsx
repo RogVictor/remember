@@ -93,8 +93,12 @@ export default function ServicesNavigation({ categories, current }: {
               onFocus={() => { if (desktop()) setSelected(index) }}
               onClick={() => {
                 if (desktop()) {
+                  if (!category.href) {
+                    setSelected(index)
+                    return
+                  }
                   setOpen(false)
-                  router.push(catalogHref)
+                  router.push(category.href)
                 } else {
                   setSelected(active ? null : index)
                 }
