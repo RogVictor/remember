@@ -100,14 +100,14 @@ export default function ServicesNavigation({ categories, current }: {
                   : (index + (event.key === 'ArrowDown' ? 1 : -1) + categories.length) % categories.length
                 buttons.current[next]?.focus()
               }}>{category.title}<i className="nav-chevron" aria-hidden="true" /></button>
-            {active && <div className="mega-detail" id={panelId} onKeyDown={event => {
+            <div className="mega-detail" id={panelId} aria-hidden={!active} inert={!active} onKeyDown={event => {
               if (event.key === 'ArrowLeft') { event.preventDefault(); buttons.current[index]?.focus() }
             }}>
               {category.image && <img src={category.image.url} alt={category.image.alt} />}
               <div className="mega-heading">{category.title}</div>
               <ul>{category.services.map(service => <li key={service.id}><a href={service.href}>{service.title}</a></li>)}</ul>
               {category.href && <a className="mega-category-link" href={category.href}>Перейти в категорию <span aria-hidden="true">→</span></a>}
-            </div>}
+            </div>
           </Fragment>
         })}
       </div>
