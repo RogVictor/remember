@@ -77,7 +77,7 @@
 .breadcrumbs a:hover { text-decoration: underline; }
 
 @media (min-width: 1001px) {
-  .nav .mega-columns .mega-category { height: 46px; }
+  .nav .mega-columns .mega-category { height: 50px; }
   .mega-detail[aria-hidden="true"] { visibility: hidden; }
 }
 
