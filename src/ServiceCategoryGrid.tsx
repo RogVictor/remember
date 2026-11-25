@@ -1,36 +1,35 @@
 import type { CMSService } from './lib/cms-types'
 import type { ServiceCategoryGroup } from './lib/service-categories'
+import CatalogBrowser from './CatalogBrowser'
 
 type ServiceLinks = ReadonlyMap<CMSService['id'], string>
 
 export function ServiceCategoryHeadings({ group, links }: { group: ServiceCategoryGroup; links: ServiceLinks }) {
-  const linked = group.services.filter(service => links.has(service.id))
-  if (!linked.length) return null
-  return <section>
+  return <section className="category-services">
     <h2>Услуги направления</h2>
-    {linked.map(service => <section key={service.id}>
-      <h3><a href={links.get(service.id)}>{service.pageTitle || service.title}</a></h3>
-      {service.summary && <p>{service.summary}</p>}
-    </section>)}
+    {group.services.map(service => {
+      const href = links.get(service.id)
+      const title = service.pageTitle || service.title
+      return <section className="category-service-row" key={service.id}>
+        {service.image && <img src={service.image.url} alt={service.image.alt} loading="lazy" />}
+        <div>
+          <h3>{href ? <a href={href}>{title}</a> : title}</h3>
+          {service.summary && <p>{service.summary}</p>}
+          {href && <a className="service-read" href={href} aria-label={`Подробнее об услуге «${title}»`}>Об услуге <span aria-hidden="true">→</span></a>}
+        </div>
+      </section>
+    })}
   </section>
 }
 
-export function ServiceCategorySection({ group, links, href }: {
-  group: ServiceCategoryGroup
-  links: ServiceLinks
-  href?: string
-}) {
-  return (
-    <section className="service-category">
-      <h2>{href ? <a className="service-category-title" href={href}>{group.title}</a> : group.title}</h2>
-      <ul>
-        {group.services.map(({ id, title }) => {
-          const serviceHref = links.get(id)
-          return <li key={id}>{serviceHref ? <a href={serviceHref}>{title}</a> : <span>{title}</span>}</li>
-        })}
-      </ul>
-    </section>
-  )
+export function ServiceCategorySection({ group, links }: { group: ServiceCategoryGroup; links: ServiceLinks }) {
+  return <section className="related-services">
+    <h2>{group.title}</h2>
+    <ul>{group.services.map(({ id, title }) => {
+      const href = links.get(id)
+      return <li key={id}>{href ? <a href={href}>{title}<span aria-hidden="true">→</span></a> : title}</li>
+    })}</ul>
+  </section>
 }
 
 export default function ServiceCategoryGrid({ groups, serviceLinks, categoryLinks }: {
@@ -38,16 +37,11 @@ export default function ServiceCategoryGrid({ groups, serviceLinks, categoryLink
   serviceLinks: ServiceLinks
   categoryLinks: ServiceLinks
 }) {
-  return (
-    <div className="service-category-grid">
-      {groups.map(group => (
-        <ServiceCategorySection
-          key={group.key}
-          group={group}
-          links={serviceLinks}
-          href={group.categoryId == null ? undefined : categoryLinks.get(group.categoryId)}
-        />
-      ))}
-    </div>
-  )
+  return <CatalogBrowser groups={groups.map(group => ({
+    key: group.key,
+    title: group.title,
+    image: group.image,
+    href: group.categoryId == null ? undefined : categoryLinks.get(group.categoryId),
+    services: group.services.map(({ id, title }) => ({ id, title, href: serviceLinks.get(id) })),
+  }))} />
 }

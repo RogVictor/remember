@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import ServicesNavigation, { type NavigationCategory } from './ServicesNavigation'
 import type { Breadcrumb } from './seo/structuredData'
 import type {
   CMSCompanySettings,
@@ -15,7 +16,6 @@ import { DEFAULT_COMPANY_SETTINGS } from './lib/cms-types'
 import './navigation.css'
 
 type PageKey = 'home' | 'services' | 'funeral' | 'products' | 'prices' | 'about' | 'info' | 'faq' | 'contacts' | 'legal' | 'cms'
-type ServiceLink = Pick<CMSService, 'id' | 'title'> & { href: string }
 
 const routes: Record<string, PageKey> = {
   '': 'home', home: 'home', services: 'services', funeral: 'funeral', products: 'products',
@@ -66,11 +66,23 @@ function Icon({ name }: { name: 'phone' | 'clock' | 'menu' | 'close' | 'check' |
   return <svg aria-hidden="true" viewBox="0 0 24 24">{paths[name]}</svg>
 }
 
-function Header({ page, company, serviceLinks }: { page: PageKey; company: CMSCompanySettings; serviceLinks: ServiceLink[] }) {
+function Header({ page, company, navigation }: { page: PageKey; company: CMSCompanySettings; navigation: NavigationCategory[] }) {
   const [open, setOpen] = useState(false)
+  const header = useRef<HTMLElement>(null)
+  const toggle = useRef<HTMLButtonElement>(null)
+  useEffect(() => {
+    if (!open) return
+    const outside = (event: PointerEvent) => {
+      if (event.target instanceof Node && !header.current?.contains(event.target)) setOpen(false)
+    }
+    document.addEventListener('pointerdown', outside)
+    return () => document.removeEventListener('pointerdown', outside)
+  }, [open])
   return <>
     <div className="topline"><div className="container top-inner"><span>Ритуальные услуги в {company.city}</span><span className="top-hours"><Icon name="clock" /> {company.workingHours}</span></div></div>
-    <header>
+    <header ref={header} onKeyDown={event => {
+      if (open && event.key === 'Escape') { setOpen(false); toggle.current?.focus() }
+    }}>
       <div className="container header-main">
         <button className="brand" onClick={() => go('home')} aria-label="На главную">
           <BrandMark company={company}/><span><strong>{company.companyName}</strong><small>{company.brandSlogan}</small></span>
@@ -79,46 +91,11 @@ function Header({ page, company, serviceLinks }: { page: PageKey; company: CMSCo
         <div className="header-contact"><small>Телефон для связи</small><a href={phoneHref(company.phone)}>{company.phone}</a></div>
         <Button secondary onClick={() => go('contacts')}>Заказать звонок</Button>
         <Button onClick={() => go('contacts')}>Вызвать специалиста</Button>
-        <button className="menu-btn" onClick={() => setOpen(!open)} aria-label={open ? 'Закрыть меню' : 'Открыть меню'} aria-expanded={open} aria-controls="site-navigation"><Icon name={open ? 'close' : 'menu'} /></button>
+        <button ref={toggle} className="menu-btn" onClick={() => setOpen(!open)} aria-label={open ? 'Закрыть меню' : 'Открыть меню'} aria-expanded={open} aria-controls="site-navigation"><Icon name={open ? 'close' : 'menu'} /></button>
       </div>
       <nav id="site-navigation" className={open ? 'nav open' : 'nav'}><div className="container nav-inner">
         {nav.map(([key, label]) => key === 'services' ? (
-          <details
-            key={key}
-            className="services-nav"
-            onPointerEnter={({ currentTarget, pointerType }) => {
-              if (pointerType === 'mouse') currentTarget.open = true
-            }}
-            onPointerLeave={({ currentTarget, pointerType }) => {
-              if (pointerType === 'mouse' && !currentTarget.querySelector('.services-nav-links:focus-within')) {
-                currentTarget.open = false
-              }
-            }}
-            onBlur={({ currentTarget, relatedTarget }) => {
-              if (relatedTarget && !currentTarget.contains(relatedTarget)) currentTarget.open = false
-            }}
-            onKeyDown={(event) => {
-              const dropdown = event.currentTarget
-              if (event.key === 'Escape' && dropdown.open) {
-                event.preventDefault()
-                dropdown.querySelector('summary')?.focus()
-                dropdown.open = false
-              }
-            }}
-          >
-            <summary
-              className={page === key ? 'active' : ''}
-              onClick={({ nativeEvent, preventDefault }) => {
-                if ('pointerType' in nativeEvent && nativeEvent.pointerType === 'mouse') preventDefault()
-              }}
-            >
-              {label}
-            </summary>
-            <ul className="services-nav-links">
-              <li><a href={pagePath(key)} aria-current={page === key ? 'page' : undefined}>Все услуги</a></li>
-              {serviceLinks.map(({ id, title, href }) => <li key={id}><a href={href}>{title}</a></li>)}
-            </ul>
-          </details>
+          <ServicesNavigation key={key + open} categories={navigation} current={page === key} />
         ) : <button key={key} className={page === key ? 'active' : ''} onClick={() => { go(key); setOpen(false) }}>{label}</button>)}
       </div></nav>
     </header>
@@ -260,7 +237,7 @@ function CatalogPage({
   products: CMSResult<CMSProduct>
   children?: React.ReactNode
 }) {
-  return <PageShell company={company} title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Оказываем комплексную помощь в организации похорон. Специалист подробно объяснит порядок действий и поможет выбрать только необходимые услуги.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
+  return <PageShell company={company} variant={type === 'services' ? 'catalog' : undefined} aside={type !== 'services'} title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Выберите направление, чтобы узнать порядок действий, состав услуги и условия её оказания.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
     {type === 'services' ? (
       services.error
         ? <EmptyState>Не удалось загрузить услуги. Попробуйте открыть страницу позже.</EmptyState>
@@ -291,8 +268,8 @@ function CatalogPage({
   </PageShell>
 }
 
-function PageShell({ company, title, intro, children, aside = true, breadcrumbs }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean; breadcrumbs?: Breadcrumb[] }) {
-  return <main className="page container"><Breadcrumbs title={title} parents={breadcrumbs}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
+function PageShell({ company, title, intro, children, aside = true, breadcrumbs, variant }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean; breadcrumbs?: Breadcrumb[]; variant?: string }) {
+  return <main className={`page container ${variant ? 'page-' + variant : ''}`}><Breadcrumbs title={title} parents={breadcrumbs}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
 }
 
 function FuneralPage({ company }: { company: CMSCompanySettings }) {
@@ -383,11 +360,12 @@ export default function App({
   company = DEFAULT_COMPANY_SETTINGS,
   page = 'home',
   services = { data: [], error: false },
-  serviceLinks = [],
+  navigation = [],
   products = { data: [], error: false },
   priceItems = { data: [], error: false },
   faqs = { data: [], error: false },
   cmsTitle,
+  landingKind,
   breadcrumbs,
   infoArticles = [],
   children,
@@ -395,11 +373,12 @@ export default function App({
   company?: CMSCompanySettings
   page?: PageKey
   services?: CMSResult<CMSService>
-  serviceLinks?: ServiceLink[]
+  navigation?: NavigationCategory[]
   products?: CMSResult<CMSProduct>
   priceItems?: CMSResult<CMSPriceItem>
   faqs?: CMSResult<CMSFAQ>
   cmsTitle?: string
+  landingKind?: 'service' | 'category'
   breadcrumbs?: Breadcrumb[]
   infoArticles?: CMSInfoArticle[]
   children?: React.ReactNode
@@ -415,6 +394,6 @@ export default function App({
   else if(page==='faq') content=<PageShell company={company} title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
   else if(page==='contacts') content=<Contacts company={company}/>
   else if(page==='legal') content=<PageShell company={company} title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>
-  else content=<PageShell company={company} title={cmsTitle || ''} breadcrumbs={breadcrumbs}><article className="editorial cms-page">{children}</article></PageShell>
-  return <><Header page={page} company={company} serviceLinks={serviceLinks}/>{content}<Footer company={company}/></>
+  else content=<PageShell company={company} title={cmsTitle || ''} breadcrumbs={breadcrumbs} variant={landingKind} aside={!landingKind}><article className="editorial cms-page">{children}</article></PageShell>
+  return <><Header page={page} company={company} navigation={navigation}/>{content}<Footer company={company}/></>
 }

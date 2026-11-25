@@ -10,11 +10,16 @@ import { staticHeading } from './seo/routes'
 
 export default async function SiteApp(props: ComponentProps<typeof App>) {
   const [company, catalog] = await Promise.all([getCompanySettings(), getServiceCatalog()])
-  const services = props.services ?? catalog.services
-  const serviceLinks = services.data.flatMap(({ id, title }) => {
-    const href = catalog.serviceLinks.get(id)
-    return href ? [{ id, title, href }] : []
-  })
+  const navigation = catalog.groups.map(group => ({
+    key: group.key,
+    title: group.title,
+    image: group.image,
+    href: group.categoryId == null ? undefined : catalog.categoryLinks.get(group.categoryId),
+    services: group.services.flatMap(({ id, title }) => {
+      const href = catalog.serviceLinks.get(id)
+      return href ? [{ id, title, href }] : []
+    }),
+  }))
   const page = props.page ?? 'home'
   const path = page === 'home' ? '/' : `/${page}` as const
   const seo = path === '/cms' ? null : await staticSeoInput(path)
@@ -31,6 +36,6 @@ export default async function SiteApp(props: ComponentProps<typeof App>) {
       services={page === 'services' ? catalog.groups.flatMap(group => group.services.map(({ id, title }) => ({
         title, path: catalog.serviceLinks.get(id),
       }))) : undefined} faqs={faqs} />}
-    <App {...props} company={company} serviceLinks={serviceLinks} />{chatConfigured() && <ChatWidget />}
+    <App {...props} company={company} navigation={navigation} />{chatConfigured() && <ChatWidget />}
   </>
 }

@@ -80,5 +80,6 @@ export const landingSeo = cache(async (slug: string) => {
     description: article?.description || service?.summary || content.text.split('\n').find(line => line.trim()) || companyDescription(company.city),
     indexing: indexingEnabled() && !inactive.has(page.id),
   }
-  return { input, page, company, type, services, breadcrumbs, related, extraCategory, serviceLinks: catalog.serviceLinks }
+  const landingKind = hasCatalog ? 'category' as const : serviceGroups.length ? 'service' as const : undefined
+  return { input, page, company, type, services, breadcrumbs, related, extraCategory, landingKind, serviceLinks: catalog.serviceLinks }
 })
