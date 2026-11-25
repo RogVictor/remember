@@ -1,4 +1,5 @@
 'use client'
+import { CallbackForm } from '../CallbackForm'
 import Link from 'next/link'
 import { useState } from 'react'
 import { guidePath, guideTitle, situationTitles, situations, type Situation, type Step, type Instructions } from './data'
@@ -17,8 +18,8 @@ function GuideIcon({ name }: { name: keyof typeof symbols }) {
 export function GuideShortcut() {
   return <Link className="guide-shortcut" href={guidePath}><GuideIcon name="book"/><span><strong>{guideTitle}</strong><small>Пошаговая инструкция для родственников.</small></span><span aria-hidden="true">→</span></Link>
 }
-export function Consultation() {
-  return <aside className="guide-consult"><div><strong>Нужна помощь специалиста?</strong><p>Круглосуточная консультация по организации похорон.</p></div><Link href="/contacts#callback">Заказать звонок →</Link></aside>
+export function GuideFeedback({ source }: { source: string }) {
+  return <div className="guide-feedback"><CallbackForm feedback source={source} id="feedback"/></div>
 }
 export function SituationPicker({ value, onSelect }: { value: Situation; onSelect: (key: Situation) => void }) {
   return <div className="guide-picker" role="group" aria-label="Обстоятельства смерти">{situations.map(key =>
@@ -37,7 +38,7 @@ export function GuidePreview({ data }: { data: Instructions }) {
     <SituationPicker value={selected} onSelect={select}/>
     <div id="guide-steps" className="guide-panel"><Steps steps={data[selected]}/>
       <Link className="guide-action" href={guidePath + '?situation=' + selected + '#situations'}>Читать подробную инструкцию <span aria-hidden="true">→</span></Link>
-    </div><Consultation/>
+    </div><GuideFeedback source="/#feedback"/>
   </div></section>
 }
 

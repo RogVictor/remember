@@ -29,7 +29,7 @@ export const SiteSeo: CollectionConfig = {
       name: key, label: situationTitles[key], type: 'array' as const,
       admin: { description: 'Пустой список использует базовую инструкцию.' },
       fields: [
-        { name: 'summary', label: 'Краткий шаг и пункт чек-листа', type: 'text', required: true },
+        { name: 'summary', label: 'Краткий шаг', type: 'text', required: true },
         { name: 'detail', label: 'Подробное пояснение', type: 'textarea', required: true },
       ],
     })),
