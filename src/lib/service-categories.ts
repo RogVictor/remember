@@ -1,6 +1,7 @@
 import type { CMSService, CMSServiceCategory } from './cms-types'
 
 export type ServiceCategoryGroup = {
+  image?: CMSServiceCategory['image']
   key: string
   title: string
   categoryId: CMSServiceCategory['id'] | null
@@ -30,6 +31,7 @@ export function groupServices(services: readonly CMSService[], categories: reado
     } else {
       groups.set(key, {
         key,
+        image: category?.image,
         title: category ? normalize(category.title) : legacyTitle,
         categoryId: category?.id ?? null,
         services: [service],

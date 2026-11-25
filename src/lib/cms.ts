@@ -283,11 +283,11 @@ async function getServiceCategories(): Promise<CMSServiceCategory[]> {
     const payload = await getPayload({ config })
     const { docs } = await payload.find({
       collection: 'service-categories',
-      depth: 1,
+      depth: 2,
       draft: false,
       limit: 0,
       overrideAccess: false,
-      populate: { pages: { slug: true, _status: true } },
+      populate: { pages: { slug: true, _status: true, ogImage: true } },
       where: { active: { equals: true } },
     })
     return docs.flatMap(doc => {
@@ -296,6 +296,7 @@ async function getServiceCategories(): Promise<CMSServiceCategory[]> {
       return id == null || !title ? [] : [{
         id,
         title,
+        image: isRecord(doc.page) && publishedPageSlug(doc.page) ? media(doc.page.ogImage) : null,
         pageSlug: publishedPageSlug(doc.page),
         linkSlug: text(doc.linkSlug),
       }]

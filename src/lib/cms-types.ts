@@ -27,6 +27,7 @@ export type CMSService = CMSPrice & {
 }
 
 export type CMSServiceCategory = {
+  image: CMSMedia | null
   id: number | string
   title: string
   pageSlug: string | null
