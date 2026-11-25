@@ -44,7 +44,24 @@ jobs:
           cd /opt/remember
 
           echo "=== Updating source code ==="
+          export PATH="$HOME/.local/bin:$PATH"
           git pull --ff-only origin main
+          git lfs pull origin
+          git lfs fsck --pointers HEAD
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import subprocess
+
+          listing = subprocess.check_output(["git", "lfs", "ls-files", "--json", "HEAD"])
+          files = json.loads(listing)["files"]
+          for item in files:
+              with open(item["name"], "rb") as source:
+                  digest = hashlib.file_digest(source, "sha256").hexdigest()
+              if digest != item["oid"]:
+                  raise SystemExit(f"Git LFS checksum mismatch: {item['name']}")
+          print(f"Verified {len(files)} materialized Git LFS files")
+          PY
 
           NEW_TAG="$(git rev-parse --short=12 HEAD)"
           PREVIOUS_TAG="rollback-$(date +%Y%m%d-%H%M%S)"
