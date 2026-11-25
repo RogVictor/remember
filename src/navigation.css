@@ -74,13 +74,10 @@
 .mega-detail li a { display: block; padding: 6px 0; color: var(--ink); font-size: 14px; }
 .mega-category-link { display: inline-block; padding-block: 6px; }
 .mega-menu :focus-visible, .services-trigger:focus-visible { outline: 2px solid var(--wine); outline-offset: -2px; }
+.breadcrumbs { flex-wrap: wrap; align-items: baseline; }
 .breadcrumbs .breadcrumb-parent { display: inline-flex; gap: 9px; }
 .breadcrumbs a { color: var(--wine); text-decoration: none; }
 .breadcrumbs a:hover { text-decoration: underline; }
-
-@media (min-width: 1001px) {
-  .mega-detail { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
-}
 
 @media (max-width: 1000px) {
   header .nav { top: 100%; }

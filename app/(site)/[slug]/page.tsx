@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import type { SerializedBlockNode } from '@payloadcms/richtext-lexical'
 import { RichText, type JSXConverterArgs, type JSXConvertersFunction } from '@payloadcms/richtext-lexical/react'
+import ServiceArticle from '@/ServiceArticle'
 import type { CategoryServicesBlock } from '../../../payload-types'
 import { CallbackForm } from '@/App'
 import { ServiceCategoryHeadings, ServiceCategorySection } from '@/ServiceCategoryGrid'
@@ -23,13 +24,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return seo ? metadata(seo.input, seo.type === 'Article') : { robots: { index: false, follow: false } }
 }
 
-async function CategoryServices({ categoryId, layout }: { categoryId: number | string; layout?: CategoryServicesBlock['layout'] }) {
+async function CategoryServices({ categoryId }: { categoryId: number | string }) {
   const { groups, serviceLinks } = await getServiceCatalog()
   const group = groups.find(item => item.categoryId === categoryId)
-  if (group && layout === 'sections') {
-    return <ServiceCategoryHeadings group={group} links={serviceLinks} />
-  }
-  return group ? <ServiceCategorySection group={group} links={serviceLinks} /> : null
+  return group ? <ServiceCategoryHeadings group={group} links={serviceLinks} /> : null
 }
 
 export default async function CMSPageRoute({ params }: PageProps) {
@@ -62,19 +60,23 @@ export default async function CMSPageRoute({ params }: PageProps) {
     blocks: {
       'category-services': ({ node }: JSXConverterArgs<SerializedBlockNode<CategoryServicesBlock>>) => {
         const categoryId = relationshipID(node.fields.category)
-        return categoryId == null ? null : <CategoryServices categoryId={categoryId} layout={node.fields.layout} />
+        return categoryId == null ? null : <CategoryServices categoryId={categoryId} />
       },
       'callback-form': () => <CallbackForm source={`/${page.slug}`} />,
     },
   })
 
+  const relatedSection = related && related.services.length > 0
+    ? <ServiceCategorySection group={related} links={serviceLinks} /> : null
   return (
-    <SiteApp page="cms" cmsTitle={page.title} breadcrumbs={breadcrumbs}>
+    <SiteApp page="cms" landingKind={seo.landingKind} cmsTitle={page.title} breadcrumbs={breadcrumbs}>
       <JsonLd origin={input.origin} path={input.path} title={page.title} description={resolveSeo(input).description}
         company={company} breadcrumbs={breadcrumbs} services={services} type={type} dateModified={page.updatedAt} />
-      {page.content && <RichText data={page.content} converters={converters} />}
-      {extraCategory && <ServiceCategorySection group={extraCategory} links={serviceLinks} />}
-      {related && related.services.length > 0 && <ServiceCategorySection group={related} links={serviceLinks} />}
+      {page.content && (seo.landingKind
+        ? <ServiceArticle content={page.content} converters={converters} related={relatedSection} />
+        : <RichText data={page.content} converters={converters} />)}
+      {extraCategory && <ServiceCategoryHeadings group={extraCategory} links={serviceLinks} />}
+      {!page.content && relatedSection}
     </SiteApp>
   )
 }

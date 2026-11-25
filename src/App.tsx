@@ -237,7 +237,7 @@ function CatalogPage({
   products: CMSResult<CMSProduct>
   children?: React.ReactNode
 }) {
-  return <PageShell company={company} title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Оказываем комплексную помощь в организации похорон. Специалист подробно объяснит порядок действий и поможет выбрать только необходимые услуги.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
+  return <PageShell company={company} variant={type === 'services' ? 'catalog' : undefined} aside={type !== 'services'} title={type==='services'?'Ритуальные услуги':'Ритуальные принадлежности'} intro={type==='services'?'Выберите направление, чтобы узнать порядок действий, состав услуги и условия её оказания.':'Каталог ритуальных принадлежностей. Наличие, комплектацию и стоимость конкретных изделий уточняйте у специалиста.'}>
     {type === 'services' ? (
       services.error
         ? <EmptyState>Не удалось загрузить услуги. Попробуйте открыть страницу позже.</EmptyState>
@@ -268,8 +268,8 @@ function CatalogPage({
   </PageShell>
 }
 
-function PageShell({ company, title, intro, children, aside = true, breadcrumbs }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean; breadcrumbs?: Breadcrumb[] }) {
-  return <main className="page container"><Breadcrumbs title={title} parents={breadcrumbs}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
+function PageShell({ company, title, intro, children, aside = true, breadcrumbs, variant }: { company: CMSCompanySettings; title: string; intro?: string; children: React.ReactNode; aside?: boolean; breadcrumbs?: Breadcrumb[]; variant?: string }) {
+  return <main className={`page container ${variant ? 'page-' + variant : ''}`}><Breadcrumbs title={title} parents={breadcrumbs}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
 }
 
 function FuneralPage({ company }: { company: CMSCompanySettings }) {
@@ -365,6 +365,7 @@ export default function App({
   priceItems = { data: [], error: false },
   faqs = { data: [], error: false },
   cmsTitle,
+  landingKind,
   breadcrumbs,
   infoArticles = [],
   children,
@@ -377,6 +378,7 @@ export default function App({
   priceItems?: CMSResult<CMSPriceItem>
   faqs?: CMSResult<CMSFAQ>
   cmsTitle?: string
+  landingKind?: 'service' | 'category'
   breadcrumbs?: Breadcrumb[]
   infoArticles?: CMSInfoArticle[]
   children?: React.ReactNode
@@ -392,6 +394,6 @@ export default function App({
   else if(page==='faq') content=<PageShell company={company} title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
   else if(page==='contacts') content=<Contacts company={company}/>
   else if(page==='legal') content=<PageShell company={company} title="Политика конфиденциальности" intro="Шаблон документа для последующего заполнения юридически проверенными сведениями." aside={false}><div className="legal"><h2>Общие положения</h2><p>[Разместите утверждённый текст политики обработки персональных данных.]</p><h2>Согласие на обработку данных</h2><p>[Разместите утверждённый текст согласия и реквизиты оператора.]</p></div></PageShell>
-  else content=<PageShell company={company} title={cmsTitle || ''} breadcrumbs={breadcrumbs}><article className="editorial cms-page">{children}</article></PageShell>
+  else content=<PageShell company={company} title={cmsTitle || ''} breadcrumbs={breadcrumbs} variant={landingKind} aside={!landingKind}><article className="editorial cms-page">{children}</article></PageShell>
   return <><Header page={page} company={company} navigation={navigation}/>{content}<Footer company={company}/></>
 }
