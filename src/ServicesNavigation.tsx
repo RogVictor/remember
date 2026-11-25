@@ -2,6 +2,7 @@
 
 import { Fragment, useEffect, useId, useRef, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import type { CMSMedia } from './lib/cms-types'
 
 export type NavigationCategory = {
@@ -13,11 +14,13 @@ export type NavigationCategory = {
 }
 
 const desktop = () => window.matchMedia('(min-width: 1001px)').matches
+const catalogHref = '/services'
 
 export default function ServicesNavigation({ categories, current }: {
   categories: NavigationCategory[]
   current: boolean
 }) {
+  const router = useRouter()
   const [open, setOpen] = useState(false)
   const [selected, setSelected] = useState<number | null>(0)
   const root = useRef<HTMLDivElement>(null)
@@ -78,7 +81,7 @@ export default function ServicesNavigation({ categories, current }: {
         }
       }}>Услуги <i className="nav-chevron" aria-hidden="true" /></button>
     {open && <div className="mega-menu" id={menuId}>
-      <div className="mega-top"><span>Направления услуг</span><Link prefetch={false} onNavigate={() => setOpen(false)} href="/services" aria-current={current ? 'page' : undefined}>Полный каталог <span aria-hidden="true">↗</span></Link></div>
+      <div className="mega-top"><span>Направления услуг</span><Link prefetch={false} onNavigate={() => setOpen(false)} href={catalogHref} aria-current={current ? 'page' : undefined}>Полный каталог <span aria-hidden="true">↗</span></Link></div>
       <div className="mega-columns" style={{ gridTemplateRows: `repeat(${Math.max(1, categories.length)}, auto)` }}>
         {categories.map((category, index) => {
           const active = selected === index
@@ -88,7 +91,14 @@ export default function ServicesNavigation({ categories, current }: {
               style={{ gridRow: index + 1 }} aria-expanded={active} aria-controls={active ? panelId : undefined}
               onPointerEnter={event => { if (desktop() && event.pointerType === 'mouse') setSelected(index) }}
               onFocus={() => { if (desktop()) setSelected(index) }}
-              onClick={() => setSelected(!desktop() && active ? null : index)}
+              onClick={() => {
+                if (desktop()) {
+                  setOpen(false)
+                  router.push(catalogHref)
+                } else {
+                  setSelected(active ? null : index)
+                }
+              }}
               onKeyDown={event => {
                 if (event.key === 'ArrowRight' && desktop()) {
                   event.preventDefault()
