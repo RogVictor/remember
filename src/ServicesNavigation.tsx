@@ -78,7 +78,7 @@ export default function ServicesNavigation({ categories, current }: {
       }}>Услуги <i className="nav-chevron" aria-hidden="true" /></button>
     {open && <div className="mega-menu" id={menuId}>
       <div className="mega-top"><span>Направления услуг</span><a href="/services" aria-current={current ? 'page' : undefined}>Полный каталог <span aria-hidden="true">↗</span></a></div>
-      <div className="mega-columns" style={{ gridTemplateRows: `repeat(${Math.max(1, categories.length)}, auto)` }}>
+      <div className="mega-columns" style={{ gridTemplateRows: `repeat(${Math.max(1, categories.length)}, 46px)` }}>
         {categories.map((category, index) => {
           const active = selected === index
           const panelId = menuId + '-group-' + index

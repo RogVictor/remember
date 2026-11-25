@@ -79,6 +79,10 @@
 .breadcrumbs a { color: var(--wine); text-decoration: none; }
 .breadcrumbs a:hover { text-decoration: underline; }
 
+@media (min-width: 1001px) {
+  .mega-detail { min-height: 0; overflow-y: auto; scrollbar-gutter: stable; }
+}
+
 @media (max-width: 1000px) {
   header .nav { top: 100%; }
   .nav.open { max-height: calc(100dvh - 109px); overflow-y: auto; overscroll-behavior: contain; }
