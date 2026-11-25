@@ -1,6 +1,7 @@
 'use client'
 
 import { Fragment, useEffect, useId, useRef, useState } from 'react'
+import Link from 'next/link'
 import type { CMSMedia } from './lib/cms-types'
 
 export type NavigationCategory = {
@@ -77,7 +78,7 @@ export default function ServicesNavigation({ categories, current }: {
         }
       }}>Услуги <i className="nav-chevron" aria-hidden="true" /></button>
     {open && <div className="mega-menu" id={menuId}>
-      <div className="mega-top"><span>Направления услуг</span><a href="/services" aria-current={current ? 'page' : undefined}>Полный каталог <span aria-hidden="true">↗</span></a></div>
+      <div className="mega-top"><span>Направления услуг</span><Link prefetch={false} onNavigate={() => setOpen(false)} href="/services" aria-current={current ? 'page' : undefined}>Полный каталог <span aria-hidden="true">↗</span></Link></div>
       <div className="mega-columns" style={{ gridTemplateRows: `repeat(${Math.max(1, categories.length)}, auto)` }}>
         {categories.map((category, index) => {
           const active = selected === index
@@ -103,10 +104,10 @@ export default function ServicesNavigation({ categories, current }: {
             <div className="mega-detail" id={panelId} aria-hidden={!active} inert={!active} onKeyDown={event => {
               if (event.key === 'ArrowLeft') { event.preventDefault(); buttons.current[index]?.focus() }
             }}>
-              {category.image && <img src={category.image.url} alt={category.image.alt} />}
+              {active && category.image && <img loading="lazy" src={category.image.src ?? category.image.url} srcSet={category.image.srcSet} sizes="auto, 100vw" alt={category.image.alt} />}
               <div className="mega-heading">{category.title}</div>
-              <ul>{category.services.map(service => <li key={service.id}><a href={service.href}>{service.title}</a></li>)}</ul>
-              {category.href && <a className="mega-category-link" href={category.href}>Перейти в категорию <span aria-hidden="true">→</span></a>}
+              <ul>{category.services.map(service => <li key={service.id}><Link prefetch={false} onNavigate={() => setOpen(false)} href={service.href}>{service.title}</Link></li>)}</ul>
+              {category.href && <Link prefetch={false} onNavigate={() => setOpen(false)} className="mega-category-link" href={category.href}>Перейти в категорию <span aria-hidden="true">→</span></Link>}
             </div>
           </Fragment>
         })}

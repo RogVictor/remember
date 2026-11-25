@@ -6,6 +6,8 @@ export type CMSPrice = {
 }
 
 export type CMSMedia = {
+  src?: string
+  srcSet?: string
   alt: string
   url: string
 }

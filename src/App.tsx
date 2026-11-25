@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import ServicesNavigation, { type NavigationCategory } from './ServicesNavigation'
 import type { Breadcrumb } from './seo/structuredData'
@@ -44,7 +45,7 @@ function BrandMark({ company }: { company: CMSCompanySettings }) {
   return (
     <span className="brand-mark">
       {company.logo
-        ? <img className="brand-logo" src={company.logo.url} alt={company.logo.alt || company.companyName} />
+        ? <img className="brand-logo" src={company.logo.src ?? company.logo.url} alt={company.logo.alt || company.companyName} />
         : company.companyName.charAt(0)}
     </span>
   )
@@ -121,7 +122,7 @@ function ServiceGrid({ result, limit }: { result: CMSResult<CMSService>; limit?:
 
   return <div className="service-grid">{result.data.slice(0, limit).map((service) => {
     const card = <article className="service-card" key={service.id}>
-      {service.image && <img className="catalog-service-image" src={service.image.url} alt={service.image.alt || service.title} />}
+      {service.image && <img loading="lazy" srcSet={service.image.srcSet} sizes="auto, 100vw" className="catalog-service-image" src={service.image.src ?? service.image.url} alt={service.image.alt || service.title} />}
       {service.category && <small className="catalog-category">{service.category}</small>}
       <h3>{service.title}</h3>
       {service.summary && <p>{service.summary}</p>}
@@ -130,7 +131,7 @@ function ServiceGrid({ result, limit }: { result: CMSResult<CMSService>; limit?:
     </article>
 
     return service.linkSlug
-      ? <a className="service-card-link" href={`/${service.linkSlug}`} key={service.id}>{card}</a>
+      ? <Link prefetch={false} className="service-card-link" href={`/${service.linkSlug}`} key={service.id}>{card}</Link>
       : card
   })}</div>
 }
@@ -168,7 +169,7 @@ function ContactAside({ company }: { company: CMSCompanySettings }) {
 function Breadcrumbs({ title, parents = [] }: { title: string; parents?: Breadcrumb[] }) {
   return <nav className="breadcrumbs" aria-label="Хлебные крошки">
     {[{ title: 'Главная', path: '/' }, ...parents].map(parent => <span key={parent.path} className="breadcrumb-parent">
-      <a href={parent.path}>{parent.title}</a><span aria-hidden="true">/</span>
+      <Link prefetch={false} href={parent.path}>{parent.title}</Link><span aria-hidden="true">/</span>
     </span>)}
     <span aria-current="page">{title}</span>
   </nav>
@@ -188,17 +189,24 @@ function Home({
   return <>
     <section className="hero">
       <div className="container hero-grid">
-        <div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Button secondary onClick={() => go('services')}>Все услуги</Button></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a></div>
+        <div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Link className="btn btn-secondary" href="/services" prefetch={false}>Все услуги</Link></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a></div>
         <div className="hero-image">
-          <img
-            src={company.heroImage?.url ?? 'https://images.unsplash.com/photo-1532276958900-0036587925c8?auto=format&fit=crop&w=1000&q=85'}
-            alt={company.heroImage?.alt ?? 'Белые цветы в спокойной светлой композиции'}
-          />
+          <picture>
+            <source media="(max-width: 1000px)" srcSet="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" />
+            <img
+              fetchPriority="high"
+              loading="eager"
+              sizes="(min-width: 1240px) 570px, calc(47.5vw - 19px)"
+              srcSet={company.heroImage?.srcSet}
+              src={company.heroImage?.src ?? company.heroImage?.url ?? 'https://images.unsplash.com/photo-1532276958900-0036587925c8?auto=format&fit=crop&w=1000&q=85'}
+              alt={company.heroImage?.alt ?? 'Белые цветы в спокойной светлой композиции'}
+            />
+          </picture>
           <span>Помощь с уважением и вниманием к каждой семье</span>
         </div>
       </div>
     </section>
-    <section className="section container"><SectionTitle eyebrow="Основные направления">Наши услуги</SectionTitle><ServiceGrid result={services} limit={8}/><div className="center"><Button secondary onClick={() => go('services')}>Смотреть все услуги</Button></div></section>
+    <section className="section container"><SectionTitle eyebrow="Основные направления">Наши услуги</SectionTitle><ServiceGrid result={services} limit={8}/><div className="center"><Link className="btn btn-secondary" href="/services" prefetch={false}>Смотреть все услуги</Link></div></section>
     <section className="advantages"><div className="container"><SectionTitle>Почему обращаются к нам</SectionTitle><div className="adv-grid">{['Круглосуточная консультация','Комплексный подход','Понятная стоимость услуг','Сопровождение на этапах'].map((x,i)=><div className="adv" key={x}><span>0{i+1}</span><h3>{x}</h3><p>{['Принимаем обращения 24 часа, без выходных.','Помогаем согласовать услуги в одном месте.','Объясняем, из чего складывается итоговая сумма.','Остаёмся на связи в согласованном порядке.'][i]}</p></div>)}</div></div></section>
     <section className="section container"><SectionTitle eyebrow="Порядок действий">Как организовать похороны</SectionTitle><div className="steps">{['Свяжитесь с нами','Обсудите необходимые услуги','Согласуйте стоимость и порядок','Получите помощь в организации'].map((x,i)=><div className="step" key={x}><span>{i+1}</span><strong>{x}</strong></div>)}</div></section>
     <section className="section muted"><div className="container"><SectionTitle>Стоимость ритуальных услуг</SectionTitle><PriceTable result={priceItems} compact/><div className="center"><Button onClick={() => go('prices')}>Посмотреть все цены</Button></div></div></section>
@@ -252,7 +260,7 @@ function CatalogPage({
           <article className="product" key={product.id}>
             <div className="product-image">
               {product.images[0]
-                ? <img src={product.images[0].url} alt={product.images[0].alt || product.title} />
+                ? <img loading="lazy" srcSet={product.images[0].srcSet} sizes="auto, 100vw" src={product.images[0].src ?? product.images[0].url} alt={product.images[0].alt || product.title} />
                 : <span>{String(index + 1).padStart(2, '0')}</span>}
             </div>
             <div>
@@ -274,7 +282,7 @@ function PageShell({ company, title, intro, children, aside = true, breadcrumbs,
 
 function FuneralPage({ company }: { company: CMSCompanySettings }) {
   return <PageShell company={company} title="Организация похорон" intro="Помогаем последовательно решить организационные вопросы и согласовать состав необходимых услуг.">
-    <img className="content-image" src="https://images.unsplash.com/photo-1777542842081-808785008a22?auto=format&fit=crop&w=1200&q=80" alt="Сдержанная композиция из белых цветов"/>
+    <img loading="lazy" className="content-image" src="https://images.unsplash.com/photo-1777542842081-808785008a22?auto=format&fit=crop&w=1200&q=80" alt="Сдержанная композиция из белых цветов"/>
     <h2>Помощь на каждом согласованном этапе</h2><p>Организация церемонии требует внимания к документам, срокам и множеству практических деталей. Специалист уточнит обстоятельства, предложит понятный порядок действий и ответит на вопросы.</p>
     <div className="note"><strong>В комплекс услуг может входить:</strong><ul>{['Консультация по первоочередным действиям','Помощь с подготовкой необходимых документов','Подбор ритуальных принадлежностей','Организация транспорта и церемонии','Согласование дополнительных услуг'].map(x=><li key={x}><Icon name="check"/>{x}</li>)}</ul></div>
     <h2>Порядок организации</h2><div className="vertical-steps">{['Первичная консультация','Определение состава услуг','Согласование стоимости','Организационное сопровождение'].map((x,i)=><div key={x}><span>{i+1}</span><div><h3>{x}</h3><p>Содержание этапа уточняется индивидуально с учётом ситуации и пожеланий семьи.</p></div></div>)}</div>

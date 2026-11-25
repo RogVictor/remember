@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { CMSService } from './lib/cms-types'
 import type { ServiceCategoryGroup } from './lib/service-categories'
 import CatalogBrowser from './CatalogBrowser'
@@ -11,11 +12,11 @@ export function ServiceCategoryHeadings({ group, links }: { group: ServiceCatego
       const href = links.get(service.id)
       const title = service.pageTitle || service.title
       return <section className="category-service-row" key={service.id}>
-        {service.image && <img src={service.image.url} alt={service.image.alt} loading="lazy" />}
+        {service.image && <img src={service.image.src ?? service.image.url} srcSet={service.image.srcSet} sizes="auto, 100vw" alt={service.image.alt} loading="lazy" />}
         <div>
-          <h3>{href ? <a href={href}>{title}</a> : title}</h3>
+          <h3>{href ? <Link prefetch={false} href={href}>{title}</Link> : title}</h3>
           {service.summary && <p>{service.summary}</p>}
-          {href && <a className="service-read" href={href} aria-label={`Подробнее об услуге «${title}»`}>Об услуге <span aria-hidden="true">→</span></a>}
+          {href && <Link prefetch={false} className="service-read" href={href} aria-label={`Подробнее об услуге «${title}»`}>Об услуге <span aria-hidden="true">→</span></Link>}
         </div>
       </section>
     })}
@@ -27,7 +28,7 @@ export function ServiceCategorySection({ group, links }: { group: ServiceCategor
     <h2>{group.title}</h2>
     <ul>{group.services.map(({ id, title }) => {
       const href = links.get(id)
-      return <li key={id}>{href ? <a href={href}>{title}<span aria-hidden="true">→</span></a> : title}</li>
+      return <li key={id}>{href ? <Link prefetch={false} href={href}>{title}<span aria-hidden="true">→</span></Link> : title}</li>
     })}</ul>
   </section>
 }

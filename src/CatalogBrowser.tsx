@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import type { CMSMedia } from './lib/cms-types'
 
 type Group = {
@@ -46,12 +47,12 @@ export default function CatalogBrowser({ groups }: { groups: Group[] }) {
     </div>
     {visible.length ? <div className="service-category-grid">
       {visible.map(group => <section key={group.key} className="catalog-group">
-        {group.image && <img className="category-cover" src={group.image.url} alt={group.image.alt} loading="lazy" />}
+        {group.image && <img className="category-cover" src={group.image.src ?? group.image.url} srcSet={group.image.srcSet} sizes="auto, 100vw" alt={group.image.alt} loading="lazy" />}
         <div className="catalog-group-body">
           <span className="category-count">{serviceCount(group.services.length)}</span>
-          <h2>{group.href ? <a href={group.href}>{group.title}<span aria-hidden="true">↗</span></a> : group.title}</h2>
+          <h2>{group.href ? <Link prefetch={false} href={group.href}>{group.title}<span aria-hidden="true">↗</span></Link> : group.title}</h2>
           <ul>{group.services.map(service => <li key={service.id}>{service.href
-            ? <a href={service.href}>{service.title}</a> : service.title}</li>)}</ul>
+            ? <Link prefetch={false} href={service.href}>{service.title}</Link> : service.title}</li>)}</ul>
         </div>
       </section>)}
     </div> : <div className="catalog-no-results"><h2>Услуг по запросу не найдено</h2>

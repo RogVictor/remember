@@ -232,3 +232,6 @@
 @media (prefers-reduced-motion: reduce) {
   html:has(.reading-layout) { scroll-behavior: auto; }
 }
+
+.hero-actions a.btn, .center a.btn { display: inline-block; text-decoration: none; text-align: center; }
+.hero-image > picture { display: contents; }

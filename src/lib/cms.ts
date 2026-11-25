@@ -5,6 +5,7 @@ import config from '@payload-config'
 import { getPayload } from 'payload'
 import { unstable_noStore as noStore } from 'next/cache'
 import { DEFAULT_COMPANY_SETTINGS } from './cms-types'
+import { mediaURL } from './media-url'
 import { groupServices } from './service-categories'
 import { landingPath, isStaticRoute, type StaticRoute } from '../seo/routes'
 import type { CompanySetting, Page, SiteSeo } from '../../payload-types'
@@ -90,7 +91,13 @@ const media = (value: unknown): CMSMedia | null => {
   if (!isRecord(value)) return null
   const url = text(value.url)
   if (!url) return null
-  return { url, alt: value.decorative === true ? '' : text(value.alt) ?? '' }
+  const src = mediaURL(url, value.updatedAt)
+  const card = isRecord(value.sizes) && isRecord(value.sizes.card) ? value.sizes.card : null
+  const srcSet = card && typeof card.url === 'string' && typeof card.width === 'number' &&
+    typeof value.width === 'number' && card.width < value.width
+    ? `${mediaURL(card.url, value.updatedAt)} ${card.width}w, ${src} ${value.width}w`
+    : undefined
+  return { url, src, srcSet, alt: value.decorative === true ? '' : text(value.alt) ?? '' }
 }
 
 const documents = async (collection: 'services' | 'products' | 'price-items' | 'faqs') => {

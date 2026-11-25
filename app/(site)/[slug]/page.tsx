@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { mediaURL } from '@/lib/media-url'
 import { notFound } from 'next/navigation'
 import type { SerializedBlockNode } from '@payloadcms/richtext-lexical'
 import { RichText, type JSXConverterArgs, type JSXConvertersFunction } from '@payloadcms/richtext-lexical/react'
 import ServiceArticle from '@/ServiceArticle'
-import type { CategoryServicesBlock } from '../../../payload-types'
+import type { CategoryServicesBlock, Media } from '../../../payload-types'
 import { CallbackForm } from '@/App'
 import { ServiceCategoryHeadings, ServiceCategorySection } from '@/ServiceCategoryGrid'
 import SiteApp from '@/SiteApp'
@@ -46,16 +48,26 @@ export default async function CMSPageRoute({ params }: PageProps) {
       const target = record(node.fields.doc?.value)
       const href = target?._status === 'published' ? landingPath(target.slug) : null
       const children = nodesToJSX({ nodes: node.children })
-      return href ? <a href={href} target={node.fields.newTab ? '_blank' : undefined}
-        rel={node.fields.newTab ? 'noopener noreferrer' : undefined}>{children}</a> : <>{children}</>
+      return href ? <Link href={href} prefetch={false} target={node.fields.newTab ? '_blank' : undefined}
+        rel={node.fields.newTab ? 'noopener noreferrer' : undefined}>{children}</Link> : <>{children}</>
     },
     upload: (args) => {
       const asset = args.node.value
       if (!asset || typeof asset !== 'object' || typeof asset.mimeType !== 'string') return null
-      const node = asset.decorative === true
-        ? { ...args.node, value: { ...asset, alt: '' }, fields: { ...args.node.fields, alt: '' } }
-        : args.node
-      return typeof defaultConverters.upload === 'function' ? defaultConverters.upload({ ...args, node }) : null
+      if (args.node.relationTo !== 'media' || !asset.mimeType.startsWith('image/')) {
+        return typeof defaultConverters.upload === 'function' ? defaultConverters.upload(args) : null
+      }
+      const media = asset as unknown as Media
+      if (!media.url) return null
+      const alt = media.decorative ? '' : String(args.node.fields?.alt || media.alt || '')
+      const img = <img loading="lazy" src={mediaURL(media.url, media.updatedAt)} alt={alt}
+        width={media.width ?? undefined} height={media.height ?? undefined} />
+      if (!media.sizes) return img
+      return <picture>{Object.entries(media.sizes).map(([name, size]) =>
+        size?.url && size.width && size.mimeType
+          ? <source key={name} media={`(max-width: ${size.width}px)`} type={size.mimeType}
+              srcSet={mediaURL(size.url, media.updatedAt)} />
+          : null)}{img}</picture>
     },
     blocks: {
       'category-services': ({ node }: JSXConverterArgs<SerializedBlockNode<CategoryServicesBlock>>) => {
