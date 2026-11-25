@@ -5,6 +5,7 @@ import * as migration_20261124_111651_hero_image from './20261124_111651_hero_im
 import * as migration_20261124_115231_service_page from './20261124_115231_service_page';
 import * as migration_20261124_151531_service_categories from './20261124_151531_service_categories';
 import * as migration_20261124_162717_seo_module from './20261124_162717_seo_module';
+import * as migration_20261125_233840_death_guide from './20261125_233840_death_guide';
 
 export const migrations = [
   {
@@ -40,6 +41,11 @@ export const migrations = [
   {
     up: migration_20261124_162717_seo_module.up,
     down: migration_20261124_162717_seo_module.down,
-    name: '20261124_162717_seo_module'
+    name: '20261124_162717_seo_module',
+  },
+  {
+    up: migration_20261125_233840_death_guide.up,
+    down: migration_20261125_233840_death_guide.down,
+    name: '20261125_233840_death_guide'
   },
 ];

@@ -1,4 +1,7 @@
+import { guidePath, guideTitle } from '../guide/data'
+
 export const staticRoutes = {
+  [guidePath]: guideTitle,
   '/': 'Ритуальные услуги и организация похорон',
   '/services': 'Ритуальные услуги',
   '/funeral': 'Организация похорон',

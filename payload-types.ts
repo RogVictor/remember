@@ -262,7 +262,57 @@ export interface Media {
 export interface SiteSeo {
   id: number;
   route:
-    '/' | '/services' | '/funeral' | '/products' | '/prices' | '/about' | '/info' | '/faq' | '/contacts' | '/legal';
+    | '/chto-delat-esli-umer-chelovek'
+    | '/'
+    | '/services'
+    | '/funeral'
+    | '/products'
+    | '/prices'
+    | '/about'
+    | '/info'
+    | '/faq'
+    | '/contacts'
+    | '/legal';
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  home?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  hospital?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  outside?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  away?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
   ogImage?: (number | null) | Media;
@@ -358,7 +408,7 @@ export interface Service {
   title: string;
   slug: string;
   /**
-   * Выберите опубликованную страницу или создайте и опубликуйте новую прямо здесь.
+   * В черновике можно связать страницу до публикации.
    */
   page?: (number | null) | Page;
   /**
@@ -722,6 +772,34 @@ export interface PagesSelect<T extends boolean = true> {
  */
 export interface SiteSeoSelect<T extends boolean = true> {
   route?: T;
+  home?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
+  hospital?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
+  outside?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
+  away?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
   seoTitle?: T;
   seoDescription?: T;
   ogImage?: T;
@@ -1107,6 +1185,9 @@ export interface CollectionsWidget {
  */
 export interface CategoryServicesBlock {
   layout?: ('list' | 'sections') | null;
+  /**
+   * Раздел появится на сайте, когда категория активна и у услуг доступны страницы.
+   */
   category: number | ServiceCategory;
   id?: string | null;
   blockName?: string | null;

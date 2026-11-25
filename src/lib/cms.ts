@@ -8,6 +8,7 @@ import { DEFAULT_COMPANY_SETTINGS } from './cms-types'
 import { mediaURL } from './media-url'
 import { groupServices } from './service-categories'
 import { landingPath, isStaticRoute, type StaticRoute } from '../seo/routes'
+import { guidePath, instructions, situations } from '../guide/data'
 import type { CompanySetting, Page, SiteSeo } from '../../payload-types'
 import type {
   CMSFAQ,
@@ -165,6 +166,16 @@ export const getStaticSeo = cache(async (route: StaticRoute): Promise<SiteSeo | 
   const { docs } = await payload.find({ collection: 'site-seo', depth: 1, draft: false, limit: 1,
     overrideAccess: false, where: { route: { equals: route }, _status: { equals: 'published' } } })
   return (docs[0] as SiteSeo | undefined) ?? null
+})
+
+export const getGuideInstructions = cache(async () => {
+  const section = await getStaticSeo(guidePath)
+  const result = { ...instructions }
+  for (const key of situations) {
+    const rows = section?.[key]?.filter(row => row.summary?.trim() && row.detail?.trim())
+    if (rows?.length) result[key] = rows.map(({ summary, detail }) => ({ summary, detail }))
+  }
+  return result
 })
 
 // Inactive directory entries are hidden by public access. Read only the

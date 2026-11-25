@@ -1,5 +1,6 @@
 import 'server-only'
 
+import { guidePath, guideDescription } from '../guide/data'
 import { cache } from 'react'
 import { getCompanySettings, getInactiveLandingIds, getPublishedInfoArticles, getPublishedPage, getServiceCatalog, getStaticSeo, relationshipID } from '../lib/cms'
 import { indexingEnabled, siteOrigin } from './config'
@@ -15,9 +16,9 @@ function companyDescription(city: string) {
 export const staticSeoInput = cache(async (path: StaticRoute): Promise<SeoInput> => {
   const [company, fields] = await Promise.all([getCompanySettings(), getStaticSeo(path)])
   return {
-    title: path === '/' ? `${company.companyName} — ${company.city}` : staticRoutes[path],
-    description: companyDescription(company.city),
-    companyName: path === '/' ? undefined : company.companyName,
+    title: path === guidePath ? 'Что делать, если умер человек в Москве и Московской области — RitualGroup24' : path === '/' ? `${company.companyName} — ${company.city}` : staticRoutes[path],
+    description: path === guidePath ? guideDescription : companyDescription(company.city),
+    companyName: path === '/' || path === guidePath ? undefined : company.companyName,
     path, origin: siteOrigin(), fields, indexing: indexingEnabled(),
   }
 })

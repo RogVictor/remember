@@ -1,4 +1,6 @@
 'use client'
+import { GuidePreview, GuideShortcut } from './guide/GuideControls'
+import { guidePath, guideSlug, guideTitle, instructions, type Instructions } from './guide/data'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import ServicesNavigation, { type NavigationCategory } from './ServicesNavigation'
@@ -16,7 +18,7 @@ import { DEFAULT_COMPANY_SETTINGS } from './lib/cms-types'
 import './navigation.css'
 import './contacts.css'
 
-type PageKey = 'home' | 'services' | 'funeral' | 'products' | 'prices' | 'about' | 'info' | 'faq' | 'contacts' | 'legal' | 'cms'
+type PageKey = 'home' | 'services' | 'funeral' | 'products' | 'prices' | 'about' | 'info' | 'faq' | 'contacts' | 'legal' | 'cms' | typeof guideSlug
 
 const routes: Record<string, PageKey> = {
   '': 'home', home: 'home', services: 'services', funeral: 'funeral', products: 'products',
@@ -99,6 +101,7 @@ function Header({ page, company, navigation }: { page: PageKey; company: CMSComp
         {nav.map(([key, label]) => key === 'services' ? (
           <ServicesNavigation key={key + open} categories={navigation} current={page === key} />
         ) : <button key={key} className={page === key ? 'active' : ''} onClick={() => { go(key); setOpen(false) }}>{label}</button>)}
+        <Link href={guidePath} className="guide-nav" aria-current={page === guideSlug ? 'page' : undefined} onClick={() => setOpen(false)}>Что делать при смерти?</Link>
       </div></nav>
     </header>
   </>
@@ -112,7 +115,7 @@ function publicAddress(company: CMSCompanySettings) {
 function Footer({ company }: { company: CMSCompanySettings }) {
   const address = publicAddress(company)
   return <footer><div className="container footer-grid">
-    <div><div className="footer-brand"><BrandMark company={company}/><strong>{company.companyName}</strong></div><p>Комплексная помощь в организации похорон и решении сопутствующих вопросов.</p></div>
+    <div><div className="footer-brand"><BrandMark company={company}/><strong>{company.companyName}</strong></div><p>Комплексная помощь в организации похорон и решении сопутствующих вопросов.</p><Link href={guidePath}>Что делать при смерти?</Link></div>
     <div><h3>Услуги</h3><button onClick={() => go('funeral')}>Организация похорон</button><button onClick={() => go('products')}>Ритуальные товары</button><button onClick={() => go('prices')}>Цены на услуги</button></div>
     <div><h3>Информация</h3><button onClick={() => go('about')}>О компании</button><button onClick={() => go('faq')}>Частые вопросы</button><button onClick={() => go('legal')}>Политика конфиденциальности</button></div>
     <div><h3>Контакты</h3>
@@ -190,12 +193,14 @@ function Breadcrumbs({ title, parents = [] }: { title: string; parents?: Breadcr
 }
 
 function Home({
+  guideData,
   company,
   services,
   priceItems,
   faqs,
 }: {
   company: CMSCompanySettings
+  guideData: Instructions
   services: CMSResult<CMSService>
   priceItems: CMSResult<CMSPriceItem>
   faqs: CMSResult<CMSFAQ>
@@ -203,7 +208,7 @@ function Home({
   return <>
     <section className="hero">
       <div className="container hero-grid">
-        <div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Link className="btn btn-secondary" href="/services" prefetch={false}>Все услуги</Link></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a></div>
+        <div className="hero-copy"><span className="hero-label">Деликатная помощь 24 часа</span><h1>Ритуальные услуги<br/>и организация похорон</h1><p>Полный комплекс ритуальных услуг. Помощь в организации похорон, оформлении документов и решении необходимых вопросов.</p><div className="hero-actions"><Button onClick={() => go('contacts')}>Вызвать специалиста</Button><Link className="btn btn-secondary" href="/services" prefetch={false}>Все услуги</Link></div><a className="hero-phone" href={phoneHref(company.phone)}><Icon name="phone"/> {company.phone}</a><GuideShortcut/></div>
         <div className="hero-image">
           <picture>
             <source media="(max-width: 1000px)" srcSet="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" />
@@ -220,6 +225,7 @@ function Home({
         </div>
       </div>
     </section>
+    <GuidePreview data={guideData}/>
     <section className="section container"><SectionTitle eyebrow="Основные направления">Наши услуги</SectionTitle><ServiceGrid result={services} limit={8}/><div className="center"><Link className="btn btn-secondary" href="/services" prefetch={false}>Смотреть все услуги</Link></div></section>
     <section className="advantages"><div className="container"><SectionTitle>Почему обращаются к нам</SectionTitle><div className="adv-grid">{['Круглосуточная консультация','Комплексный подход','Понятная стоимость услуг','Сопровождение на этапах'].map((x,i)=><div className="adv" key={x}><span>0{i+1}</span><h3>{x}</h3><p>{['Принимаем обращения 24 часа, без выходных.','Помогаем согласовать услуги в одном месте.','Объясняем, из чего складывается итоговая сумма.','Остаёмся на связи в согласованном порядке.'][i]}</p></div>)}</div></div></section>
     <section className="section container"><SectionTitle eyebrow="Порядок действий">Как организовать похороны</SectionTitle><div className="steps">{['Свяжитесь с нами','Обсудите необходимые услуги','Согласуйте стоимость и порядок','Получите помощь в организации'].map((x,i)=><div className="step" key={x}><span>{i+1}</span><strong>{x}</strong></div>)}</div></section>
@@ -339,12 +345,12 @@ function Contacts({ company }: { company: CMSCompanySettings }) {
         {company.messengerUrl && <div className="contact-channel"><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></div>}
         <p className="contact-note">Если помощь нужна срочно, позвоните нам.</p>
       </section>
-      <CallbackForm/>
+      <CallbackForm id="callback"/>
     </div>
   </PageShell>
 }
 
-export function CallbackForm({ source = '/contacts#callback' }: { source?: string }) {
+export function CallbackForm({ source = '/contacts#callback', id }: { source?: string; id?: string }) {
   const [sent, setSent] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -371,7 +377,7 @@ export function CallbackForm({ source = '/contacts#callback' }: { source?: strin
     }
   }
 
-  return <form className="callback" onSubmit={submitLead}>
+  return <form id={id} className="callback" onSubmit={submitLead}>
     <span>Обратная связь</span><h2>Заказать звонок</h2>
     <p>Оставьте номер — специалист свяжется с вами для консультации.</p>
     <label>Ваше имя<input name="name" required maxLength={120} placeholder="Как к вам обращаться"/></label>
@@ -399,6 +405,7 @@ function About({ company }: { company: CMSCompanySettings }) {
 export default function App({
   company = DEFAULT_COMPANY_SETTINGS,
   page = 'home',
+  guideData = instructions,
   services = { data: [], error: false },
   navigation = [],
   products = { data: [], error: false },
@@ -411,6 +418,7 @@ export default function App({
   children,
 }: {
   company?: CMSCompanySettings
+  guideData?: Instructions
   page?: PageKey
   services?: CMSResult<CMSService>
   navigation?: NavigationCategory[]
@@ -424,7 +432,8 @@ export default function App({
   children?: React.ReactNode
 }) {
   let content: React.ReactNode
-  if(page==='home') content=<Home company={company} services={services} priceItems={priceItems} faqs={faqs}/>
+  if(page==='home') content=<Home guideData={guideData} company={company} services={services} priceItems={priceItems} faqs={faqs}/>
+  else if(page===guideSlug) content=<PageShell company={company} title={guideTitle} intro="Выберите обстоятельства, чтобы узнать, кому позвонить, где получить документы и что можно сделать позже." aside={false} variant="guide">{children}</PageShell>
   else if(page==='services') content=<CatalogPage company={company} type="services" services={services} products={products}>{children}</CatalogPage>
   else if(page==='products') content=<CatalogPage company={company} type="products" services={services} products={products}/>
   else if(page==='funeral') content=<FuneralPage company={company}/>
