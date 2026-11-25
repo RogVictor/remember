@@ -80,7 +80,8 @@
 .breadcrumbs a:hover { text-decoration: underline; }
 
 @media (min-width: 1001px) {
-  .mega-detail { min-height: 0; overflow-y: auto; scrollbar-gutter: stable; }
+  .nav .mega-columns .mega-category { height: 46px; }
+  .mega-detail { contain: size; min-height: 0; overflow-y: auto; scrollbar-gutter: stable; }
 }
 
 @media (max-width: 1000px) {
