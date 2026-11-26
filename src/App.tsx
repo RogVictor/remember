@@ -341,9 +341,10 @@ function Contacts({ company }: { company: CMSCompanySettings }) {
           </div>
         </div>
         {company.workingHours && <div className="contact-row"><Icon name="clock"/><div><span>Режим работы</span>{company.workingHours}</div></div>}
+        {company.contactCity && <div className="contact-row"><Icon name="location"/><div><span>Регион оказания услуг</span>{company.contactCity}</div></div>}
         {address && <div className="contact-row"><Icon name="location"/><div><span>Адрес</span>{address}</div></div>}
         {company.email && <div className="contact-channel"><span>Электронная почта</span><a href={`mailto:${company.email}`}>{company.email}</a></div>}
-        {company.messengerUrl && <div className="contact-channel"><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></div>}
+        {company.messengerUrl && <div className="contact-channel"><span>Ссылка на мессенджер</span><a href={company.messengerUrl} target="_blank" rel="noreferrer">Написать в мессенджер</a></div>}
         <p className="contact-note">Если помощь нужна срочно, позвоните нам.</p>
       </section>
       <CallbackForm id="callback"/>

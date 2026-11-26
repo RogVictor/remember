@@ -238,12 +238,14 @@ export const getCompanySettings = cache(async (): Promise<CMSCompanySettings> =>
       overrideAccess: false,
     }) as CompanySetting
     const values: RecordValue = isRecord(settings) ? settings : {}
+    const contactCity = text(values.city)
 
     return {
       additionalPhone: optionalText(values.additionalPhone, DEFAULT_COMPANY_SETTINGS.additionalPhone),
       address: optionalText(values.address, DEFAULT_COMPANY_SETTINGS.address),
       brandSlogan: optionalText(values.brandSlogan, DEFAULT_COMPANY_SETTINGS.brandSlogan),
-      city: text(values.city) ?? DEFAULT_COMPANY_SETTINGS.city,
+      city: contactCity ?? DEFAULT_COMPANY_SETTINGS.city,
+      contactCity,
       companyName: text(values.companyName) ?? DEFAULT_COMPANY_SETTINGS.companyName,
       email: optionalText(values.email, DEFAULT_COMPANY_SETTINGS.email),
       heroImage: media(values.heroImage),

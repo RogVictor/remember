@@ -77,6 +77,7 @@ export type CMSCompanySettings = {
   address: string
   brandSlogan: string
   city: string
+  contactCity?: string | null
   companyName: string
   email: string
   heroImage: CMSMedia | null
