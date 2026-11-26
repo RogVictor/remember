@@ -38,7 +38,7 @@ export function GuidePreview({ data }: { data: Instructions }) {
     <SituationPicker value={selected} onSelect={select}/>
     <div id="guide-steps" className="guide-panel"><Steps steps={data[selected]}/>
       <Link className="guide-action" href={guidePath + '?situation=' + selected + '#situations'}>Читать подробную инструкцию <span aria-hidden="true">→</span></Link>
-    </div><GuideFeedback source="/#feedback"/>
+    </div>
   </div></section>
 }
 
