@@ -278,7 +278,7 @@ function CatalogPage({
       : products.data.length === 0
         ? <EmptyState>В каталоге пока нет доступных товаров.</EmptyState>
         : <div className="product-grid">{products.data.map((product, index) =>
-          <article className="product" key={product.id}>
+          <article className="product" key={product.id} id={`product-${product.id}`}>
             <div className="product-image">
               {product.images[0]
                 ? <img loading="lazy" srcSet={product.images[0].srcSet} sizes="auto, 100vw" src={product.images[0].src ?? product.images[0].url} alt={product.images[0].alt || product.title} />
@@ -290,6 +290,7 @@ function CatalogPage({
               {product.summary && <p>{product.summary}</p>}
               {product.description && <p>{product.description}</p>}
               <strong>{formatPrice(product)}</strong>
+              {Boolean(product.offers?.length) && <div><h4>Входит в комплексные предложения</h4>{product.offers?.map(o=><p key={o.href}><a href={o.href}>{o.title}</a></p>)}</div>}
               <Button secondary onClick={() => go('contacts')}>Уточнить стоимость</Button>
             </div>
           </article>
@@ -301,15 +302,7 @@ function PageShell({ company, title, intro, children, aside = true, breadcrumbs,
   return <main className={`page container ${variant ? 'page-' + variant : ''}`}><Breadcrumbs title={title} parents={breadcrumbs}/><div className={aside?'page-layout':''}><div><h1>{title}</h1>{intro&&<p className="lead">{intro}</p>}{children}</div>{aside&&<ContactAside company={company}/>}</div></main>
 }
 
-function FuneralPage({ company }: { company: CMSCompanySettings }) {
-  return <PageShell company={company} title="Организация похорон" intro="Помогаем последовательно решить организационные вопросы и согласовать состав необходимых услуг.">
-    <img loading="lazy" className="content-image" src="https://images.unsplash.com/photo-1777542842081-808785008a22?auto=format&fit=crop&w=1200&q=80" alt="Сдержанная композиция из белых цветов"/>
-    <h2>Помощь на каждом согласованном этапе</h2><p>Организация церемонии требует внимания к документам, срокам и множеству практических деталей. Специалист уточнит обстоятельства, предложит понятный порядок действий и ответит на вопросы.</p>
-    <div className="note"><strong>В комплекс услуг может входить:</strong><ul>{['Консультация по первоочередным действиям','Помощь с подготовкой необходимых документов','Подбор ритуальных принадлежностей','Организация транспорта и церемонии','Согласование дополнительных услуг'].map(x=><li key={x}><Icon name="check"/>{x}</li>)}</ul></div>
-    <h2>Порядок организации</h2><div className="vertical-steps">{['Первичная консультация','Определение состава услуг','Согласование стоимости','Организационное сопровождение'].map((x,i)=><div key={x}><span>{i+1}</span><div><h3>{x}</h3><p>Содержание этапа уточняется индивидуально с учётом ситуации и пожеланий семьи.</p></div></div>)}</div>
-    <h2>Стоимость</h2><p>Итоговая стоимость зависит от выбранных услуг и принадлежностей. До оформления специалист предоставит подробный перечень и ответит на вопросы.</p>
-  </PageShell>
-}
+
 
 function FaqList({ result, limit }: { result: CMSResult<CMSFAQ>; limit?: number }) {
   const [active, setActive] = useState(0)
@@ -392,7 +385,7 @@ export default function App({
   else if(page===guideSlug) content=<PageShell company={company} title={guideTitle} intro="Выберите обстоятельства, чтобы узнать, кому позвонить, где получить документы и что можно сделать позже." aside={false} variant="guide">{children}</PageShell>
   else if(page==='services') content=<CatalogPage company={company} type="services" services={services} products={products}>{children}</CatalogPage>
   else if(page==='products') content=<CatalogPage company={company} type="products" services={services} products={products}/>
-  else if(page==='funeral') content=<FuneralPage company={company}/>
+  else if(page==='funeral') content=<PageShell company={company} title={cmsTitle || 'Организация похорон'} breadcrumbs={breadcrumbs} aside={false} variant="funeral">{children}</PageShell>
   else if(page==='prices') content=<PageShell company={company} title="Цены на ритуальные услуги" intro="Актуальные позиции и стоимость услуг из нашего прайс-листа."><PriceTable result={priceItems}/><div className="note price-note"><strong>Обратите внимание</strong><p>Итоговая сумма зависит от выбранного состава услуг, принадлежностей и индивидуальных условий. Точную стоимость специалист согласует до оформления.</p></div></PageShell>
   else if(page==='about') content=<About company={company}/>
   else if(page==='info') content=<InfoPage company={company} articles={infoArticles}/>

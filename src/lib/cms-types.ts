@@ -37,6 +37,7 @@ export type CMSServiceCategory = {
 }
 
 export type CMSProduct = CMSPrice & {
+  offers?: {title:string;href:string}[]
   category: string | null
   description: string | null
   id: number | string

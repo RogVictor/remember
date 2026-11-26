@@ -9,6 +9,7 @@ import type { CategoryServicesBlock, Media } from '../../../payload-types'
 import { CallbackForm } from '@/CallbackForm'
 import { ServiceCategoryHeadings, ServiceCategorySection } from '@/ServiceCategoryGrid'
 import SiteApp from '@/SiteApp'
+import { offerIndex, contains, offerPath } from '@/funeral/data'
 import { getServiceCatalog, relationshipID } from '@/lib/cms'
 import { JsonLd } from '@/seo/JsonLd'
 import { record } from '@/seo/content'
@@ -38,6 +39,9 @@ export default async function CMSPageRoute({ params }: PageProps) {
   if (!seo) notFound()
   const { input, page, company, breadcrumbs, services, type, extraCategory, related, serviceLinks } = seo
 
+  const matchingIds=new Set([...serviceLinks].filter(([,href])=>href==='/'+slug).map(([id])=>id))
+  const linked=matchingIds.size ? (await offerIndex()).filter(o=>contains(o,'services',matchingIds)) : []
+  const formatLinks:Record<string,string>={'pohorony-pod-klyuch':'','organizaciya-pohoron':'','organizaciya-kremacii':'?format=cremation','organizaciya-zahoroneniya':'?format=burial'}
   const converters: JSXConvertersFunction = ({ defaultConverters }) => ({
     ...defaultConverters,
     link: (args) => {
@@ -89,6 +93,8 @@ export default async function CMSPageRoute({ params }: PageProps) {
         : <RichText data={page.content} converters={converters} />)}
       {extraCategory && <ServiceCategoryHeadings group={extraCategory} links={serviceLinks} />}
       {!page.content && relatedSection}
+      {Object.hasOwn(formatLinks,slug) && <p><Link href={'/funeral'+formatLinks[slug]+'#offers'}>Выбрать комплекс ритуальных услуг</Link></p>}
+      {linked.length>0 && <section><h2>Входит в комплексные предложения</h2><ul>{linked.map(o=><li key={o.id}><Link href={offerPath(o)}>{o.title}</Link></li>)}</ul></section>}
     </SiteApp>
   )
 }

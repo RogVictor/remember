@@ -1,0 +1,203 @@
+.funeral-body {
+  max-width: 100%;
+  min-width: 0;
+}
+.funeral-body a:not(.btn) {
+  color: var(--wine);
+}
+.funeral-body section,
+.funeral-body form {
+  margin-block: clamp(28px, 5vw, 68px);
+  scroll-margin-top: 180px;
+}
+.funeral-body section > h2 {
+  margin-bottom: 20px;
+}
+.funeral-hero {
+  background: #eeeae5;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+.funeral-hero > div {
+  flex: 1;
+  padding: clamp(20px, 4vw, 50px);
+}
+.funeral-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.65;
+  object-fit: cover;
+}
+.funeral-hero > .funeral-photo {
+  width: 43%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  min-height: 240px;
+  max-height: 440px;
+}
+.funeral-hero small,
+.funeral-price {
+  display: block;
+}
+.funeral-hero .btn {
+  display: inline-block;
+  margin-top: 12px;
+}
+.funeral-guide,
+.funeral-links a {
+  display: block;
+  padding: 16px 20px;
+  background: white;
+  border: 1px solid var(--line);
+}
+.funeral-guide {
+  margin-top: 14px;
+}
+.funeral-guide span {
+  float: right;
+}
+.funeral-actions,
+.funeral-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+.funeral-body .btn {
+  text-decoration: none;
+}
+.funeral-switch {
+  gap: 0;
+}
+.funeral-switch a {
+  padding: 10px 20px;
+  border: 1px solid var(--line);
+  background: white;
+  text-decoration: none;
+}
+.funeral-switch a[aria-current] {
+  background: var(--wine);
+  color: white;
+}
+.funeral-grid,
+.funeral-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.funeral-card {
+  border: 1px solid var(--line);
+  background: white;
+}
+.funeral-card[data-category='vip'] {
+  border-top: 3px solid var(--wine);
+}
+.funeral-card > div {
+  padding: 22px;
+}
+.funeral-card h3 {
+  font:
+    26px Georgia,
+    serif;
+  margin: 12px 0;
+}
+.funeral-price {
+  font:
+    bold 24px Georgia,
+    serif;
+  color: var(--wine-dark);
+  margin: 18px 0;
+}
+.funeral-lines {
+  white-space: pre-line;
+}
+.funeral-item,
+.funeral-body details {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.funeral-item small {
+  display: block;
+  color: var(--muted);
+}
+.funeral-body summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+.funeral-table {
+  overflow: auto;
+  max-width: 100%;
+}
+.funeral-table table {
+  min-width: 100%;
+  width: max-content;
+}
+.funeral-table thead {
+  display: table-header-group;
+}
+.funeral-table tr {
+  display: table-row;
+}
+.funeral-table td,
+.funeral-table th {
+  display: table-cell;
+  width: 230px;
+  max-width: 65vw;
+  vertical-align: top;
+  white-space: normal;
+}
+.funeral-table td {
+  font-weight: normal;
+  color: var(--ink);
+}
+.funeral-table td:before {
+  content: none;
+}
+.funeral-table th a {
+  color: white !important;
+}
+.funeral-table tbody th {
+  background: var(--beige);
+  color: var(--ink);
+}
+.funeral-table .funeral-item:last-child {
+  border: 0;
+}
+.funeral-body .callback {
+  max-width: 640px;
+}
+.funeral-body textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  min-height: 80px;
+  border: 1px solid var(--line);
+}
+.product[id] {
+  scroll-margin-top: 180px;
+}
+@media (max-width: 740px) {
+  .funeral-grid,
+  .funeral-links {
+    grid-template-columns: 1fr;
+  }
+  .funeral-hero {
+    flex-direction: column-reverse;
+  }
+  .funeral-hero > .funeral-photo {
+    width: 100%;
+    height: 160px;
+    min-height: 0;
+  }
+  .funeral-body section,
+  .funeral-body form {
+    scroll-margin-top: 125px;
+  }
+  .funeral-table table {
+    min-width: 540px;
+  }
+  .funeral-table th:first-child { width: 120px; max-width: 33vw; }
+}

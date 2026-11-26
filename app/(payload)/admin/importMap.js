@@ -25,6 +25,7 @@ import { InlineToolbarFeatureClient as InlineToolbarFeatureClient_e70f5e05f09f93
 import { SeoPreview as SeoPreview_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
 import { SeoAnalyzer as SeoAnalyzer_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
 import { LinkedSeo as LinkedSeo_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
+import { default as default_1302b18c65bffec9dbbb003f5f48f7a1 } from '../../../app/(payload)/admin/components/FuneralReview'
 import { AdminIcon as AdminIcon_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
 import { AdminLogo as AdminLogo_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
 import { default as default_ec5dfb78f51b4fc2967471716a8f9625 } from '../../../app/(payload)/admin/components/ThemeToggle'
@@ -62,6 +63,7 @@ export const importMap = {
   "/app/(payload)/admin/components/Seo#SeoPreview": SeoPreview_eb490e1e244f90749abf42e67d39acbf,
   "/app/(payload)/admin/components/Seo#SeoAnalyzer": SeoAnalyzer_eb490e1e244f90749abf42e67d39acbf,
   "/app/(payload)/admin/components/Seo#LinkedSeo": LinkedSeo_eb490e1e244f90749abf42e67d39acbf,
+  "/app/(payload)/admin/components/FuneralReview#default": default_1302b18c65bffec9dbbb003f5f48f7a1,
   "/app/(payload)/admin/components/Brand#AdminIcon": AdminIcon_e4149f270c1248a497447691509288a3,
   "/app/(payload)/admin/components/Brand#AdminLogo": AdminLogo_e4149f270c1248a497447691509288a3,
   "/app/(payload)/admin/components/ThemeToggle#default": default_ec5dfb78f51b4fc2967471716a8f9625,

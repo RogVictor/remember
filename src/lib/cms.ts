@@ -109,7 +109,7 @@ const documents = async (collection: 'services' | 'products' | 'price-items' | '
     draft: false,
     ...(collection === 'services'
       ? { limit: 0, populate: { pages: { slug: true, title: true, _status: true } } }
-      : { limit: 200 }),
+      : collection === 'products' ? { pagination: false } : { limit: 200 }),
     overrideAccess: false,
     sort: 'sortOrder',
     where: { _status: { equals: 'published' } },

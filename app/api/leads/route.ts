@@ -10,6 +10,7 @@ import {
 } from '@/lib/lead-notifications'
 import { LeadValidationError, normalizeLeadSubmission } from '@/lib/lead-validation'
 import { checkLeadRateLimit } from '@/lib/lead-rate-limit'
+import { displayPrice, formats } from '@/funeral/model'
 
 export const runtime = 'nodejs'
 
@@ -102,8 +103,16 @@ export async function POST(request: Request) {
   }
 
   let submission
+  let offerId: number | undefined
+  let displayedPrice: unknown
   try {
-    submission = normalizeLeadSubmission(await readJsonBody(request))
+    const body = await readJsonBody(request)
+    submission = normalizeLeadSubmission(body)
+    if (body && typeof body==='object' && 'offerId' in body) {
+      offerId=Number(body.offerId)
+      if (!Number.isSafeInteger(offerId) || offerId<=0) throw new LeadValidationError('Invalid offer')
+      displayedPrice='displayedPrice' in body ? body.displayedPrice : undefined
+    }
   } catch (error) {
     if (error instanceof RequestBodyTooLargeError) {
       return errorResponse('Размер заявки превышает допустимый предел.', 413)
@@ -118,11 +127,22 @@ export async function POST(request: Request) {
 
   try {
     const payload = await getPayload({ config })
+    let offerSnapshot: string | undefined
+    if (offerId !== undefined) {
+      const {docs}=await payload.find({collection:'funeral-offers',where:{id:{equals:offerId}},limit:1,overrideAccess:false,depth:0})
+      const [offer]=docs as import('../../../payload-types').FuneralOffer[]
+      if (!offer || displayedPrice!==displayPrice(offer)) return errorResponse('Условия предложения изменились.',409)
+      submission.source='/funeral/'+offer.slug
+      submission.service=offer.title.slice(0,160)
+      offerSnapshot=['Организация похорон', 'Комплекс №'+offer.id+' · '+offer.title, 'Формат: '+formats[offer.format],
+        'Стоимость на момент обращения: '+displayPrice(offer),'Страница: '+new URL(submission.source,configuredSiteURL || request.url).href].join('\n')
+    }
     const lead = await createLeadAndNotify(
       () => payload.create({
         collection: 'leads',
         data: {
           ...submission,
+          offerSnapshot,
           telegramStatus: 'pending',
           emailStatus: 'pending',
           notificationStatus: 'pending',

@@ -6,9 +6,11 @@ import CatalogBrowser from './CatalogBrowser'
 type ServiceLinks = ReadonlyMap<CMSService['id'], string>
 
 export function ServiceCategoryHeadings({ group, links }: { group: ServiceCategoryGroup; links: ServiceLinks }) {
+  const linkedServices = group.services.filter(service => links.has(service.id))
+  if (!linkedServices.length) return null
   return <section className="category-services">
     <h2>Услуги направления</h2>
-    {group.services.map(service => {
+    {linkedServices.map(service => {
       const href = links.get(service.id)
       const title = service.pageTitle || service.title
       return <section className="category-service-row" key={service.id}>

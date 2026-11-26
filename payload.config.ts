@@ -15,6 +15,7 @@ import { FAQs } from './collections/FAQs'
 import { InfoArticles } from './collections/InfoArticles'
 import { Media } from './collections/Media'
 import { Leads } from './collections/Leads'
+import { FuneralCategories, FuneralOffers, FuneralSettings } from './collections/FuneralOffers'
 import { ChatSessions, ChatMessages } from './collections/Chat'
 import { CompanySettings } from './globals/CompanySettings'
 import { SiteSeo } from './collections/SiteSeo'
@@ -70,8 +71,8 @@ export default buildConfig({
       },
     },
   },
-  collections: [Pages, SiteSeo, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, Leads, ChatSessions, ChatMessages, Media, Users],
-  globals: [CompanySettings],
+  collections: [Pages, SiteSeo, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, FuneralCategories, FuneralOffers, Leads, ChatSessions, ChatMessages, Media, Users],
+  globals: [CompanySettings, FuneralSettings],
   editor: lexicalEditor(),
   db: postgresAdapter({
     pool: {

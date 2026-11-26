@@ -2,7 +2,9 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-export function CallbackForm({ source = '/contacts#callback', id, feedback = false }: { source?: string; id?: string; feedback?: boolean }) {
+export function CallbackForm({ source = '/contacts#callback', id, feedback = false, offer, heading }: {
+  source?: string; id?: string; feedback?: boolean; heading?: string; offer?: {id:number;title:string;price:string}
+}) {
   const [sent, setSent] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -19,6 +21,10 @@ export function CallbackForm({ source = '/contacts#callback', id, feedback = fal
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(Object.fromEntries(new FormData(form))),
       })
+      if (offer && response.status===409) {
+        setError('Предложение изменилось. Обновите страницу и проверьте стоимость.')
+        return
+      }
       if (!response.ok) throw new Error('Lead submission failed')
       setSent(true)
       form.reset()
@@ -30,18 +36,20 @@ export function CallbackForm({ source = '/contacts#callback', id, feedback = fal
   }
 
   return <form id={id} className="callback" onSubmit={submitLead}>
-    {feedback ? <h2>Обратная связь</h2> : <><span>Обратная связь</span><h2>Заказать звонок</h2></>}
+    {offer ? <><h2>Получить расчёт</h2><p>{offer.title} · {offer.price}</p></> : heading ? <h2>{heading}</h2> : feedback ? <h2>Обратная связь</h2> : <><span>Обратная связь</span><h2>Заказать звонок</h2></>}
     <p>Оставьте номер — специалист свяжется с вами для консультации.</p>
     <label>Ваше имя<input name="name" required maxLength={120} placeholder="Как к вам обращаться"/></label>
     <label>Телефон<input name="phone" type="tel" required maxLength={40} placeholder="+7 (___) ___-__-__"/></label>
     <div className="lead-honeypot" hidden aria-hidden="true">
       <label>Оставьте это поле пустым<input name="website" tabIndex={-1} autoComplete="off"/></label>
     </div>
-    <input type="hidden" name="requestType" value="callback"/>
+    {offer && <><label>Дополнительные пожелания<textarea name="message" maxLength={2000}/></label>
+      <input type="hidden" name="offerId" value={offer.id}/><input type="hidden" name="displayedPrice" value={offer.price}/></>}
+    <input type="hidden" name="requestType" value={offer?'price':'callback'}/>
     <input type="hidden" name="source" value={source}/>
     <label className="consent"><input type="checkbox" name="personalDataConsent" value="true" required/> <span>Согласен на обработку персональных данных в соответствии с <Link href="/legal">политикой конфиденциальности</Link></span></label>
     <button className="btn" type="submit" disabled={submitting || sent}>
-      {submitting ? 'Отправка…' : sent ? 'Заявка отправлена' : 'Заказать звонок'}
+      {submitting ? 'Отправка…' : sent ? 'Заявка отправлена' : offer ? 'Получить расчёт' : 'Заказать звонок'}
     </button>
     {sent && <p className="success" role="status">Спасибо! Заявка сохранена, специалист свяжется с вами.</p>}
     {error && <p className="error" role="alert">{error}</p>}

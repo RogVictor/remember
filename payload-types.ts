@@ -75,6 +75,8 @@ export interface Config {
     services: Service;
     products: Product;
     'price-items': PriceItem;
+    'funeral-categories': FuneralCategory;
+    'funeral-offers': FuneralOffer;
     leads: Lead;
     'chat-sessions': ChatSession;
     'chat-messages': ChatMessage;
@@ -99,6 +101,8 @@ export interface Config {
     services: ServicesSelect<false> | ServicesSelect<true>;
     products: ProductsSelect<false> | ProductsSelect<true>;
     'price-items': PriceItemsSelect<false> | PriceItemsSelect<true>;
+    'funeral-categories': FuneralCategoriesSelect<false> | FuneralCategoriesSelect<true>;
+    'funeral-offers': FuneralOffersSelect<false> | FuneralOffersSelect<true>;
     leads: LeadsSelect<false> | LeadsSelect<true>;
     'chat-sessions': ChatSessionsSelect<false> | ChatSessionsSelect<true>;
     'chat-messages': ChatMessagesSelect<false> | ChatMessagesSelect<true>;
@@ -115,9 +119,11 @@ export interface Config {
   fallbackLocale: null;
   globals: {
     'company-settings': CompanySetting;
+    'funeral-settings': FuneralSetting;
   };
   globalsSelect: {
     'company-settings': CompanySettingsSelect<false> | CompanySettingsSelect<true>;
+    'funeral-settings': FuneralSettingsSelect<false> | FuneralSettingsSelect<true>;
   };
   locale: null;
   widgets: {
@@ -513,6 +519,95 @@ export interface PriceItem {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "funeral-categories".
+ */
+export interface FuneralCategory {
+  id: number;
+  title: string;
+  sortOrder?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "funeral-offers".
+ */
+export interface FuneralOffer {
+  id: number;
+  title: string;
+  slug: string;
+  category: number | FuneralCategory;
+  format: 'burial' | 'cremation';
+  summary: string;
+  description?: string | null;
+  benefits?: string | null;
+  accent?: string | null;
+  sortOrder?: number | null;
+  priceType: 'fixed' | 'from' | 'individual' | 'request';
+  amount?: number | null;
+  priceDate?: string | null;
+  included?: string | null;
+  excluded?: string | null;
+  expenses?: string | null;
+  terms?: string | null;
+  region?: string | null;
+  cover?: (number | null) | Media;
+  gallery?: (number | Media)[] | null;
+  items?:
+    | {
+        group:
+          | 'coffin'
+          | 'lining'
+          | 'accessories'
+          | 'flowers'
+          | 'cross'
+          | 'urn'
+          | 'agent'
+          | 'papers'
+          | 'transport'
+          | 'team'
+          | 'ceremony'
+          | 'extra';
+        state: 'included' | 'optional' | 'separate' | 'absent' | 'negotiated';
+        reference?:
+          | ({
+              relationTo: 'products';
+              value: number | Product;
+            } | null)
+          | ({
+              relationTo: 'services';
+              value: number | Service;
+            } | null);
+        label?: string | null;
+        quantity: number;
+        unit?: string | null;
+        comment?: string | null;
+        limits?: string | null;
+        alternative?: (number | null) | Product;
+        short?: boolean | null;
+        showPrice?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  faq?:
+    | {
+        question: string;
+        answer?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
+  ogTitle?: string | null;
+  ogDescription?: string | null;
+  ogImage?: (number | null) | Media;
+  archived?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "leads".
  */
 export interface Lead {
@@ -526,6 +621,7 @@ export interface Lead {
   personalDataConsent: boolean;
   status: 'new' | 'in-progress' | 'completed' | 'cancelled';
   source?: string | null;
+  offerSnapshot?: string | null;
   notificationStatus?: ('pending' | 'sent' | 'partial' | 'failed') | null;
   telegramStatus?: ('pending' | 'sent' | 'failed') | null;
   emailStatus?: ('pending' | 'sent' | 'failed') | null;
@@ -651,6 +747,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'price-items';
         value: number | PriceItem;
+      } | null)
+    | ({
+        relationTo: 'funeral-categories';
+        value: number | FuneralCategory;
+      } | null)
+    | ({
+        relationTo: 'funeral-offers';
+        value: number | FuneralOffer;
       } | null)
     | ({
         relationTo: 'leads';
@@ -952,6 +1056,73 @@ export interface PriceItemsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "funeral-categories_select".
+ */
+export interface FuneralCategoriesSelect<T extends boolean = true> {
+  title?: T;
+  sortOrder?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "funeral-offers_select".
+ */
+export interface FuneralOffersSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  category?: T;
+  format?: T;
+  summary?: T;
+  description?: T;
+  benefits?: T;
+  accent?: T;
+  sortOrder?: T;
+  priceType?: T;
+  amount?: T;
+  priceDate?: T;
+  included?: T;
+  excluded?: T;
+  expenses?: T;
+  terms?: T;
+  region?: T;
+  cover?: T;
+  gallery?: T;
+  items?:
+    | T
+    | {
+        group?: T;
+        state?: T;
+        reference?: T;
+        label?: T;
+        quantity?: T;
+        unit?: T;
+        comment?: T;
+        limits?: T;
+        alternative?: T;
+        short?: T;
+        showPrice?: T;
+        id?: T;
+      };
+  faq?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  seoTitle?: T;
+  seoDescription?: T;
+  ogTitle?: T;
+  ogDescription?: T;
+  ogImage?: T;
+  archived?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "leads_select".
  */
 export interface LeadsSelect<T extends boolean = true> {
@@ -964,6 +1135,7 @@ export interface LeadsSelect<T extends boolean = true> {
   personalDataConsent?: T;
   status?: T;
   source?: T;
+  offerSnapshot?: T;
   notificationStatus?: T;
   telegramStatus?: T;
   emailStatus?: T;
@@ -1144,6 +1316,62 @@ export interface CompanySetting {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "funeral-settings".
+ */
+export interface FuneralSetting {
+  id: number;
+  heading?: string | null;
+  intro?: string | null;
+  hero?: (number | null) | Media;
+  benefits?: string | null;
+  chooseLabel?: string | null;
+  consultLabel?: string | null;
+  steps?:
+    | {
+        title: string;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  sections?:
+    | {
+        key:
+          | 'offers'
+          | 'comparison'
+          | 'directions'
+          | 'extras'
+          | 'programs'
+          | 'steps'
+          | 'documents'
+          | 'advantages'
+          | 'geography'
+          | 'articles'
+          | 'faq'
+          | 'callback';
+        heading?: string | null;
+        visible?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  documents?: string | null;
+  geography?: string | null;
+  advantages?: string | null;
+  directions?: (number | Page)[] | null;
+  extras?: (number | Page)[] | null;
+  programs?: (number | Page)[] | null;
+  articles?: (number | Page)[] | null;
+  faq?:
+    | {
+        question: string;
+        answer?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "company-settings_select".
  */
 export interface CompanySettingsSelect<T extends boolean = true> {
@@ -1163,6 +1391,50 @@ export interface CompanySettingsSelect<T extends boolean = true> {
     | T
     | {
         region?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "funeral-settings_select".
+ */
+export interface FuneralSettingsSelect<T extends boolean = true> {
+  heading?: T;
+  intro?: T;
+  hero?: T;
+  benefits?: T;
+  chooseLabel?: T;
+  consultLabel?: T;
+  steps?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  sections?:
+    | T
+    | {
+        key?: T;
+        heading?: T;
+        visible?: T;
+        id?: T;
+      };
+  documents?: T;
+  geography?: T;
+  advantages?: T;
+  directions?: T;
+  extras?: T;
+  programs?: T;
+  articles?: T;
+  faq?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
         id?: T;
       };
   updatedAt?: T;

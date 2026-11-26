@@ -8,7 +8,7 @@ export const Products: CollectionConfig = {
   admin: {
     group: 'Каталог',
     useAsTitle: 'title',
-    defaultColumns: ['title', 'category', 'priceType', 'isAvailable', '_status'],
+    defaultColumns: ['title', 'category', 'images', 'priceType', 'price', 'isAvailable', '_status'],
   },
   access: {
     read: ({ req }) =>

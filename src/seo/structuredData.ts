@@ -15,6 +15,7 @@ type SchemaInput = {
   company: Company
   breadcrumbs?: Breadcrumb[]
   type?: 'WebPage' | 'Service' | 'OfferCatalog' | 'Article' | 'FAQPage'
+  fixedPrice?: number | null
   dateModified?: string
   services?: { title: string; path?: string }[]
   faqs?: FAQ[]
@@ -49,7 +50,12 @@ export function structuredData(input: SchemaInput) {
     '@type': 'Service', name, url: servicePath ? new URL(servicePath, origin).href : undefined, provider: organization, areaServed,
   })
   if (type === 'Service') {
-    graph.push({ ...service(title, path), ...entity })
+    graph.push({ ...service(title, path), ...entity, offers: input.fixedPrice && input.fixedPrice > 0 ? {
+      '@type':'Offer', priceCurrency:'RUB', price:input.fixedPrice, url,
+    } : undefined })
+    if (faqs.length) graph.push({ '@type':'FAQPage','@id':url+'#faq',mainEntity:faqs.map(q=>({
+      '@type':'Question',name:q.question,acceptedAnswer:{'@type':'Answer',text:q.answer},
+    })) })
     page.mainEntity = { '@id': entity['@id'] }
   } else if (type === 'OfferCatalog' && services.length) {
     graph.push({ '@type': 'OfferCatalog', ...entity, itemListElement: services.map(({ title, path }) => service(title, path)) })

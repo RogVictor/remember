@@ -85,7 +85,7 @@
 
 @media (max-width: 760px) {
   .contact-panels { grid-template-columns: minmax(0, 1fr); }
-  body:has(.contact-panels) .header-main .brand { min-width: 0; }
-  body:has(.contact-panels) .header-main .brand-mark { flex: none; }
-  body:has(.contact-panels) .header-contact { white-space: nowrap; }
+  body:has(.contact-panels, .page-funeral) .header-main .brand { min-width: 0; }
+  body:has(.contact-panels, .page-funeral) .header-main .brand-mark { flex: none; }
+  body:has(.contact-panels, .page-funeral) .header-contact { white-space: nowrap; }
 }

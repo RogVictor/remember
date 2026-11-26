@@ -77,6 +77,7 @@ export const Leads: CollectionConfig = {
       { label: 'Завершена', value: 'completed' }, { label: 'Отменена', value: 'cancelled' },
     ] },
     { name: 'source', type: 'text', maxLength: 200, label: 'Источник' },
+    { name: 'offerSnapshot', type: 'textarea', label: 'Комплекс на момент обращения', admin: { readOnly: true } },
     { name: 'notificationStatus', type: 'select', defaultValue: 'pending', label: 'Статус уведомлений', options: [
       { label: 'Ожидает', value: 'pending' }, { label: 'Все отправлены', value: 'sent' },
       { label: 'Частично отправлены', value: 'partial' }, { label: 'Ошибка', value: 'failed' },

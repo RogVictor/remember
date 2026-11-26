@@ -11,6 +11,7 @@ export type LeadForNotification = {
   email?: string | null
   service?: string | null
   message?: string | null
+  offerSnapshot?: string | null
   createdAt: string
   telegramStatus?: LeadNotificationStatuses['telegramStatus']
   emailStatus?: LeadNotificationStatuses['emailStatus']
@@ -34,6 +35,7 @@ export const toLeadForNotification = (value: Record<string, unknown>): LeadForNo
     service: typeof value.service === 'string' ? value.service : null,
     message: typeof value.message === 'string' ? value.message : null,
     createdAt: value.createdAt,
+    offerSnapshot: typeof value.offerSnapshot==='string' ? value.offerSnapshot : null,
     telegramStatus: value.telegramStatus === 'sent' || value.telegramStatus === 'failed'
       ? value.telegramStatus
       : 'pending',
@@ -53,7 +55,8 @@ const escapeHTML = (value: string): string =>
   })[character] ?? character)
 
 const leadDetails = (lead: LeadForNotification): string => [
-  `Заявка №${lead.id}`,
+  `${lead.offerSnapshot ? "Новая заявка на организацию похорон" : "Заявка"} №${lead.id}`,
+  ...(lead.offerSnapshot ? [lead.offerSnapshot] : []),
   `Имя: ${lead.name}`,
   `Телефон: ${lead.phone}`,
   `Услуга: ${lead.service || 'Не указана'}`,
@@ -76,8 +79,8 @@ const leadAdminURL = (id: string | number): string | undefined => {
 }
 
 export const sendTelegramLeadNotification = async (lead: LeadForNotification): Promise<void> => {
-  const token = process.env.TELEGRAM_BOT_TOKEN
-  const chatId = process.env.TELEGRAM_CHAT_ID
+  const token = lead.offerSnapshot ? process.env.TELEGRAM_CHAT_BOT_TOKEN : process.env.TELEGRAM_BOT_TOKEN
+  const chatId = lead.offerSnapshot ? process.env.TELEGRAM_CHAT_GROUP_ID : process.env.TELEGRAM_CHAT_ID
   if (!token || !chatId) throw new Error('Telegram is not configured')
 
   const details = leadDetails(lead)
@@ -90,8 +93,8 @@ export const sendTelegramLeadNotification = async (lead: LeadForNotification): P
   const response = await requestTelegram(token, 'sendMessage', {
     chat_id: chatId, text: message, parse_mode: 'HTML',
   })
-  await response.body?.cancel().catch(() => {})
-  if (!response.ok) throw new Error('Telegram notification failed')
+  const result = await response.json() as { ok?: boolean } | null
+  if (!response.ok || result?.ok !== true) throw new Error('Telegram notification failed')
 }
 
 export const sendEmailLeadNotification = async (lead: LeadForNotification): Promise<void> => {

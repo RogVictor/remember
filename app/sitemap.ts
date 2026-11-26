@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { offerIndex, offerPath } from '../src/funeral/data'
 import { getInactiveLandingIds, getPublicSeoEntries } from '../src/lib/cms'
 import { indexingEnabled, siteOrigin } from '../src/seo/config'
 import { canonicalURL } from '../src/seo/model'
@@ -12,6 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [{ pages, sections }, inactive] = await Promise.all([getPublicSeoEntries(), getInactiveLandingIds()])
   const publishedSections = new Map(sections.map(section => [section.route, section]))
   const entries = [
+    ...(await offerIndex()).map(o=>({path:offerPath(o),fields:{updatedAt:o.updatedAt,robots:undefined,canonicalOverride:undefined}})),
     ...Object.keys(staticRoutes).map(path => ({ path, fields: publishedSections.get(path as keyof typeof staticRoutes) })),
     ...pages.filter(page => !inactive.has(page.id)).map(page => ({ path: landingPath(page.slug), fields: page })),
   ]
