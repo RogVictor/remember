@@ -81,6 +81,7 @@ export interface Config {
     'chat-sessions': ChatSession;
     'chat-messages': ChatMessage;
     media: Media;
+    'public-documents': PublicDocument;
     users: User;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
@@ -107,6 +108,7 @@ export interface Config {
     'chat-sessions': ChatSessionsSelect<false> | ChatSessionsSelect<true>;
     'chat-messages': ChatMessagesSelect<false> | ChatMessagesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    'public-documents': PublicDocumentsSelect<false> | PublicDocumentsSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -319,6 +321,242 @@ export interface SiteSeo {
         id?: string | null;
       }[]
     | null;
+  aboutInitialized?: boolean | null;
+  /**
+   * Меняйте порядок перетаскиванием. У каждой секции есть флажок видимости.
+   */
+  sections?:
+    | (
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            eyebrow?: string | null;
+            subtitle?: string | null;
+            description?: string | null;
+            image?: (number | null) | Media;
+            alt?: string | null;
+            button?: string | null;
+            action?: ('callback' | 'phone' | 'section' | 'page' | 'external') | null;
+            sectionPath?:
+              | (
+                  | '/chto-delat-esli-umer-chelovek'
+                  | '/'
+                  | '/services'
+                  | '/funeral'
+                  | '/products'
+                  | '/prices'
+                  | '/about'
+                  | '/info'
+                  | '/faq'
+                  | '/contacts'
+                  | '/legal'
+                )
+              | null;
+            page?: (number | null) | Page;
+            url?: string | null;
+            note?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'hero';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            body?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            image?: (number | null) | Media;
+            alt?: string | null;
+            side?: ('left' | 'right') | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'intro';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            /**
+             * Перетащите строки, чтобы изменить порядок.
+             */
+            items?:
+              | {
+                  visible?: boolean | null;
+                  title?: string | null;
+                  description?: string | null;
+                  iconType?: ('library' | 'image') | null;
+                  icon?:
+                    | (
+                        | 'HeartHandshake'
+                        | 'ReceiptText'
+                        | 'Clock'
+                        | 'ClipboardCheck'
+                        | 'Wallet'
+                        | 'MapPin'
+                        | 'Flower2'
+                        | 'Flame'
+                        | 'FileText'
+                        | 'Package'
+                        | 'Truck'
+                        | 'Church'
+                        | 'Landmark'
+                        | 'Utensils'
+                      )
+                    | null;
+                  image?: (number | null) | Media;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'benefits';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            /**
+             * Перетащите строки, чтобы изменить порядок.
+             */
+            items?:
+              | {
+                  visible?: boolean | null;
+                  /**
+                   * Карточка появится на сайте после публикации связанной услуги.
+                   */
+                  service?: (number | null) | Service;
+                  title?: string | null;
+                  description?: string | null;
+                  icon?:
+                    | (
+                        | 'HeartHandshake'
+                        | 'ReceiptText'
+                        | 'Clock'
+                        | 'ClipboardCheck'
+                        | 'Wallet'
+                        | 'MapPin'
+                        | 'Flower2'
+                        | 'Flame'
+                        | 'FileText'
+                        | 'Package'
+                        | 'Truck'
+                        | 'Church'
+                        | 'Landmark'
+                        | 'Utensils'
+                      )
+                    | null;
+                  image?: (number | null) | Media;
+                  alt?: string | null;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'competencies';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            /**
+             * Перетащите строки, чтобы изменить порядок.
+             */
+            items?:
+              | {
+                  visible?: boolean | null;
+                  title?: string | null;
+                  description?: string | null;
+                  icon?:
+                    | (
+                        | 'HeartHandshake'
+                        | 'ReceiptText'
+                        | 'Clock'
+                        | 'ClipboardCheck'
+                        | 'Wallet'
+                        | 'MapPin'
+                        | 'Flower2'
+                        | 'Flame'
+                        | 'FileText'
+                        | 'Package'
+                        | 'Truck'
+                        | 'Church'
+                        | 'Landmark'
+                        | 'Utensils'
+                      )
+                    | null;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'steps';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            /**
+             * Перетащите строки, чтобы изменить порядок.
+             */
+            items?:
+              | {
+                  visible?: boolean | null;
+                  firstName?: string | null;
+                  lastName?: string | null;
+                  middleName?: string | null;
+                  role?: string | null;
+                  description?: string | null;
+                  details?: string | null;
+                  image?: (number | null) | Media;
+                  alt?: string | null;
+                  illustrative?: boolean | null;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'team';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            description?: string | null;
+            /**
+             * Перетащите строки, чтобы изменить порядок.
+             */
+            items?:
+              | {
+                  visible?: boolean | null;
+                  file?: (number | null) | PublicDocument;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'legal';
+          }
+        | {
+            visible?: boolean | null;
+            title?: string | null;
+            description?: string | null;
+            call?: string | null;
+            callback?: string | null;
+            note?: string | null;
+            showHours?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'contact';
+          }
+      )[]
+    | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
   ogImage?: (number | null) | Media;
@@ -361,49 +599,6 @@ export interface SiteSeo {
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "info-articles".
- */
-export interface InfoArticle {
-  id: number;
-  title: string;
-  summary?: string | null;
-  page: number | Page;
-  sortOrder?: number | null;
-  updatedAt: string;
-  createdAt: string;
-  _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "faqs".
- */
-export interface Faq {
-  id: number;
-  question: string;
-  answer: string;
-  sortOrder?: number | null;
-  updatedAt: string;
-  createdAt: string;
-  _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "service-categories".
- */
-export interface ServiceCategory {
-  id: number;
-  title: string;
-  active?: boolean | null;
-  page?: (number | null) | Page;
-  /**
-   * Резервный адрес существующей страницы или раздела, например funeral.
-   */
-  linkSlug?: string | null;
-  updatedAt: string;
-  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -450,6 +645,74 @@ export interface Service {
   sortOrder?: number | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "service-categories".
+ */
+export interface ServiceCategory {
+  id: number;
+  title: string;
+  active?: boolean | null;
+  page?: (number | null) | Page;
+  /**
+   * Резервный адрес существующей страницы или раздела, например funeral.
+   */
+  linkSlug?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "public-documents".
+ */
+export interface PublicDocument {
+  id: number;
+  title: string;
+  description?: string | null;
+  date?: string | null;
+  /**
+   * Перед публикацией проверьте документ и удалите лишние персональные данные.
+   */
+  approved?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "info-articles".
+ */
+export interface InfoArticle {
+  id: number;
+  title: string;
+  summary?: string | null;
+  page: number | Page;
+  sortOrder?: number | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "faqs".
+ */
+export interface Faq {
+  id: number;
+  question: string;
+  answer: string;
+  sortOrder?: number | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -773,6 +1036,10 @@ export interface PayloadLockedDocument {
         value: number | Media;
       } | null)
     | ({
+        relationTo: 'public-documents';
+        value: number | PublicDocument;
+      } | null)
+    | ({
         relationTo: 'users';
         value: number | User;
       } | null);
@@ -903,6 +1170,150 @@ export interface SiteSeoSelect<T extends boolean = true> {
         summary?: T;
         detail?: T;
         id?: T;
+      };
+  aboutInitialized?: T;
+  sections?:
+    | T
+    | {
+        hero?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              eyebrow?: T;
+              subtitle?: T;
+              description?: T;
+              image?: T;
+              alt?: T;
+              button?: T;
+              action?: T;
+              sectionPath?: T;
+              page?: T;
+              url?: T;
+              note?: T;
+              id?: T;
+              blockName?: T;
+            };
+        intro?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              body?: T;
+              image?: T;
+              alt?: T;
+              side?: T;
+              id?: T;
+              blockName?: T;
+            };
+        benefits?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              items?:
+                | T
+                | {
+                    visible?: T;
+                    title?: T;
+                    description?: T;
+                    iconType?: T;
+                    icon?: T;
+                    image?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        competencies?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              items?:
+                | T
+                | {
+                    visible?: T;
+                    service?: T;
+                    title?: T;
+                    description?: T;
+                    icon?: T;
+                    image?: T;
+                    alt?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        steps?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              items?:
+                | T
+                | {
+                    visible?: T;
+                    title?: T;
+                    description?: T;
+                    icon?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        team?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              items?:
+                | T
+                | {
+                    visible?: T;
+                    firstName?: T;
+                    lastName?: T;
+                    middleName?: T;
+                    role?: T;
+                    description?: T;
+                    details?: T;
+                    image?: T;
+                    alt?: T;
+                    illustrative?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        legal?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              description?: T;
+              items?:
+                | T
+                | {
+                    visible?: T;
+                    file?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        contact?:
+          | T
+          | {
+              visible?: T;
+              title?: T;
+              description?: T;
+              call?: T;
+              callback?: T;
+              note?: T;
+              showHours?: T;
+              id?: T;
+              blockName?: T;
+            };
       };
   seoTitle?: T;
   seoDescription?: T;
@@ -1218,6 +1629,27 @@ export interface MediaSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "public-documents_select".
+ */
+export interface PublicDocumentsSelect<T extends boolean = true> {
+  title?: T;
+  description?: T;
+  date?: T;
+  approved?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
@@ -1287,6 +1719,16 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface CompanySetting {
   id: number;
+  legalDetails?: {
+    confirmed?: boolean | null;
+    legalName?: string | null;
+    tradeName?: string | null;
+    inn?: string | null;
+    ogrnip?: string | null;
+    registered?: string | null;
+    address?: string | null;
+    details?: string | null;
+  };
   companyName: string;
   city: string;
   brandSlogan?: string | null;
@@ -1375,6 +1817,18 @@ export interface FuneralSetting {
  * via the `definition` "company-settings_select".
  */
 export interface CompanySettingsSelect<T extends boolean = true> {
+  legalDetails?:
+    | T
+    | {
+        confirmed?: T;
+        legalName?: T;
+        tradeName?: T;
+        inn?: T;
+        ogrnip?: T;
+        registered?: T;
+        address?: T;
+        details?: T;
+      };
   companyName?: T;
   city?: T;
   brandSlogan?: T;

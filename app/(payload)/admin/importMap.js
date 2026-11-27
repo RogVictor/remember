@@ -24,6 +24,7 @@ import { HorizontalRuleFeatureClient as HorizontalRuleFeatureClient_e70f5e05f09f
 import { InlineToolbarFeatureClient as InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { SeoPreview as SeoPreview_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
 import { SeoAnalyzer as SeoAnalyzer_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
+import { default as default_3fcef134e1d6b8d0503d5fa68e78969c } from '../../../app/(payload)/admin/components/AboutIconPicker'
 import { LinkedSeo as LinkedSeo_eb490e1e244f90749abf42e67d39acbf } from '../../../app/(payload)/admin/components/Seo'
 import { default as default_1302b18c65bffec9dbbb003f5f48f7a1 } from '../../../app/(payload)/admin/components/FuneralReview'
 import { AdminIcon as AdminIcon_e4149f270c1248a497447691509288a3 } from '../../../app/(payload)/admin/components/Brand'
@@ -62,6 +63,7 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#InlineToolbarFeatureClient": InlineToolbarFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "/app/(payload)/admin/components/Seo#SeoPreview": SeoPreview_eb490e1e244f90749abf42e67d39acbf,
   "/app/(payload)/admin/components/Seo#SeoAnalyzer": SeoAnalyzer_eb490e1e244f90749abf42e67d39acbf,
+  "/app/(payload)/admin/components/AboutIconPicker#default": default_3fcef134e1d6b8d0503d5fa68e78969c,
   "/app/(payload)/admin/components/Seo#LinkedSeo": LinkedSeo_eb490e1e244f90749abf42e67d39acbf,
   "/app/(payload)/admin/components/FuneralReview#default": default_1302b18c65bffec9dbbb003f5f48f7a1,
   "/app/(payload)/admin/components/Brand#AdminIcon": AdminIcon_e4149f270c1248a497447691509288a3,

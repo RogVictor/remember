@@ -6,7 +6,7 @@ export const Media: CollectionConfig = {
   labels: { singular: 'Файл', plural: 'Медиафайлы' },
   admin: { group: 'Система' },
   upload: {
-    staticDir: 'media',
+    staticDir: process.env.PAYLOAD_MEDIA_DIR || 'media',
     mimeTypes: ['image/jpeg', 'image/png', 'image/webp', 'image/avif'],
     imageSizes: [
       { name: 'thumbnail', width: 400, height: 300, fit: 'cover' },

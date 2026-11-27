@@ -120,6 +120,13 @@ jobs:
           APP_IMAGE_TAG="$NEW_TAG" docker compose run \
             --interactive=false --rm --no-deps app npm run payload:migrate
 
+          # Initialize on the upgrade from an image predating the About editor.
+          # Keeping this out of subsequent releases respects intentional page removal.
+          if ! docker exec "$CURRENT_CONTAINER" test -f /app/scripts/about/seed.mjs; then
+            APP_IMAGE_TAG="$NEW_TAG" docker compose run \
+              --interactive=false --rm --no-deps app npm run about:seed -- --apply
+          fi
+
           rollback_application() {
             echo "=== Restoring previous application image ==="
 

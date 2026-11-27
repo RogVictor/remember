@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { isAdminUser } from './access'
 import { seoTab } from '../src/seo/fields'
+import { aboutTab } from './aboutSections'
 import { siteOrigin } from '../src/seo/config'
 import { staticRoutes } from '../src/seo/routes'
 import { guidePath, situations, situationTitles } from '../src/guide/data'
@@ -33,5 +34,5 @@ export const SiteSeo: CollectionConfig = {
         { name: 'detail', label: 'Подробное пояснение', type: 'textarea', required: true },
       ],
     })),
-  }, seoTab(siteOrigin())] }],
+  }, aboutTab, seoTab(siteOrigin())] }],
 }

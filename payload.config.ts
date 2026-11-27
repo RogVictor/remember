@@ -7,6 +7,7 @@ import { ru } from '@payloadcms/translations/languages/ru'
 import sharp from 'sharp'
 import { Users } from './collections/Users'
 import { Pages } from './collections/Pages'
+import { PublicDocuments } from './collections/PublicDocuments'
 import { Services } from './collections/Services'
 import { ServiceCategories } from './collections/ServiceCategories'
 import { Products } from './collections/Products'
@@ -71,7 +72,7 @@ export default buildConfig({
       },
     },
   },
-  collections: [Pages, SiteSeo, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, FuneralCategories, FuneralOffers, Leads, ChatSessions, ChatMessages, Media, Users],
+  collections: [Pages, SiteSeo, InfoArticles, FAQs, ServiceCategories, Services, Products, PriceItems, FuneralCategories, FuneralOffers, Leads, ChatSessions, ChatMessages, Media, PublicDocuments, Users],
   globals: [CompanySettings, FuneralSettings],
   editor: lexicalEditor(),
   db: postgresAdapter({

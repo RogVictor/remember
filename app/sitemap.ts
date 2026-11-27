@@ -14,7 +14,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const publishedSections = new Map(sections.map(section => [section.route, section]))
   const entries = [
     ...(await offerIndex()).map(o=>({path:offerPath(o),fields:{updatedAt:o.updatedAt,robots:undefined,canonicalOverride:undefined}})),
-    ...Object.keys(staticRoutes).map(path => ({ path, fields: publishedSections.get(path as keyof typeof staticRoutes) })),
+    ...Object.keys(staticRoutes).filter(path => path !== '/about' || publishedSections.has('/about'))
+      .map(path => ({ path, fields: publishedSections.get(path as keyof typeof staticRoutes) })),
     ...pages.filter(page => !inactive.has(page.id)).map(page => ({ path: landingPath(page.slug), fields: page })),
   ]
   return entries.flatMap(({ path, fields }) => {

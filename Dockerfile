@@ -35,6 +35,7 @@ COPY --from=builder /app/next.config.ts ./next.config.ts
 COPY --from=builder /app/payload.config.ts ./payload.config.ts
 COPY --from=builder /app/scripts/payload-cli-loader.mjs ./scripts/payload-cli-loader.mjs
 COPY --from=builder /app/scripts/content-v4 ./scripts/content-v4
+COPY --from=builder /app/scripts/about ./scripts/about
 COPY --from=builder /app/content-import/RitualGroup24-V4-final ./content-import/RitualGroup24-V4-final
 COPY --from=builder /app/scripts/telegram-check.mjs ./scripts/telegram-check.mjs
 COPY --from=builder /app/migrations ./migrations

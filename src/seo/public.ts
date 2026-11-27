@@ -19,7 +19,8 @@ export const staticSeoInput = cache(async (path: StaticRoute): Promise<SeoInput>
     title: path === '/funeral' ? 'Организация похорон в Москве и Московской области — Эконом, Стандарт, VIP' : path === guidePath ? 'Что делать, если умер человек в Москве и Московской области — RitualGroup24' : path === '/' ? `${company.companyName} — ${company.city}` : staticRoutes[path],
     description: path === '/funeral' ? 'Организация похорон в Москве и Московской области. Комплексы для захоронения и кремации, состав ритуальных услуг и помощь в организации церемонии.' : path === guidePath ? guideDescription : companyDescription(company.city),
     companyName: path === '/' || path === guidePath ? undefined : company.companyName,
-    path, origin: siteOrigin(), fields, indexing: indexingEnabled(),
+    path, origin: siteOrigin(), fields: path === '/about' && fields ? { ...fields, ogImage: fields.ogImage || company.logo } : fields,
+    indexing: indexingEnabled() && (path !== '/about' || !!fields),
   }
 })
 

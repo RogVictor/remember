@@ -14,7 +14,9 @@ type SchemaInput = {
   description?: string
   company: Company
   breadcrumbs?: Breadcrumb[]
-  type?: 'WebPage' | 'Service' | 'OfferCatalog' | 'Article' | 'FAQPage'
+  type?: 'WebPage' | 'AboutPage' | 'Service' | 'OfferCatalog' | 'Article' | 'FAQPage'
+  canonical?: string
+  breadcrumbTitle?: string
   fixedPrice?: number | null
   dateModified?: string
   services?: { title: string; path?: string }[]
@@ -24,7 +26,7 @@ type SchemaInput = {
 export function structuredData(input: SchemaInput) {
   const { origin, path, title, description, company, breadcrumbs = [], type, services = [], faqs = [] } = input
   const home = new URL('/', origin).href
-  const url = new URL(path, origin).href
+  const url = input.canonical || new URL(path, origin).href
   const organization = { '@id': `${home}#organization` }
   const website = { '@id': `${home}#website` }
   const regions = company.serviceRegions?.length ? company.serviceRegions : company.city ? [company.city] : []
@@ -36,11 +38,12 @@ export function structuredData(input: SchemaInput) {
   ]
   const page: Record<string, unknown> = { '@type': faqs.length && type === 'FAQPage' ? 'FAQPage' : 'WebPage',
     '@id': `${url}#webpage`, url, name: title, description, isPartOf: website, inLanguage: 'ru' }
+  if (type === 'AboutPage') Object.assign(page, { '@type': 'AboutPage', about: organization, dateModified: input.dateModified })
   if (path !== '/') {
     const id = `${url}#breadcrumbs`
     page.breadcrumb = { '@id': id }
     graph.push({ '@type': 'BreadcrumbList', '@id': id, itemListElement: [
-      { title: 'Главная', path: '/' }, ...breadcrumbs, { title, path },
+      { title: 'Главная', path: '/' }, ...breadcrumbs, { title: input.breadcrumbTitle ?? title, path: url },
     ].map(({ title: name, path: itemPath }, index) => ({
       '@type': 'ListItem', position: index + 1, name, item: new URL(itemPath, origin).href,
     })) })

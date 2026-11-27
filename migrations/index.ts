@@ -8,6 +8,7 @@ import * as migration_20261124_162717_seo_module from './20261124_162717_seo_mod
 import * as migration_20261125_233840_death_guide from './20261125_233840_death_guide';
 import * as migration_20261126_004715_funeral_offers from './20261126_004715_funeral_offers';
 import * as migration_20261126_005525_funeral_section_order from './20261126_005525_funeral_section_order';
+import * as migration_20261126_221152_about_page from './20261126_221152_about_page';
 
 export const migrations = [
   {
@@ -58,6 +59,11 @@ export const migrations = [
   {
     up: migration_20261126_005525_funeral_section_order.up,
     down: migration_20261126_005525_funeral_section_order.down,
-    name: '20261126_005525_funeral_section_order'
+    name: '20261126_005525_funeral_section_order',
+  },
+  {
+    up: migration_20261126_221152_about_page.up,
+    down: migration_20261126_221152_about_page.down,
+    name: '20261126_221152_about_page'
   },
 ];

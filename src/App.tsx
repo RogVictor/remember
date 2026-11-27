@@ -345,11 +345,7 @@ function Contacts({ company }: { company: CMSCompanySettings }) {
   </PageShell>
 }
 
-function About({ company }: { company: CMSCompanySettings }) {
-  return <PageShell company={company} title="О компании" intro={`${company.companyName} помогает семьям решать организационные вопросы спокойно, последовательно и с уважением.`}>
-    <div className="editorial"><h2>Наш подход к работе</h2><p>Мы считаем важными деликатное общение, понятное объяснение каждого этапа и прозрачное согласование состава услуг. Фактические сведения о компании, реквизиты и документы будут добавлены после подтверждения.</p><div className="principles">{['Уважительное отношение','Понятный порядок действий','Согласование стоимости','Круглосуточная связь'].map((x,i)=><div key={x}><span>0{i+1}</span><h3>{x}</h3></div>)}</div><h2>В каких вопросах мы помогаем</h2><p>Организация похорон, подбор принадлежностей, транспорт, консультации по документам, кремация, памятники и поминальные мероприятия.</p></div>
-  </PageShell>
-}
+
 
 export default function App({
   company = DEFAULT_COMPANY_SETTINGS,
@@ -387,7 +383,7 @@ export default function App({
   else if(page==='products') content=<CatalogPage company={company} type="products" services={services} products={products}/>
   else if(page==='funeral') content=<PageShell company={company} title={cmsTitle || 'Организация похорон'} breadcrumbs={breadcrumbs} aside={false} variant="funeral">{children}</PageShell>
   else if(page==='prices') content=<PageShell company={company} title="Цены на ритуальные услуги" intro="Актуальные позиции и стоимость услуг из нашего прайс-листа."><PriceTable result={priceItems}/><div className="note price-note"><strong>Обратите внимание</strong><p>Итоговая сумма зависит от выбранного состава услуг, принадлежностей и индивидуальных условий. Точную стоимость специалист согласует до оформления.</p></div></PageShell>
-  else if(page==='about') content=<About company={company}/>
+  else if(page==='about') content=<main className="container page page-about"><Breadcrumbs title="О компании"/>{children}</main>
   else if(page==='info') content=<InfoPage company={company} articles={infoArticles}/>
   else if(page==='faq') content=<PageShell company={company} title="Часто задаваемые вопросы" intro="Ответы на основные вопросы об организации похорон и работе службы."><FaqList result={faqs}/></PageShell>
   else if(page==='contacts') content=<Contacts company={company}/>

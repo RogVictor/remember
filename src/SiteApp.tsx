@@ -23,7 +23,7 @@ export default async function SiteApp(props: ComponentProps<typeof App>) {
   }))
   const page = props.page ?? 'home'
   const path = page === 'home' ? '/' : `/${page}` as const
-  const seo = path === '/cms' || page === 'funeral' ? null : await staticSeoInput(path)
+  const seo = path === '/cms' || page === 'funeral' || page === 'about' ? null : await staticSeoInput(path)
   const faqs = page === guideSlug ? guideFaq : page === 'faq' ? props.faqs?.data : page === 'home' ? props.faqs?.data.slice(0, 3) : undefined
   const schema = seo?.fields?.schemaType
   const type = schema === 'WebPage' || schema === 'Service' || schema === 'Article' ? schema

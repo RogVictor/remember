@@ -88,7 +88,7 @@ const richText = (value: unknown): string | null => {
   return text(parts.join('').replace(/\n{2,}/g, '\n'))
 }
 
-const media = (value: unknown): CMSMedia | null => {
+export const media = (value: unknown): CMSMedia | null => {
   if (!isRecord(value)) return null
   const url = text(value.url)
   if (!url) return null
@@ -164,8 +164,18 @@ export const getStaticSeo = cache(async (route: StaticRoute): Promise<SiteSeo | 
   noStore()
   const payload = await getPayload({ config })
   const { docs } = await payload.find({ collection: 'site-seo', depth: 1, draft: false, limit: 1,
+    context: route === '/about' ? { aboutRendering: true } : {},
+    populate: { pages: { slug: true, _status: true } },
     overrideAccess: false, where: { route: { equals: route }, _status: { equals: 'published' } } })
   return (docs[0] as SiteSeo | undefined) ?? null
+})
+
+export const getConfirmedLegalDetails = cache(async () => {
+  noStore()
+  const payload = await getPayload({ config })
+  const settings = await payload.findGlobal({ slug: 'company-settings', depth: 0, overrideAccess: false,
+    context: { aboutRendering: true }, select: { legalDetails: true } }) as CompanySetting
+  return settings.legalDetails?.confirmed ? settings.legalDetails : null
 })
 
 export const getGuideInstructions = cache(async () => {
