@@ -16,7 +16,7 @@ export default function DashboardWelcome({ permissions }: { permissions?: Saniti
       <h1>Добро пожаловать в RitualGroup24 Admin</h1>
       {links.length > 0 && (
         <ul aria-label="Быстрые действия">
-          {permissions?.collections?.['site-seo']?.read && <li><Link href="/admin/collections/site-seo?where[route][equals]=%2Fabout">О компании</Link></li>}
+          {permissions?.collections?.['site-seo']?.read && <li><Link href="/admin/about" prefetch={false}>О компании</Link></li>}
           {links.map(({ slug, label }) => (
             <li key={slug}><Link href={`/admin/collections/${slug}/create`}>{label}</Link></li>
           ))}

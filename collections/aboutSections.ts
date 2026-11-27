@@ -1,4 +1,4 @@
-import type { Block, Field, Tab } from 'payload'
+import type { Block, Field } from 'payload'
 import { lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical'
 import { aboutIcons } from '../src/about/icons'
 import { externalLink } from '../src/about/links'
@@ -67,8 +67,8 @@ const blocks = [
     text('note','Дополнительный текст'), { name: 'showHours', type: 'checkbox', label: 'Показывать режим работы из настроек компании', defaultValue: true }]),
 ]
 
-export const aboutTab: Tab = {
-  label: 'О компании', admin: { condition: data => data.route === '/about' },
+export const aboutSections: Field = {
+  type: 'collapsible', label: 'О компании', admin: { initCollapsed: false, condition: data => data.route === '/about' },
   fields: [
     { name: 'aboutInitialized', type: 'checkbox', admin: { hidden: true },
       hooks: { beforeChange: [({ data, value }) => data?.route === '/about' ? true : value] } },

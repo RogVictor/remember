@@ -269,58 +269,6 @@ export interface Media {
  */
 export interface SiteSeo {
   id: number;
-  route:
-    | '/chto-delat-esli-umer-chelovek'
-    | '/'
-    | '/services'
-    | '/funeral'
-    | '/products'
-    | '/prices'
-    | '/about'
-    | '/info'
-    | '/faq'
-    | '/contacts'
-    | '/legal';
-  /**
-   * Пустой список использует базовую инструкцию.
-   */
-  home?:
-    | {
-        summary: string;
-        detail: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Пустой список использует базовую инструкцию.
-   */
-  hospital?:
-    | {
-        summary: string;
-        detail: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Пустой список использует базовую инструкцию.
-   */
-  outside?:
-    | {
-        summary: string;
-        detail: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Пустой список использует базовую инструкцию.
-   */
-  away?:
-    | {
-        summary: string;
-        detail: string;
-        id?: string | null;
-      }[]
-    | null;
   aboutInitialized?: boolean | null;
   /**
    * Меняйте порядок перетаскиванием. У каждой секции есть флажок видимости.
@@ -556,6 +504,58 @@ export interface SiteSeo {
             blockType: 'contact';
           }
       )[]
+    | null;
+  route:
+    | '/chto-delat-esli-umer-chelovek'
+    | '/'
+    | '/services'
+    | '/funeral'
+    | '/products'
+    | '/prices'
+    | '/about'
+    | '/info'
+    | '/faq'
+    | '/contacts'
+    | '/legal';
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  home?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  hospital?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  outside?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Пустой список использует базовую инструкцию.
+   */
+  away?:
+    | {
+        summary: string;
+        detail: string;
+        id?: string | null;
+      }[]
     | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
@@ -1142,35 +1142,6 @@ export interface PagesSelect<T extends boolean = true> {
  * via the `definition` "site-seo_select".
  */
 export interface SiteSeoSelect<T extends boolean = true> {
-  route?: T;
-  home?:
-    | T
-    | {
-        summary?: T;
-        detail?: T;
-        id?: T;
-      };
-  hospital?:
-    | T
-    | {
-        summary?: T;
-        detail?: T;
-        id?: T;
-      };
-  outside?:
-    | T
-    | {
-        summary?: T;
-        detail?: T;
-        id?: T;
-      };
-  away?:
-    | T
-    | {
-        summary?: T;
-        detail?: T;
-        id?: T;
-      };
   aboutInitialized?: T;
   sections?:
     | T
@@ -1314,6 +1285,35 @@ export interface SiteSeoSelect<T extends boolean = true> {
               id?: T;
               blockName?: T;
             };
+      };
+  route?: T;
+  home?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
+  hospital?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
+  outside?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
+      };
+  away?:
+    | T
+    | {
+        summary?: T;
+        detail?: T;
+        id?: T;
       };
   seoTitle?: T;
   seoDescription?: T;

@@ -12,9 +12,12 @@ export function AdminLogo() {
 
 export function NavBrand() {
   return (
-    <div className="rg-nav-brand-row">
-      <Link className="rg-nav-brand" href="/admin" aria-label="RitualGroup24 Admin, главная"><AdminLogo /></Link>
-      <MobileNavToggle />
-    </div>
+    <>
+      <div className="rg-nav-brand-row">
+        <Link className="rg-nav-brand" href="/admin" aria-label="RitualGroup24 Admin, главная"><AdminLogo /></Link>
+        <MobileNavToggle />
+      </div>
+      <Link className="nav__link" href="/admin/about" prefetch={false}><span className="nav__link-label">О компании</span></Link>
+    </>
   )
 }
